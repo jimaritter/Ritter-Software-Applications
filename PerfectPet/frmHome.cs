@@ -20,7 +20,7 @@ namespace PerfectPet
         private frmBooking formBooking;
         private frmSettings formSettings;
         private frmInvoice formInvoice;
-        private frmWorkOrder formWorkOrder;
+        private frmInvoice _formInvoice;
 
         public frmHome()
         {
@@ -105,8 +105,8 @@ namespace PerfectPet
         private void linkNewWorkOrder_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-            formWorkOrder = new frmWorkOrder();
-            formWorkOrder.ShowDialog(this);
+            _formInvoice = new frmInvoice();
+            _formInvoice.ShowDialog(this);
             Cursor.Current = Cursors.Default;
         }
     }

@@ -11,6 +11,7 @@ using PerfectPet.Model.People;
 using PerfectPet.Model.Pets;
 using PerfectPet.Model.Phones;
 using PerfectPet.Model.Products;
+using PerfectPet.Model.Sales;
 using PerfectPet.Model.Services;
 using PerfectPet.Model.Workorders;
 using StructureMap;
@@ -39,6 +40,7 @@ namespace PerfectPet.Container
                 x.For<IService>().Singleton().Use(() => new Service());
                 x.For<IProduct>().Singleton().Use(() => new Product());
                 x.For<IWorkorder>().Singleton().Use(() => new Workorder());
+                x.For<IInvoice>().Singleton().Use(() => new Invoice());
             });
 
         }
