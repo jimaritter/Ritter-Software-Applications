@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using PerfectPet.Model.Addresses;
 using PerfectPet.Model.People;
 using PerfectPet.Model.Pets;
+using PerfectPet.Model.Products;
+using PerfectPet.Model.Services;
 using PerfectPet.Model.Workorders;
 using StructureMap;
 using Telerik.WinControls.UI;
@@ -39,6 +41,8 @@ namespace PerfectPet
                 _workorder = ObjectFactory.GetInstance<IWorkorder>();
                 workorder = _workorder.Get();
                 BindCustomerDropDown();
+                BindProductsDropDown();
+                BindServicesDropDown();
             }
 
             private void btnSelectCustomer_Click(object sender, EventArgs e)
@@ -129,6 +133,40 @@ namespace PerfectPet
                     
                     throw;
                 }        
+            }
+
+            private void BindProductsDropDown()
+            {
+                try
+                {
+                    var _product = ObjectFactory.GetInstance<IProduct>();
+                    var product = _product.GetAll();
+                    ddlProductList.DataSource = product;
+                    ddlProductList.DisplayMember = "Name";
+                    ddlProductList.ValueMember = "Id";
+                }
+                catch (Exception)
+                {
+                    
+                    throw;
+                }
+            }
+
+            private void BindServicesDropDown()
+            {
+                try
+                {
+                    var _service = ObjectFactory.GetInstance<IService>();
+                    var service = _service.GetAll();
+                    ddlServiceList.DataSource = service;
+                    ddlServiceList.DisplayMember = "Name";
+                    ddlServiceList.ValueMember = "Id";
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
             }
 
             private void BindCustomerDropDown()
