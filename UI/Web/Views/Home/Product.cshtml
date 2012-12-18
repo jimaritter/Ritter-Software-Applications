@@ -1,0 +1,18 @@
+﻿@model IEnumerable<StaticConsulting.Model.Products.Product>
+
+@{
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<hgroup class="title">
+    <h2>Our Products</h2>
+</hgroup>
+
+<article>
+  <ul>
+@foreach (var item in Model) {
+    <li>@Html.DisplayFor(modelItem => item.Name)</li>
+}
+  </ul>
+</article>

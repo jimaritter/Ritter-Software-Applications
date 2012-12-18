@@ -1,0 +1,229 @@
+﻿namespace PerfectPet
+{
+    partial class frmAddAddress
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
+            this.ddlAddressType = new Telerik.WinControls.UI.RadDropDownList();
+            this.lblAddressType = new Telerik.WinControls.UI.RadLabel();
+            this.ddlState = new Telerik.WinControls.UI.RadDropDownList();
+            this.lblZip = new Telerik.WinControls.UI.RadLabel();
+            this.txtZip = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.lblState = new Telerik.WinControls.UI.RadLabel();
+            this.lblCity = new Telerik.WinControls.UI.RadLabel();
+            this.txtCity = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtStreet = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.lblStreet = new Telerik.WinControls.UI.RadLabel();
+            this.btnCancel = new Telerik.WinControls.UI.RadButton();
+            this.btnAddAddress = new Telerik.WinControls.UI.RadButton();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlAddressType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblAddressType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlState)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblZip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtZip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblState)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblCity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtStreet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblStreet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddAddress)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // radLabel1
+            // 
+            this.radLabel1.Font = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel1.Location = new System.Drawing.Point(12, 12);
+            this.radLabel1.Name = "radLabel1";
+            this.radLabel1.Size = new System.Drawing.Size(91, 22);
+            this.radLabel1.TabIndex = 44;
+            this.radLabel1.Text = "Add Address";
+            // 
+            // ddlAddressType
+            // 
+            this.ddlAddressType.DropDownAnimationEnabled = true;
+            this.ddlAddressType.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
+            this.ddlAddressType.Location = new System.Drawing.Point(12, 58);
+            this.ddlAddressType.MaxDropDownItems = 0;
+            this.ddlAddressType.Name = "ddlAddressType";
+            this.ddlAddressType.ShowImageInEditorArea = true;
+            this.ddlAddressType.Size = new System.Drawing.Size(106, 20);
+            this.ddlAddressType.TabIndex = 1;
+            // 
+            // lblAddressType
+            // 
+            this.lblAddressType.Location = new System.Drawing.Point(12, 40);
+            this.lblAddressType.Name = "lblAddressType";
+            this.lblAddressType.Size = new System.Drawing.Size(76, 18);
+            this.lblAddressType.TabIndex = 53;
+            this.lblAddressType.Text = "Address Type:";
+            // 
+            // ddlState
+            // 
+            this.ddlState.DropDownAnimationEnabled = true;
+            this.ddlState.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
+            this.ddlState.Location = new System.Drawing.Point(270, 109);
+            this.ddlState.MaxDropDownItems = 0;
+            this.ddlState.Name = "ddlState";
+            this.ddlState.ShowImageInEditorArea = true;
+            this.ddlState.Size = new System.Drawing.Size(55, 20);
+            this.ddlState.TabIndex = 4;
+            // 
+            // lblZip
+            // 
+            this.lblZip.Location = new System.Drawing.Point(331, 84);
+            this.lblZip.Name = "lblZip";
+            this.lblZip.Size = new System.Drawing.Size(24, 18);
+            this.lblZip.TabIndex = 51;
+            this.lblZip.Text = "Zip:";
+            // 
+            // txtZip
+            // 
+            this.txtZip.Location = new System.Drawing.Point(331, 108);
+            this.txtZip.Name = "txtZip";
+            this.txtZip.Size = new System.Drawing.Size(87, 20);
+            this.txtZip.TabIndex = 5;
+            // 
+            // lblState
+            // 
+            this.lblState.Location = new System.Drawing.Point(269, 84);
+            this.lblState.Name = "lblState";
+            this.lblState.Size = new System.Drawing.Size(34, 18);
+            this.lblState.TabIndex = 49;
+            this.lblState.Text = "State:";
+            // 
+            // lblCity
+            // 
+            this.lblCity.Location = new System.Drawing.Point(154, 84);
+            this.lblCity.Name = "lblCity";
+            this.lblCity.Size = new System.Drawing.Size(28, 18);
+            this.lblCity.TabIndex = 48;
+            this.lblCity.Text = "City:";
+            // 
+            // txtCity
+            // 
+            this.txtCity.Location = new System.Drawing.Point(152, 108);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(111, 20);
+            this.txtCity.TabIndex = 3;
+            // 
+            // txtStreet
+            // 
+            this.txtStreet.Location = new System.Drawing.Point(12, 108);
+            this.txtStreet.Name = "txtStreet";
+            this.txtStreet.Size = new System.Drawing.Size(129, 20);
+            this.txtStreet.TabIndex = 2;
+            // 
+            // lblStreet
+            // 
+            this.lblStreet.Location = new System.Drawing.Point(12, 84);
+            this.lblStreet.Name = "lblStreet";
+            this.lblStreet.Size = new System.Drawing.Size(38, 18);
+            this.lblStreet.TabIndex = 45;
+            this.lblStreet.Text = "Street:";
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.Location = new System.Drawing.Point(222, 172);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(96, 24);
+            this.btnCancel.TabIndex = 7;
+            this.btnCancel.Text = "Close";
+            this.btnCancel.ThemeName = "VisualStudio2012Light";
+            // 
+            // btnAddAddress
+            // 
+            this.btnAddAddress.Location = new System.Drawing.Point(115, 172);
+            this.btnAddAddress.Name = "btnAddAddress";
+            this.btnAddAddress.Size = new System.Drawing.Size(96, 24);
+            this.btnAddAddress.TabIndex = 6;
+            this.btnAddAddress.Text = "Add";
+            this.btnAddAddress.ThemeName = "VisualStudio2012Light";
+            this.btnAddAddress.Click += new System.EventHandler(this.btnAddAddress_Click);
+            // 
+            // frmAddAddress
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnCancel;
+            this.ClientSize = new System.Drawing.Size(432, 208);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnAddAddress);
+            this.Controls.Add(this.ddlAddressType);
+            this.Controls.Add(this.lblAddressType);
+            this.Controls.Add(this.ddlState);
+            this.Controls.Add(this.lblZip);
+            this.Controls.Add(this.txtZip);
+            this.Controls.Add(this.lblState);
+            this.Controls.Add(this.lblCity);
+            this.Controls.Add(this.txtCity);
+            this.Controls.Add(this.txtStreet);
+            this.Controls.Add(this.lblStreet);
+            this.Controls.Add(this.radLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Name = "frmAddAddress";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Add Address";
+            this.Load += new System.EventHandler(this.frmAddAddress_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlAddressType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblAddressType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlState)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblZip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtZip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblState)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblCity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtStreet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblStreet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddAddress)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private Telerik.WinControls.UI.RadLabel radLabel1;
+        private Telerik.WinControls.UI.RadDropDownList ddlAddressType;
+        private Telerik.WinControls.UI.RadLabel lblAddressType;
+        private Telerik.WinControls.UI.RadDropDownList ddlState;
+        private Telerik.WinControls.UI.RadLabel lblZip;
+        private Telerik.WinControls.UI.RadTextBoxControl txtZip;
+        private Telerik.WinControls.UI.RadLabel lblState;
+        private Telerik.WinControls.UI.RadLabel lblCity;
+        private Telerik.WinControls.UI.RadTextBoxControl txtCity;
+        private Telerik.WinControls.UI.RadTextBoxControl txtStreet;
+        private Telerik.WinControls.UI.RadLabel lblStreet;
+        private Telerik.WinControls.UI.RadButton btnCancel;
+        private Telerik.WinControls.UI.RadButton btnAddAddress;
+    }
+}

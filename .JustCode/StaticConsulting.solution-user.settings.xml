@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0.7" Timestamp="1776e479-f513-4f14-9b3c-74e0d7d8171e">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>C:\Projects\VS2012\StaticConsulting\VetMed.Model\Pets\IPet.cs</Path>
+        <ProjectFullName>C:\Projects\VS2012\StaticConsulting\VetMed.Model\VetMed.Model.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>17</Column>
+          <Text>Unexpected end of declaration</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Projects\VS2012\StaticConsulting\CherishedPetBoarding.Model\Mappings\OrderMap.cs</Path>
+        <ProjectFullName>C:\Projects\VS2012\StaticConsulting\CherishedPetBoarding.Model\CherishedPetBoarding.Model.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>37</Column>
+          <Text>Unexpected end of declaration</Text>
+          <Line>9</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>37</Column>
+          <Text>Unexpected end of declaration</Text>
+          <Line>9</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>37</Column>
+          <Text>Unexpected end of declaration</Text>
+          <Line>9</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Projects\VS2012\StaticConsulting\UI\Web\Content\font\demo.html</Path>
+        <ProjectFullName>C:\Projects\VS2012\StaticConsulting\UI\Web\Web.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>0</Column>
+          <Text>Expected &lt;/link&gt;</Text>
+          <Line>39</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Projects\VS2012\StaticConsulting\UI\Web\Content\jquery.ennui.contentslider.css</Path>
+        <ProjectFullName>C:\Projects\VS2012\StaticConsulting\UI\Web\Web.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>15</Column>
+          <Text>Unexpected ;</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>16</Column>
+          <Text>Unexpected  </Text>
+          <Line>6</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>17</Column>
+          <Text>Unexpected /</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>18</Column>
+          <Text>Unexpected *</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>19</Column>
+          <Text>Unexpected  </Text>
+          <Line>6</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>52</Column>
+          <Text>Unexpected end of declaration</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>53</Column>
+          <Text>Unexpected end of declaration</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>54</Column>
+          <Text>Unexpected end of declaration</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Projects\VS2012\StaticConsulting\UI\Web\Content\js\thickbox.css</Path>
+        <ProjectFullName>C:\Projects\VS2012\StaticConsulting\UI\Web\Web.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>105</Column>
+          <Text>Unexpected &amp;</Text>
+          <Line>64</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>106</Column>
+          <Text>Unexpected &amp;</Text>
+          <Line>64</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>105</Column>
+          <Text>Unexpected &amp;</Text>
+          <Line>135</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>106</Column>
+          <Text>Unexpected &amp;</Text>
+          <Line>135</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Projects\VS2012\StaticConsulting\UI\Web\Views\Shared\EditorTemplates\Currency.cshtml</Path>
+        <ProjectFullName>C:\Projects\VS2012\StaticConsulting\UI\Web\Web.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>8</Column>
+          <Text>Unknown method &lt;/C&gt;Telerik&lt;//C&gt; of &lt;/C&gt;System.Web.Mvc.HtmlHelper&lt;decimal?&gt;&lt;//C&gt;</Text>
+          <Line>3</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>42</Column>
+          <Text>Unknown type of variable &lt;/C&gt;m&lt;//C&gt;</Text>
+          <Line>3</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Projects\VS2012\StaticConsulting\UI\Web\Views\Shared\EditorTemplates\Date.cshtml</Path>
+        <ProjectFullName>C:\Projects\VS2012\StaticConsulting\UI\Web\Web.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>8</Column>
+          <Text>Unknown method &lt;/C&gt;Telerik&lt;//C&gt; of &lt;/C&gt;System.Web.Mvc.HtmlHelper&lt;System.DateTime?&gt;&lt;//C&gt;</Text>
+          <Line>3</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>37</Column>
+          <Text>Unknown type of variable &lt;/C&gt;m&lt;//C&gt;</Text>
+          <Line>3</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Projects\VS2012\StaticConsulting\UI\Web\Views\Shared\EditorTemplates\DateTime.cshtml</Path>
+        <ProjectFullName>C:\Projects\VS2012\StaticConsulting\UI\Web\Web.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>8</Column>
+          <Text>Unknown method &lt;/C&gt;Telerik&lt;//C&gt; of &lt;/C&gt;System.Web.Mvc.HtmlHelper&lt;System.DateTime?&gt;&lt;//C&gt;</Text>
+          <Line>3</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>41</Column>
+          <Text>Unknown type of variable &lt;/C&gt;m&lt;//C&gt;</Text>
+          <Line>3</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Projects\VS2012\StaticConsulting\UI\Web\Views\Shared\EditorTemplates\GridForeignKey.cshtml</Path>
+        <ProjectFullName>C:\Projects\VS2012\StaticConsulting\UI\Web\Web.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>8</Column>
+          <Text>Unknown method &lt;/C&gt;Telerik&lt;//C&gt; of &lt;/C&gt;System.Web.Mvc.HtmlHelper&lt;dynamic&gt;&lt;//C&gt;</Text>
+          <Line>1</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Projects\VS2012\StaticConsulting\UI\Web\Views\Shared\EditorTemplates\Integer.cshtml</Path>
+        <ProjectFullName>C:\Projects\VS2012\StaticConsulting\UI\Web\Web.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>8</Column>
+          <Text>Unknown method &lt;/C&gt;Telerik&lt;//C&gt; of &lt;/C&gt;System.Web.Mvc.HtmlHelper&lt;int?&gt;&lt;//C&gt;</Text>
+          <Line>3</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>41</Column>
+          <Text>Unknown type of variable &lt;/C&gt;m&lt;//C&gt;</Text>
+          <Line>3</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Projects\VS2012\StaticConsulting\UI\Web\Views\Shared\EditorTemplates\Number.cshtml</Path>
+        <ProjectFullName>C:\Projects\VS2012\StaticConsulting\UI\Web\Web.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>8</Column>
+          <Text>Unknown method &lt;/C&gt;Telerik&lt;//C&gt; of &lt;/C&gt;System.Web.Mvc.HtmlHelper&lt;double?&gt;&lt;//C&gt;</Text>
+          <Line>3</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>41</Column>
+          <Text>Unknown type of variable &lt;/C&gt;m&lt;//C&gt;</Text>
+          <Line>3</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Projects\VS2012\StaticConsulting\UI\Web\Views\Shared\EditorTemplates\Time.cshtml</Path>
+        <ProjectFullName>C:\Projects\VS2012\StaticConsulting\UI\Web\Web.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>8</Column>
+          <Text>Unknown method &lt;/C&gt;Telerik&lt;//C&gt; of &lt;/C&gt;System.Web.Mvc.HtmlHelper&lt;System.DateTime?&gt;&lt;//C&gt;</Text>
+          <Line>3</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>37</Column>
+          <Text>Unknown type of variable &lt;/C&gt;m&lt;//C&gt;</Text>
+          <Line>3</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

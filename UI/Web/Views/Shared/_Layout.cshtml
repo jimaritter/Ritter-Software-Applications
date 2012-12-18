@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - Static Software Consulting</title>
+        <link href="~/box_software.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Scripts.Render("~/bundles/modernizr")
+        <!-- Bootstrap -->
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="../../Content/bootstrap.css" rel="stylesheet">
+        <style type="text/css">
+          body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+          }
+        </style>
+        <link href="../../Content/bootstrap-responsive.css" rel="stylesheet">
+    </head>
+    <body>
+    
+      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Static Software Consulting</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+                <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Products", "Product", "Home")</li>
+                <li>@Html.ActionLink("Services", "Index", "Service")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="hero-unit">
+        <h1></h1>
+        <h1></h1>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <div class="row">
+        <div class="span12">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>   
+        </div>
+    </div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h3>
+              <img alt="" src="\Images\environment_network.png" /> Internet Technologies</h3>
+            <p>
+                Utilizing the latest internet technologies, we offer your company customized solutions designed specifically with your business goals in mind.  Using proven architectural concepts, we build systems that are scalable, flexible, reliable, and easy to support.  Our proven performance of incorporating information technology with imagination and creative solutions is always consistent with your corporate image and goals.              
+            </p>
+        </div>
+        <div class="span4">
+            <h3>
+                <img alt="" src="\Images\text_code_csharp.png" />
+                Application Development</h3>
+            <ul>
+                <li>Planning and Design</li>
+                <li>Front End Implementation</li>
+                <li>Back End Implementation</li>
+                <li>QA & Testing</li>
+            </ul>
+       </div>
+        <div class="span4">
+            <h3>
+                <img alt="" src="\Images\branch.png" /> Application Support</h3>
+            <p>
+               We provide full support for the following applications. 
+            </p>
+            <ul>
+                <li>ASP.NET</li>
+                <li>C# and VB.NET</li>
+                <li>MS Sql Server</li>
+                <li>Windows Servers</li>
+                <li>Windows Desktop</li>
+            </ul>
+        </div>
+      </div>
+
+      <hr>
+
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - Static Consulting - Software Specialists</p>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <script src="../../Content/bootstrap.min.js"></script>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../Content/js/jquery.js"></script>
+    <script src="../../Content/js/bootstrap-transition.js"></script>
+    <script src="../../Content/js/bootstrap-alert.js"></script>
+    <script src="../../Content/js/bootstrap-modal.js"></script>
+    <script src="../../Content/js/bootstrap-dropdown.js"></script>
+    <script src="../../Content/js/bootstrap-scrollspy.js"></script>
+    <script src="../../Content/js/bootstrap-tab.js"></script>
+    <script src="../../Content/js/bootstrap-tooltip.js"></script>
+    <script src="../../Content/js/bootstrap-popover.js"></script>
+    <script src="../../Content/js/bootstrap-button.js"></script>
+    <script src="../../Content/js/bootstrap-collapse.js"></script>
+    <script src="../../Content/js/bootstrap-carousel.js"></script>
+    <script src="../../Content/js/bootstrap-typeahead.js"></script>
+    </body>
+</html>
