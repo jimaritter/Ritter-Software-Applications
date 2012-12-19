@@ -29,6 +29,9 @@ namespace PerfectPet
         private Company company;
         private IInvoice _invoice;
         private Invoice invoice;
+        private IInvoiceNumber _invoiceNumber;
+        private InvoiceNumber invoiceNumber;
+        private GridViewComboBoxColumn productcombo;
 
         public frmInvoice()
         {
@@ -43,15 +46,21 @@ namespace PerfectPet
                 {
                     Cursor.Current = Cursors.Default;
                     this.WindowState = FormWindowState.Maximized;
+                    gridProducts.CellEditorInitialized += new GridViewCellEventHandler(gridProducts_CellEditorInitialized);
                     Pets = new List<Pet>();
                     _company = ObjectFactory.GetInstance<ICompany>();
                     company = _company.GetById(1002);
                     _invoice = ObjectFactory.GetInstance<IInvoice>();
                     invoice = _invoice.Get();
+                    _invoiceNumber = ObjectFactory.GetInstance<IInvoiceNumber>();
+                    invoiceNumber = _invoiceNumber.GetById(1);
                     invoice.Company = company;
+                    lblTaxIdNumber.Text = company.TaxNumber;
+                    lblInvoiceNumber.Text = invoiceNumber.Number.ToString();
                     BindCustomerDropDown();
                     BindProductsDropDown();
                     BindServicesDropDown();
+                    BindProductGrid();
                 }
                 catch (Exception)
                 {
@@ -60,7 +69,32 @@ namespace PerfectPet
                 }
             }
 
-            private void btnSelectCustomer_Click(object sender, EventArgs e)
+        private void gridProducts_CellEditorInitialized(object sender, GridViewCellEventArgs e)
+        {
+            if (e.Row is GridViewNewRowInfo)
+            {
+
+                var editor = e.ActiveEditor as RadDropDownListEditor;
+
+                if (editor != null)
+                {
+
+                    editor.ValueChanged -= new EventHandler(editor_ValueChanged);
+
+                    editor.ValueChanged += new EventHandler(editor_ValueChanged);
+
+                }
+
+            }
+        }
+
+        private void editor_ValueChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine(sender.GetType().ToString());
+            //gridProducts.EndEdit();
+        }
+
+        private void btnSelectCustomer_Click(object sender, EventArgs e)
             {
                 try
                 {
@@ -142,6 +176,28 @@ namespace PerfectPet
                         lblHeaderAddress.Text = address.Street + " " + address.City + " " + address.State + ", " +
                                                 address.Zip;
                     }
+                }
+                catch (Exception)
+                {
+                    
+                    throw;
+                }        
+            }
+
+            private void BindProductGrid()
+            {
+                try
+                {
+                    var _products = ObjectFactory.GetInstance<IProduct>();
+                    var products = _products.GetAll();
+
+                    var query = from product in products
+                                select new {Id = product.Id, Product = product.Name};
+
+                    productcombo = (GridViewComboBoxColumn)gridProducts.Columns[1];
+                    productcombo.DataSource = query;
+                    productcombo.DisplayMember = "Product";
+                    productcombo.ValueMember = "Id";
                 }
                 catch (Exception)
                 {
@@ -299,5 +355,27 @@ namespace PerfectPet
                 }
             }
         #endregion
+
+            private void MasterTemplate_CellValueChanged(object sender, GridViewCellEventArgs e)
+            {
+                try
+                {
+                    if (e.Column is GridViewComboBoxColumn)
+                    {
+                        //Console.WriteLine(gridProducts.CurrentRow.Cells["Product"].Value);
+                        var _product = ObjectFactory.GetInstance<IProduct>();
+                        var product = _product.GetById((int) gridProducts.CurrentRow.Cells["Product"].Value);
+                        gridProducts.CurrentRow.Cells["Description"].Value = product.Description;
+                        gridProducts.CurrentRow.Cells["Cost"].Value = product.Cost;
+                        gridProducts.CurrentRow.Cells["Retail"].Value = product.Retail;
+                        //gridProducts.Rows[e.RowIndex].Cells["Cost"].Value = 125.00;//e.Value;
+                    }
+                }
+                catch (Exception)
+                {
+                    
+                    throw;
+                }
+            }
     }
 }

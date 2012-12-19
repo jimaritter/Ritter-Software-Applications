@@ -92,6 +92,7 @@ namespace PerfectPet
                 txtCell.Text = company.Cell;
                 txtWebSite.Text = company.Web;
                 txtEmail.Text = company.Email;
+                txtTaxIdNumber.Text = company.TaxNumber;
                 if(company.Logo != null)
                 {
                     MemoryStream stmBLOBData = new MemoryStream(company.Logo);
@@ -132,6 +133,7 @@ namespace PerfectPet
                 company.Cell = txtCell.Text;
                 company.Web = txtWebSite.Text;
                 company.Email = txtEmail.Text;
+                company.TaxNumber = txtTaxIdNumber.Text;
                 if (picLogo.Image != null)
                 {
                     company.Logo = ImageTool.ConvertImageToByteArray(picLogo.Image, System.Drawing.Imaging.ImageFormat.Jpeg);

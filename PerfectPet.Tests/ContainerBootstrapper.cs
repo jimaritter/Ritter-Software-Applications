@@ -40,6 +40,7 @@ namespace PerfectPet.Tests
                                              x.For<IPerson>().Singleton().Use(() => new Person());
                                              x.For<IInvoice>().Singleton().Use(() => new Invoice());
                                              x.For<IAddress>().Singleton().Use(() => new Address());
+                                             x.For<IInvoiceNumber>().Singleton().Use(() => new InvoiceNumber());
                                             // x.For(typeof(IAppointments)).LifecycleIs(new HybridLifecycle()).Use(typeof(Appointments));
 
                                          });

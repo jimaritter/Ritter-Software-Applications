@@ -103,6 +103,7 @@
     <Compile Include="Mappings\DiscountMap.cs" />
     <Compile Include="Mappings\DogBreedMap.cs" />
     <Compile Include="Mappings\InvoiceMap.cs" />
+    <Compile Include="Mappings\InvoiceNumberMap.cs" />
     <Compile Include="Mappings\InvoicesPetsMap.cs" />
     <Compile Include="Mappings\KennelMap.cs" />
     <Compile Include="Mappings\LineItemMap.cs" />
@@ -158,6 +159,7 @@
     <Compile Include="Sales\IInvoicesPets.cs" />
     <Compile Include="Sales\ILineItem.cs" />
     <Compile Include="Sales\Invoice.cs" />
+    <Compile Include="Sales\InvoiceNumber.cs" />
     <Compile Include="Sales\InvoicesPets.cs" />
     <Compile Include="Sales\IOrder.cs" />
     <Compile Include="Sales\LineItem.cs" />

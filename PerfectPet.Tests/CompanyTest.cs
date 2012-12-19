@@ -22,7 +22,7 @@ namespace PerfectPet.Tests
         public void can_add_company_info()
         {
             var _companyinfo = ObjectFactory.GetInstance<ICompany>();
-            var companyinfo = _companyinfo.Get();
+            var companyinfo = _companyinfo.GetById(1002);
             companyinfo.CompanyName = "Static Consulting";
             companyinfo.TaxRate = .06;
             companyinfo.Street = "5145 N Susquehanna Trail";

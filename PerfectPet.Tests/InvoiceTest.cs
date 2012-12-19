@@ -23,6 +23,24 @@ namespace PerfectPet.Tests
         }
 
         [Test]
+        public void can_generate_invoice_number()
+        {
+            try
+            {
+                var _invoicenumber = ObjectFactory.GetInstance<IInvoiceNumber>();
+                var invoicenumber = _invoicenumber.GetById(1);
+                invoicenumber.Number = invoicenumber.Number + 1;
+                _invoicenumber.Save(invoicenumber);
+                Assert.IsNotNull(_invoicenumber);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [Test]
         public void can_get_invoices_pets()
         {
             try

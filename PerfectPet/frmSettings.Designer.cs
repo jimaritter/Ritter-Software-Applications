@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn5 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn6 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn5 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn6 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn7 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn8 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn7 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn8 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn1 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn2 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn3 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn4 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn3 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn4 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
             this.radMenuItem1 = new Telerik.WinControls.UI.RadMenuItem();
             this.menuExit = new Telerik.WinControls.UI.RadMenuItem();
@@ -87,6 +87,8 @@
             this.gridServices = new Telerik.WinControls.UI.RadGridView();
             this.radLabel18 = new Telerik.WinControls.UI.RadLabel();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
+            this.txtTaxIdNumber = new Telerik.WinControls.UI.RadTextBox();
+            this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabParent)).BeginInit();
             this.tabParent.SuspendLayout();
@@ -133,6 +135,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridServices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridServices.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTaxIdNumber)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
             this.SuspendLayout();
             // 
             // radMenu1
@@ -187,6 +191,8 @@
             // 
             // tabCompany
             // 
+            this.tabCompany.Controls.Add(this.txtTaxIdNumber);
+            this.tabCompany.Controls.Add(this.radLabel19);
             this.tabCompany.Controls.Add(this.linklblChooseImage);
             this.tabCompany.Controls.Add(this.picLogo);
             this.tabCompany.Controls.Add(this.radLabel16);
@@ -543,52 +549,52 @@
             this.gridProducts.MasterTemplate.AllowDragToGroup = false;
             this.gridProducts.MasterTemplate.AllowRowResize = false;
             this.gridProducts.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn7.EnableExpressionEditor = false;
-            gridViewTextBoxColumn7.FieldName = "Id";
-            gridViewTextBoxColumn7.HeaderText = "Id";
-            gridViewTextBoxColumn7.IsVisible = false;
-            gridViewTextBoxColumn7.Name = "Id";
-            gridViewTextBoxColumn7.ReadOnly = true;
-            gridViewTextBoxColumn8.EnableExpressionEditor = false;
-            gridViewTextBoxColumn8.FieldName = "Name";
-            gridViewTextBoxColumn8.HeaderText = "Name";
-            gridViewTextBoxColumn8.Name = "Name";
-            gridViewTextBoxColumn8.Width = 121;
-            gridViewTextBoxColumn9.EnableExpressionEditor = false;
-            gridViewTextBoxColumn9.FieldName = "Description";
-            gridViewTextBoxColumn9.HeaderText = "Description";
-            gridViewTextBoxColumn9.Name = "Description";
-            gridViewTextBoxColumn9.Width = 121;
-            gridViewDecimalColumn5.EnableExpressionEditor = false;
-            gridViewDecimalColumn5.FieldName = "Cost";
-            gridViewDecimalColumn5.HeaderText = "Cost";
-            gridViewDecimalColumn5.Name = "Cost";
-            gridViewDecimalColumn5.Width = 121;
-            gridViewDecimalColumn6.EnableExpressionEditor = false;
-            gridViewDecimalColumn6.FieldName = "Retail";
-            gridViewDecimalColumn6.HeaderText = "Retail";
-            gridViewDecimalColumn6.Name = "Retail";
-            gridViewDecimalColumn6.Width = 121;
-            gridViewCheckBoxColumn5.EnableExpressionEditor = false;
-            gridViewCheckBoxColumn5.FieldName = "Active";
-            gridViewCheckBoxColumn5.HeaderText = "Active";
-            gridViewCheckBoxColumn5.MinWidth = 20;
-            gridViewCheckBoxColumn5.Name = "Active";
-            gridViewCheckBoxColumn5.Width = 121;
-            gridViewCheckBoxColumn6.EnableExpressionEditor = false;
-            gridViewCheckBoxColumn6.FieldName = "TaxExempt";
-            gridViewCheckBoxColumn6.HeaderText = "Tax Exempt";
-            gridViewCheckBoxColumn6.MinWidth = 20;
-            gridViewCheckBoxColumn6.Name = "TaxExempt";
-            gridViewCheckBoxColumn6.Width = 121;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
+            gridViewTextBoxColumn1.FieldName = "Id";
+            gridViewTextBoxColumn1.HeaderText = "Id";
+            gridViewTextBoxColumn1.IsVisible = false;
+            gridViewTextBoxColumn1.Name = "Id";
+            gridViewTextBoxColumn1.ReadOnly = true;
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
+            gridViewTextBoxColumn2.FieldName = "Name";
+            gridViewTextBoxColumn2.HeaderText = "Name";
+            gridViewTextBoxColumn2.Name = "Name";
+            gridViewTextBoxColumn2.Width = 121;
+            gridViewTextBoxColumn3.EnableExpressionEditor = false;
+            gridViewTextBoxColumn3.FieldName = "Description";
+            gridViewTextBoxColumn3.HeaderText = "Description";
+            gridViewTextBoxColumn3.Name = "Description";
+            gridViewTextBoxColumn3.Width = 121;
+            gridViewDecimalColumn1.EnableExpressionEditor = false;
+            gridViewDecimalColumn1.FieldName = "Cost";
+            gridViewDecimalColumn1.HeaderText = "Cost";
+            gridViewDecimalColumn1.Name = "Cost";
+            gridViewDecimalColumn1.Width = 121;
+            gridViewDecimalColumn2.EnableExpressionEditor = false;
+            gridViewDecimalColumn2.FieldName = "Retail";
+            gridViewDecimalColumn2.HeaderText = "Retail";
+            gridViewDecimalColumn2.Name = "Retail";
+            gridViewDecimalColumn2.Width = 121;
+            gridViewCheckBoxColumn1.EnableExpressionEditor = false;
+            gridViewCheckBoxColumn1.FieldName = "Active";
+            gridViewCheckBoxColumn1.HeaderText = "Active";
+            gridViewCheckBoxColumn1.MinWidth = 20;
+            gridViewCheckBoxColumn1.Name = "Active";
+            gridViewCheckBoxColumn1.Width = 121;
+            gridViewCheckBoxColumn2.EnableExpressionEditor = false;
+            gridViewCheckBoxColumn2.FieldName = "TaxExempt";
+            gridViewCheckBoxColumn2.HeaderText = "Tax Exempt";
+            gridViewCheckBoxColumn2.MinWidth = 20;
+            gridViewCheckBoxColumn2.Name = "TaxExempt";
+            gridViewCheckBoxColumn2.Width = 121;
             this.gridProducts.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn7,
-            gridViewTextBoxColumn8,
-            gridViewTextBoxColumn9,
-            gridViewDecimalColumn5,
-            gridViewDecimalColumn6,
-            gridViewCheckBoxColumn5,
-            gridViewCheckBoxColumn6});
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewDecimalColumn1,
+            gridViewDecimalColumn2,
+            gridViewCheckBoxColumn1,
+            gridViewCheckBoxColumn2});
             this.gridProducts.MasterTemplate.EnableFiltering = true;
             this.gridProducts.Name = "gridProducts";
             this.gridProducts.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -656,52 +662,52 @@
             this.gridServices.MasterTemplate.AllowDragToGroup = false;
             this.gridServices.MasterTemplate.AllowRowResize = false;
             this.gridServices.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn10.EnableExpressionEditor = false;
-            gridViewTextBoxColumn10.FieldName = "Id";
-            gridViewTextBoxColumn10.HeaderText = "Id";
-            gridViewTextBoxColumn10.IsVisible = false;
-            gridViewTextBoxColumn10.Name = "Id";
-            gridViewTextBoxColumn10.ReadOnly = true;
-            gridViewTextBoxColumn11.EnableExpressionEditor = false;
-            gridViewTextBoxColumn11.FieldName = "Name";
-            gridViewTextBoxColumn11.HeaderText = "Name";
-            gridViewTextBoxColumn11.Name = "Name";
-            gridViewTextBoxColumn11.Width = 121;
-            gridViewTextBoxColumn12.EnableExpressionEditor = false;
-            gridViewTextBoxColumn12.FieldName = "Description";
-            gridViewTextBoxColumn12.HeaderText = "Description";
-            gridViewTextBoxColumn12.Name = "Description";
-            gridViewTextBoxColumn12.Width = 121;
-            gridViewDecimalColumn7.EnableExpressionEditor = false;
-            gridViewDecimalColumn7.FieldName = "Cost";
-            gridViewDecimalColumn7.HeaderText = "Cost";
-            gridViewDecimalColumn7.Name = "Cost";
-            gridViewDecimalColumn7.Width = 121;
-            gridViewDecimalColumn8.EnableExpressionEditor = false;
-            gridViewDecimalColumn8.FieldName = "Retail";
-            gridViewDecimalColumn8.HeaderText = "Retail";
-            gridViewDecimalColumn8.Name = "Retail";
-            gridViewDecimalColumn8.Width = 121;
-            gridViewCheckBoxColumn7.EnableExpressionEditor = false;
-            gridViewCheckBoxColumn7.FieldName = "Active";
-            gridViewCheckBoxColumn7.HeaderText = "Active";
-            gridViewCheckBoxColumn7.MinWidth = 20;
-            gridViewCheckBoxColumn7.Name = "Active";
-            gridViewCheckBoxColumn7.Width = 121;
-            gridViewCheckBoxColumn8.EnableExpressionEditor = false;
-            gridViewCheckBoxColumn8.FieldName = "TaxExempt";
-            gridViewCheckBoxColumn8.HeaderText = "Tax Exempt";
-            gridViewCheckBoxColumn8.MinWidth = 20;
-            gridViewCheckBoxColumn8.Name = "TaxExempt";
-            gridViewCheckBoxColumn8.Width = 121;
+            gridViewTextBoxColumn4.EnableExpressionEditor = false;
+            gridViewTextBoxColumn4.FieldName = "Id";
+            gridViewTextBoxColumn4.HeaderText = "Id";
+            gridViewTextBoxColumn4.IsVisible = false;
+            gridViewTextBoxColumn4.Name = "Id";
+            gridViewTextBoxColumn4.ReadOnly = true;
+            gridViewTextBoxColumn5.EnableExpressionEditor = false;
+            gridViewTextBoxColumn5.FieldName = "Name";
+            gridViewTextBoxColumn5.HeaderText = "Name";
+            gridViewTextBoxColumn5.Name = "Name";
+            gridViewTextBoxColumn5.Width = 121;
+            gridViewTextBoxColumn6.EnableExpressionEditor = false;
+            gridViewTextBoxColumn6.FieldName = "Description";
+            gridViewTextBoxColumn6.HeaderText = "Description";
+            gridViewTextBoxColumn6.Name = "Description";
+            gridViewTextBoxColumn6.Width = 121;
+            gridViewDecimalColumn3.EnableExpressionEditor = false;
+            gridViewDecimalColumn3.FieldName = "Cost";
+            gridViewDecimalColumn3.HeaderText = "Cost";
+            gridViewDecimalColumn3.Name = "Cost";
+            gridViewDecimalColumn3.Width = 121;
+            gridViewDecimalColumn4.EnableExpressionEditor = false;
+            gridViewDecimalColumn4.FieldName = "Retail";
+            gridViewDecimalColumn4.HeaderText = "Retail";
+            gridViewDecimalColumn4.Name = "Retail";
+            gridViewDecimalColumn4.Width = 121;
+            gridViewCheckBoxColumn3.EnableExpressionEditor = false;
+            gridViewCheckBoxColumn3.FieldName = "Active";
+            gridViewCheckBoxColumn3.HeaderText = "Active";
+            gridViewCheckBoxColumn3.MinWidth = 20;
+            gridViewCheckBoxColumn3.Name = "Active";
+            gridViewCheckBoxColumn3.Width = 121;
+            gridViewCheckBoxColumn4.EnableExpressionEditor = false;
+            gridViewCheckBoxColumn4.FieldName = "TaxExempt";
+            gridViewCheckBoxColumn4.HeaderText = "Tax Exempt";
+            gridViewCheckBoxColumn4.MinWidth = 20;
+            gridViewCheckBoxColumn4.Name = "TaxExempt";
+            gridViewCheckBoxColumn4.Width = 121;
             this.gridServices.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn10,
-            gridViewTextBoxColumn11,
-            gridViewTextBoxColumn12,
-            gridViewDecimalColumn7,
-            gridViewDecimalColumn8,
-            gridViewCheckBoxColumn7,
-            gridViewCheckBoxColumn8});
+            gridViewTextBoxColumn4,
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6,
+            gridViewDecimalColumn3,
+            gridViewDecimalColumn4,
+            gridViewCheckBoxColumn3,
+            gridViewCheckBoxColumn4});
             this.gridServices.MasterTemplate.EnableFiltering = true;
             this.gridServices.Name = "gridServices";
             this.gridServices.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -720,6 +726,22 @@
             this.radLabel18.Size = new System.Drawing.Size(93, 21);
             this.radLabel18.TabIndex = 29;
             this.radLabel18.Text = "Your Services";
+            // 
+            // txtTaxIdNumber
+            // 
+            this.txtTaxIdNumber.Location = new System.Drawing.Point(376, 302);
+            this.txtTaxIdNumber.Name = "txtTaxIdNumber";
+            this.txtTaxIdNumber.Size = new System.Drawing.Size(149, 20);
+            this.txtTaxIdNumber.TabIndex = 60;
+            this.txtTaxIdNumber.TabStop = false;
+            // 
+            // radLabel19
+            // 
+            this.radLabel19.Location = new System.Drawing.Point(376, 278);
+            this.radLabel19.Name = "radLabel19";
+            this.radLabel19.Size = new System.Drawing.Size(83, 18);
+            this.radLabel19.TabIndex = 61;
+            this.radLabel19.Text = "Tax Id Number:";
             // 
             // frmSettings
             // 
@@ -782,6 +804,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridServices.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridServices)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTaxIdNumber)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -834,6 +858,8 @@
         private System.Windows.Forms.LinkLabel linklblChooseImage;
         private System.Windows.Forms.PictureBox picLogo;
         private Telerik.WinControls.UI.RadLabel radLabel16;
+        private Telerik.WinControls.UI.RadTextBox txtTaxIdNumber;
+        private Telerik.WinControls.UI.RadLabel radLabel19;
 
     }
 }
