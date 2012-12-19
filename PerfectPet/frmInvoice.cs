@@ -32,6 +32,7 @@ namespace PerfectPet
         private IInvoiceNumber _invoiceNumber;
         private InvoiceNumber invoiceNumber;
         private GridViewComboBoxColumn productcombo;
+        private GridViewComboBoxColumn servicecombo;
 
         public frmInvoice()
         {
@@ -58,9 +59,8 @@ namespace PerfectPet
                     lblTaxIdNumber.Text = company.TaxNumber;
                     lblInvoiceNumber.Text = invoiceNumber.Number.ToString();
                     BindCustomerDropDown();
-                    BindProductsDropDown();
-                    BindServicesDropDown();
                     BindProductGrid();
+                    BindServiceGrid();
                 }
                 catch (Exception)
                 {
@@ -206,32 +206,20 @@ namespace PerfectPet
                 }        
             }
 
-            private void BindProductsDropDown()
+            private void BindServiceGrid()
             {
                 try
                 {
-                    var _product = ObjectFactory.GetInstance<IProduct>();
-                    var product = _product.GetAll();
-                    ddlProductList.DataSource = product;
-                    ddlProductList.DisplayMember = "Name";
-                    ddlProductList.ValueMember = "Id";
-                }
-                catch (Exception)
-                {
-                    
-                    throw;
-                }
-            }
+                    var _services = ObjectFactory.GetInstance<IService>();
+                    var services = _services.GetAll();
 
-            private void BindServicesDropDown()
-            {
-                try
-                {
-                    var _service = ObjectFactory.GetInstance<IService>();
-                    var service = _service.GetAll();
-                    ddlServiceList.DataSource = service;
-                    ddlServiceList.DisplayMember = "Name";
-                    ddlServiceList.ValueMember = "Id";
+                    var query = from service in services
+                                select new { Id = service.Id, Service = service.Name };
+
+                    servicecombo = (GridViewComboBoxColumn)gridServices.Columns[1];
+                    servicecombo.DataSource = query;
+                    servicecombo.DisplayMember = "Service";
+                    servicecombo.ValueMember = "Id";
                 }
                 catch (Exception)
                 {
@@ -362,13 +350,17 @@ namespace PerfectPet
                 {
                     if (e.Column is GridViewComboBoxColumn)
                     {
-                        //Console.WriteLine(gridProducts.CurrentRow.Cells["Product"].Value);
                         var _product = ObjectFactory.GetInstance<IProduct>();
                         var product = _product.GetById((int) gridProducts.CurrentRow.Cells["Product"].Value);
                         gridProducts.CurrentRow.Cells["Description"].Value = product.Description;
                         gridProducts.CurrentRow.Cells["Cost"].Value = product.Cost;
                         gridProducts.CurrentRow.Cells["Retail"].Value = product.Retail;
-                        //gridProducts.Rows[e.RowIndex].Cells["Cost"].Value = 125.00;//e.Value;
+                    }
+                    if (e.Column.Name == "Quantity")
+                    {
+                        gridProducts.CurrentRow.Cells["Subtotal"].Value = (decimal)gridProducts.CurrentRow.Cells["Retail"].Value *
+                                                                          (decimal)gridProducts.CurrentRow.Cells["Quantity"].
+                                                                                       Value;                        
                     }
                 }
                 catch (Exception)
@@ -376,6 +368,60 @@ namespace PerfectPet
                     
                     throw;
                 }
+            }
+
+            private void MasterTemplate_UserAddedRow(object sender, GridViewRowEventArgs e)
+            {
+                decimal calc = 0;
+                foreach (var row in gridProducts.Rows)
+                {
+                    if(row.Cells["Subtotal"].Value != null)
+                    {
+                        var total = (decimal)row.Cells["Subtotal"].Value + calc;
+                        calc = total;
+                    }
+                }
+                txtProductTotal.Text = calc.ToString();
+            }
+
+            private void gridServices_CellValueChanged(object sender, GridViewCellEventArgs e)
+            {
+                try
+                {
+                    if (e.Column is GridViewComboBoxColumn)
+                    {
+                        var _service = ObjectFactory.GetInstance<IService>();
+                        var service = _service.GetById((int)gridServices.CurrentRow.Cells["Service"].Value);
+                        gridServices.CurrentRow.Cells["Description"].Value = service.Description;
+                        gridServices.CurrentRow.Cells["Cost"].Value = service.Cost;
+                        gridServices.CurrentRow.Cells["Retail"].Value = service.Retail;
+                    }
+                    if (e.Column.Name == "Quantity")
+                    {
+                        gridServices.CurrentRow.Cells["Subtotal"].Value = (decimal)gridServices.CurrentRow.Cells["Retail"].Value *
+                                                                          (decimal)gridServices.CurrentRow.Cells["Quantity"].
+                                                                                       Value;
+                    }
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
+
+            private void gridServices_UserAddedRow(object sender, GridViewRowEventArgs e)
+            {
+                decimal calc = 0;
+                foreach (var row in gridServices.Rows)
+                {
+                    if (row.Cells["Subtotal"].Value != null)
+                    {
+                        var total = (decimal)row.Cells["Subtotal"].Value + calc;
+                        calc = total;
+                    }
+                }
+                txtServiceTotal.Text = calc.ToString();
             }
     }
 }
