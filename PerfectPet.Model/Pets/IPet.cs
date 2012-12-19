@@ -9,6 +9,7 @@ namespace PerfectPet.Model.Pets
         Pet GetById(int id);
         IEnumerable<Pet> GetByPersonId(int personid);
         IEnumerable<Pet> GetByMultiplePets(int[] petids);
+        IList<Pet> GetAllCheckedIn();
         void Save(Pet pet);
         void Delete(Pet pet);
     }

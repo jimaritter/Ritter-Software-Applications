@@ -29,9 +29,8 @@ namespace PerfectPet.Container
                 x.For<IAddress>().Use<Address>();
                 x.For<IDogBreed>().Use<DogBreed>();
                 x.For<ICatBreed>().Use<CatBreed>();
-                x.For<IArrival>().Use<Arrival>();
+                x.For<IArrivalDeparture>().Use<ArrivalDeparture>();
                 x.For<IKennel>().Use<Kennel>();
-                x.For<IBooking>().Use<Booking>();
                 x.For<IPhone>().Use<Phone>();
                 x.For<IAppointments>().Singleton().Use(() => new Appointments());
                 x.For<IResources>().Singleton().Use(() => new Resources());
@@ -42,6 +41,7 @@ namespace PerfectPet.Container
                 x.For<IWorkorder>().Singleton().Use(() => new Workorder());
                 x.For<IInvoice>().Singleton().Use(() => new Invoice());
                 x.For<IInvoiceNumber>().Singleton().Use(() => new InvoiceNumber());
+                x.For<IInvoice>().Singleton().Use(() => new Invoice());
             });
 
         }

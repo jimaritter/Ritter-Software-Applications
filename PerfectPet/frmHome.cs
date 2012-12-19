@@ -15,12 +15,13 @@ namespace PerfectPet
     public partial class frmHome : Form
     {
         private frmCustomer formCustomer;
-        private frmPeopleTools formPeopleTools;
         private frmResources _formResources;
         private frmBooking formBooking;
         private frmSettings formSettings;
         private frmInvoice formInvoice;
         private frmInvoice _formInvoice;
+        private frmCheckIn _formCheckIn;
+        private frmCheckOut _formCheckOut;
 
         public frmHome()
         {
@@ -107,6 +108,22 @@ namespace PerfectPet
             Cursor.Current = Cursors.WaitCursor;
             _formInvoice = new frmInvoice();
             _formInvoice.ShowDialog(this);
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void linkCheckIn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            _formCheckIn = new frmCheckIn();
+            _formCheckIn.ShowDialog(this);
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void linkCheckOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            _formCheckOut = new frmCheckOut();
+            _formCheckOut.ShowDialog(this);
             Cursor.Current = Cursors.Default;
         }
     }

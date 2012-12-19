@@ -30,7 +30,9 @@ namespace PerfectPet.Model.Pets
         public virtual bool Vaccintated { get; set; }
         public virtual bool Biter { get; set; }
         public virtual bool Deceased { get; set; }
+        public virtual string Sex { get; set; }
         public virtual byte[] Picture { get; set; }
+        public virtual bool IsCheckedIn { get; set; }
         public virtual IList<Medication> Medications { get; set; }
         public virtual string Notes { get; set; }
         public virtual IList<Workorder> Workorder { get; set; }
@@ -141,6 +143,30 @@ namespace PerfectPet.Model.Pets
             {
                 return null;
             }     
+        }
+
+        public IList<Pet> GetAllCheckedIn()
+        {
+            try
+            {
+                if (_session == null)
+                {
+                    _session = SessionManager.OpenSession();
+                }
+                var pets = _session.CreateCriteria(typeof(Pet)).List<Pet>();
+
+                IEnumerable<Pet> petlist = from p in pets
+                                           where p.IsCheckedIn == true
+                                           select p;
+
+                _session.Close();
+                return petlist.ToList();
+
+            }
+            catch (Exception)
+            {
+                return null;
+            }   
         }
 
         public void Save(Pet pet)

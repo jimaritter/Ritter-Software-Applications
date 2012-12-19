@@ -7,34 +7,36 @@ using PerfectPet.Model.Repository;
 
 namespace PerfectPet.Model.Bookings
 {
-    public class Arrival : Business<Arrival>, IArrival
+    public class ArrivalDeparture : Business<ArrivalDeparture>, IArrivalDeparture
     {
-        private readonly IArrival _arrival;
+        private readonly IArrivalDeparture _arrivalDeparture;
         protected ISession _session = null;
 
         public virtual int Id { get; set; }
         public virtual string Name { get; set; }
         public virtual string Description { get; set; }
+        public virtual string Notes { get; set; }
         public virtual Pet Pet { get; set; }
         public virtual DateTime ArriveDate { get; set; }
+        public virtual DateTime DepartureDate { get; set; }
         public virtual DateTime CreatedDate { get; set; }
 
-        public Arrival()
+        public ArrivalDeparture()
         {
             
         }
 
-        //public Arrival(IArrival arrival)
+        //public ArrivalDepartureDeparture(IArrivalDeparture ArrivalDepartureDeparture)
         //{
-        //    _arrival = arrival;
+        //    _arrivalDeparture = ArrivalDepartureDeparture;
         //}
 
-        public Arrival Get()
+        public ArrivalDeparture Get()
         {
-            return new Arrival();
+            return new ArrivalDeparture();
         }
 
-        public IList<Arrival> GetAll()
+        public IList<ArrivalDeparture> GetAll()
         {
             try
             {
@@ -42,7 +44,7 @@ namespace PerfectPet.Model.Bookings
                 {
                     _session = SessionManager.OpenSession();
                 }
-                var arrivallist = _session.CreateCriteria(typeof(Arrival)).List<Arrival>();
+                var arrivallist = _session.CreateCriteria(typeof(ArrivalDeparture)).List<ArrivalDeparture>();
                 return arrivallist;
             }
             catch (Exception exception)
@@ -52,16 +54,16 @@ namespace PerfectPet.Model.Bookings
             }
         }
 
-        public Arrival GetById(int id)
+        public ArrivalDeparture GetById(int id)
         {
             using (RepositoryBase repository = new RepositoryBase())
             {
                 try
                 {
                     repository.BeginTransaction();
-                    var arrival = repository.GetById(typeof (Arrival), id);
+                    var arrival = repository.GetById(typeof(ArrivalDeparture), id);
                     repository.CommitTransaction();
-                    return arrival as Arrival;
+                    return arrival as ArrivalDeparture;
                 }
                 catch (Exception)
                 {
@@ -71,14 +73,14 @@ namespace PerfectPet.Model.Bookings
             }
         }
 
-        public void Save(Arrival arrival)
+        public void Save(ArrivalDeparture arrivalDeparture)
         {
             using (RepositoryBase repository = new RepositoryBase())
             {
                 try
                 {
                     repository.BeginTransaction();
-                    repository.Save(arrival);
+                    repository.Save(arrivalDeparture);
                     repository.CommitTransaction();
                 }
                 catch (Exception)
@@ -89,14 +91,14 @@ namespace PerfectPet.Model.Bookings
             }
         }
 
-        public void Delete(Arrival arrival)
+        public void Delete(ArrivalDeparture arrivalDeparture)
         {
             using (RepositoryBase repository = new RepositoryBase())
             {
                 try
                 {
                     repository.BeginTransaction();
-                    repository.Delete(arrival);
+                    repository.Delete(arrivalDeparture);
                     repository.CommitTransaction();
                 }
                 catch (Exception)

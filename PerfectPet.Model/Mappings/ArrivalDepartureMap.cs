@@ -8,17 +8,19 @@ using PerfectPet.Model.Bookings;
 
 namespace PerfectPet.Model.Mappings
 {
-    public class DepartureMap : ClassMap<Departure>
+    public class ArrivalDepartureMap : ClassMap<ArrivalDeparture>
     {
-        public DepartureMap()
+        public ArrivalDepartureMap()
         {
             Not.LazyLoad();
             Id(c => c.Id).GeneratedBy.HiLo("1001");
             Map(x => x.Name);
             Map(x => x.Description);
+            Map(x => x.Notes);
             Map(x => x.ArriveDate);
+            Map(x => x.DepartureDate);
+            Map(x => x.CreatedDate);
             References(x => x.Pet);
-            Map(x => x.CreatedDate);            
         }
     }
 }

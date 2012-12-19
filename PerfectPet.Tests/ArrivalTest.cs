@@ -15,14 +15,14 @@ namespace PerfectPet.Tests
     public class ArrivalTest
     {
         protected ISession _session = null;
-        private IArrival _arrival;
+        private IArrivalDeparture _arrivalDeparture;
         private DateTime _addedDate = DateTime.Now;
 
         [SetUp]
         public void Init()
         {
             ContainerBootstrapper.BootstrapStructuremap();
-          // _arrival = new Arrival();
+          // _arrivalDeparture = new ArrivalDepartureDeparture();
           // _session = SessionManager.OpenSession();
         }
 
@@ -31,7 +31,7 @@ namespace PerfectPet.Tests
         {
             try
             {
-                var arrivals = ObjectFactory.GetInstance<IArrival>();
+                var arrivals = ObjectFactory.GetInstance<IArrivalDeparture>();
                 var items = arrivals.GetAll();
                 foreach (var a in items)
                 {

@@ -28,7 +28,7 @@ namespace PerfectPet.Tests
             ObjectFactory.Initialize(x =>
                                          {
                                              x.For<IPet>().Singleton().Use<Pet>();
-                                             x.For<IArrival>().Singleton().Use<Arrival>();
+                                             x.For<IArrivalDeparture>().Singleton().Use<ArrivalDepartureDeparture>();
                                              x.For<IDogBreed>().Singleton().Use<DogBreed>();
                                              x.For<ICatBreed>().Singleton().Use<CatBreed>();
                                              x.For<IAppointments>().Singleton().Use(() => new Appointments());

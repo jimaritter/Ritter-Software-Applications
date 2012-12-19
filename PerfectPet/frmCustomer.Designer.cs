@@ -119,6 +119,8 @@
             this.btnEditPet = new Telerik.WinControls.UI.RadButton();
             this.gridPets = new Telerik.WinControls.UI.RadGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.radLabel23 = new Telerik.WinControls.UI.RadLabel();
+            this.ddlPetSex = new Telerik.WinControls.UI.RadDropDownList();
             this.ddlSize = new Telerik.WinControls.UI.RadDropDownList();
             this.btnAdd = new Telerik.WinControls.UI.RadButton();
             this.linklblChooseImage = new System.Windows.Forms.LinkLabel();
@@ -214,6 +216,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridPets)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridPets.MasterTemplate)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlPetSex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPet)).BeginInit();
@@ -258,7 +262,7 @@
             // 
             // 
             this.radMenu1.RootElement.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
-            this.radMenu1.Size = new System.Drawing.Size(966, 59);
+            this.radMenu1.Size = new System.Drawing.Size(966, 61);
             this.radMenu1.TabIndex = 0;
             this.radMenu1.Text = "radMenu1";
             this.radMenu1.ThemeName = "TelerikMetro";
@@ -333,13 +337,13 @@
             this.radSplitContainer1.Controls.Add(this.splitPanel1);
             this.radSplitContainer1.Controls.Add(this.splitPanel2);
             this.radSplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radSplitContainer1.Location = new System.Drawing.Point(0, 59);
+            this.radSplitContainer1.Location = new System.Drawing.Point(0, 61);
             this.radSplitContainer1.Name = "radSplitContainer1";
             // 
             // 
             // 
             this.radSplitContainer1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.radSplitContainer1.Size = new System.Drawing.Size(966, 621);
+            this.radSplitContainer1.Size = new System.Drawing.Size(966, 619);
             this.radSplitContainer1.TabIndex = 1;
             this.radSplitContainer1.TabStop = false;
             this.radSplitContainer1.Text = "radSplitContainer1";
@@ -359,7 +363,7 @@
             // 
             // 
             this.splitPanel1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel1.Size = new System.Drawing.Size(228, 621);
+            this.splitPanel1.Size = new System.Drawing.Size(228, 619);
             this.splitPanel1.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.2630058F, 0F);
             this.splitPanel1.SizeInfo.SplitterCorrection = new System.Drawing.Size(-227, 0);
             this.splitPanel1.TabIndex = 0;
@@ -444,7 +448,7 @@
             gridViewTextBoxColumn2.Name = "Name";
             gridViewTextBoxColumn2.ReadOnly = true;
             gridViewTextBoxColumn2.VisibleInColumnChooser = false;
-            gridViewTextBoxColumn2.Width = 239;
+            gridViewTextBoxColumn2.Width = 621;
             this.cboCustomerList.EditorControl.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2});
@@ -488,7 +492,7 @@
             // 
             // 
             this.splitPanel2.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel2.Size = new System.Drawing.Size(735, 621);
+            this.splitPanel2.Size = new System.Drawing.Size(735, 619);
             this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.2630058F, 0F);
             this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(227, 0);
             this.splitPanel2.TabIndex = 1;
@@ -505,7 +509,7 @@
             this.tabParent.Location = new System.Drawing.Point(0, 0);
             this.tabParent.Name = "tabParent";
             this.tabParent.SelectedPage = this.tabPerson;
-            this.tabParent.Size = new System.Drawing.Size(735, 621);
+            this.tabParent.Size = new System.Drawing.Size(735, 619);
             this.tabParent.TabIndex = 1;
             this.tabParent.Text = "radPageView1";
             this.tabParent.ThemeName = "TelerikMetro";
@@ -516,7 +520,7 @@
             this.tabPerson.Controls.Add(this.groupBox1);
             this.tabPerson.Location = new System.Drawing.Point(5, 31);
             this.tabPerson.Name = "tabPerson";
-            this.tabPerson.Size = new System.Drawing.Size(725, 585);
+            this.tabPerson.Size = new System.Drawing.Size(725, 583);
             this.tabPerson.Text = "Person";
             // 
             // groupBox1
@@ -1028,7 +1032,7 @@
             this.tabPets.Controls.Add(this.groupBox3);
             this.tabPets.Location = new System.Drawing.Point(5, 31);
             this.tabPets.Name = "tabPets";
-            this.tabPets.Size = new System.Drawing.Size(725, 585);
+            this.tabPets.Size = new System.Drawing.Size(725, 583);
             this.tabPets.Text = "Pets";
             // 
             // groupBox5
@@ -1060,7 +1064,7 @@
             this.gridPets.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.gridPets.Location = new System.Drawing.Point(21, 31);
             // 
-            // gridPets
+            // 
             // 
             this.gridPets.MasterTemplate.AllowAddNewRow = false;
             this.gridPets.MasterTemplate.AllowDeleteRow = false;
@@ -1149,6 +1153,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.radLabel23);
+            this.groupBox3.Controls.Add(this.ddlPetSex);
             this.groupBox3.Controls.Add(this.ddlSize);
             this.groupBox3.Controls.Add(this.btnAdd);
             this.groupBox3.Controls.Add(this.linklblChooseImage);
@@ -1183,6 +1189,26 @@
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Pets";
+            // 
+            // radLabel23
+            // 
+            this.radLabel23.Location = new System.Drawing.Point(478, 63);
+            this.radLabel23.Name = "radLabel23";
+            this.radLabel23.Size = new System.Drawing.Size(26, 18);
+            this.radLabel23.TabIndex = 59;
+            this.radLabel23.Text = "Sex:";
+            // 
+            // ddlPetSex
+            // 
+            this.ddlPetSex.DropDownAnimationEnabled = true;
+            this.ddlPetSex.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
+            this.ddlPetSex.Location = new System.Drawing.Point(530, 58);
+            this.ddlPetSex.MaxDropDownItems = 0;
+            this.ddlPetSex.Name = "ddlPetSex";
+            this.ddlPetSex.ShowImageInEditorArea = true;
+            this.ddlPetSex.Size = new System.Drawing.Size(106, 23);
+            this.ddlPetSex.TabIndex = 58;
+            this.ddlPetSex.ThemeName = "TelerikMetro";
             // 
             // ddlSize
             // 
@@ -1315,16 +1341,16 @@
             // 
             // txtColor
             // 
-            this.txtColor.Location = new System.Drawing.Point(432, 63);
+            this.txtColor.Location = new System.Drawing.Point(372, 59);
             this.txtColor.Name = "txtColor";
-            this.txtColor.Size = new System.Drawing.Size(108, 20);
+            this.txtColor.Size = new System.Drawing.Size(74, 20);
             this.txtColor.TabIndex = 44;
             // 
             // txtDiet
             // 
-            this.txtDiet.Location = new System.Drawing.Point(260, 65);
+            this.txtDiet.Location = new System.Drawing.Point(234, 63);
             this.txtDiet.Name = "txtDiet";
-            this.txtDiet.Size = new System.Drawing.Size(108, 20);
+            this.txtDiet.Size = new System.Drawing.Size(80, 20);
             this.txtDiet.TabIndex = 42;
             // 
             // radLabel10
@@ -1374,7 +1400,7 @@
             // 
             // radLabel7
             // 
-            this.radLabel7.Location = new System.Drawing.Point(390, 65);
+            this.radLabel7.Location = new System.Drawing.Point(330, 63);
             this.radLabel7.Name = "radLabel7";
             this.radLabel7.Size = new System.Drawing.Size(36, 18);
             this.radLabel7.TabIndex = 41;
@@ -1382,7 +1408,7 @@
             // 
             // radLabel6
             // 
-            this.radLabel6.Location = new System.Drawing.Point(225, 63);
+            this.radLabel6.Location = new System.Drawing.Point(199, 63);
             this.radLabel6.Name = "radLabel6";
             this.radLabel6.Size = new System.Drawing.Size(29, 18);
             this.radLabel6.TabIndex = 39;
@@ -1522,6 +1548,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridPets)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlPetSex)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlSize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPet)).EndInit();
@@ -1659,5 +1687,7 @@
         private Telerik.WinControls.UI.RadPageViewPage tabAddresses;
         private Telerik.WinControls.UI.RadPageViewPage tabPets;
         private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
+        private Telerik.WinControls.UI.RadLabel radLabel23;
+        private Telerik.WinControls.UI.RadDropDownList ddlPetSex;
     }
 }

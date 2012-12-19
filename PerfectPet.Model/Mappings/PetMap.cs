@@ -24,6 +24,8 @@ namespace PerfectPet.Model.Mappings
             Map(x => x.MixedBreed);
             Map(x => x.Vaccintated);
             Map(x => x.Deceased);
+            Map(x => x.Sex);
+            Map(x => x.IsCheckedIn);
             Map(x => x.Picture).CustomSqlType("varbinary").Length(2147483647);
             Map(x => x.CreatedDate);
             Map(x => x.ModifiedDate);

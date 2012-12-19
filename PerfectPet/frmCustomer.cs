@@ -64,6 +64,7 @@ namespace PerfectPet
                 BindStateList();
                 GetSpeciesList();
                 GetSizeList();
+                BindPetSexList();
                 GetTempermentList();
                 GetPhoneTypeList();
                 BindPhoneList();
@@ -370,6 +371,7 @@ namespace PerfectPet
                 petobj.CreatedDate = DateTime.Now;
                 petobj.Diet = txtDiet.Text;
                 petobj.Notes = txtNotes.Text;
+                petobj.Sex = ddlPetSex.SelectedValue.ToString();
                 petobj.Person = person;
                 if (picPet.Image != null)
                 {
@@ -556,6 +558,21 @@ namespace PerfectPet
                 var bindsrc = new BindingSource();
                 bindsrc.DataSource = EnumerationParser.GetEnumDescriptions(typeof(States));
                 ddlState.DataSource = bindsrc.DataSource;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void BindPetSexList()
+        {
+            try
+            {
+                var bindsrc = new BindingSource();
+                bindsrc.DataSource = EnumerationParser.GetEnumDescriptions(typeof(PetSexes));
+                ddlPetSex.DataSource = bindsrc.DataSource;
             }
             catch (Exception)
             {

@@ -95,11 +95,10 @@
     <Compile Include="Mappings\AddressMap.cs" />
     <Compile Include="Mappings\AddressTypeMap.cs" />
     <Compile Include="Mappings\AppointmentsMap.cs" />
-    <Compile Include="Mappings\ArrivalMap.cs" />
+    <Compile Include="Mappings\ArrivalDepartureMap.cs" />
     <Compile Include="Mappings\BreedMap.cs" />
     <Compile Include="Mappings\CatBreedMap.cs" />
     <Compile Include="Mappings\CompanyMap.cs" />
-    <Compile Include="Mappings\DepartureMap.cs" />
     <Compile Include="Mappings\DiscountMap.cs" />
     <Compile Include="Mappings\DogBreedMap.cs" />
     <Compile Include="Mappings\InvoiceMap.cs" />
@@ -116,7 +115,6 @@
     <Compile Include="Mappings\PhoneMap.cs" />
     <Compile Include="Mappings\PhoneTypeMap.cs" />
     <Compile Include="Mappings\ProductMap.cs" />
-    <Compile Include="Mappings\BookingMap.cs" />
     <Compile Include="Mappings\ResourcesMap.cs" />
     <Compile Include="Mappings\ServiceMap.cs" />
     <Compile Include="Mappings\StatusMap.cs" />
@@ -170,12 +168,8 @@
     <Compile Include="Sales\IOrder.cs" />
     <Compile Include="Sales\LineItem.cs" />
     <Compile Include="Sales\Order.cs" />
-    <Compile Include="Bookings\Arrival.cs" />
-    <Compile Include="Bookings\Departure.cs" />
-    <Compile Include="Bookings\IArrival.cs" />
-    <Compile Include="Bookings\IDeparture.cs" />
-    <Compile Include="Bookings\IBooking.cs" />
-    <Compile Include="Bookings\Booking.cs" />
+    <Compile Include="Bookings\ArrivalDeparture.cs" />
+    <Compile Include="Bookings\IArrivalDeparture.cs" />
     <Compile Include="Bookings\ScheduleType.cs" />
     <Compile Include="Services\IService.cs" />
     <Compile Include="Services\Service.cs" />
