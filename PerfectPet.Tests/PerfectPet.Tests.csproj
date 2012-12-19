@@ -69,6 +69,7 @@
     <Compile Include="InvoiceTest.cs" />
     <Compile Include="PersonTest.cs" />
     <Compile Include="PersonTypeTest.cs" />
+    <Compile Include="PetStatusTest.cs" />
     <Compile Include="PetTest.cs" />
     <Compile Include="ProductTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

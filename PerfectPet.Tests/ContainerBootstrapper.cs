@@ -41,6 +41,8 @@ namespace PerfectPet.Tests
                                              x.For<IInvoice>().Singleton().Use(() => new Invoice());
                                              x.For<IAddress>().Singleton().Use(() => new Address());
                                              x.For<IInvoiceNumber>().Singleton().Use(() => new InvoiceNumber());
+                                             x.For<IStatus>().Singleton().Use(() => new Status());
+                                             x.For<IPetStatus>().Singleton().Use(() => new PetStatus());
                                             // x.For(typeof(IAppointments)).LifecycleIs(new HybridLifecycle()).Use(typeof(Appointments));
 
                                          });
