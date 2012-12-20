@@ -154,6 +154,14 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.StripStatus = new Telerik.WinControls.UI.RadStatusStrip();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
+            this.windows7Theme1 = new Telerik.WinControls.Themes.Windows7Theme();
+            this.tabDiscountsandBalance = new Telerik.WinControls.UI.RadPageViewPage();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.radLabel24 = new Telerik.WinControls.UI.RadLabel();
+            this.txtBalance = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.listInvoices = new Telerik.WinControls.UI.RadListView();
+            this.radLabel25 = new Telerik.WinControls.UI.RadLabel();
+            this.radButton1 = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
             this.radSplitContainer1.SuspendLayout();
@@ -247,6 +255,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StripStatus)).BeginInit();
+            this.tabDiscountsandBalance.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBalance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listInvoices)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // radMenu1
@@ -419,7 +434,7 @@
             this.cboCustomerList.EditorControl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cboCustomerList.EditorControl.Location = new System.Drawing.Point(0, 0);
             // 
-            // 
+            // cboCustomerList.NestedRadGridView
             // 
             this.cboCustomerList.EditorControl.MasterTemplate.AllowAddNewRow = false;
             this.cboCustomerList.EditorControl.MasterTemplate.AllowCellContextMenu = false;
@@ -448,7 +463,7 @@
             gridViewTextBoxColumn2.Name = "Name";
             gridViewTextBoxColumn2.ReadOnly = true;
             gridViewTextBoxColumn2.VisibleInColumnChooser = false;
-            gridViewTextBoxColumn2.Width = 621;
+            gridViewTextBoxColumn2.Width = 239;
             this.cboCustomerList.EditorControl.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2});
@@ -469,10 +484,10 @@
             // 
             // 
             this.cboCustomerList.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.FitToAvailableSize;
-            this.cboCustomerList.Size = new System.Drawing.Size(150, 21);
+            this.cboCustomerList.Size = new System.Drawing.Size(150, 20);
             this.cboCustomerList.TabIndex = 2;
             this.cboCustomerList.TabStop = false;
-            this.cboCustomerList.ThemeName = "TelerikMetro";
+            this.cboCustomerList.ThemeName = "Windows7";
             // 
             // lblPersonTypeList
             // 
@@ -505,13 +520,13 @@
             this.tabParent.Controls.Add(this.tabPerson);
             this.tabParent.Controls.Add(this.tabAddresses);
             this.tabParent.Controls.Add(this.tabPets);
+            this.tabParent.Controls.Add(this.tabDiscountsandBalance);
             this.tabParent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabParent.Location = new System.Drawing.Point(0, 0);
             this.tabParent.Name = "tabParent";
             this.tabParent.SelectedPage = this.tabPerson;
             this.tabParent.Size = new System.Drawing.Size(735, 619);
             this.tabParent.TabIndex = 1;
-            this.tabParent.Text = "radPageView1";
             this.tabParent.ThemeName = "TelerikMetro";
             ((Telerik.WinControls.UI.RadPageViewStripElement)(this.tabParent.GetChildAt(0))).StripButtons = Telerik.WinControls.UI.StripViewButtons.None;
             // 
@@ -631,9 +646,9 @@
             this.ddlPhoneType.MaxDropDownItems = 0;
             this.ddlPhoneType.Name = "ddlPhoneType";
             this.ddlPhoneType.ShowImageInEditorArea = true;
-            this.ddlPhoneType.Size = new System.Drawing.Size(106, 23);
+            this.ddlPhoneType.Size = new System.Drawing.Size(106, 22);
             this.ddlPhoneType.TabIndex = 9;
-            this.ddlPhoneType.ThemeName = "TelerikMetro";
+            this.ddlPhoneType.ThemeName = "Windows7";
             // 
             // txtPhone
             // 
@@ -949,9 +964,9 @@
             this.ddlAddressType.MaxDropDownItems = 0;
             this.ddlAddressType.Name = "ddlAddressType";
             this.ddlAddressType.ShowImageInEditorArea = true;
-            this.ddlAddressType.Size = new System.Drawing.Size(106, 23);
+            this.ddlAddressType.Size = new System.Drawing.Size(106, 22);
             this.ddlAddressType.TabIndex = 54;
-            this.ddlAddressType.ThemeName = "TelerikMetro";
+            this.ddlAddressType.ThemeName = "Windows7";
             // 
             // lblAddressType
             // 
@@ -969,9 +984,9 @@
             this.ddlState.MaxDropDownItems = 0;
             this.ddlState.Name = "ddlState";
             this.ddlState.ShowImageInEditorArea = true;
-            this.ddlState.Size = new System.Drawing.Size(125, 23);
+            this.ddlState.Size = new System.Drawing.Size(125, 22);
             this.ddlState.TabIndex = 57;
-            this.ddlState.ThemeName = "TelerikMetro";
+            this.ddlState.ThemeName = "Windows7";
             // 
             // lblZip
             // 
@@ -1064,7 +1079,7 @@
             this.gridPets.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.gridPets.Location = new System.Drawing.Point(21, 31);
             // 
-            // 
+            // gridPets
             // 
             this.gridPets.MasterTemplate.AllowAddNewRow = false;
             this.gridPets.MasterTemplate.AllowDeleteRow = false;
@@ -1206,9 +1221,9 @@
             this.ddlPetSex.MaxDropDownItems = 0;
             this.ddlPetSex.Name = "ddlPetSex";
             this.ddlPetSex.ShowImageInEditorArea = true;
-            this.ddlPetSex.Size = new System.Drawing.Size(106, 23);
+            this.ddlPetSex.Size = new System.Drawing.Size(106, 22);
             this.ddlPetSex.TabIndex = 58;
-            this.ddlPetSex.ThemeName = "TelerikMetro";
+            this.ddlPetSex.ThemeName = "Windows7";
             // 
             // ddlSize
             // 
@@ -1267,9 +1282,9 @@
             this.ddlTemperment.MaxDropDownItems = 0;
             this.ddlTemperment.Name = "ddlTemperment";
             this.ddlTemperment.ShowImageInEditorArea = true;
-            this.ddlTemperment.Size = new System.Drawing.Size(106, 23);
+            this.ddlTemperment.Size = new System.Drawing.Size(106, 22);
             this.ddlTemperment.TabIndex = 47;
-            this.ddlTemperment.ThemeName = "TelerikMetro";
+            this.ddlTemperment.ThemeName = "Windows7";
             // 
             // radLabel11
             // 
@@ -1287,9 +1302,9 @@
             this.ddlBreedList.MaxDropDownItems = 0;
             this.ddlBreedList.Name = "ddlBreedList";
             this.ddlBreedList.ShowImageInEditorArea = true;
-            this.ddlBreedList.Size = new System.Drawing.Size(166, 23);
+            this.ddlBreedList.Size = new System.Drawing.Size(166, 22);
             this.ddlBreedList.TabIndex = 36;
-            this.ddlBreedList.ThemeName = "TelerikMetro";
+            this.ddlBreedList.ThemeName = "Windows7";
             // 
             // ddlSpecies
             // 
@@ -1299,9 +1314,9 @@
             this.ddlSpecies.MaxDropDownItems = 0;
             this.ddlSpecies.Name = "ddlSpecies";
             this.ddlSpecies.ShowImageInEditorArea = true;
-            this.ddlSpecies.Size = new System.Drawing.Size(106, 23);
+            this.ddlSpecies.Size = new System.Drawing.Size(106, 22);
             this.ddlSpecies.TabIndex = 34;
-            this.ddlSpecies.ThemeName = "TelerikMetro";
+            this.ddlSpecies.ThemeName = "Windows7";
             this.ddlSpecies.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(this.ddlSpecies_SelectedIndexChanged);
             // 
             // chkVaccinated
@@ -1470,6 +1485,71 @@
             this.StripStatus.Text = "radStatusStrip1";
             this.StripStatus.ThemeName = "TelerikMetro";
             // 
+            // tabDiscountsandBalance
+            // 
+            this.tabDiscountsandBalance.Controls.Add(this.groupBox6);
+            this.tabDiscountsandBalance.Location = new System.Drawing.Point(5, 31);
+            this.tabDiscountsandBalance.Name = "tabDiscountsandBalance";
+            this.tabDiscountsandBalance.Size = new System.Drawing.Size(725, 583);
+            this.tabDiscountsandBalance.Text = "Invoices & Balance";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.radButton1);
+            this.groupBox6.Controls.Add(this.radLabel25);
+            this.groupBox6.Controls.Add(this.listInvoices);
+            this.groupBox6.Controls.Add(this.txtBalance);
+            this.groupBox6.Controls.Add(this.radLabel24);
+            this.groupBox6.Location = new System.Drawing.Point(13, 10);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(705, 199);
+            this.groupBox6.TabIndex = 0;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Invoices and Balance";
+            // 
+            // radLabel24
+            // 
+            this.radLabel24.Location = new System.Drawing.Point(22, 33);
+            this.radLabel24.Name = "radLabel24";
+            this.radLabel24.Size = new System.Drawing.Size(88, 18);
+            this.radLabel24.TabIndex = 0;
+            this.radLabel24.Text = "Current Balance:";
+            // 
+            // txtBalance
+            // 
+            this.txtBalance.Location = new System.Drawing.Point(126, 33);
+            this.txtBalance.Name = "txtBalance";
+            this.txtBalance.Size = new System.Drawing.Size(108, 20);
+            this.txtBalance.TabIndex = 1;
+            this.txtBalance.Text = "0";
+            // 
+            // listInvoices
+            // 
+            this.listInvoices.GroupItemSize = new System.Drawing.Size(200, 20);
+            this.listInvoices.ItemSize = new System.Drawing.Size(200, 20);
+            this.listInvoices.Location = new System.Drawing.Point(126, 81);
+            this.listInvoices.Name = "listInvoices";
+            this.listInvoices.Size = new System.Drawing.Size(154, 95);
+            this.listInvoices.TabIndex = 2;
+            this.listInvoices.Text = "radListView1";
+            // 
+            // radLabel25
+            // 
+            this.radLabel25.Location = new System.Drawing.Point(22, 81);
+            this.radLabel25.Name = "radLabel25";
+            this.radLabel25.Size = new System.Drawing.Size(49, 18);
+            this.radLabel25.TabIndex = 3;
+            this.radLabel25.Text = "Invoices:";
+            // 
+            // radButton1
+            // 
+            this.radButton1.Location = new System.Drawing.Point(295, 81);
+            this.radButton1.Name = "radButton1";
+            this.radButton1.Size = new System.Drawing.Size(97, 24);
+            this.radButton1.TabIndex = 58;
+            this.radButton1.Text = "View";
+            this.radButton1.ThemeName = "TelerikMetro";
+            // 
             // frmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1579,6 +1659,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StripStatus)).EndInit();
+            this.tabDiscountsandBalance.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBalance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listInvoices)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1689,5 +1777,13 @@
         private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
         private Telerik.WinControls.UI.RadLabel radLabel23;
         private Telerik.WinControls.UI.RadDropDownList ddlPetSex;
+        private Telerik.WinControls.Themes.Windows7Theme windows7Theme1;
+        private Telerik.WinControls.UI.RadPageViewPage tabDiscountsandBalance;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private Telerik.WinControls.UI.RadTextBoxControl txtBalance;
+        private Telerik.WinControls.UI.RadLabel radLabel24;
+        private Telerik.WinControls.UI.RadButton radButton1;
+        private Telerik.WinControls.UI.RadLabel radLabel25;
+        private Telerik.WinControls.UI.RadListView listInvoices;
     }
 }
