@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn19 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn20 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn1 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn6 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn7 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn2 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn4 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Name");
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn15 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn9 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn16 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn33 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn34 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn35 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn36 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn21 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn10 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn22 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn37 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn38 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn39 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn40 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn5 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Name");
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn13 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn6 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn14 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn21 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn22 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn23 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn24 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn5 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn17 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn18 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn19 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn20 = new Telerik.WinControls.UI.GridViewDecimalColumn();
             this.splitParent = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
             this.splitLeftNav = new Telerik.WinControls.UI.RadSplitContainer();
@@ -57,16 +57,12 @@
             this.ddlCustomerList = new Telerik.WinControls.UI.RadMultiColumnComboBox();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.btnSelectCustomer = new Telerik.WinControls.UI.RadButton();
-            this.splitPanel4 = new Telerik.WinControls.UI.SplitPanel();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
             this.btnAddPets = new Telerik.WinControls.UI.RadButton();
             this.listviewPets = new Telerik.WinControls.UI.RadListView();
-            this.splitPanel5 = new Telerik.WinControls.UI.SplitPanel();
             this.radGroupBox3 = new Telerik.WinControls.UI.RadGroupBox();
             this.btnAddAddress = new Telerik.WinControls.UI.RadButton();
             this.listViewAddresses = new Telerik.WinControls.UI.RadListView();
-            this.splitPanel6 = new Telerik.WinControls.UI.SplitPanel();
-            this.splitPanel7 = new Telerik.WinControls.UI.SplitPanel();
             this.splitPanel2 = new Telerik.WinControls.UI.SplitPanel();
             this.splitMain = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel8 = new Telerik.WinControls.UI.SplitPanel();
@@ -79,19 +75,19 @@
             this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
             this.lblHeaderCustomer = new Telerik.WinControls.UI.RadLabel();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
-            this.splitPanel11 = new Telerik.WinControls.UI.SplitPanel();
             this.radGroupBox5 = new Telerik.WinControls.UI.RadGroupBox();
             this.radLabel9 = new Telerik.WinControls.UI.RadLabel();
             this.txtProductTotal = new Telerik.WinControls.UI.RadTextBoxControl();
             this.gridProducts = new Telerik.WinControls.UI.RadGridView();
             this.gridViewTemplate1 = new Telerik.WinControls.UI.GridViewTemplate();
-            this.splitPanel12 = new Telerik.WinControls.UI.SplitPanel();
             this.radGroupBox7 = new Telerik.WinControls.UI.RadGroupBox();
             this.radLabel12 = new Telerik.WinControls.UI.RadLabel();
             this.txtServiceTotal = new Telerik.WinControls.UI.RadTextBoxControl();
             this.gridServices = new Telerik.WinControls.UI.RadGridView();
             this.gridViewTemplate2 = new Telerik.WinControls.UI.GridViewTemplate();
             this.splitPanel9 = new Telerik.WinControls.UI.SplitPanel();
+            this.radLabel13 = new Telerik.WinControls.UI.RadLabel();
+            this.txtInvoiceDescription = new Telerik.WinControls.UI.RadTextBoxControl();
             this.lblTaxIdNumber = new Telerik.WinControls.UI.RadLabel();
             this.lblInvoiceNumber = new Telerik.WinControls.UI.RadLabel();
             this.btnClearInvoice = new Telerik.WinControls.UI.RadButton();
@@ -109,8 +105,12 @@
             this.radLabel10 = new Telerik.WinControls.UI.RadLabel();
             this.radButton3 = new Telerik.WinControls.UI.RadButton();
             this.radLabel11 = new Telerik.WinControls.UI.RadLabel();
-            this.txtInvoiceDescription = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.radLabel13 = new Telerik.WinControls.UI.RadLabel();
+            this.radDateTimePicker1 = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.radLabel14 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel15 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel16 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel17 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel18 = new Telerik.WinControls.UI.RadLabel();
             ((System.ComponentModel.ISupportInitialize)(this.splitParent)).BeginInit();
             this.splitParent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
@@ -126,20 +126,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.ddlCustomerList.EditorControl.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSelectCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel4)).BeginInit();
-            this.splitPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
             this.radGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddPets)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listviewPets)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel5)).BeginInit();
-            this.splitPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).BeginInit();
             this.radGroupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddAddress)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listViewAddresses)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).BeginInit();
             this.splitPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitMain)).BeginInit();
@@ -158,8 +152,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblHeaderCustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel11)).BeginInit();
-            this.splitPanel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox5)).BeginInit();
             this.radGroupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel9)).BeginInit();
@@ -167,8 +159,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridProducts.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTemplate1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel12)).BeginInit();
-            this.splitPanel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox7)).BeginInit();
             this.radGroupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).BeginInit();
@@ -177,7 +167,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridServices.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTemplate2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel9)).BeginInit();
-            this.splitPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceDescription)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblTaxIdNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblInvoiceNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClearInvoice)).BeginInit();
@@ -195,8 +186,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceDescription)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel18)).BeginInit();
             this.SuspendLayout();
             // 
             // splitParent
@@ -210,7 +205,7 @@
             // 
             // 
             this.splitParent.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitParent.Size = new System.Drawing.Size(1284, 781);
+            this.splitParent.Size = new System.Drawing.Size(1284, 766);
             this.splitParent.TabIndex = 0;
             this.splitParent.TabStop = false;
             this.splitParent.Text = "radSplitContainer1";
@@ -225,7 +220,7 @@
             // 
             // 
             this.splitPanel1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel1.Size = new System.Drawing.Size(309, 781);
+            this.splitPanel1.Size = new System.Drawing.Size(309, 766);
             this.splitPanel1.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.2587822F, 0F);
             this.splitPanel1.SizeInfo.SplitterCorrection = new System.Drawing.Size(-235, 0);
             this.splitPanel1.TabIndex = 0;
@@ -238,10 +233,6 @@
             this.splitLeftNav.AutoScroll = true;
             this.splitLeftNav.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitLeftNav.Controls.Add(this.splitPanel3);
-            this.splitLeftNav.Controls.Add(this.splitPanel4);
-            this.splitLeftNav.Controls.Add(this.splitPanel5);
-            this.splitLeftNav.Controls.Add(this.splitPanel6);
-            this.splitLeftNav.Controls.Add(this.splitPanel7);
             this.splitLeftNav.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitLeftNav.Location = new System.Drawing.Point(0, 0);
             this.splitLeftNav.Name = "splitLeftNav";
@@ -250,7 +241,7 @@
             // 
             // 
             this.splitLeftNav.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitLeftNav.Size = new System.Drawing.Size(309, 781);
+            this.splitLeftNav.Size = new System.Drawing.Size(309, 766);
             this.splitLeftNav.TabIndex = 0;
             this.splitLeftNav.TabStop = false;
             this.splitLeftNav.ThemeName = "TelerikMetro";
@@ -258,16 +249,37 @@
             // splitPanel3
             // 
             this.splitPanel3.AutoScroll = true;
+            this.splitPanel3.Controls.Add(this.radGroupBox3);
+            this.splitPanel3.Controls.Add(this.btnSaveInvoice);
+            this.splitPanel3.Controls.Add(this.radGroupBox2);
+            this.splitPanel3.Controls.Add(this.radLabel18);
             this.splitPanel3.Controls.Add(this.radGroupBox1);
+            this.splitPanel3.Controls.Add(this.radLabel3);
+            this.splitPanel3.Controls.Add(this.radLabel13);
+            this.splitPanel3.Controls.Add(this.radLabel17);
+            this.splitPanel3.Controls.Add(this.radLabel4);
+            this.splitPanel3.Controls.Add(this.txtInvoiceDescription);
+            this.splitPanel3.Controls.Add(this.radLabel7);
+            this.splitPanel3.Controls.Add(this.radLabel16);
+            this.splitPanel3.Controls.Add(this.lblTaxIdNumber);
+            this.splitPanel3.Controls.Add(this.radTextBoxControl1);
+            this.splitPanel3.Controls.Add(this.radLabel15);
+            this.splitPanel3.Controls.Add(this.lblInvoiceNumber);
+            this.splitPanel3.Controls.Add(this.radCheckBox1);
+            this.splitPanel3.Controls.Add(this.radLabel14);
+            this.splitPanel3.Controls.Add(this.btnClearInvoice);
+            this.splitPanel3.Controls.Add(this.radDateTimePicker1);
+            this.splitPanel3.Controls.Add(this.radLabel8);
+            this.splitPanel3.Controls.Add(this.dateInvoiceDate);
             this.splitPanel3.Location = new System.Drawing.Point(0, 0);
             this.splitPanel3.Name = "splitPanel3";
             // 
             // 
             // 
             this.splitPanel3.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel3.Size = new System.Drawing.Size(307, 173);
-            this.splitPanel3.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.02614379F);
-            this.splitPanel3.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 31);
+            this.splitPanel3.Size = new System.Drawing.Size(307, 764);
+            this.splitPanel3.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.1129139F);
+            this.splitPanel3.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 89);
             this.splitPanel3.TabIndex = 0;
             this.splitPanel3.TabStop = false;
             this.splitPanel3.Text = "splitPanel3";
@@ -285,7 +297,7 @@
             this.radGroupBox1.HeaderImageKey = "";
             this.radGroupBox1.HeaderMargin = new System.Windows.Forms.Padding(0);
             this.radGroupBox1.HeaderText = "Customer Selection";
-            this.radGroupBox1.Location = new System.Drawing.Point(11, 25);
+            this.radGroupBox1.Location = new System.Drawing.Point(11, 256);
             this.radGroupBox1.Name = "radGroupBox1";
             this.radGroupBox1.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
             // 
@@ -322,26 +334,26 @@
             this.ddlCustomerList.EditorControl.MasterTemplate.AllowDragToGroup = false;
             this.ddlCustomerList.EditorControl.MasterTemplate.AllowEditRow = false;
             this.ddlCustomerList.EditorControl.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn19.AllowGroup = false;
-            gridViewTextBoxColumn19.AllowResize = false;
-            gridViewTextBoxColumn19.AllowSort = false;
-            gridViewTextBoxColumn19.EnableExpressionEditor = false;
-            gridViewTextBoxColumn19.FieldName = "Id";
-            gridViewTextBoxColumn19.HeaderText = "Id";
-            gridViewTextBoxColumn19.IsVisible = false;
-            gridViewTextBoxColumn19.Name = "Id";
-            gridViewTextBoxColumn19.Width = 621;
-            gridViewTextBoxColumn20.AllowGroup = false;
-            gridViewTextBoxColumn20.AllowResize = false;
-            gridViewTextBoxColumn20.AllowSort = false;
-            gridViewTextBoxColumn20.EnableExpressionEditor = false;
-            gridViewTextBoxColumn20.FieldName = "Name";
-            gridViewTextBoxColumn20.HeaderText = "Name";
-            gridViewTextBoxColumn20.Name = "Name";
-            gridViewTextBoxColumn20.Width = 621;
+            gridViewTextBoxColumn11.AllowGroup = false;
+            gridViewTextBoxColumn11.AllowResize = false;
+            gridViewTextBoxColumn11.AllowSort = false;
+            gridViewTextBoxColumn11.EnableExpressionEditor = false;
+            gridViewTextBoxColumn11.FieldName = "Id";
+            gridViewTextBoxColumn11.HeaderText = "Id";
+            gridViewTextBoxColumn11.IsVisible = false;
+            gridViewTextBoxColumn11.Name = "Id";
+            gridViewTextBoxColumn11.Width = 621;
+            gridViewTextBoxColumn12.AllowGroup = false;
+            gridViewTextBoxColumn12.AllowResize = false;
+            gridViewTextBoxColumn12.AllowSort = false;
+            gridViewTextBoxColumn12.EnableExpressionEditor = false;
+            gridViewTextBoxColumn12.FieldName = "Name";
+            gridViewTextBoxColumn12.HeaderText = "Name";
+            gridViewTextBoxColumn12.Name = "Name";
+            gridViewTextBoxColumn12.Width = 621;
             this.ddlCustomerList.EditorControl.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn19,
-            gridViewTextBoxColumn20});
+            gridViewTextBoxColumn11,
+            gridViewTextBoxColumn12});
             this.ddlCustomerList.EditorControl.MasterTemplate.EnableFiltering = true;
             this.ddlCustomerList.EditorControl.MasterTemplate.EnableGrouping = false;
             this.ddlCustomerList.EditorControl.MasterTemplate.ShowColumnHeaders = false;
@@ -382,24 +394,6 @@
             this.btnSelectCustomer.ThemeName = "TelerikMetro";
             this.btnSelectCustomer.Click += new System.EventHandler(this.btnSelectCustomer_Click);
             // 
-            // splitPanel4
-            // 
-            this.splitPanel4.AutoScroll = true;
-            this.splitPanel4.Controls.Add(this.radGroupBox2);
-            this.splitPanel4.Location = new System.Drawing.Point(0, 176);
-            this.splitPanel4.Name = "splitPanel4";
-            // 
-            // 
-            // 
-            this.splitPanel4.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel4.Size = new System.Drawing.Size(307, 217);
-            this.splitPanel4.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.08235294F);
-            this.splitPanel4.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 48);
-            this.splitPanel4.TabIndex = 1;
-            this.splitPanel4.TabStop = false;
-            this.splitPanel4.Text = "splitPanel4";
-            this.splitPanel4.ThemeName = "TelerikMetro";
-            // 
             // radGroupBox2
             // 
             this.radGroupBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
@@ -411,21 +405,21 @@
             this.radGroupBox2.HeaderImageKey = "";
             this.radGroupBox2.HeaderMargin = new System.Windows.Forms.Padding(0);
             this.radGroupBox2.HeaderText = "Pets";
-            this.radGroupBox2.Location = new System.Drawing.Point(11, 21);
+            this.radGroupBox2.Location = new System.Drawing.Point(11, 390);
             this.radGroupBox2.Name = "radGroupBox2";
             this.radGroupBox2.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
             // 
             // 
             // 
             this.radGroupBox2.RootElement.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
-            this.radGroupBox2.Size = new System.Drawing.Size(279, 162);
+            this.radGroupBox2.Size = new System.Drawing.Size(279, 131);
             this.radGroupBox2.TabIndex = 1;
             this.radGroupBox2.Text = "Pets";
             this.radGroupBox2.ThemeName = "TelerikMetro";
             // 
             // btnAddPets
             // 
-            this.btnAddPets.Location = new System.Drawing.Point(91, 126);
+            this.btnAddPets.Location = new System.Drawing.Point(91, 93);
             this.btnAddPets.Name = "btnAddPets";
             this.btnAddPets.Size = new System.Drawing.Size(96, 24);
             this.btnAddPets.TabIndex = 2;
@@ -435,11 +429,11 @@
             // 
             // listviewPets
             // 
-            listViewDetailColumn1.HeaderText = "Id";
-            listViewDetailColumn1.Visible = false;
+            listViewDetailColumn6.HeaderText = "Id";
+            listViewDetailColumn6.Visible = false;
             listViewDetailColumn7.HeaderText = "Name";
             this.listviewPets.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
-            listViewDetailColumn1,
+            listViewDetailColumn6,
             listViewDetailColumn7});
             this.listviewPets.GroupItemSize = new System.Drawing.Size(200, 20);
             this.listviewPets.ItemSize = new System.Drawing.Size(200, 20);
@@ -448,26 +442,8 @@
             this.listviewPets.Name = "listviewPets";
             this.listviewPets.ShowCheckBoxes = true;
             this.listviewPets.ShowGridLines = true;
-            this.listviewPets.Size = new System.Drawing.Size(243, 95);
+            this.listviewPets.Size = new System.Drawing.Size(243, 62);
             this.listviewPets.TabIndex = 0;
-            // 
-            // splitPanel5
-            // 
-            this.splitPanel5.AutoScroll = true;
-            this.splitPanel5.Controls.Add(this.radGroupBox3);
-            this.splitPanel5.Location = new System.Drawing.Point(0, 396);
-            this.splitPanel5.Name = "splitPanel5";
-            // 
-            // 
-            // 
-            this.splitPanel5.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel5.Size = new System.Drawing.Size(307, 213);
-            this.splitPanel5.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.07712418F);
-            this.splitPanel5.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 48);
-            this.splitPanel5.TabIndex = 2;
-            this.splitPanel5.TabStop = false;
-            this.splitPanel5.Text = "splitPanel5";
-            this.splitPanel5.ThemeName = "TelerikMetro";
             // 
             // radGroupBox3
             // 
@@ -480,21 +456,21 @@
             this.radGroupBox3.HeaderImageKey = "";
             this.radGroupBox3.HeaderMargin = new System.Windows.Forms.Padding(0);
             this.radGroupBox3.HeaderText = "Addresses";
-            this.radGroupBox3.Location = new System.Drawing.Point(11, 23);
+            this.radGroupBox3.Location = new System.Drawing.Point(11, 536);
             this.radGroupBox3.Name = "radGroupBox3";
             this.radGroupBox3.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
             // 
             // 
             // 
             this.radGroupBox3.RootElement.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
-            this.radGroupBox3.Size = new System.Drawing.Size(279, 162);
+            this.radGroupBox3.Size = new System.Drawing.Size(279, 134);
             this.radGroupBox3.TabIndex = 2;
             this.radGroupBox3.Text = "Addresses";
             this.radGroupBox3.ThemeName = "TelerikMetro";
             // 
             // btnAddAddress
             // 
-            this.btnAddAddress.Location = new System.Drawing.Point(91, 126);
+            this.btnAddAddress.Location = new System.Drawing.Point(91, 97);
             this.btnAddAddress.Name = "btnAddAddress";
             this.btnAddAddress.Size = new System.Drawing.Size(96, 24);
             this.btnAddAddress.TabIndex = 2;
@@ -506,50 +482,18 @@
             // 
             listViewDetailColumn2.HeaderText = "Id";
             listViewDetailColumn2.Visible = false;
-            listViewDetailColumn3.HeaderText = "Name";
+            listViewDetailColumn5.HeaderText = "Name";
             this.listViewAddresses.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
             listViewDetailColumn2,
-            listViewDetailColumn3});
+            listViewDetailColumn5});
             this.listViewAddresses.GroupItemSize = new System.Drawing.Size(200, 20);
             this.listViewAddresses.ItemSize = new System.Drawing.Size(200, 20);
             this.listViewAddresses.Location = new System.Drawing.Point(19, 25);
             this.listViewAddresses.Name = "listViewAddresses";
             this.listViewAddresses.ShowCheckBoxes = true;
             this.listViewAddresses.ShowGridLines = true;
-            this.listViewAddresses.Size = new System.Drawing.Size(243, 95);
+            this.listViewAddresses.Size = new System.Drawing.Size(243, 66);
             this.listViewAddresses.TabIndex = 0;
-            // 
-            // splitPanel6
-            // 
-            this.splitPanel6.Location = new System.Drawing.Point(0, 612);
-            this.splitPanel6.Name = "splitPanel6";
-            // 
-            // 
-            // 
-            this.splitPanel6.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel6.Size = new System.Drawing.Size(307, 136);
-            this.splitPanel6.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.02222222F);
-            this.splitPanel6.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -15);
-            this.splitPanel6.TabIndex = 3;
-            this.splitPanel6.TabStop = false;
-            this.splitPanel6.Text = "splitPanel6";
-            this.splitPanel6.ThemeName = "TelerikMetro";
-            // 
-            // splitPanel7
-            // 
-            this.splitPanel7.Location = new System.Drawing.Point(0, 751);
-            this.splitPanel7.Name = "splitPanel7";
-            // 
-            // 
-            // 
-            this.splitPanel7.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel7.Size = new System.Drawing.Size(307, 28);
-            this.splitPanel7.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.1633987F);
-            this.splitPanel7.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -112);
-            this.splitPanel7.TabIndex = 4;
-            this.splitPanel7.TabStop = false;
-            this.splitPanel7.Text = "splitPanel7";
-            this.splitPanel7.ThemeName = "TelerikMetro";
             // 
             // splitPanel2
             // 
@@ -560,7 +504,7 @@
             // 
             // 
             this.splitPanel2.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel2.Size = new System.Drawing.Size(972, 781);
+            this.splitPanel2.Size = new System.Drawing.Size(972, 766);
             this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.2587822F, 0F);
             this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(235, 0);
             this.splitPanel2.TabIndex = 1;
@@ -580,7 +524,7 @@
             // 
             // 
             this.splitMain.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitMain.Size = new System.Drawing.Size(972, 781);
+            this.splitMain.Size = new System.Drawing.Size(972, 766);
             this.splitMain.TabIndex = 0;
             this.splitMain.TabStop = false;
             this.splitMain.Text = "radSplitContainer1";
@@ -594,9 +538,9 @@
             // 
             // 
             this.splitPanel8.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel8.Size = new System.Drawing.Size(600, 764);
-            this.splitPanel8.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.1299292F, 0F);
-            this.splitPanel8.SizeInfo.SplitterCorrection = new System.Drawing.Size(41, 0);
+            this.splitPanel8.Size = new System.Drawing.Size(626, 766);
+            this.splitPanel8.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.1460268F, 0F);
+            this.splitPanel8.SizeInfo.SplitterCorrection = new System.Drawing.Size(57, 0);
             this.splitPanel8.TabIndex = 0;
             this.splitPanel8.TabStop = false;
             this.splitPanel8.Text = "splitPanel8";
@@ -605,8 +549,6 @@
             // 
             this.radSplitContainer1.AutoScroll = true;
             this.radSplitContainer1.Controls.Add(this.splitPanel10);
-            this.radSplitContainer1.Controls.Add(this.splitPanel11);
-            this.radSplitContainer1.Controls.Add(this.splitPanel12);
             this.radSplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radSplitContainer1.Location = new System.Drawing.Point(0, 0);
             this.radSplitContainer1.Name = "radSplitContainer1";
@@ -615,7 +557,7 @@
             // 
             // 
             this.radSplitContainer1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.radSplitContainer1.Size = new System.Drawing.Size(600, 764);
+            this.radSplitContainer1.Size = new System.Drawing.Size(626, 766);
             this.radSplitContainer1.TabIndex = 1;
             this.radSplitContainer1.TabStop = false;
             this.radSplitContainer1.Text = "splitMainMiddle";
@@ -623,15 +565,17 @@
             // splitPanel10
             // 
             this.splitPanel10.AutoScroll = true;
+            this.splitPanel10.Controls.Add(this.radGroupBox7);
             this.splitPanel10.Controls.Add(this.radGroupBox4);
+            this.splitPanel10.Controls.Add(this.radGroupBox5);
             this.splitPanel10.Location = new System.Drawing.Point(0, 0);
             this.splitPanel10.Name = "splitPanel10";
             // 
             // 
             // 
             this.splitPanel10.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel10.Size = new System.Drawing.Size(600, 226);
-            this.splitPanel10.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.03518031F);
+            this.splitPanel10.Size = new System.Drawing.Size(626, 766);
+            this.splitPanel10.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.03070176F);
             this.splitPanel10.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -28);
             this.splitPanel10.TabIndex = 0;
             this.splitPanel10.TabStop = false;
@@ -676,9 +620,9 @@
             // listviewHeaderPets
             // 
             this.listviewHeaderPets.AllowEdit = false;
-            listViewDetailColumn4.HeaderText = "Name";
+            listViewDetailColumn3.HeaderText = "Name";
             this.listviewHeaderPets.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
-            listViewDetailColumn4});
+            listViewDetailColumn3});
             this.listviewHeaderPets.GroupItemSize = new System.Drawing.Size(200, 20);
             this.listviewHeaderPets.ItemSize = new System.Drawing.Size(200, 20);
             this.listviewHeaderPets.Location = new System.Drawing.Point(124, 106);
@@ -722,23 +666,6 @@
             this.radLabel2.TabIndex = 0;
             this.radLabel2.Text = "Customer:";
             // 
-            // splitPanel11
-            // 
-            this.splitPanel11.AutoScroll = true;
-            this.splitPanel11.Controls.Add(this.radGroupBox5);
-            this.splitPanel11.Location = new System.Drawing.Point(0, 229);
-            this.splitPanel11.Name = "splitPanel11";
-            // 
-            // 
-            // 
-            this.splitPanel11.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel11.Size = new System.Drawing.Size(600, 274);
-            this.splitPanel11.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.02814423F);
-            this.splitPanel11.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 22);
-            this.splitPanel11.TabIndex = 1;
-            this.splitPanel11.TabStop = false;
-            this.splitPanel11.Text = "splitPanel11";
-            // 
             // radGroupBox5
             // 
             this.radGroupBox5.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
@@ -751,14 +678,14 @@
             this.radGroupBox5.HeaderImageKey = "";
             this.radGroupBox5.HeaderMargin = new System.Windows.Forms.Padding(0);
             this.radGroupBox5.HeaderText = "Products";
-            this.radGroupBox5.Location = new System.Drawing.Point(19, 24);
+            this.radGroupBox5.Location = new System.Drawing.Point(19, 212);
             this.radGroupBox5.Name = "radGroupBox5";
             this.radGroupBox5.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
             // 
             // 
             // 
             this.radGroupBox5.RootElement.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
-            this.radGroupBox5.Size = new System.Drawing.Size(581, 226);
+            this.radGroupBox5.Size = new System.Drawing.Size(581, 183);
             this.radGroupBox5.TabIndex = 1;
             this.radGroupBox5.Text = "Products";
             this.radGroupBox5.ThemeName = "TelerikMetro";
@@ -766,7 +693,7 @@
             // radLabel9
             // 
             this.radLabel9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel9.Location = new System.Drawing.Point(370, 188);
+            this.radLabel9.Location = new System.Drawing.Point(370, 153);
             this.radLabel9.Name = "radLabel9";
             this.radLabel9.Size = new System.Drawing.Size(82, 18);
             this.radLabel9.TabIndex = 15;
@@ -775,7 +702,7 @@
             // txtProductTotal
             // 
             this.txtProductTotal.IsReadOnly = true;
-            this.txtProductTotal.Location = new System.Drawing.Point(456, 186);
+            this.txtProductTotal.Location = new System.Drawing.Point(456, 151);
             this.txtProductTotal.Name = "txtProductTotal";
             this.txtProductTotal.Size = new System.Drawing.Size(108, 20);
             this.txtProductTotal.TabIndex = 14;
@@ -796,79 +723,63 @@
             this.gridProducts.MasterTemplate.AllowDragToGroup = false;
             this.gridProducts.MasterTemplate.AllowEditRow = false;
             this.gridProducts.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn15.EnableExpressionEditor = false;
-            gridViewTextBoxColumn15.FieldName = "Id";
-            gridViewTextBoxColumn15.HeaderText = "Id";
-            gridViewTextBoxColumn15.IsVisible = false;
-            gridViewTextBoxColumn15.Name = "Id";
-            gridViewTextBoxColumn15.VisibleInColumnChooser = false;
-            gridViewComboBoxColumn9.DisplayMember = null;
-            gridViewComboBoxColumn9.EnableExpressionEditor = false;
-            gridViewComboBoxColumn9.FieldName = "Product";
-            gridViewComboBoxColumn9.HeaderText = "Product";
-            gridViewComboBoxColumn9.Name = "Product";
-            gridViewComboBoxColumn9.ValueMember = null;
-            gridViewComboBoxColumn9.Width = 122;
-            gridViewTextBoxColumn16.EnableExpressionEditor = false;
-            gridViewTextBoxColumn16.FieldName = "Description";
-            gridViewTextBoxColumn16.HeaderText = "Description";
-            gridViewTextBoxColumn16.Name = "Description";
-            gridViewTextBoxColumn16.Width = 127;
-            gridViewDecimalColumn33.EnableExpressionEditor = false;
-            gridViewDecimalColumn33.FieldName = "Cost";
-            gridViewDecimalColumn33.HeaderText = "Cost";
-            gridViewDecimalColumn33.Name = "Cost";
-            gridViewDecimalColumn33.Width = 67;
-            gridViewDecimalColumn34.EnableExpressionEditor = false;
-            gridViewDecimalColumn34.FieldName = "Retail";
-            gridViewDecimalColumn34.HeaderText = "Retail";
-            gridViewDecimalColumn34.Name = "Retail";
-            gridViewDecimalColumn34.Width = 54;
-            gridViewDecimalColumn35.EnableExpressionEditor = false;
-            gridViewDecimalColumn35.FieldName = "Quantity";
-            gridViewDecimalColumn35.HeaderText = "Quantity";
-            gridViewDecimalColumn35.Name = "Quantity";
-            gridViewDecimalColumn35.Width = 54;
-            gridViewDecimalColumn36.EnableExpressionEditor = false;
-            gridViewDecimalColumn36.FieldName = "Subtotal";
-            gridViewDecimalColumn36.HeaderText = "Subtotal";
-            gridViewDecimalColumn36.Name = "Subtotal";
-            gridViewDecimalColumn36.ReadOnly = true;
-            gridViewDecimalColumn36.Width = 73;
+            gridViewTextBoxColumn13.EnableExpressionEditor = false;
+            gridViewTextBoxColumn13.FieldName = "Id";
+            gridViewTextBoxColumn13.HeaderText = "Id";
+            gridViewTextBoxColumn13.IsVisible = false;
+            gridViewTextBoxColumn13.Name = "Id";
+            gridViewTextBoxColumn13.VisibleInColumnChooser = false;
+            gridViewComboBoxColumn6.DisplayMember = null;
+            gridViewComboBoxColumn6.EnableExpressionEditor = false;
+            gridViewComboBoxColumn6.FieldName = "Product";
+            gridViewComboBoxColumn6.HeaderText = "Product";
+            gridViewComboBoxColumn6.Name = "Product";
+            gridViewComboBoxColumn6.ValueMember = null;
+            gridViewComboBoxColumn6.Width = 122;
+            gridViewTextBoxColumn14.EnableExpressionEditor = false;
+            gridViewTextBoxColumn14.FieldName = "Description";
+            gridViewTextBoxColumn14.HeaderText = "Description";
+            gridViewTextBoxColumn14.Name = "Description";
+            gridViewTextBoxColumn14.Width = 127;
+            gridViewDecimalColumn21.EnableExpressionEditor = false;
+            gridViewDecimalColumn21.FieldName = "Cost";
+            gridViewDecimalColumn21.HeaderText = "Cost";
+            gridViewDecimalColumn21.Name = "Cost";
+            gridViewDecimalColumn21.Width = 67;
+            gridViewDecimalColumn22.EnableExpressionEditor = false;
+            gridViewDecimalColumn22.FieldName = "Retail";
+            gridViewDecimalColumn22.HeaderText = "Retail";
+            gridViewDecimalColumn22.Name = "Retail";
+            gridViewDecimalColumn22.Width = 54;
+            gridViewDecimalColumn23.EnableExpressionEditor = false;
+            gridViewDecimalColumn23.FieldName = "Quantity";
+            gridViewDecimalColumn23.HeaderText = "Quantity";
+            gridViewDecimalColumn23.Name = "Quantity";
+            gridViewDecimalColumn23.Width = 54;
+            gridViewDecimalColumn24.EnableExpressionEditor = false;
+            gridViewDecimalColumn24.FieldName = "Subtotal";
+            gridViewDecimalColumn24.HeaderText = "Subtotal";
+            gridViewDecimalColumn24.Name = "Subtotal";
+            gridViewDecimalColumn24.ReadOnly = true;
+            gridViewDecimalColumn24.Width = 73;
             this.gridProducts.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn15,
-            gridViewComboBoxColumn9,
-            gridViewTextBoxColumn16,
-            gridViewDecimalColumn33,
-            gridViewDecimalColumn34,
-            gridViewDecimalColumn35,
-            gridViewDecimalColumn36});
+            gridViewTextBoxColumn13,
+            gridViewComboBoxColumn6,
+            gridViewTextBoxColumn14,
+            gridViewDecimalColumn21,
+            gridViewDecimalColumn22,
+            gridViewDecimalColumn23,
+            gridViewDecimalColumn24});
             this.gridProducts.MasterTemplate.Templates.AddRange(new Telerik.WinControls.UI.GridViewTemplate[] {
             this.gridViewTemplate1});
             this.gridProducts.Name = "gridProducts";
             this.gridProducts.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gridProducts.ShowGroupPanel = false;
-            this.gridProducts.Size = new System.Drawing.Size(534, 153);
+            this.gridProducts.Size = new System.Drawing.Size(534, 118);
             this.gridProducts.TabIndex = 13;
             this.gridProducts.Text = "radGridView1";
             this.gridProducts.UserAddedRow += new Telerik.WinControls.UI.GridViewRowEventHandler(this.MasterTemplate_UserAddedRow);
             this.gridProducts.CellValueChanged += new Telerik.WinControls.UI.GridViewCellEventHandler(this.MasterTemplate_CellValueChanged);
-            // 
-            // splitPanel12
-            // 
-            this.splitPanel12.Controls.Add(this.radGroupBox7);
-            this.splitPanel12.Location = new System.Drawing.Point(0, 506);
-            this.splitPanel12.Name = "splitPanel12";
-            // 
-            // 
-            // 
-            this.splitPanel12.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel12.Size = new System.Drawing.Size(600, 258);
-            this.splitPanel12.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.00703605F);
-            this.splitPanel12.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 6);
-            this.splitPanel12.TabIndex = 2;
-            this.splitPanel12.TabStop = false;
-            this.splitPanel12.Text = "splitPanel12";
             // 
             // radGroupBox7
             // 
@@ -882,14 +793,14 @@
             this.radGroupBox7.HeaderImageKey = "";
             this.radGroupBox7.HeaderMargin = new System.Windows.Forms.Padding(0);
             this.radGroupBox7.HeaderText = "Services";
-            this.radGroupBox7.Location = new System.Drawing.Point(19, 18);
+            this.radGroupBox7.Location = new System.Drawing.Point(19, 401);
             this.radGroupBox7.Name = "radGroupBox7";
             this.radGroupBox7.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
             // 
             // 
             // 
             this.radGroupBox7.RootElement.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
-            this.radGroupBox7.Size = new System.Drawing.Size(581, 230);
+            this.radGroupBox7.Size = new System.Drawing.Size(581, 176);
             this.radGroupBox7.TabIndex = 0;
             this.radGroupBox7.Text = "Services";
             this.radGroupBox7.ThemeName = "TelerikMetro";
@@ -897,7 +808,7 @@
             // radLabel12
             // 
             this.radLabel12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel12.Location = new System.Drawing.Point(370, 192);
+            this.radLabel12.Location = new System.Drawing.Point(370, 151);
             this.radLabel12.Name = "radLabel12";
             this.radLabel12.Size = new System.Drawing.Size(78, 18);
             this.radLabel12.TabIndex = 17;
@@ -906,7 +817,7 @@
             // txtServiceTotal
             // 
             this.txtServiceTotal.IsReadOnly = true;
-            this.txtServiceTotal.Location = new System.Drawing.Point(456, 190);
+            this.txtServiceTotal.Location = new System.Drawing.Point(456, 149);
             this.txtServiceTotal.Name = "txtServiceTotal";
             this.txtServiceTotal.Size = new System.Drawing.Size(108, 20);
             this.txtServiceTotal.TabIndex = 16;
@@ -927,59 +838,59 @@
             this.gridServices.MasterTemplate.AllowDragToGroup = false;
             this.gridServices.MasterTemplate.AllowEditRow = false;
             this.gridServices.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn21.EnableExpressionEditor = false;
-            gridViewTextBoxColumn21.FieldName = "Id";
-            gridViewTextBoxColumn21.HeaderText = "Id";
-            gridViewTextBoxColumn21.IsVisible = false;
-            gridViewTextBoxColumn21.Name = "Id";
-            gridViewTextBoxColumn21.VisibleInColumnChooser = false;
-            gridViewComboBoxColumn10.DisplayMember = null;
-            gridViewComboBoxColumn10.EnableExpressionEditor = false;
-            gridViewComboBoxColumn10.FieldName = "Service";
-            gridViewComboBoxColumn10.HeaderText = "Service";
-            gridViewComboBoxColumn10.Name = "Service";
-            gridViewComboBoxColumn10.ValueMember = null;
-            gridViewComboBoxColumn10.Width = 144;
-            gridViewTextBoxColumn22.EnableExpressionEditor = false;
-            gridViewTextBoxColumn22.FieldName = "Description";
-            gridViewTextBoxColumn22.HeaderText = "Description";
-            gridViewTextBoxColumn22.Name = "Description";
-            gridViewTextBoxColumn22.Width = 121;
-            gridViewDecimalColumn37.EnableExpressionEditor = false;
-            gridViewDecimalColumn37.FieldName = "Cost";
-            gridViewDecimalColumn37.HeaderText = "Cost";
-            gridViewDecimalColumn37.Name = "Cost";
-            gridViewDecimalColumn37.Width = 65;
-            gridViewDecimalColumn38.EnableExpressionEditor = false;
-            gridViewDecimalColumn38.FieldName = "Retail";
-            gridViewDecimalColumn38.HeaderText = "Retail";
-            gridViewDecimalColumn38.Name = "Retail";
-            gridViewDecimalColumn38.Width = 53;
-            gridViewDecimalColumn39.EnableExpressionEditor = false;
-            gridViewDecimalColumn39.FieldName = "Quantity";
-            gridViewDecimalColumn39.HeaderText = "Quantity";
-            gridViewDecimalColumn39.Name = "Quantity";
-            gridViewDecimalColumn39.Width = 53;
-            gridViewDecimalColumn40.EnableExpressionEditor = false;
-            gridViewDecimalColumn40.FieldName = "Subtotal";
-            gridViewDecimalColumn40.HeaderText = "Subtotal";
-            gridViewDecimalColumn40.Name = "Subtotal";
-            gridViewDecimalColumn40.ReadOnly = true;
-            gridViewDecimalColumn40.Width = 68;
+            gridViewTextBoxColumn7.EnableExpressionEditor = false;
+            gridViewTextBoxColumn7.FieldName = "Id";
+            gridViewTextBoxColumn7.HeaderText = "Id";
+            gridViewTextBoxColumn7.IsVisible = false;
+            gridViewTextBoxColumn7.Name = "Id";
+            gridViewTextBoxColumn7.VisibleInColumnChooser = false;
+            gridViewComboBoxColumn5.DisplayMember = null;
+            gridViewComboBoxColumn5.EnableExpressionEditor = false;
+            gridViewComboBoxColumn5.FieldName = "Service";
+            gridViewComboBoxColumn5.HeaderText = "Service";
+            gridViewComboBoxColumn5.Name = "Service";
+            gridViewComboBoxColumn5.ValueMember = null;
+            gridViewComboBoxColumn5.Width = 144;
+            gridViewTextBoxColumn8.EnableExpressionEditor = false;
+            gridViewTextBoxColumn8.FieldName = "Description";
+            gridViewTextBoxColumn8.HeaderText = "Description";
+            gridViewTextBoxColumn8.Name = "Description";
+            gridViewTextBoxColumn8.Width = 121;
+            gridViewDecimalColumn17.EnableExpressionEditor = false;
+            gridViewDecimalColumn17.FieldName = "Cost";
+            gridViewDecimalColumn17.HeaderText = "Cost";
+            gridViewDecimalColumn17.Name = "Cost";
+            gridViewDecimalColumn17.Width = 65;
+            gridViewDecimalColumn18.EnableExpressionEditor = false;
+            gridViewDecimalColumn18.FieldName = "Retail";
+            gridViewDecimalColumn18.HeaderText = "Retail";
+            gridViewDecimalColumn18.Name = "Retail";
+            gridViewDecimalColumn18.Width = 53;
+            gridViewDecimalColumn19.EnableExpressionEditor = false;
+            gridViewDecimalColumn19.FieldName = "Quantity";
+            gridViewDecimalColumn19.HeaderText = "Quantity";
+            gridViewDecimalColumn19.Name = "Quantity";
+            gridViewDecimalColumn19.Width = 53;
+            gridViewDecimalColumn20.EnableExpressionEditor = false;
+            gridViewDecimalColumn20.FieldName = "Subtotal";
+            gridViewDecimalColumn20.HeaderText = "Subtotal";
+            gridViewDecimalColumn20.Name = "Subtotal";
+            gridViewDecimalColumn20.ReadOnly = true;
+            gridViewDecimalColumn20.Width = 68;
             this.gridServices.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn21,
-            gridViewComboBoxColumn10,
-            gridViewTextBoxColumn22,
-            gridViewDecimalColumn37,
-            gridViewDecimalColumn38,
-            gridViewDecimalColumn39,
-            gridViewDecimalColumn40});
+            gridViewTextBoxColumn7,
+            gridViewComboBoxColumn5,
+            gridViewTextBoxColumn8,
+            gridViewDecimalColumn17,
+            gridViewDecimalColumn18,
+            gridViewDecimalColumn19,
+            gridViewDecimalColumn20});
             this.gridServices.MasterTemplate.Templates.AddRange(new Telerik.WinControls.UI.GridViewTemplate[] {
             this.gridViewTemplate2});
             this.gridServices.Name = "gridServices";
             this.gridServices.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gridServices.ShowGroupPanel = false;
-            this.gridServices.Size = new System.Drawing.Size(541, 153);
+            this.gridServices.Size = new System.Drawing.Size(541, 114);
             this.gridServices.TabIndex = 14;
             this.gridServices.Text = "radGridView1";
             this.gridServices.UserAddedRow += new Telerik.WinControls.UI.GridViewRowEventHandler(this.gridServices_UserAddedRow);
@@ -988,37 +899,40 @@
             // splitPanel9
             // 
             this.splitPanel9.AutoScroll = true;
-            this.splitPanel9.Controls.Add(this.radLabel13);
-            this.splitPanel9.Controls.Add(this.txtInvoiceDescription);
-            this.splitPanel9.Controls.Add(this.lblTaxIdNumber);
-            this.splitPanel9.Controls.Add(this.lblInvoiceNumber);
-            this.splitPanel9.Controls.Add(this.btnClearInvoice);
-            this.splitPanel9.Controls.Add(this.btnSaveInvoice);
-            this.splitPanel9.Controls.Add(this.dateInvoiceDate);
-            this.splitPanel9.Controls.Add(this.radLabel8);
-            this.splitPanel9.Controls.Add(this.radCheckBox1);
-            this.splitPanel9.Controls.Add(this.radTextBoxControl1);
-            this.splitPanel9.Controls.Add(this.radLabel7);
-            this.splitPanel9.Controls.Add(this.radLabel4);
-            this.splitPanel9.Controls.Add(this.radLabel3);
-            this.splitPanel9.Location = new System.Drawing.Point(603, 0);
+            this.splitPanel9.Location = new System.Drawing.Point(629, 0);
             this.splitPanel9.Name = "splitPanel9";
             // 
             // 
             // 
             this.splitPanel9.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel9.Size = new System.Drawing.Size(352, 764);
-            this.splitPanel9.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.1299292F, 0F);
-            this.splitPanel9.SizeInfo.SplitterCorrection = new System.Drawing.Size(-41, 0);
+            this.splitPanel9.Size = new System.Drawing.Size(343, 766);
+            this.splitPanel9.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.1460268F, 0F);
+            this.splitPanel9.SizeInfo.SplitterCorrection = new System.Drawing.Size(-57, 0);
             this.splitPanel9.TabIndex = 1;
             this.splitPanel9.TabStop = false;
             this.splitPanel9.Text = " ";
+            // 
+            // radLabel13
+            // 
+            this.radLabel13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel13.Location = new System.Drawing.Point(30, 196);
+            this.radLabel13.Name = "radLabel13";
+            this.radLabel13.Size = new System.Drawing.Size(102, 18);
+            this.radLabel13.TabIndex = 16;
+            this.radLabel13.Text = "Short Description:";
+            // 
+            // txtInvoiceDescription
+            // 
+            this.txtInvoiceDescription.Location = new System.Drawing.Point(30, 220);
+            this.txtInvoiceDescription.Name = "txtInvoiceDescription";
+            this.txtInvoiceDescription.Size = new System.Drawing.Size(252, 20);
+            this.txtInvoiceDescription.TabIndex = 15;
             // 
             // lblTaxIdNumber
             // 
             this.lblTaxIdNumber.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.lblTaxIdNumber.ForeColor = System.Drawing.Color.Maroon;
-            this.lblTaxIdNumber.Location = new System.Drawing.Point(126, 107);
+            this.lblTaxIdNumber.Location = new System.Drawing.Point(130, 87);
             this.lblTaxIdNumber.Name = "lblTaxIdNumber";
             this.lblTaxIdNumber.Size = new System.Drawing.Size(2, 2);
             this.lblTaxIdNumber.TabIndex = 14;
@@ -1027,14 +941,14 @@
             // 
             this.lblInvoiceNumber.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.lblInvoiceNumber.ForeColor = System.Drawing.Color.Maroon;
-            this.lblInvoiceNumber.Location = new System.Drawing.Point(126, 70);
+            this.lblInvoiceNumber.Location = new System.Drawing.Point(130, 60);
             this.lblInvoiceNumber.Name = "lblInvoiceNumber";
             this.lblInvoiceNumber.Size = new System.Drawing.Size(2, 2);
             this.lblInvoiceNumber.TabIndex = 13;
             // 
             // btnClearInvoice
             // 
-            this.btnClearInvoice.Location = new System.Drawing.Point(159, 26);
+            this.btnClearInvoice.Location = new System.Drawing.Point(163, 16);
             this.btnClearInvoice.Name = "btnClearInvoice";
             this.btnClearInvoice.Size = new System.Drawing.Size(119, 24);
             this.btnClearInvoice.TabIndex = 12;
@@ -1043,7 +957,7 @@
             // 
             // btnSaveInvoice
             // 
-            this.btnSaveInvoice.Location = new System.Drawing.Point(26, 26);
+            this.btnSaveInvoice.Location = new System.Drawing.Point(30, 16);
             this.btnSaveInvoice.Name = "btnSaveInvoice";
             this.btnSaveInvoice.Size = new System.Drawing.Size(119, 24);
             this.btnSaveInvoice.TabIndex = 11;
@@ -1054,7 +968,7 @@
             // dateInvoiceDate
             // 
             this.dateInvoiceDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateInvoiceDate.Location = new System.Drawing.Point(121, 150);
+            this.dateInvoiceDate.Location = new System.Drawing.Point(125, 109);
             this.dateInvoiceDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateInvoiceDate.MinDate = new System.DateTime(((long)(0)));
             this.dateInvoiceDate.Name = "dateInvoiceDate";
@@ -1069,7 +983,7 @@
             // radLabel8
             // 
             this.radLabel8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel8.Location = new System.Drawing.Point(26, 151);
+            this.radLabel8.Location = new System.Drawing.Point(30, 110);
             this.radLabel8.Name = "radLabel8";
             this.radLabel8.Size = new System.Drawing.Size(34, 18);
             this.radLabel8.TabIndex = 9;
@@ -1077,7 +991,7 @@
             // 
             // radCheckBox1
             // 
-            this.radCheckBox1.Location = new System.Drawing.Point(152, 228);
+            this.radCheckBox1.Location = new System.Drawing.Point(156, 167);
             this.radCheckBox1.Name = "radCheckBox1";
             this.radCheckBox1.Size = new System.Drawing.Size(125, 18);
             this.radCheckBox1.TabIndex = 8;
@@ -1085,7 +999,7 @@
             // 
             // radTextBoxControl1
             // 
-            this.radTextBoxControl1.Location = new System.Drawing.Point(26, 228);
+            this.radTextBoxControl1.Location = new System.Drawing.Point(30, 167);
             this.radTextBoxControl1.Name = "radTextBoxControl1";
             this.radTextBoxControl1.Size = new System.Drawing.Size(108, 20);
             this.radTextBoxControl1.TabIndex = 7;
@@ -1094,7 +1008,7 @@
             // radLabel7
             // 
             this.radLabel7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel7.Location = new System.Drawing.Point(26, 195);
+            this.radLabel7.Location = new System.Drawing.Point(30, 134);
             this.radLabel7.Name = "radLabel7";
             this.radLabel7.Size = new System.Drawing.Size(80, 18);
             this.radLabel7.TabIndex = 6;
@@ -1103,7 +1017,7 @@
             // radLabel4
             // 
             this.radLabel4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel4.Location = new System.Drawing.Point(26, 105);
+            this.radLabel4.Location = new System.Drawing.Point(30, 85);
             this.radLabel4.Name = "radLabel4";
             this.radLabel4.Size = new System.Drawing.Size(89, 18);
             this.radLabel4.TabIndex = 4;
@@ -1112,7 +1026,7 @@
             // radLabel3
             // 
             this.radLabel3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel3.Location = new System.Drawing.Point(26, 70);
+            this.radLabel3.Location = new System.Drawing.Point(30, 60);
             this.radLabel3.Name = "radLabel3";
             this.radLabel3.Size = new System.Drawing.Size(94, 18);
             this.radLabel3.TabIndex = 2;
@@ -1175,27 +1089,71 @@
             this.radLabel11.TabIndex = 15;
             this.radLabel11.Text = "Products:";
             // 
-            // txtInvoiceDescription
+            // radDateTimePicker1
             // 
-            this.txtInvoiceDescription.Location = new System.Drawing.Point(26, 295);
-            this.txtInvoiceDescription.Name = "txtInvoiceDescription";
-            this.txtInvoiceDescription.Size = new System.Drawing.Size(252, 20);
-            this.txtInvoiceDescription.TabIndex = 15;
+            this.radDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.radDateTimePicker1.Location = new System.Drawing.Point(125, 109);
+            this.radDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.radDateTimePicker1.MinDate = new System.DateTime(((long)(0)));
+            this.radDateTimePicker1.Name = "radDateTimePicker1";
+            this.radDateTimePicker1.NullableValue = new System.DateTime(2012, 12, 18, 15, 34, 35, 561);
+            this.radDateTimePicker1.NullDate = new System.DateTime(((long)(0)));
+            this.radDateTimePicker1.Size = new System.Drawing.Size(157, 20);
+            this.radDateTimePicker1.TabIndex = 10;
+            this.radDateTimePicker1.TabStop = false;
+            this.radDateTimePicker1.Text = "Tuesday, December 18, 2012";
+            this.radDateTimePicker1.Value = new System.DateTime(2012, 12, 18, 15, 34, 35, 561);
             // 
-            // radLabel13
+            // radLabel14
             // 
-            this.radLabel13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel13.Location = new System.Drawing.Point(26, 271);
-            this.radLabel13.Name = "radLabel13";
-            this.radLabel13.Size = new System.Drawing.Size(102, 18);
-            this.radLabel13.TabIndex = 16;
-            this.radLabel13.Text = "Short Description:";
+            this.radLabel14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel14.Location = new System.Drawing.Point(30, 110);
+            this.radLabel14.Name = "radLabel14";
+            this.radLabel14.Size = new System.Drawing.Size(34, 18);
+            this.radLabel14.TabIndex = 9;
+            this.radLabel14.Text = "Date:";
+            // 
+            // radLabel15
+            // 
+            this.radLabel15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel15.ForeColor = System.Drawing.Color.Maroon;
+            this.radLabel15.Location = new System.Drawing.Point(130, 60);
+            this.radLabel15.Name = "radLabel15";
+            this.radLabel15.Size = new System.Drawing.Size(2, 2);
+            this.radLabel15.TabIndex = 13;
+            // 
+            // radLabel16
+            // 
+            this.radLabel16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel16.ForeColor = System.Drawing.Color.Maroon;
+            this.radLabel16.Location = new System.Drawing.Point(130, 87);
+            this.radLabel16.Name = "radLabel16";
+            this.radLabel16.Size = new System.Drawing.Size(2, 2);
+            this.radLabel16.TabIndex = 14;
+            // 
+            // radLabel17
+            // 
+            this.radLabel17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel17.Location = new System.Drawing.Point(30, 85);
+            this.radLabel17.Name = "radLabel17";
+            this.radLabel17.Size = new System.Drawing.Size(89, 18);
+            this.radLabel17.TabIndex = 4;
+            this.radLabel17.Text = "Tax Id Number:";
+            // 
+            // radLabel18
+            // 
+            this.radLabel18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel18.Location = new System.Drawing.Point(30, 60);
+            this.radLabel18.Name = "radLabel18";
+            this.radLabel18.Size = new System.Drawing.Size(94, 18);
+            this.radLabel18.TabIndex = 2;
+            this.radLabel18.Text = "Invoice Number:";
             // 
             // frmInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 781);
+            this.ClientSize = new System.Drawing.Size(1284, 766);
             this.Controls.Add(this.splitParent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmInvoice";
@@ -1210,6 +1168,7 @@
             this.splitLeftNav.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel3)).EndInit();
             this.splitPanel3.ResumeLayout(false);
+            this.splitPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
@@ -1218,20 +1177,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.ddlCustomerList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSelectCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel4)).EndInit();
-            this.splitPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).EndInit();
             this.radGroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnAddPets)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listviewPets)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel5)).EndInit();
-            this.splitPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).EndInit();
             this.radGroupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnAddAddress)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listViewAddresses)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).EndInit();
             this.splitPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitMain)).EndInit();
@@ -1251,8 +1204,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblHeaderCustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel11)).EndInit();
-            this.splitPanel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox5)).EndInit();
             this.radGroupBox5.ResumeLayout(false);
             this.radGroupBox5.PerformLayout();
@@ -1261,8 +1212,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridProducts.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridProducts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTemplate1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel12)).EndInit();
-            this.splitPanel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox7)).EndInit();
             this.radGroupBox7.ResumeLayout(false);
             this.radGroupBox7.PerformLayout();
@@ -1272,8 +1221,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridServices)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTemplate2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel9)).EndInit();
-            this.splitPanel9.ResumeLayout(false);
-            this.splitPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceDescription)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblTaxIdNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblInvoiceNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClearInvoice)).EndInit();
@@ -1292,8 +1241,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceDescription)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel18)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1305,7 +1258,6 @@
         private Telerik.WinControls.UI.SplitPanel splitPanel2;
         private Telerik.WinControls.UI.RadSplitContainer splitLeftNav;
         private Telerik.WinControls.UI.SplitPanel splitPanel3;
-        private Telerik.WinControls.UI.SplitPanel splitPanel4;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox1;
         private Telerik.WinControls.UI.RadLabel radLabel1;
         private Telerik.WinControls.UI.RadButton btnSelectCustomer;
@@ -1314,12 +1266,9 @@
         private Telerik.WinControls.UI.RadGroupBox radGroupBox2;
         private Telerik.WinControls.UI.RadListView listviewPets;
         private Telerik.WinControls.UI.RadButton btnAddPets;
-        private Telerik.WinControls.UI.SplitPanel splitPanel5;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox3;
         private Telerik.WinControls.UI.RadButton btnAddAddress;
         private Telerik.WinControls.UI.RadListView listViewAddresses;
-        private Telerik.WinControls.UI.SplitPanel splitPanel6;
-        private Telerik.WinControls.UI.SplitPanel splitPanel7;
         private Telerik.WinControls.UI.RadSplitContainer splitMain;
         private Telerik.WinControls.UI.SplitPanel splitPanel8;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox4;
@@ -1332,7 +1281,6 @@
         private Telerik.WinControls.UI.RadLabel radLabel6;
         private Telerik.WinControls.UI.RadLabel radLabel4;
         private Telerik.WinControls.UI.RadLabel radLabel3;
-        private Telerik.WinControls.UI.SplitPanel splitPanel11;
         private Telerik.WinControls.UI.RadLabel radLabel5;
         private Telerik.WinControls.UI.RadListView listviewHeaderPets;
         private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl1;
@@ -1340,7 +1288,6 @@
         private Telerik.WinControls.UI.RadCheckBox radCheckBox1;
         private Telerik.WinControls.UI.RadDateTimePicker dateInvoiceDate;
         private Telerik.WinControls.UI.RadLabel radLabel8;
-        private Telerik.WinControls.UI.SplitPanel splitPanel12;
         private Telerik.WinControls.UI.RadButton btnSaveInvoice;
         private Telerik.WinControls.UI.RadButton btnClearInvoice;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox5;
@@ -1362,5 +1309,11 @@
         private Telerik.WinControls.UI.RadTextBoxControl txtServiceTotal;
         private Telerik.WinControls.UI.RadLabel radLabel13;
         private Telerik.WinControls.UI.RadTextBoxControl txtInvoiceDescription;
+        private Telerik.WinControls.UI.RadLabel radLabel18;
+        private Telerik.WinControls.UI.RadLabel radLabel17;
+        private Telerik.WinControls.UI.RadLabel radLabel16;
+        private Telerik.WinControls.UI.RadLabel radLabel15;
+        private Telerik.WinControls.UI.RadLabel radLabel14;
+        private Telerik.WinControls.UI.RadDateTimePicker radDateTimePicker1;
     }
 }
