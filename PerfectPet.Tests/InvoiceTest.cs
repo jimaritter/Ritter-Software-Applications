@@ -105,11 +105,11 @@ namespace PerfectPet.Tests
                 foreach (var item in invoice)
                 {
                     Console.WriteLine("Invoice Number: " + item.Number);
-                    var pets = item.Pets;
-                    foreach (var o in pets)
-                    {
-                        Console.WriteLine("Pet: " + o.Name);
-                    }
+                    //var pets = item.Pets;
+                    //foreach (var o in pets)
+                    //{
+                    //    Console.WriteLine("Pet: " + o.Name);
+                    //}
                 }
                 //person = invoice.Person;
                 //var pets = invoice.Pets;
@@ -146,10 +146,10 @@ namespace PerfectPet.Tests
             invoice.Company = company.GetById(1002) as Company;
             invoice.InvoiceAddress = address.GetById(8016) as Address;
             invoice.Person = person.GetById(6012) as Person;
-            foreach (var item in pet)
-            {
-                invoice.Pets.Add(item);
-            }
+            //foreach (var item in pet)
+            //{
+            //    invoice.Pets.Add(item);
+            //}
             _invoice.Save(invoice);
         }
 

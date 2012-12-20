@@ -29,16 +29,13 @@ namespace PerfectPet.Model.Mappings
             Map(x => x.Picture).CustomSqlType("varbinary").Length(2147483647);
             Map(x => x.CreatedDate);
             Map(x => x.ModifiedDate);
-            HasMany(x => x.Workorder);
-            HasMany(x => x.Products);
-            HasMany(x => x.Services);
             References(x => x.Person);
             Map(x => x.Breed);
-            HasManyToMany(x => x.Invoices)
-                .Table("InvoicesToPets")
-                .ParentKeyColumn("PetId")
-                .ChildKeyColumn("InvoiceId")
-                .Cascade.All().Inverse().FetchType.Join();
+            //HasManyToMany(x => x.Invoices)
+            //    .Table("InvoicesToPets")
+            //    .ParentKeyColumn("PetId")
+            //    .ChildKeyColumn("InvoiceId")
+            //    .Cascade.All().Inverse().FetchType.Join();
             //HasMany(x => x.InvoicesPets)
             //.Cascade.AllDeleteOrphan()
             //.Fetch.Join()

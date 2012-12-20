@@ -76,7 +76,6 @@ namespace PerfectPet.Model.Sales
                 }
                 _session.Save(invoiceNumber);
                 _session.Flush();
-                _session.Close();
             }
             catch (Exception)
             {
@@ -95,7 +94,6 @@ namespace PerfectPet.Model.Sales
                 }
                 _session.Delete(invoiceNumber);
                 _session.Flush();
-                _session.Close();
             }
             catch (Exception)
             {

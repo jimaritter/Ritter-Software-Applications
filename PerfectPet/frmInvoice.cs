@@ -462,13 +462,46 @@ namespace PerfectPet
             try
             {
                 _invoice = ObjectFactory.GetInstance<IInvoice>();
+
+                //Increment Invoice Number
+                if(_invoiceNumber == null)
+                {
+                    _invoiceNumber = ObjectFactory.GetInstance<IInvoiceNumber>();
+                }
+                var tempinvnumber = _invoiceNumber.GetById(1);
+                tempinvnumber.Number = invoiceNumber.Number + 1;
+                _invoiceNumber.Save(tempinvnumber);
+
+                var _lineitems = ObjectFactory.GetInstance<ILineItem>();
+                var _invoicetopet = ObjectFactory.GetInstance<IInvoiceToPet>();
+                var invoicetopet = _invoicetopet.Get();
+
+                //Fill Invoice Data
                 invoice = _invoice.Get();
                 invoice.Number = invoiceNumber.ToString();
                 invoice.InvoiceDate = Convert.ToDateTime(dateInvoiceDate.Text);
                 invoice.Person = customer;
                 invoice.InvoiceAddress = address;
-                invoice.LineItems = lineItems;
+                invoice.Company = company;
+                invoice.DeliveryDate = DateTime.Now;
+                invoice.Description = txtInvoiceDescription.Text;
+                invoice.CreatedDate = DateTime.Now;          
+                _invoice.Save(invoice);
 
+                //Save Invoice To Pet Table Data
+                foreach (var pet in Pets)
+                {
+                    invoicetopet.Pet = pet;
+                    invoicetopet.Invoice = invoice;
+                    _invoicetopet.Save(invoicetopet);
+                }
+
+                //Save Invoice Line Items
+                foreach (var item in lineItems)
+                {
+                    item.Invoice = invoice;
+                    _lineitems.Save(item);
+                }
             }
             catch (Exception)
             {

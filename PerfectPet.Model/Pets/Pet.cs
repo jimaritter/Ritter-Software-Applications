@@ -35,19 +35,12 @@ namespace PerfectPet.Model.Pets
         public virtual bool IsCheckedIn { get; set; }
         public virtual IList<Medication> Medications { get; set; }
         public virtual string Notes { get; set; }
-        public virtual IList<Workorder> Workorder { get; set; }
-        public virtual IList<Product> Products { get; set; }
-        public virtual IList<Service> Services { get; set; }
         public virtual Person Person { get; set; }
         public virtual DateTime CreatedDate { get; set; }
         public virtual DateTime? ModifiedDate { get; set; }
-        public virtual IList<Invoice> Invoices { get; set; }
-
 
         public Pet()
         {
-            Invoices = new List<Invoice>();
-            Workorder = new List<Workorder>();
         }
 
         //public Pet(IPet pet)
@@ -105,9 +98,9 @@ namespace PerfectPet.Model.Pets
                 {
                     _session = SessionManager.OpenSession();
                 }
-                var addressList = _session.CreateCriteria(typeof(Pet)).List<Pet>();
+                var petList = _session.CreateCriteria(typeof(Pet)).List<Pet>();
 
-                IEnumerable<Pet> petlist = from p in addressList
+                IEnumerable<Pet> petlist = from p in petList
                                                  where p.Person.Id == personid
                                                  select p;
 

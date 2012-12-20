@@ -22,12 +22,11 @@ namespace PerfectPet.Model.Mappings
             References(x => x.Company);
             References(x => x.Person);
             References(x => x.Phone);
-            HasMany(x => x.LineItems);
-            HasManyToMany(x => x.Pets)
-                .Table("InvoicesToPets")
-                .ParentKeyColumn("InvoiceId")
-                .ChildKeyColumn("PetId")
-                .Cascade.All().LazyLoad();
+            //HasManyToMany(x => x.Pets)
+            //    .Table("InvoicesToPets")
+            //    .ParentKeyColumn("InvoiceId")
+            //    .ChildKeyColumn("PetId")
+            //    .Cascade.All().LazyLoad();
 
         } 
     }

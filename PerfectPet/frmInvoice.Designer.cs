@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn19 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn20 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn1 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn2 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn4 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn5 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Name");
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn1 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn3 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn4 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn2 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn5 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn6 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn7 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn8 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn7 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn2 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn4 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Name");
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn15 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn9 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn16 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn33 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn34 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn35 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn36 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn21 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn10 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn22 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn37 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn38 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn39 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn40 = new Telerik.WinControls.UI.GridViewDecimalColumn();
             this.splitParent = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
             this.splitLeftNav = new Telerik.WinControls.UI.RadSplitContainer();
@@ -109,6 +109,8 @@
             this.radLabel10 = new Telerik.WinControls.UI.RadLabel();
             this.radButton3 = new Telerik.WinControls.UI.RadButton();
             this.radLabel11 = new Telerik.WinControls.UI.RadLabel();
+            this.txtInvoiceDescription = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.radLabel13 = new Telerik.WinControls.UI.RadLabel();
             ((System.ComponentModel.ISupportInitialize)(this.splitParent)).BeginInit();
             this.splitParent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
@@ -193,6 +195,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceDescription)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).BeginInit();
             this.SuspendLayout();
             // 
             // splitParent
@@ -221,9 +225,9 @@
             // 
             // 
             this.splitPanel1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel1.Size = new System.Drawing.Size(289, 781);
-            this.splitPanel1.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.2741936F, 0F);
-            this.splitPanel1.SizeInfo.SplitterCorrection = new System.Drawing.Size(-255, 0);
+            this.splitPanel1.Size = new System.Drawing.Size(309, 781);
+            this.splitPanel1.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.2587822F, 0F);
+            this.splitPanel1.SizeInfo.SplitterCorrection = new System.Drawing.Size(-235, 0);
             this.splitPanel1.TabIndex = 0;
             this.splitPanel1.TabStop = false;
             this.splitPanel1.Text = "splitPanel1";
@@ -238,7 +242,6 @@
             this.splitLeftNav.Controls.Add(this.splitPanel5);
             this.splitLeftNav.Controls.Add(this.splitPanel6);
             this.splitLeftNav.Controls.Add(this.splitPanel7);
-            this.splitLeftNav.Cursor = System.Windows.Forms.Cursors.HSplit;
             this.splitLeftNav.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitLeftNav.Location = new System.Drawing.Point(0, 0);
             this.splitLeftNav.Name = "splitLeftNav";
@@ -247,13 +250,14 @@
             // 
             // 
             this.splitLeftNav.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitLeftNav.Size = new System.Drawing.Size(289, 781);
+            this.splitLeftNav.Size = new System.Drawing.Size(309, 781);
             this.splitLeftNav.TabIndex = 0;
             this.splitLeftNav.TabStop = false;
             this.splitLeftNav.ThemeName = "TelerikMetro";
             // 
             // splitPanel3
             // 
+            this.splitPanel3.AutoScroll = true;
             this.splitPanel3.Controls.Add(this.radGroupBox1);
             this.splitPanel3.Location = new System.Drawing.Point(0, 0);
             this.splitPanel3.Name = "splitPanel3";
@@ -261,7 +265,7 @@
             // 
             // 
             this.splitPanel3.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel3.Size = new System.Drawing.Size(287, 173);
+            this.splitPanel3.Size = new System.Drawing.Size(307, 173);
             this.splitPanel3.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.02614379F);
             this.splitPanel3.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 31);
             this.splitPanel3.TabIndex = 0;
@@ -307,7 +311,7 @@
             this.ddlCustomerList.EditorControl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ddlCustomerList.EditorControl.Location = new System.Drawing.Point(0, 0);
             // 
-            // 
+            // ddlCustomerList.NestedRadGridView
             // 
             this.ddlCustomerList.EditorControl.MasterTemplate.AllowAddNewRow = false;
             this.ddlCustomerList.EditorControl.MasterTemplate.AllowCellContextMenu = false;
@@ -318,26 +322,26 @@
             this.ddlCustomerList.EditorControl.MasterTemplate.AllowDragToGroup = false;
             this.ddlCustomerList.EditorControl.MasterTemplate.AllowEditRow = false;
             this.ddlCustomerList.EditorControl.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn1.AllowGroup = false;
-            gridViewTextBoxColumn1.AllowResize = false;
-            gridViewTextBoxColumn1.AllowSort = false;
-            gridViewTextBoxColumn1.EnableExpressionEditor = false;
-            gridViewTextBoxColumn1.FieldName = "Id";
-            gridViewTextBoxColumn1.HeaderText = "Id";
-            gridViewTextBoxColumn1.IsVisible = false;
-            gridViewTextBoxColumn1.Name = "Id";
-            gridViewTextBoxColumn1.Width = 621;
-            gridViewTextBoxColumn2.AllowGroup = false;
-            gridViewTextBoxColumn2.AllowResize = false;
-            gridViewTextBoxColumn2.AllowSort = false;
-            gridViewTextBoxColumn2.EnableExpressionEditor = false;
-            gridViewTextBoxColumn2.FieldName = "Name";
-            gridViewTextBoxColumn2.HeaderText = "Name";
-            gridViewTextBoxColumn2.Name = "Name";
-            gridViewTextBoxColumn2.Width = 621;
+            gridViewTextBoxColumn19.AllowGroup = false;
+            gridViewTextBoxColumn19.AllowResize = false;
+            gridViewTextBoxColumn19.AllowSort = false;
+            gridViewTextBoxColumn19.EnableExpressionEditor = false;
+            gridViewTextBoxColumn19.FieldName = "Id";
+            gridViewTextBoxColumn19.HeaderText = "Id";
+            gridViewTextBoxColumn19.IsVisible = false;
+            gridViewTextBoxColumn19.Name = "Id";
+            gridViewTextBoxColumn19.Width = 621;
+            gridViewTextBoxColumn20.AllowGroup = false;
+            gridViewTextBoxColumn20.AllowResize = false;
+            gridViewTextBoxColumn20.AllowSort = false;
+            gridViewTextBoxColumn20.EnableExpressionEditor = false;
+            gridViewTextBoxColumn20.FieldName = "Name";
+            gridViewTextBoxColumn20.HeaderText = "Name";
+            gridViewTextBoxColumn20.Name = "Name";
+            gridViewTextBoxColumn20.Width = 621;
             this.ddlCustomerList.EditorControl.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2});
+            gridViewTextBoxColumn19,
+            gridViewTextBoxColumn20});
             this.ddlCustomerList.EditorControl.MasterTemplate.EnableFiltering = true;
             this.ddlCustomerList.EditorControl.MasterTemplate.EnableGrouping = false;
             this.ddlCustomerList.EditorControl.MasterTemplate.ShowColumnHeaders = false;
@@ -380,6 +384,7 @@
             // 
             // splitPanel4
             // 
+            this.splitPanel4.AutoScroll = true;
             this.splitPanel4.Controls.Add(this.radGroupBox2);
             this.splitPanel4.Location = new System.Drawing.Point(0, 176);
             this.splitPanel4.Name = "splitPanel4";
@@ -387,7 +392,7 @@
             // 
             // 
             this.splitPanel4.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel4.Size = new System.Drawing.Size(287, 217);
+            this.splitPanel4.Size = new System.Drawing.Size(307, 217);
             this.splitPanel4.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.08235294F);
             this.splitPanel4.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 48);
             this.splitPanel4.TabIndex = 1;
@@ -432,10 +437,10 @@
             // 
             listViewDetailColumn1.HeaderText = "Id";
             listViewDetailColumn1.Visible = false;
-            listViewDetailColumn2.HeaderText = "Name";
+            listViewDetailColumn7.HeaderText = "Name";
             this.listviewPets.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
             listViewDetailColumn1,
-            listViewDetailColumn2});
+            listViewDetailColumn7});
             this.listviewPets.GroupItemSize = new System.Drawing.Size(200, 20);
             this.listviewPets.ItemSize = new System.Drawing.Size(200, 20);
             this.listviewPets.Location = new System.Drawing.Point(19, 25);
@@ -448,6 +453,7 @@
             // 
             // splitPanel5
             // 
+            this.splitPanel5.AutoScroll = true;
             this.splitPanel5.Controls.Add(this.radGroupBox3);
             this.splitPanel5.Location = new System.Drawing.Point(0, 396);
             this.splitPanel5.Name = "splitPanel5";
@@ -455,7 +461,7 @@
             // 
             // 
             this.splitPanel5.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel5.Size = new System.Drawing.Size(287, 213);
+            this.splitPanel5.Size = new System.Drawing.Size(307, 213);
             this.splitPanel5.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.07712418F);
             this.splitPanel5.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 48);
             this.splitPanel5.TabIndex = 2;
@@ -498,12 +504,12 @@
             // 
             // listViewAddresses
             // 
-            listViewDetailColumn3.HeaderText = "Id";
-            listViewDetailColumn3.Visible = false;
-            listViewDetailColumn4.HeaderText = "Name";
+            listViewDetailColumn2.HeaderText = "Id";
+            listViewDetailColumn2.Visible = false;
+            listViewDetailColumn3.HeaderText = "Name";
             this.listViewAddresses.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
-            listViewDetailColumn3,
-            listViewDetailColumn4});
+            listViewDetailColumn2,
+            listViewDetailColumn3});
             this.listViewAddresses.GroupItemSize = new System.Drawing.Size(200, 20);
             this.listViewAddresses.ItemSize = new System.Drawing.Size(200, 20);
             this.listViewAddresses.Location = new System.Drawing.Point(19, 25);
@@ -521,7 +527,7 @@
             // 
             // 
             this.splitPanel6.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel6.Size = new System.Drawing.Size(287, 136);
+            this.splitPanel6.Size = new System.Drawing.Size(307, 136);
             this.splitPanel6.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.02222222F);
             this.splitPanel6.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -15);
             this.splitPanel6.TabIndex = 3;
@@ -537,7 +543,7 @@
             // 
             // 
             this.splitPanel7.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel7.Size = new System.Drawing.Size(287, 28);
+            this.splitPanel7.Size = new System.Drawing.Size(307, 28);
             this.splitPanel7.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.1633987F);
             this.splitPanel7.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -112);
             this.splitPanel7.TabIndex = 4;
@@ -548,15 +554,15 @@
             // splitPanel2
             // 
             this.splitPanel2.Controls.Add(this.splitMain);
-            this.splitPanel2.Location = new System.Drawing.Point(292, 0);
+            this.splitPanel2.Location = new System.Drawing.Point(312, 0);
             this.splitPanel2.Name = "splitPanel2";
             // 
             // 
             // 
             this.splitPanel2.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel2.Size = new System.Drawing.Size(992, 781);
-            this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.2741935F, 0F);
-            this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(255, 0);
+            this.splitPanel2.Size = new System.Drawing.Size(972, 781);
+            this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.2587822F, 0F);
+            this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(235, 0);
             this.splitPanel2.TabIndex = 1;
             this.splitPanel2.TabStop = false;
             this.splitPanel2.Text = "splitPanel2";
@@ -564,6 +570,7 @@
             // 
             // splitMain
             // 
+            this.splitMain.AutoScroll = true;
             this.splitMain.Controls.Add(this.splitPanel8);
             this.splitMain.Controls.Add(this.splitPanel9);
             this.splitMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -573,7 +580,7 @@
             // 
             // 
             this.splitMain.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitMain.Size = new System.Drawing.Size(992, 781);
+            this.splitMain.Size = new System.Drawing.Size(972, 781);
             this.splitMain.TabIndex = 0;
             this.splitMain.TabStop = false;
             this.splitMain.Text = "radSplitContainer1";
@@ -587,7 +594,7 @@
             // 
             // 
             this.splitPanel8.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel8.Size = new System.Drawing.Size(623, 781);
+            this.splitPanel8.Size = new System.Drawing.Size(600, 764);
             this.splitPanel8.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.1299292F, 0F);
             this.splitPanel8.SizeInfo.SplitterCorrection = new System.Drawing.Size(41, 0);
             this.splitPanel8.TabIndex = 0;
@@ -596,6 +603,7 @@
             // 
             // radSplitContainer1
             // 
+            this.radSplitContainer1.AutoScroll = true;
             this.radSplitContainer1.Controls.Add(this.splitPanel10);
             this.radSplitContainer1.Controls.Add(this.splitPanel11);
             this.radSplitContainer1.Controls.Add(this.splitPanel12);
@@ -607,7 +615,7 @@
             // 
             // 
             this.radSplitContainer1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.radSplitContainer1.Size = new System.Drawing.Size(623, 781);
+            this.radSplitContainer1.Size = new System.Drawing.Size(600, 764);
             this.radSplitContainer1.TabIndex = 1;
             this.radSplitContainer1.TabStop = false;
             this.radSplitContainer1.Text = "splitMainMiddle";
@@ -622,8 +630,8 @@
             // 
             // 
             this.splitPanel10.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel10.Size = new System.Drawing.Size(623, 231);
-            this.splitPanel10.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.03526883F);
+            this.splitPanel10.Size = new System.Drawing.Size(600, 226);
+            this.splitPanel10.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.03518031F);
             this.splitPanel10.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -28);
             this.splitPanel10.TabIndex = 0;
             this.splitPanel10.TabStop = false;
@@ -668,9 +676,9 @@
             // listviewHeaderPets
             // 
             this.listviewHeaderPets.AllowEdit = false;
-            listViewDetailColumn5.HeaderText = "Name";
+            listViewDetailColumn4.HeaderText = "Name";
             this.listviewHeaderPets.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
-            listViewDetailColumn5});
+            listViewDetailColumn4});
             this.listviewHeaderPets.GroupItemSize = new System.Drawing.Size(200, 20);
             this.listviewHeaderPets.ItemSize = new System.Drawing.Size(200, 20);
             this.listviewHeaderPets.Location = new System.Drawing.Point(124, 106);
@@ -716,16 +724,17 @@
             // 
             // splitPanel11
             // 
+            this.splitPanel11.AutoScroll = true;
             this.splitPanel11.Controls.Add(this.radGroupBox5);
-            this.splitPanel11.Location = new System.Drawing.Point(0, 234);
+            this.splitPanel11.Location = new System.Drawing.Point(0, 229);
             this.splitPanel11.Name = "splitPanel11";
             // 
             // 
             // 
             this.splitPanel11.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel11.Size = new System.Drawing.Size(623, 256);
-            this.splitPanel11.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.003010763F);
-            this.splitPanel11.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -2);
+            this.splitPanel11.Size = new System.Drawing.Size(600, 274);
+            this.splitPanel11.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.02814423F);
+            this.splitPanel11.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 22);
             this.splitPanel11.TabIndex = 1;
             this.splitPanel11.TabStop = false;
             this.splitPanel11.Text = "splitPanel11";
@@ -787,53 +796,53 @@
             this.gridProducts.MasterTemplate.AllowDragToGroup = false;
             this.gridProducts.MasterTemplate.AllowEditRow = false;
             this.gridProducts.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.FieldName = "Id";
-            gridViewTextBoxColumn3.HeaderText = "Id";
-            gridViewTextBoxColumn3.IsVisible = false;
-            gridViewTextBoxColumn3.Name = "Id";
-            gridViewTextBoxColumn3.VisibleInColumnChooser = false;
-            gridViewComboBoxColumn1.DisplayMember = null;
-            gridViewComboBoxColumn1.EnableExpressionEditor = false;
-            gridViewComboBoxColumn1.FieldName = "Product";
-            gridViewComboBoxColumn1.HeaderText = "Product";
-            gridViewComboBoxColumn1.Name = "Product";
-            gridViewComboBoxColumn1.ValueMember = null;
-            gridViewComboBoxColumn1.Width = 122;
-            gridViewTextBoxColumn4.EnableExpressionEditor = false;
-            gridViewTextBoxColumn4.FieldName = "Description";
-            gridViewTextBoxColumn4.HeaderText = "Description";
-            gridViewTextBoxColumn4.Name = "Description";
-            gridViewTextBoxColumn4.Width = 127;
-            gridViewDecimalColumn1.EnableExpressionEditor = false;
-            gridViewDecimalColumn1.FieldName = "Cost";
-            gridViewDecimalColumn1.HeaderText = "Cost";
-            gridViewDecimalColumn1.Name = "Cost";
-            gridViewDecimalColumn1.Width = 67;
-            gridViewDecimalColumn2.EnableExpressionEditor = false;
-            gridViewDecimalColumn2.FieldName = "Retail";
-            gridViewDecimalColumn2.HeaderText = "Retail";
-            gridViewDecimalColumn2.Name = "Retail";
-            gridViewDecimalColumn2.Width = 54;
-            gridViewDecimalColumn3.EnableExpressionEditor = false;
-            gridViewDecimalColumn3.FieldName = "Quantity";
-            gridViewDecimalColumn3.HeaderText = "Quantity";
-            gridViewDecimalColumn3.Name = "Quantity";
-            gridViewDecimalColumn3.Width = 54;
-            gridViewDecimalColumn4.EnableExpressionEditor = false;
-            gridViewDecimalColumn4.FieldName = "Subtotal";
-            gridViewDecimalColumn4.HeaderText = "Subtotal";
-            gridViewDecimalColumn4.Name = "Subtotal";
-            gridViewDecimalColumn4.ReadOnly = true;
-            gridViewDecimalColumn4.Width = 73;
+            gridViewTextBoxColumn15.EnableExpressionEditor = false;
+            gridViewTextBoxColumn15.FieldName = "Id";
+            gridViewTextBoxColumn15.HeaderText = "Id";
+            gridViewTextBoxColumn15.IsVisible = false;
+            gridViewTextBoxColumn15.Name = "Id";
+            gridViewTextBoxColumn15.VisibleInColumnChooser = false;
+            gridViewComboBoxColumn9.DisplayMember = null;
+            gridViewComboBoxColumn9.EnableExpressionEditor = false;
+            gridViewComboBoxColumn9.FieldName = "Product";
+            gridViewComboBoxColumn9.HeaderText = "Product";
+            gridViewComboBoxColumn9.Name = "Product";
+            gridViewComboBoxColumn9.ValueMember = null;
+            gridViewComboBoxColumn9.Width = 122;
+            gridViewTextBoxColumn16.EnableExpressionEditor = false;
+            gridViewTextBoxColumn16.FieldName = "Description";
+            gridViewTextBoxColumn16.HeaderText = "Description";
+            gridViewTextBoxColumn16.Name = "Description";
+            gridViewTextBoxColumn16.Width = 127;
+            gridViewDecimalColumn33.EnableExpressionEditor = false;
+            gridViewDecimalColumn33.FieldName = "Cost";
+            gridViewDecimalColumn33.HeaderText = "Cost";
+            gridViewDecimalColumn33.Name = "Cost";
+            gridViewDecimalColumn33.Width = 67;
+            gridViewDecimalColumn34.EnableExpressionEditor = false;
+            gridViewDecimalColumn34.FieldName = "Retail";
+            gridViewDecimalColumn34.HeaderText = "Retail";
+            gridViewDecimalColumn34.Name = "Retail";
+            gridViewDecimalColumn34.Width = 54;
+            gridViewDecimalColumn35.EnableExpressionEditor = false;
+            gridViewDecimalColumn35.FieldName = "Quantity";
+            gridViewDecimalColumn35.HeaderText = "Quantity";
+            gridViewDecimalColumn35.Name = "Quantity";
+            gridViewDecimalColumn35.Width = 54;
+            gridViewDecimalColumn36.EnableExpressionEditor = false;
+            gridViewDecimalColumn36.FieldName = "Subtotal";
+            gridViewDecimalColumn36.HeaderText = "Subtotal";
+            gridViewDecimalColumn36.Name = "Subtotal";
+            gridViewDecimalColumn36.ReadOnly = true;
+            gridViewDecimalColumn36.Width = 73;
             this.gridProducts.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn3,
-            gridViewComboBoxColumn1,
-            gridViewTextBoxColumn4,
-            gridViewDecimalColumn1,
-            gridViewDecimalColumn2,
-            gridViewDecimalColumn3,
-            gridViewDecimalColumn4});
+            gridViewTextBoxColumn15,
+            gridViewComboBoxColumn9,
+            gridViewTextBoxColumn16,
+            gridViewDecimalColumn33,
+            gridViewDecimalColumn34,
+            gridViewDecimalColumn35,
+            gridViewDecimalColumn36});
             this.gridProducts.MasterTemplate.Templates.AddRange(new Telerik.WinControls.UI.GridViewTemplate[] {
             this.gridViewTemplate1});
             this.gridProducts.Name = "gridProducts";
@@ -848,15 +857,15 @@
             // splitPanel12
             // 
             this.splitPanel12.Controls.Add(this.radGroupBox7);
-            this.splitPanel12.Location = new System.Drawing.Point(0, 493);
+            this.splitPanel12.Location = new System.Drawing.Point(0, 506);
             this.splitPanel12.Name = "splitPanel12";
             // 
             // 
             // 
             this.splitPanel12.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel12.Size = new System.Drawing.Size(623, 288);
-            this.splitPanel12.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.03827956F);
-            this.splitPanel12.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 30);
+            this.splitPanel12.Size = new System.Drawing.Size(600, 258);
+            this.splitPanel12.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.00703605F);
+            this.splitPanel12.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 6);
             this.splitPanel12.TabIndex = 2;
             this.splitPanel12.TabStop = false;
             this.splitPanel12.Text = "splitPanel12";
@@ -918,53 +927,53 @@
             this.gridServices.MasterTemplate.AllowDragToGroup = false;
             this.gridServices.MasterTemplate.AllowEditRow = false;
             this.gridServices.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn5.EnableExpressionEditor = false;
-            gridViewTextBoxColumn5.FieldName = "Id";
-            gridViewTextBoxColumn5.HeaderText = "Id";
-            gridViewTextBoxColumn5.IsVisible = false;
-            gridViewTextBoxColumn5.Name = "Id";
-            gridViewTextBoxColumn5.VisibleInColumnChooser = false;
-            gridViewComboBoxColumn2.DisplayMember = null;
-            gridViewComboBoxColumn2.EnableExpressionEditor = false;
-            gridViewComboBoxColumn2.FieldName = "Service";
-            gridViewComboBoxColumn2.HeaderText = "Service";
-            gridViewComboBoxColumn2.Name = "Service";
-            gridViewComboBoxColumn2.ValueMember = null;
-            gridViewComboBoxColumn2.Width = 144;
-            gridViewTextBoxColumn6.EnableExpressionEditor = false;
-            gridViewTextBoxColumn6.FieldName = "Description";
-            gridViewTextBoxColumn6.HeaderText = "Description";
-            gridViewTextBoxColumn6.Name = "Description";
-            gridViewTextBoxColumn6.Width = 121;
-            gridViewDecimalColumn5.EnableExpressionEditor = false;
-            gridViewDecimalColumn5.FieldName = "Cost";
-            gridViewDecimalColumn5.HeaderText = "Cost";
-            gridViewDecimalColumn5.Name = "Cost";
-            gridViewDecimalColumn5.Width = 65;
-            gridViewDecimalColumn6.EnableExpressionEditor = false;
-            gridViewDecimalColumn6.FieldName = "Retail";
-            gridViewDecimalColumn6.HeaderText = "Retail";
-            gridViewDecimalColumn6.Name = "Retail";
-            gridViewDecimalColumn6.Width = 53;
-            gridViewDecimalColumn7.EnableExpressionEditor = false;
-            gridViewDecimalColumn7.FieldName = "Quantity";
-            gridViewDecimalColumn7.HeaderText = "Quantity";
-            gridViewDecimalColumn7.Name = "Quantity";
-            gridViewDecimalColumn7.Width = 53;
-            gridViewDecimalColumn8.EnableExpressionEditor = false;
-            gridViewDecimalColumn8.FieldName = "Subtotal";
-            gridViewDecimalColumn8.HeaderText = "Subtotal";
-            gridViewDecimalColumn8.Name = "Subtotal";
-            gridViewDecimalColumn8.ReadOnly = true;
-            gridViewDecimalColumn8.Width = 68;
+            gridViewTextBoxColumn21.EnableExpressionEditor = false;
+            gridViewTextBoxColumn21.FieldName = "Id";
+            gridViewTextBoxColumn21.HeaderText = "Id";
+            gridViewTextBoxColumn21.IsVisible = false;
+            gridViewTextBoxColumn21.Name = "Id";
+            gridViewTextBoxColumn21.VisibleInColumnChooser = false;
+            gridViewComboBoxColumn10.DisplayMember = null;
+            gridViewComboBoxColumn10.EnableExpressionEditor = false;
+            gridViewComboBoxColumn10.FieldName = "Service";
+            gridViewComboBoxColumn10.HeaderText = "Service";
+            gridViewComboBoxColumn10.Name = "Service";
+            gridViewComboBoxColumn10.ValueMember = null;
+            gridViewComboBoxColumn10.Width = 144;
+            gridViewTextBoxColumn22.EnableExpressionEditor = false;
+            gridViewTextBoxColumn22.FieldName = "Description";
+            gridViewTextBoxColumn22.HeaderText = "Description";
+            gridViewTextBoxColumn22.Name = "Description";
+            gridViewTextBoxColumn22.Width = 121;
+            gridViewDecimalColumn37.EnableExpressionEditor = false;
+            gridViewDecimalColumn37.FieldName = "Cost";
+            gridViewDecimalColumn37.HeaderText = "Cost";
+            gridViewDecimalColumn37.Name = "Cost";
+            gridViewDecimalColumn37.Width = 65;
+            gridViewDecimalColumn38.EnableExpressionEditor = false;
+            gridViewDecimalColumn38.FieldName = "Retail";
+            gridViewDecimalColumn38.HeaderText = "Retail";
+            gridViewDecimalColumn38.Name = "Retail";
+            gridViewDecimalColumn38.Width = 53;
+            gridViewDecimalColumn39.EnableExpressionEditor = false;
+            gridViewDecimalColumn39.FieldName = "Quantity";
+            gridViewDecimalColumn39.HeaderText = "Quantity";
+            gridViewDecimalColumn39.Name = "Quantity";
+            gridViewDecimalColumn39.Width = 53;
+            gridViewDecimalColumn40.EnableExpressionEditor = false;
+            gridViewDecimalColumn40.FieldName = "Subtotal";
+            gridViewDecimalColumn40.HeaderText = "Subtotal";
+            gridViewDecimalColumn40.Name = "Subtotal";
+            gridViewDecimalColumn40.ReadOnly = true;
+            gridViewDecimalColumn40.Width = 68;
             this.gridServices.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn5,
-            gridViewComboBoxColumn2,
-            gridViewTextBoxColumn6,
-            gridViewDecimalColumn5,
-            gridViewDecimalColumn6,
-            gridViewDecimalColumn7,
-            gridViewDecimalColumn8});
+            gridViewTextBoxColumn21,
+            gridViewComboBoxColumn10,
+            gridViewTextBoxColumn22,
+            gridViewDecimalColumn37,
+            gridViewDecimalColumn38,
+            gridViewDecimalColumn39,
+            gridViewDecimalColumn40});
             this.gridServices.MasterTemplate.Templates.AddRange(new Telerik.WinControls.UI.GridViewTemplate[] {
             this.gridViewTemplate2});
             this.gridServices.Name = "gridServices";
@@ -978,6 +987,9 @@
             // 
             // splitPanel9
             // 
+            this.splitPanel9.AutoScroll = true;
+            this.splitPanel9.Controls.Add(this.radLabel13);
+            this.splitPanel9.Controls.Add(this.txtInvoiceDescription);
             this.splitPanel9.Controls.Add(this.lblTaxIdNumber);
             this.splitPanel9.Controls.Add(this.lblInvoiceNumber);
             this.splitPanel9.Controls.Add(this.btnClearInvoice);
@@ -989,13 +1001,13 @@
             this.splitPanel9.Controls.Add(this.radLabel7);
             this.splitPanel9.Controls.Add(this.radLabel4);
             this.splitPanel9.Controls.Add(this.radLabel3);
-            this.splitPanel9.Location = new System.Drawing.Point(626, 0);
+            this.splitPanel9.Location = new System.Drawing.Point(603, 0);
             this.splitPanel9.Name = "splitPanel9";
             // 
             // 
             // 
             this.splitPanel9.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel9.Size = new System.Drawing.Size(366, 781);
+            this.splitPanel9.Size = new System.Drawing.Size(352, 764);
             this.splitPanel9.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.1299292F, 0F);
             this.splitPanel9.SizeInfo.SplitterCorrection = new System.Drawing.Size(-41, 0);
             this.splitPanel9.TabIndex = 1;
@@ -1004,6 +1016,8 @@
             // 
             // lblTaxIdNumber
             // 
+            this.lblTaxIdNumber.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblTaxIdNumber.ForeColor = System.Drawing.Color.Maroon;
             this.lblTaxIdNumber.Location = new System.Drawing.Point(126, 107);
             this.lblTaxIdNumber.Name = "lblTaxIdNumber";
             this.lblTaxIdNumber.Size = new System.Drawing.Size(2, 2);
@@ -1011,6 +1025,8 @@
             // 
             // lblInvoiceNumber
             // 
+            this.lblInvoiceNumber.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblInvoiceNumber.ForeColor = System.Drawing.Color.Maroon;
             this.lblInvoiceNumber.Location = new System.Drawing.Point(126, 70);
             this.lblInvoiceNumber.Name = "lblInvoiceNumber";
             this.lblInvoiceNumber.Size = new System.Drawing.Size(2, 2);
@@ -1159,6 +1175,22 @@
             this.radLabel11.TabIndex = 15;
             this.radLabel11.Text = "Products:";
             // 
+            // txtInvoiceDescription
+            // 
+            this.txtInvoiceDescription.Location = new System.Drawing.Point(26, 295);
+            this.txtInvoiceDescription.Name = "txtInvoiceDescription";
+            this.txtInvoiceDescription.Size = new System.Drawing.Size(252, 20);
+            this.txtInvoiceDescription.TabIndex = 15;
+            // 
+            // radLabel13
+            // 
+            this.radLabel13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel13.Location = new System.Drawing.Point(26, 271);
+            this.radLabel13.Name = "radLabel13";
+            this.radLabel13.Size = new System.Drawing.Size(102, 18);
+            this.radLabel13.TabIndex = 16;
+            this.radLabel13.Text = "Short Description:";
+            // 
             // frmInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1260,6 +1292,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceDescription)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1326,5 +1360,7 @@
         private Telerik.WinControls.UI.RadTextBoxControl txtProductTotal;
         private Telerik.WinControls.UI.RadLabel radLabel12;
         private Telerik.WinControls.UI.RadTextBoxControl txtServiceTotal;
+        private Telerik.WinControls.UI.RadLabel radLabel13;
+        private Telerik.WinControls.UI.RadTextBoxControl txtInvoiceDescription;
     }
 }

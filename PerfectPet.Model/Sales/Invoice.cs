@@ -25,18 +25,14 @@ namespace PerfectPet.Model.Sales
         public virtual Phone Phone { get; set; }
         public virtual DateTime InvoiceDate { get; set; }
         public virtual DateTime DeliveryDate { get; set; }
-        public virtual IList<LineItem> LineItems { get; set; }
         public virtual Person Person { get; set; }
         public virtual bool Voided { get; set; }
         public virtual string VoidReason { get; set; }
         public virtual DateTime CreatedDate { get; set; }
         public virtual DateTime? ModifiedDate { get; set; }
-        public virtual IList<Pet> Pets  { get; set; }
 
         public Invoice()
         {
-            LineItems = new List<LineItem>();
-            Pets = new List<Pet>();
         }
 
         public Invoice(IInvoice invoice)
