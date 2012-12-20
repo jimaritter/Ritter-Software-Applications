@@ -68,7 +68,7 @@ namespace PerfectPet
                 }
                 catch (Exception)
                 {
-
+                    Cursor.Current = Cursors.Default;
                     throw;
                 }
             }

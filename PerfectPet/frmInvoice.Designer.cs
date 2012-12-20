@@ -587,9 +587,9 @@
             // 
             // 
             this.splitPanel8.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel8.Size = new System.Drawing.Size(596, 781);
-            this.splitPanel8.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.1026289F, 0F);
-            this.splitPanel8.SizeInfo.SplitterCorrection = new System.Drawing.Size(14, 0);
+            this.splitPanel8.Size = new System.Drawing.Size(623, 781);
+            this.splitPanel8.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.1299292F, 0F);
+            this.splitPanel8.SizeInfo.SplitterCorrection = new System.Drawing.Size(41, 0);
             this.splitPanel8.TabIndex = 0;
             this.splitPanel8.TabStop = false;
             this.splitPanel8.Text = "splitPanel8";
@@ -607,13 +607,14 @@
             // 
             // 
             this.radSplitContainer1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.radSplitContainer1.Size = new System.Drawing.Size(596, 781);
+            this.radSplitContainer1.Size = new System.Drawing.Size(623, 781);
             this.radSplitContainer1.TabIndex = 1;
             this.radSplitContainer1.TabStop = false;
             this.radSplitContainer1.Text = "splitMainMiddle";
             // 
             // splitPanel10
             // 
+            this.splitPanel10.AutoScroll = true;
             this.splitPanel10.Controls.Add(this.radGroupBox4);
             this.splitPanel10.Location = new System.Drawing.Point(0, 0);
             this.splitPanel10.Name = "splitPanel10";
@@ -621,9 +622,9 @@
             // 
             // 
             this.splitPanel10.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel10.Size = new System.Drawing.Size(596, 218);
-            this.splitPanel10.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.05204302F);
-            this.splitPanel10.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -41);
+            this.splitPanel10.Size = new System.Drawing.Size(623, 231);
+            this.splitPanel10.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.03526883F);
+            this.splitPanel10.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -28);
             this.splitPanel10.TabIndex = 0;
             this.splitPanel10.TabStop = false;
             this.splitPanel10.Text = "splitPanel10";
@@ -716,15 +717,15 @@
             // splitPanel11
             // 
             this.splitPanel11.Controls.Add(this.radGroupBox5);
-            this.splitPanel11.Location = new System.Drawing.Point(0, 221);
+            this.splitPanel11.Location = new System.Drawing.Point(0, 234);
             this.splitPanel11.Name = "splitPanel11";
             // 
             // 
             // 
             this.splitPanel11.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel11.Size = new System.Drawing.Size(596, 269);
-            this.splitPanel11.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.01376343F);
-            this.splitPanel11.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 11);
+            this.splitPanel11.Size = new System.Drawing.Size(623, 256);
+            this.splitPanel11.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, -0.003010763F);
+            this.splitPanel11.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, -2);
             this.splitPanel11.TabIndex = 1;
             this.splitPanel11.TabStop = false;
             this.splitPanel11.Text = "splitPanel11";
@@ -853,7 +854,7 @@
             // 
             // 
             this.splitPanel12.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel12.Size = new System.Drawing.Size(596, 288);
+            this.splitPanel12.Size = new System.Drawing.Size(623, 288);
             this.splitPanel12.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.03827956F);
             this.splitPanel12.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 30);
             this.splitPanel12.TabIndex = 2;
@@ -988,15 +989,15 @@
             this.splitPanel9.Controls.Add(this.radLabel7);
             this.splitPanel9.Controls.Add(this.radLabel4);
             this.splitPanel9.Controls.Add(this.radLabel3);
-            this.splitPanel9.Location = new System.Drawing.Point(599, 0);
+            this.splitPanel9.Location = new System.Drawing.Point(626, 0);
             this.splitPanel9.Name = "splitPanel9";
             // 
             // 
             // 
             this.splitPanel9.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel9.Size = new System.Drawing.Size(393, 781);
-            this.splitPanel9.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.1026289F, 0F);
-            this.splitPanel9.SizeInfo.SplitterCorrection = new System.Drawing.Size(-14, 0);
+            this.splitPanel9.Size = new System.Drawing.Size(366, 781);
+            this.splitPanel9.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.1299292F, 0F);
+            this.splitPanel9.SizeInfo.SplitterCorrection = new System.Drawing.Size(-41, 0);
             this.splitPanel9.TabIndex = 1;
             this.splitPanel9.TabStop = false;
             this.splitPanel9.Text = " ";
