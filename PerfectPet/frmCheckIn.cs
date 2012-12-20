@@ -151,6 +151,7 @@ namespace PerfectPet
                 checkin.ArriveDate = Convert.ToDateTime(dateCheckIn.Text);
                 checkin.DepartureDate = Convert.ToDateTime(dateCheckOut.Text);
                 checkin.Notes = txtNotes.Text;
+                checkin.CheckedIn = true;
                 pet.IsCheckedIn = true;
                 _checkin.Save(checkin);
                 _pet.Save(pet);

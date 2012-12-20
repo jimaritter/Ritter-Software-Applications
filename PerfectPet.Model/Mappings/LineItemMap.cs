@@ -16,6 +16,7 @@ namespace PerfectPet.Model.Mappings
             Map(x => x.Tax);
             Map(x => x.LineTotal);
             References(x => x.Product);
+            References(x => x.Service);
             Map(x => x.CreatedDate);
             Map(x => x.ModifiedDate);
         }

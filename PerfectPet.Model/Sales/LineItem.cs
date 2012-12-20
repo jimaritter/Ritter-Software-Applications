@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using NHibernate;
 using PerfectPet.Model.Products;
 using PerfectPet.Model.Repository;
+using PerfectPet.Model.Services;
 
 namespace PerfectPet.Model.Sales
 {
@@ -13,6 +14,7 @@ namespace PerfectPet.Model.Sales
         public virtual int LineNumber { get; set; }
         public virtual string Description { get; set; }
         public virtual Product Product { get; set; }
+        public virtual Service Service { get; set; }
         public virtual int Quantity { get; set; }
         public virtual Double UnitPrice { get; set; }
         public virtual Double Tax { get; set; }

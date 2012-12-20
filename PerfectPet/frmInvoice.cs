@@ -29,6 +29,9 @@ namespace PerfectPet
         private Company company;
         private IInvoice _invoice;
         private Invoice invoice;
+        private IList<LineItem> lineItems; 
+        private Person customer;
+        private Address address;
         private IInvoiceNumber _invoiceNumber;
         private InvoiceNumber invoiceNumber;
         private GridViewComboBoxColumn productcombo;
@@ -48,6 +51,7 @@ namespace PerfectPet
                     Cursor.Current = Cursors.Default;
                     this.WindowState = FormWindowState.Maximized;
                     gridProducts.CellEditorInitialized += new GridViewCellEventHandler(gridProducts_CellEditorInitialized);
+                    lineItems = new List<LineItem>();
                     Pets = new List<Pet>();
                     _company = ObjectFactory.GetInstance<ICompany>();
                     company = _company.GetById(1002);
@@ -148,7 +152,7 @@ namespace PerfectPet
                 try
                 {
                     var _customer = ObjectFactory.GetInstance<IPerson>();
-                    var customer = _customer.GetById(PersonId);
+                    customer = _customer.GetById(PersonId);
                     invoice.Person = customer;
                     lblHeaderCustomer.Text = customer.Number + " - " + customer.FirstName + " " + customer.LastName;
                     Pets = new List<Pet>();
@@ -169,7 +173,7 @@ namespace PerfectPet
                 try
                 {
                     var _address = ObjectFactory.GetInstance<IAddress>();
-                    var address = _address.GetById(AddressId);
+                    address = _address.GetById(AddressId);
                     invoice.InvoiceAddress = address;
                     if(address != null)
                     {
@@ -381,10 +385,34 @@ namespace PerfectPet
                         calc = total;
                     }
                 }
+                AddProductLineItem(gridProducts.CurrentRow);
                 txtProductTotal.Text = calc.ToString();
             }
 
-            private void gridServices_CellValueChanged(object sender, GridViewCellEventArgs e)
+            private void AddProductLineItem(GridViewRowInfo row)
+        {
+            try
+            {
+                var _lineitem = ObjectFactory.GetInstance<ILineItem>();
+                var lineitem = _lineitem.Get();
+                lineitem.Quantity = Convert.ToInt32(row.Cells["Quantity"].Value);
+                var _product = ObjectFactory.GetInstance<IProduct>();
+                var product = _product.GetById(Convert.ToInt32(row.Cells["Product"].Value));
+                lineitem.Product = product;
+                lineitem.LineTotal = Convert.ToDouble(row.Cells["Subtotal"].Value);
+                lineitem.UnitPrice = Convert.ToDouble(row.Cells["Retail"].Value);
+                lineitem.CreatedDate = DateTime.Now;
+                lineitem.Description = row.Cells["Description"].Value.ToString();
+                lineItems.Add(lineitem);
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        }
+
+        private void gridServices_CellValueChanged(object sender, GridViewCellEventArgs e)
             {
                 try
                 {
@@ -423,5 +451,30 @@ namespace PerfectPet
                 }
                 txtServiceTotal.Text = calc.ToString();
             }
+
+            private void btnSaveInvoice_Click(object sender, EventArgs e)
+            {
+                SaveNewInvoice();
+            }
+
+        private void SaveNewInvoice()
+        {
+            try
+            {
+                _invoice = ObjectFactory.GetInstance<IInvoice>();
+                invoice = _invoice.Get();
+                invoice.Number = invoiceNumber.ToString();
+                invoice.InvoiceDate = Convert.ToDateTime(dateInvoiceDate.Text);
+                invoice.Person = customer;
+                invoice.InvoiceAddress = address;
+                invoice.LineItems = lineItems;
+
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        }
     }
 }
