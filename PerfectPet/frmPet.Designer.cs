@@ -28,27 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn1 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn2 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn4 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn5 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 2", "Description");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn6 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 3", "Directions");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn7 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 4", "Quantity");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn5 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn6 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn7 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 2", "Description");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn8 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 3", "Directions");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn9 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 4", "Quantity");
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
             this.windows7Theme1 = new Telerik.WinControls.Themes.Windows7Theme();
             this.radSplitContainer1 = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
+            this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
+            this.btnNew = new Telerik.WinControls.UI.RadButton();
+            this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
+            this.listPets = new Telerik.WinControls.UI.RadListView();
+            this.btnSelectCustomer = new Telerik.WinControls.UI.RadButton();
+            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
+            this.ddlCustomer = new Telerik.WinControls.UI.RadDropDownList();
             this.splitPanel2 = new Telerik.WinControls.UI.SplitPanel();
             this.tabParent = new Telerik.WinControls.UI.RadPageView();
             this.tabDetails = new Telerik.WinControls.UI.RadPageViewPage();
-            this.tabMedication = new Telerik.WinControls.UI.RadPageViewPage();
-            this.tabDiet = new Telerik.WinControls.UI.RadPageViewPage();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
+            this.chkMedications = new Telerik.WinControls.UI.RadCheckBox();
+            this.btnSavePet = new Telerik.WinControls.UI.RadButton();
+            this.chkVaccinated = new Telerik.WinControls.UI.RadCheckBox();
+            this.chkDeceased = new Telerik.WinControls.UI.RadCheckBox();
+            this.chkBiter = new Telerik.WinControls.UI.RadCheckBox();
+            this.txtNotes = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.radLabel14 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel23 = new Telerik.WinControls.UI.RadLabel();
             this.ddlPetSex = new Telerik.WinControls.UI.RadDropDownList();
             this.ddlSize = new Telerik.WinControls.UI.RadDropDownList();
             this.linklblChooseImage = new System.Windows.Forms.LinkLabel();
+            this.picPet = new System.Windows.Forms.PictureBox();
             this.radLabel12 = new Telerik.WinControls.UI.RadLabel();
             this.ddlTemperment = new Telerik.WinControls.UI.RadDropDownList();
             this.radLabel11 = new Telerik.WinControls.UI.RadLabel();
@@ -68,48 +81,48 @@
             this.radLabel13 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel15 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel16 = new Telerik.WinControls.UI.RadLabel();
-            this.btnSavePet = new Telerik.WinControls.UI.RadButton();
-            this.chkVaccinated = new Telerik.WinControls.UI.RadCheckBox();
-            this.chkDeceased = new Telerik.WinControls.UI.RadCheckBox();
-            this.chkBiter = new Telerik.WinControls.UI.RadCheckBox();
-            this.txtNotes = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.radLabel14 = new Telerik.WinControls.UI.RadLabel();
-            this.ddlCustomer = new Telerik.WinControls.UI.RadDropDownList();
-            this.btnSelectCustomer = new Telerik.WinControls.UI.RadButton();
-            this.listPets = new Telerik.WinControls.UI.RadListView();
-            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
-            this.btnNew = new Telerik.WinControls.UI.RadButton();
-            this.picPet = new System.Windows.Forms.PictureBox();
-            this.chkMedications = new Telerik.WinControls.UI.RadCheckBox();
+            this.tabMedication = new Telerik.WinControls.UI.RadPageViewPage();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
-            this.listMedications = new Telerik.WinControls.UI.RadListView();
-            this.txtMedicationName = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
-            this.txtMedicationDescription = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.radLabel17 = new Telerik.WinControls.UI.RadLabel();
-            this.txtMedicationDirections = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.btnNewMedication = new Telerik.WinControls.UI.RadButton();
+            this.btnSaveMedication = new Telerik.WinControls.UI.RadButton();
             this.radLabel18 = new Telerik.WinControls.UI.RadLabel();
             this.txtMedicationQuantity = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.btnSaveMedication = new Telerik.WinControls.UI.RadButton();
-            this.btnNewMedication = new Telerik.WinControls.UI.RadButton();
-            this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel17 = new Telerik.WinControls.UI.RadLabel();
+            this.txtMedicationDirections = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
+            this.txtMedicationDescription = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
+            this.txtMedicationName = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.listMedications = new Telerik.WinControls.UI.RadListView();
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
             this.radSplitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
             this.splitPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNew)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listPets)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSelectCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlCustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).BeginInit();
             this.splitPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabParent)).BeginInit();
             this.tabParent.SuspendLayout();
             this.tabDetails.SuspendLayout();
-            this.tabMedication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chkMedications)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSavePet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkVaccinated)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkDeceased)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkBiter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNotes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlPetSex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlSize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlTemperment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
@@ -129,34 +142,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSavePet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkVaccinated)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkDeceased)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkBiter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNotes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSelectCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listPets)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnNew)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkMedications)).BeginInit();
+            this.tabMedication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
             this.radGroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listMedications)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMedicationName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMedicationDescription)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMedicationDirections)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNewMedication)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSaveMedication)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMedicationQuantity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSaveMedication)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnNewMedication)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMedicationDirections)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMedicationDescription)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMedicationName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listMedications)).BeginInit();
             this.SuspendLayout();
             // 
             // radSplitContainer1
@@ -197,6 +196,80 @@
             this.splitPanel1.TabStop = false;
             this.splitPanel1.Text = "splitPanel1";
             // 
+            // radLabel19
+            // 
+            this.radLabel19.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.radLabel19.Location = new System.Drawing.Point(12, 12);
+            this.radLabel19.Name = "radLabel19";
+            this.radLabel19.Size = new System.Drawing.Size(118, 21);
+            this.radLabel19.TabIndex = 66;
+            this.radLabel19.Text = "Pet Management";
+            // 
+            // btnNew
+            // 
+            this.btnNew.Location = new System.Drawing.Point(240, 67);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(71, 24);
+            this.btnNew.TabIndex = 65;
+            this.btnNew.Text = "New";
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // radLabel2
+            // 
+            this.radLabel2.Location = new System.Drawing.Point(12, 121);
+            this.radLabel2.Name = "radLabel2";
+            this.radLabel2.Size = new System.Drawing.Size(36, 18);
+            this.radLabel2.TabIndex = 64;
+            this.radLabel2.Text = "Pet(s):";
+            // 
+            // listPets
+            // 
+            this.listPets.AllowEdit = false;
+            this.listPets.AllowRemove = false;
+            listViewDetailColumn3.HeaderText = "Id";
+            listViewDetailColumn3.Visible = false;
+            listViewDetailColumn4.HeaderText = "Name";
+            this.listPets.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
+            listViewDetailColumn3,
+            listViewDetailColumn4});
+            this.listPets.GroupItemSize = new System.Drawing.Size(200, 20);
+            this.listPets.ItemSize = new System.Drawing.Size(200, 20);
+            this.listPets.Location = new System.Drawing.Point(12, 143);
+            this.listPets.Name = "listPets";
+            this.listPets.ShowGridLines = true;
+            this.listPets.Size = new System.Drawing.Size(299, 95);
+            this.listPets.TabIndex = 63;
+            this.listPets.Text = "radListView1";
+            this.listPets.ItemMouseClick += new Telerik.WinControls.UI.ListViewItemEventHandler(this.listPets_ItemMouseClick);
+            // 
+            // btnSelectCustomer
+            // 
+            this.btnSelectCustomer.Location = new System.Drawing.Point(163, 67);
+            this.btnSelectCustomer.Name = "btnSelectCustomer";
+            this.btnSelectCustomer.Size = new System.Drawing.Size(71, 24);
+            this.btnSelectCustomer.TabIndex = 62;
+            this.btnSelectCustomer.Text = "Select";
+            this.btnSelectCustomer.Click += new System.EventHandler(this.btnSelectCustomer_Click);
+            // 
+            // radLabel1
+            // 
+            this.radLabel1.Location = new System.Drawing.Point(12, 43);
+            this.radLabel1.Name = "radLabel1";
+            this.radLabel1.Size = new System.Drawing.Size(57, 18);
+            this.radLabel1.TabIndex = 61;
+            this.radLabel1.Text = "Customer:";
+            // 
+            // ddlCustomer
+            // 
+            this.ddlCustomer.DropDownAnimationEnabled = true;
+            this.ddlCustomer.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
+            this.ddlCustomer.Location = new System.Drawing.Point(12, 67);
+            this.ddlCustomer.MaxDropDownItems = 0;
+            this.ddlCustomer.Name = "ddlCustomer";
+            this.ddlCustomer.ShowImageInEditorArea = true;
+            this.ddlCustomer.Size = new System.Drawing.Size(136, 20);
+            this.ddlCustomer.TabIndex = 6;
+            // 
             // splitPanel2
             // 
             this.splitPanel2.Controls.Add(this.tabParent);
@@ -217,7 +290,6 @@
             // 
             this.tabParent.Controls.Add(this.tabDetails);
             this.tabParent.Controls.Add(this.tabMedication);
-            this.tabParent.Controls.Add(this.tabDiet);
             this.tabParent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabParent.Location = new System.Drawing.Point(0, 0);
             this.tabParent.Name = "tabParent";
@@ -235,21 +307,6 @@
             this.tabDetails.Name = "tabDetails";
             this.tabDetails.Size = new System.Drawing.Size(777, 434);
             this.tabDetails.Text = "Details";
-            // 
-            // tabMedication
-            // 
-            this.tabMedication.Controls.Add(this.radGroupBox2);
-            this.tabMedication.Location = new System.Drawing.Point(5, 31);
-            this.tabMedication.Name = "tabMedication";
-            this.tabMedication.Size = new System.Drawing.Size(777, 434);
-            this.tabMedication.Text = "Medications";
-            // 
-            // tabDiet
-            // 
-            this.tabDiet.Location = new System.Drawing.Point(10, 37);
-            this.tabDiet.Name = "tabDiet";
-            this.tabDiet.Size = new System.Drawing.Size(543, 422);
-            this.tabDiet.Text = "Diet";
             // 
             // radGroupBox1
             // 
@@ -294,10 +351,80 @@
             this.radGroupBox1.Location = new System.Drawing.Point(19, 12);
             this.radGroupBox1.Name = "radGroupBox1";
             this.radGroupBox1.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
+            // 
+            // 
+            // 
+            this.radGroupBox1.RootElement.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
             this.radGroupBox1.Size = new System.Drawing.Size(713, 415);
             this.radGroupBox1.TabIndex = 0;
             this.radGroupBox1.Text = "Details";
             this.radGroupBox1.ThemeName = "TelerikMetro";
+            // 
+            // chkMedications
+            // 
+            this.chkMedications.ForeColor = System.Drawing.Color.Maroon;
+            this.chkMedications.Location = new System.Drawing.Point(37, 184);
+            this.chkMedications.Name = "chkMedications";
+            this.chkMedications.Size = new System.Drawing.Size(90, 19);
+            this.chkMedications.TabIndex = 11;
+            this.chkMedications.Text = "Medications";
+            this.chkMedications.ThemeName = "TelerikMetro";
+            // 
+            // btnSavePet
+            // 
+            this.btnSavePet.Location = new System.Drawing.Point(309, 359);
+            this.btnSavePet.Name = "btnSavePet";
+            this.btnSavePet.Size = new System.Drawing.Size(97, 24);
+            this.btnSavePet.TabIndex = 89;
+            this.btnSavePet.Text = "Save";
+            this.btnSavePet.ThemeName = "TelerikMetro";
+            this.btnSavePet.Click += new System.EventHandler(this.btnSavePet_Click);
+            // 
+            // chkVaccinated
+            // 
+            this.chkVaccinated.ForeColor = System.Drawing.Color.Maroon;
+            this.chkVaccinated.Location = new System.Drawing.Point(37, 257);
+            this.chkVaccinated.Name = "chkVaccinated";
+            this.chkVaccinated.Size = new System.Drawing.Size(83, 19);
+            this.chkVaccinated.TabIndex = 14;
+            this.chkVaccinated.Text = "Vaccinated";
+            this.chkVaccinated.ThemeName = "TelerikMetro";
+            // 
+            // chkDeceased
+            // 
+            this.chkDeceased.ForeColor = System.Drawing.Color.Maroon;
+            this.chkDeceased.Location = new System.Drawing.Point(37, 233);
+            this.chkDeceased.Name = "chkDeceased";
+            this.chkDeceased.Size = new System.Drawing.Size(76, 19);
+            this.chkDeceased.TabIndex = 13;
+            this.chkDeceased.Text = "Deceased";
+            this.chkDeceased.ThemeName = "TelerikMetro";
+            // 
+            // chkBiter
+            // 
+            this.chkBiter.ForeColor = System.Drawing.Color.Maroon;
+            this.chkBiter.Location = new System.Drawing.Point(37, 209);
+            this.chkBiter.Name = "chkBiter";
+            this.chkBiter.Size = new System.Drawing.Size(49, 19);
+            this.chkBiter.TabIndex = 12;
+            this.chkBiter.Text = "Biter";
+            this.chkBiter.ThemeName = "TelerikMetro";
+            // 
+            // txtNotes
+            // 
+            this.txtNotes.Location = new System.Drawing.Point(82, 297);
+            this.txtNotes.Multiline = true;
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Size = new System.Drawing.Size(563, 53);
+            this.txtNotes.TabIndex = 15;
+            // 
+            // radLabel14
+            // 
+            this.radLabel14.Location = new System.Drawing.Point(37, 297);
+            this.radLabel14.Name = "radLabel14";
+            this.radLabel14.Size = new System.Drawing.Size(38, 18);
+            this.radLabel14.TabIndex = 84;
+            this.radLabel14.Text = "Notes:";
             // 
             // radLabel23
             // 
@@ -340,6 +467,15 @@
             this.linklblChooseImage.TabStop = true;
             this.linklblChooseImage.Text = "Choose Image";
             this.linklblChooseImage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblChooseImage_LinkClicked);
+            // 
+            // picPet
+            // 
+            this.picPet.Location = new System.Drawing.Point(480, 112);
+            this.picPet.Name = "picPet";
+            this.picPet.Size = new System.Drawing.Size(110, 83);
+            this.picPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPet.TabIndex = 80;
+            this.picPet.TabStop = false;
             // 
             // radLabel12
             // 
@@ -501,145 +637,13 @@
             this.radLabel16.TabIndex = 60;
             this.radLabel16.Text = "Name:";
             // 
-            // btnSavePet
+            // tabMedication
             // 
-            this.btnSavePet.Location = new System.Drawing.Point(309, 359);
-            this.btnSavePet.Name = "btnSavePet";
-            this.btnSavePet.Size = new System.Drawing.Size(97, 24);
-            this.btnSavePet.TabIndex = 89;
-            this.btnSavePet.Text = "Save";
-            this.btnSavePet.ThemeName = "TelerikMetro";
-            this.btnSavePet.Click += new System.EventHandler(this.btnSavePet_Click);
-            // 
-            // chkVaccinated
-            // 
-            this.chkVaccinated.ForeColor = System.Drawing.Color.Maroon;
-            this.chkVaccinated.Location = new System.Drawing.Point(37, 257);
-            this.chkVaccinated.Name = "chkVaccinated";
-            this.chkVaccinated.Size = new System.Drawing.Size(83, 19);
-            this.chkVaccinated.TabIndex = 14;
-            this.chkVaccinated.Text = "Vaccinated";
-            this.chkVaccinated.ThemeName = "TelerikMetro";
-            // 
-            // chkDeceased
-            // 
-            this.chkDeceased.ForeColor = System.Drawing.Color.Maroon;
-            this.chkDeceased.Location = new System.Drawing.Point(37, 233);
-            this.chkDeceased.Name = "chkDeceased";
-            this.chkDeceased.Size = new System.Drawing.Size(76, 19);
-            this.chkDeceased.TabIndex = 13;
-            this.chkDeceased.Text = "Deceased";
-            this.chkDeceased.ThemeName = "TelerikMetro";
-            // 
-            // chkBiter
-            // 
-            this.chkBiter.ForeColor = System.Drawing.Color.Maroon;
-            this.chkBiter.Location = new System.Drawing.Point(37, 209);
-            this.chkBiter.Name = "chkBiter";
-            this.chkBiter.Size = new System.Drawing.Size(49, 19);
-            this.chkBiter.TabIndex = 12;
-            this.chkBiter.Text = "Biter";
-            this.chkBiter.ThemeName = "TelerikMetro";
-            // 
-            // txtNotes
-            // 
-            this.txtNotes.Location = new System.Drawing.Point(82, 297);
-            this.txtNotes.Multiline = true;
-            this.txtNotes.Name = "txtNotes";
-            this.txtNotes.Size = new System.Drawing.Size(563, 53);
-            this.txtNotes.TabIndex = 15;
-            // 
-            // radLabel14
-            // 
-            this.radLabel14.Location = new System.Drawing.Point(37, 297);
-            this.radLabel14.Name = "radLabel14";
-            this.radLabel14.Size = new System.Drawing.Size(38, 18);
-            this.radLabel14.TabIndex = 84;
-            this.radLabel14.Text = "Notes:";
-            // 
-            // ddlCustomer
-            // 
-            this.ddlCustomer.DropDownAnimationEnabled = true;
-            this.ddlCustomer.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
-            this.ddlCustomer.Location = new System.Drawing.Point(12, 67);
-            this.ddlCustomer.MaxDropDownItems = 0;
-            this.ddlCustomer.Name = "ddlCustomer";
-            this.ddlCustomer.ShowImageInEditorArea = true;
-            this.ddlCustomer.Size = new System.Drawing.Size(136, 20);
-            this.ddlCustomer.TabIndex = 6;
-            // 
-            // btnSelectCustomer
-            // 
-            this.btnSelectCustomer.Location = new System.Drawing.Point(163, 67);
-            this.btnSelectCustomer.Name = "btnSelectCustomer";
-            this.btnSelectCustomer.Size = new System.Drawing.Size(71, 24);
-            this.btnSelectCustomer.TabIndex = 62;
-            this.btnSelectCustomer.Text = "Select";
-            this.btnSelectCustomer.Click += new System.EventHandler(this.btnSelectCustomer_Click);
-            // 
-            // listPets
-            // 
-            this.listPets.AllowEdit = false;
-            this.listPets.AllowRemove = false;
-            listViewDetailColumn1.HeaderText = "Id";
-            listViewDetailColumn1.Visible = false;
-            listViewDetailColumn2.HeaderText = "Name";
-            this.listPets.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
-            listViewDetailColumn1,
-            listViewDetailColumn2});
-            this.listPets.GroupItemSize = new System.Drawing.Size(200, 20);
-            this.listPets.ItemSize = new System.Drawing.Size(200, 20);
-            this.listPets.Location = new System.Drawing.Point(12, 143);
-            this.listPets.Name = "listPets";
-            this.listPets.ShowGridLines = true;
-            this.listPets.Size = new System.Drawing.Size(299, 95);
-            this.listPets.TabIndex = 63;
-            this.listPets.Text = "radListView1";
-            this.listPets.ItemMouseClick += new Telerik.WinControls.UI.ListViewItemEventHandler(this.listPets_ItemMouseClick);
-            // 
-            // radLabel1
-            // 
-            this.radLabel1.Location = new System.Drawing.Point(12, 43);
-            this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(57, 18);
-            this.radLabel1.TabIndex = 61;
-            this.radLabel1.Text = "Customer:";
-            // 
-            // radLabel2
-            // 
-            this.radLabel2.Location = new System.Drawing.Point(12, 121);
-            this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(36, 18);
-            this.radLabel2.TabIndex = 64;
-            this.radLabel2.Text = "Pet(s):";
-            // 
-            // btnNew
-            // 
-            this.btnNew.Location = new System.Drawing.Point(240, 67);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(71, 24);
-            this.btnNew.TabIndex = 65;
-            this.btnNew.Text = "New";
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
-            // 
-            // picPet
-            // 
-            this.picPet.Location = new System.Drawing.Point(480, 112);
-            this.picPet.Name = "picPet";
-            this.picPet.Size = new System.Drawing.Size(110, 83);
-            this.picPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPet.TabIndex = 80;
-            this.picPet.TabStop = false;
-            // 
-            // chkMedications
-            // 
-            this.chkMedications.ForeColor = System.Drawing.Color.Maroon;
-            this.chkMedications.Location = new System.Drawing.Point(37, 184);
-            this.chkMedications.Name = "chkMedications";
-            this.chkMedications.Size = new System.Drawing.Size(90, 19);
-            this.chkMedications.TabIndex = 11;
-            this.chkMedications.Text = "Medications";
-            this.chkMedications.ThemeName = "TelerikMetro";
+            this.tabMedication.Controls.Add(this.radGroupBox2);
+            this.tabMedication.Location = new System.Drawing.Point(5, 31);
+            this.tabMedication.Name = "tabMedication";
+            this.tabMedication.Size = new System.Drawing.Size(777, 434);
+            this.tabMedication.Text = "Medications";
             // 
             // radGroupBox2
             // 
@@ -664,72 +668,51 @@
             this.radGroupBox2.Location = new System.Drawing.Point(19, 12);
             this.radGroupBox2.Name = "radGroupBox2";
             this.radGroupBox2.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
-            this.radGroupBox2.Size = new System.Drawing.Size(714, 327);
+            // 
+            // 
+            // 
+            this.radGroupBox2.RootElement.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
+            this.radGroupBox2.Size = new System.Drawing.Size(714, 299);
             this.radGroupBox2.TabIndex = 0;
             this.radGroupBox2.Text = "Medications";
             this.radGroupBox2.ThemeName = "TelerikMetro";
             // 
-            // listMedications
+            // btnNewMedication
             // 
-            this.listMedications.AllowEdit = false;
-            this.listMedications.AllowRemove = false;
-            listViewDetailColumn3.HeaderText = "Id";
-            listViewDetailColumn3.Visible = false;
-            listViewDetailColumn4.HeaderText = "Name";
-            listViewDetailColumn5.HeaderText = "Description";
-            listViewDetailColumn6.HeaderText = "Directions";
-            listViewDetailColumn7.HeaderText = "Quantity";
-            this.listMedications.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
-            listViewDetailColumn3,
-            listViewDetailColumn4,
-            listViewDetailColumn5,
-            listViewDetailColumn6,
-            listViewDetailColumn7});
-            this.listMedications.GroupItemSize = new System.Drawing.Size(200, 20);
-            this.listMedications.ItemSize = new System.Drawing.Size(200, 20);
-            this.listMedications.ItemSpacing = -1;
-            this.listMedications.Location = new System.Drawing.Point(32, 25);
-            this.listMedications.Name = "listMedications";
-            this.listMedications.ShowGridLines = true;
-            this.listMedications.Size = new System.Drawing.Size(656, 122);
-            this.listMedications.TabIndex = 64;
-            this.listMedications.Text = "radListView1";
-            this.listMedications.ViewType = Telerik.WinControls.UI.ListViewType.DetailsView;
-            this.listMedications.ItemMouseClick += new Telerik.WinControls.UI.ListViewItemEventHandler(this.listMedications_ItemMouseClick);
+            this.btnNewMedication.Location = new System.Drawing.Point(356, 258);
+            this.btnNewMedication.Name = "btnNewMedication";
+            this.btnNewMedication.Size = new System.Drawing.Size(99, 24);
+            this.btnNewMedication.TabIndex = 74;
+            this.btnNewMedication.Text = "New";
+            this.btnNewMedication.Click += new System.EventHandler(this.btnNewMedication_Click);
             // 
-            // txtMedicationName
+            // btnSaveMedication
             // 
-            this.txtMedicationName.Location = new System.Drawing.Point(113, 175);
-            this.txtMedicationName.Name = "txtMedicationName";
-            this.txtMedicationName.Size = new System.Drawing.Size(171, 20);
-            this.txtMedicationName.TabIndex = 1;
+            this.btnSaveMedication.Location = new System.Drawing.Point(251, 258);
+            this.btnSaveMedication.Name = "btnSaveMedication";
+            this.btnSaveMedication.Size = new System.Drawing.Size(99, 24);
+            this.btnSaveMedication.TabIndex = 73;
+            this.btnSaveMedication.Text = "Save";
+            this.btnSaveMedication.Click += new System.EventHandler(this.btnSaveMedication_Click);
             // 
-            // radLabel3
+            // radLabel18
             // 
-            this.radLabel3.Location = new System.Drawing.Point(32, 175);
-            this.radLabel3.Name = "radLabel3";
-            this.radLabel3.Size = new System.Drawing.Size(65, 18);
-            this.radLabel3.TabIndex = 66;
-            this.radLabel3.Text = "Medication:";
+            this.radLabel18.Location = new System.Drawing.Point(302, 100);
+            this.radLabel18.Name = "radLabel18";
+            this.radLabel18.Size = new System.Drawing.Size(52, 18);
+            this.radLabel18.TabIndex = 72;
+            this.radLabel18.Text = "Quantity:";
             // 
-            // radLabel4
+            // txtMedicationQuantity
             // 
-            this.radLabel4.Location = new System.Drawing.Point(290, 175);
-            this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(66, 18);
-            this.radLabel4.TabIndex = 68;
-            this.radLabel4.Text = "Description:";
-            // 
-            // txtMedicationDescription
-            // 
-            this.txtMedicationDescription.Location = new System.Drawing.Point(371, 175);
-            this.txtMedicationDescription.Name = "txtMedicationDescription";
-            this.txtMedicationDescription.Size = new System.Drawing.Size(171, 20);
-            this.txtMedicationDescription.TabIndex = 2;
+            this.txtMedicationQuantity.Location = new System.Drawing.Point(383, 100);
+            this.txtMedicationQuantity.Name = "txtMedicationQuantity";
+            this.txtMedicationQuantity.Size = new System.Drawing.Size(59, 20);
+            this.txtMedicationQuantity.TabIndex = 3;
             // 
             // radLabel17
             // 
-            this.radLabel17.Location = new System.Drawing.Point(32, 209);
+            this.radLabel17.Location = new System.Drawing.Point(28, 182);
             this.radLabel17.Name = "radLabel17";
             this.radLabel17.Size = new System.Drawing.Size(59, 18);
             this.radLabel17.TabIndex = 70;
@@ -737,50 +720,67 @@
             // 
             // txtMedicationDirections
             // 
-            this.txtMedicationDirections.Location = new System.Drawing.Point(113, 209);
+            this.txtMedicationDirections.Location = new System.Drawing.Point(109, 182);
             this.txtMedicationDirections.Name = "txtMedicationDirections";
             this.txtMedicationDirections.Size = new System.Drawing.Size(575, 52);
             this.txtMedicationDirections.TabIndex = 4;
             // 
-            // radLabel18
+            // radLabel4
             // 
-            this.radLabel18.Location = new System.Drawing.Point(548, 175);
-            this.radLabel18.Name = "radLabel18";
-            this.radLabel18.Size = new System.Drawing.Size(66, 18);
-            this.radLabel18.TabIndex = 72;
-            this.radLabel18.Text = "Description:";
+            this.radLabel4.Location = new System.Drawing.Point(302, 65);
+            this.radLabel4.Name = "radLabel4";
+            this.radLabel4.Size = new System.Drawing.Size(66, 18);
+            this.radLabel4.TabIndex = 68;
+            this.radLabel4.Text = "Description:";
             // 
-            // txtMedicationQuantity
+            // txtMedicationDescription
             // 
-            this.txtMedicationQuantity.Location = new System.Drawing.Point(629, 175);
-            this.txtMedicationQuantity.Name = "txtMedicationQuantity";
-            this.txtMedicationQuantity.Size = new System.Drawing.Size(59, 20);
-            this.txtMedicationQuantity.TabIndex = 3;
+            this.txtMedicationDescription.Location = new System.Drawing.Point(383, 65);
+            this.txtMedicationDescription.Name = "txtMedicationDescription";
+            this.txtMedicationDescription.Size = new System.Drawing.Size(171, 20);
+            this.txtMedicationDescription.TabIndex = 2;
             // 
-            // btnSaveMedication
+            // radLabel3
             // 
-            this.btnSaveMedication.Location = new System.Drawing.Point(255, 285);
-            this.btnSaveMedication.Name = "btnSaveMedication";
-            this.btnSaveMedication.Size = new System.Drawing.Size(99, 24);
-            this.btnSaveMedication.TabIndex = 73;
-            this.btnSaveMedication.Text = "Save";
+            this.radLabel3.Location = new System.Drawing.Point(302, 30);
+            this.radLabel3.Name = "radLabel3";
+            this.radLabel3.Size = new System.Drawing.Size(65, 18);
+            this.radLabel3.TabIndex = 66;
+            this.radLabel3.Text = "Medication:";
             // 
-            // btnNewMedication
+            // txtMedicationName
             // 
-            this.btnNewMedication.Location = new System.Drawing.Point(360, 285);
-            this.btnNewMedication.Name = "btnNewMedication";
-            this.btnNewMedication.Size = new System.Drawing.Size(99, 24);
-            this.btnNewMedication.TabIndex = 74;
-            this.btnNewMedication.Text = "New";
+            this.txtMedicationName.Location = new System.Drawing.Point(383, 30);
+            this.txtMedicationName.Name = "txtMedicationName";
+            this.txtMedicationName.Size = new System.Drawing.Size(171, 20);
+            this.txtMedicationName.TabIndex = 1;
             // 
-            // radLabel19
+            // listMedications
             // 
-            this.radLabel19.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.radLabel19.Location = new System.Drawing.Point(12, 12);
-            this.radLabel19.Name = "radLabel19";
-            this.radLabel19.Size = new System.Drawing.Size(118, 21);
-            this.radLabel19.TabIndex = 66;
-            this.radLabel19.Text = "Pet Management";
+            this.listMedications.AllowEdit = false;
+            this.listMedications.AllowRemove = false;
+            listViewDetailColumn5.HeaderText = "Id";
+            listViewDetailColumn5.Visible = false;
+            listViewDetailColumn6.HeaderText = "Name";
+            listViewDetailColumn7.HeaderText = "Description";
+            listViewDetailColumn8.HeaderText = "Directions";
+            listViewDetailColumn9.HeaderText = "Quantity";
+            this.listMedications.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
+            listViewDetailColumn5,
+            listViewDetailColumn6,
+            listViewDetailColumn7,
+            listViewDetailColumn8,
+            listViewDetailColumn9});
+            this.listMedications.GroupItemSize = new System.Drawing.Size(200, 20);
+            this.listMedications.ItemSize = new System.Drawing.Size(200, 20);
+            this.listMedications.Location = new System.Drawing.Point(32, 25);
+            this.listMedications.Name = "listMedications";
+            this.listMedications.ShowColumnHeaders = false;
+            this.listMedications.ShowGridLines = true;
+            this.listMedications.Size = new System.Drawing.Size(252, 122);
+            this.listMedications.TabIndex = 64;
+            this.listMedications.Text = "radListView1";
+            this.listMedications.ItemMouseClick += new Telerik.WinControls.UI.ListViewItemEventHandler(this.listMedications_ItemMouseClick);
             // 
             // frmPet
             // 
@@ -796,18 +796,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).EndInit();
             this.splitPanel1.ResumeLayout(false);
             this.splitPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNew)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listPets)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSelectCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlCustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).EndInit();
             this.splitPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabParent)).EndInit();
             this.tabParent.ResumeLayout(false);
             this.tabDetails.ResumeLayout(false);
-            this.tabMedication.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chkMedications)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSavePet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkVaccinated)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkDeceased)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkBiter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNotes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlPetSex)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlSize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlTemperment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).EndInit();
@@ -827,35 +841,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSavePet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkVaccinated)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkDeceased)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkBiter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNotes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSelectCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listPets)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnNew)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkMedications)).EndInit();
+            this.tabMedication.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).EndInit();
             this.radGroupBox2.ResumeLayout(false);
             this.radGroupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listMedications)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMedicationName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMedicationDescription)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMedicationDirections)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNewMedication)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSaveMedication)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMedicationQuantity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSaveMedication)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnNewMedication)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMedicationDirections)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMedicationDescription)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMedicationName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listMedications)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -870,7 +870,6 @@
         private Telerik.WinControls.UI.RadPageView tabParent;
         private Telerik.WinControls.UI.RadPageViewPage tabDetails;
         private Telerik.WinControls.UI.RadPageViewPage tabMedication;
-        private Telerik.WinControls.UI.RadPageViewPage tabDiet;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox1;
         private Telerik.WinControls.UI.RadLabel radLabel23;
         private Telerik.WinControls.UI.RadDropDownList ddlPetSex;

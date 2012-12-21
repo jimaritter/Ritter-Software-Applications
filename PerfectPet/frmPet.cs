@@ -17,9 +17,11 @@ namespace PerfectPet
 {
     public partial class frmPet : Form
     {
-        private bool _isNew;
+        private bool _isNewPet;
+        private bool _isNewMedication;
         public int PersonId { get; set; }
         public int PetId { get; set; }
+        public int MedicationId { get; set; }
 
         public frmPet()
         {
@@ -87,7 +89,7 @@ namespace PerfectPet
                 }
             }
 
-        private void BindMedicationDetails()
+        private void BindMedicationList()
         {
             try
             {
@@ -97,7 +99,30 @@ namespace PerfectPet
                 }
                 var _medication = ObjectFactory.GetInstance<IMedication>();
                 var medication = _medication.GetByPetId(PetId);
-                listMedications.DataSource = medication;
+                var query = from med in medication
+                            select new {Id = med.Id, Name = med.Name};
+
+                listMedications.DataSource = query.ToList();
+                listMedications.DisplayMember = "Name";
+                listMedications.ValueMember = "Id";
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        }
+
+        private void BindMedicationDetails()
+        {
+            try
+            {
+                var _medication = ObjectFactory.GetInstance<IMedication>();
+                var medication = _medication.GetById(MedicationId);
+                txtMedicationName.Text = medication.Name;
+                txtMedicationDescription.Text = medication.Description;
+                txtMedicationDirections.Text = medication.Directions;
+                txtMedicationQuantity.Text = medication.Quantity;
             }
             catch (Exception)
             {
@@ -157,7 +182,7 @@ namespace PerfectPet
             {
                 var _pet = ObjectFactory.GetInstance<IPet>();
                 Pet pet;
-                if(_isNew)
+                if(_isNewPet)
                 {
                     pet = _pet.Get();
                 }else
@@ -202,6 +227,55 @@ namespace PerfectPet
                 
                 throw;
             }
+        }
+
+        private void SaveMedicationDetails()
+        {
+            try
+            {
+                Medication medication;
+
+                var _pet = ObjectFactory.GetInstance<IPet>();
+                var pet = _pet.GetById(PetId);
+                var _medication = ObjectFactory.GetInstance<IMedication>();
+                if(_isNewMedication)
+                {
+                    medication = _medication.Get();
+                }else
+                {
+                    medication = _medication.GetById(MedicationId);
+                }
+                medication.Name = txtMedicationName.Text;
+                medication.Description = txtMedicationDescription.Text;
+                medication.Directions = txtMedicationDirections.Text;
+                medication.Quantity = txtMedicationQuantity.Text;
+                medication.Pet = pet;
+                _medication.Save(medication);
+                BindMedicationList();
+
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        }
+
+        private void ClearMedicationDetails()
+        {
+            try
+            {
+                txtMedicationName.Clear();
+                txtMedicationDescription.Clear();
+                txtMedicationDirections.Clear();
+                txtMedicationQuantity.Clear();
+                txtMedicationName.Focus();
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }    
         }
 
         private void ClearPetDetails()
@@ -336,10 +410,12 @@ namespace PerfectPet
         private void listPets_ItemMouseClick(object sender, Telerik.WinControls.UI.ListViewItemEventArgs e)
         {
             this.picPet.Image = null;
-            _isNew = false;
+            _isNewPet = false;
+            _isNewMedication = false;
             ClearPetDetails();
+            ClearMedicationDetails();
             BindPetDetails();
-            BindMedicationDetails();
+            BindMedicationList();
         }
 
         private void ddlSpecies_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
@@ -390,14 +466,31 @@ namespace PerfectPet
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            _isNew = true;
+            _isNewPet = true;
             PersonId = (int)ddlCustomer.SelectedValue;
             ClearPetDetails();
         }
 
         private void listMedications_ItemMouseClick(object sender, Telerik.WinControls.UI.ListViewItemEventArgs e)
         {
+           if(listMedications.SelectedItem.Value == null)
+            {
+                return;
+            }
+            _isNewMedication = false;
+            MedicationId = (int) listMedications.SelectedItem.Value;
+            BindMedicationDetails();
+        }
 
+        private void btnSaveMedication_Click(object sender, EventArgs e)
+        {
+            SaveMedicationDetails();
+        }
+
+        private void btnNewMedication_Click(object sender, EventArgs e)
+        {
+            _isNewMedication = true;
+            ClearMedicationDetails();
         }
     }
 }
