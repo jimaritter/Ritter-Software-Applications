@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn1 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn2 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn4 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn5 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn6 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn7 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 2", "Description");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn8 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 3", "Directions");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn9 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 4", "Quantity");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn5 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 2", "Description");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn6 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 3", "Directions");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn7 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 4", "Quantity");
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
             this.windows7Theme1 = new Telerik.WinControls.Themes.Windows7Theme();
             this.radSplitContainer1 = new Telerik.WinControls.UI.RadSplitContainer();
@@ -226,12 +226,12 @@
             // 
             this.listPets.AllowEdit = false;
             this.listPets.AllowRemove = false;
-            listViewDetailColumn3.HeaderText = "Id";
-            listViewDetailColumn3.Visible = false;
-            listViewDetailColumn4.HeaderText = "Name";
+            listViewDetailColumn1.HeaderText = "Id";
+            listViewDetailColumn1.Visible = false;
+            listViewDetailColumn2.HeaderText = "Name";
             this.listPets.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
-            listViewDetailColumn3,
-            listViewDetailColumn4});
+            listViewDetailColumn1,
+            listViewDetailColumn2});
             this.listPets.GroupItemSize = new System.Drawing.Size(200, 20);
             this.listPets.ItemSize = new System.Drawing.Size(200, 20);
             this.listPets.Location = new System.Drawing.Point(12, 143);
@@ -759,18 +759,18 @@
             // 
             this.listMedications.AllowEdit = false;
             this.listMedications.AllowRemove = false;
-            listViewDetailColumn5.HeaderText = "Id";
-            listViewDetailColumn5.Visible = false;
-            listViewDetailColumn6.HeaderText = "Name";
-            listViewDetailColumn7.HeaderText = "Description";
-            listViewDetailColumn8.HeaderText = "Directions";
-            listViewDetailColumn9.HeaderText = "Quantity";
+            listViewDetailColumn3.HeaderText = "Id";
+            listViewDetailColumn3.Visible = false;
+            listViewDetailColumn4.HeaderText = "Name";
+            listViewDetailColumn5.HeaderText = "Description";
+            listViewDetailColumn6.HeaderText = "Directions";
+            listViewDetailColumn7.HeaderText = "Quantity";
             this.listMedications.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
+            listViewDetailColumn3,
+            listViewDetailColumn4,
             listViewDetailColumn5,
             listViewDetailColumn6,
-            listViewDetailColumn7,
-            listViewDetailColumn8,
-            listViewDetailColumn9});
+            listViewDetailColumn7});
             this.listMedications.GroupItemSize = new System.Drawing.Size(200, 20);
             this.listMedications.ItemSize = new System.Drawing.Size(200, 20);
             this.listMedications.Location = new System.Drawing.Point(32, 25);
@@ -788,7 +788,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 470);
             this.Controls.Add(this.radSplitContainer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmPet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pet Management";
             this.Load += new System.EventHandler(this.frmPet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).EndInit();

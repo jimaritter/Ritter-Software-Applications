@@ -39,17 +39,6 @@
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn13 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn14 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn15 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn16 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn17 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn18 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn19 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomer));
             this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
@@ -114,41 +103,6 @@
             this.txtCity = new Telerik.WinControls.UI.RadTextBoxControl();
             this.txtStreet = new Telerik.WinControls.UI.RadTextBoxControl();
             this.lblStreet = new Telerik.WinControls.UI.RadLabel();
-            this.tabPets = new Telerik.WinControls.UI.RadPageViewPage();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.btnEditPet = new Telerik.WinControls.UI.RadButton();
-            this.gridPets = new Telerik.WinControls.UI.RadGridView();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radLabel23 = new Telerik.WinControls.UI.RadLabel();
-            this.ddlPetSex = new Telerik.WinControls.UI.RadDropDownList();
-            this.ddlSize = new Telerik.WinControls.UI.RadDropDownList();
-            this.btnAdd = new Telerik.WinControls.UI.RadButton();
-            this.linklblChooseImage = new System.Windows.Forms.LinkLabel();
-            this.picPet = new System.Windows.Forms.PictureBox();
-            this.radLabel12 = new Telerik.WinControls.UI.RadLabel();
-            this.ddlTemperment = new Telerik.WinControls.UI.RadDropDownList();
-            this.radLabel11 = new Telerik.WinControls.UI.RadLabel();
-            this.ddlBreedList = new Telerik.WinControls.UI.RadDropDownList();
-            this.ddlSpecies = new Telerik.WinControls.UI.RadDropDownList();
-            this.chkVaccinated = new Telerik.WinControls.UI.RadCheckBox();
-            this.chkDeceased = new Telerik.WinControls.UI.RadCheckBox();
-            this.chkBiter = new Telerik.WinControls.UI.RadCheckBox();
-            this.txtNotes = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.txtColor = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.txtDiet = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.radLabel10 = new Telerik.WinControls.UI.RadLabel();
-            this.txtWeight = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.txtAge = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.txtName = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.radLabel9 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel8 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel7 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel13 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel14 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel15 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel16 = new Telerik.WinControls.UI.RadLabel();
             this.tabDiscountsandBalance = new Telerik.WinControls.UI.RadPageViewPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
@@ -218,41 +172,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtStreet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblStreet)).BeginInit();
-            this.tabPets.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEditPet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridPets)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridPets.MasterTemplate)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlPetSex)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlSize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlTemperment)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlBreedList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlSpecies)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkVaccinated)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkDeceased)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkBiter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNotes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtColor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtWeight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAge)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).BeginInit();
             this.tabDiscountsandBalance.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
@@ -519,12 +438,11 @@
             // 
             this.tabParent.Controls.Add(this.tabPerson);
             this.tabParent.Controls.Add(this.tabAddresses);
-            this.tabParent.Controls.Add(this.tabPets);
             this.tabParent.Controls.Add(this.tabDiscountsandBalance);
             this.tabParent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabParent.Location = new System.Drawing.Point(0, 0);
             this.tabParent.Name = "tabParent";
-            this.tabParent.SelectedPage = this.tabPets;
+            this.tabParent.SelectedPage = this.tabPerson;
             this.tabParent.Size = new System.Drawing.Size(735, 619);
             this.tabParent.TabIndex = 1;
             this.tabParent.ThemeName = "TelerikMetro";
@@ -1041,434 +959,6 @@
             this.lblStreet.TabIndex = 59;
             this.lblStreet.Text = "Street:";
             // 
-            // tabPets
-            // 
-            this.tabPets.Controls.Add(this.groupBox5);
-            this.tabPets.Controls.Add(this.groupBox3);
-            this.tabPets.Location = new System.Drawing.Point(5, 31);
-            this.tabPets.Name = "tabPets";
-            this.tabPets.Size = new System.Drawing.Size(725, 583);
-            this.tabPets.Text = "Pets";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.btnEditPet);
-            this.groupBox5.Controls.Add(this.gridPets);
-            this.groupBox5.Location = new System.Drawing.Point(13, 347);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(659, 191);
-            this.groupBox5.TabIndex = 4;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Pets";
-            // 
-            // btnEditPet
-            // 
-            this.btnEditPet.Location = new System.Drawing.Point(281, 156);
-            this.btnEditPet.Name = "btnEditPet";
-            this.btnEditPet.Size = new System.Drawing.Size(97, 24);
-            this.btnEditPet.TabIndex = 9;
-            this.btnEditPet.Text = "Edit Pet";
-            this.btnEditPet.ThemeName = "Office2010Silver";
-            // 
-            // gridPets
-            // 
-            this.gridPets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(249)))));
-            this.gridPets.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridPets.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.gridPets.ForeColor = System.Drawing.Color.Black;
-            this.gridPets.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.gridPets.Location = new System.Drawing.Point(21, 31);
-            // 
-            // gridPets
-            // 
-            this.gridPets.MasterTemplate.AllowAddNewRow = false;
-            this.gridPets.MasterTemplate.AllowDeleteRow = false;
-            this.gridPets.MasterTemplate.AllowDragToGroup = false;
-            this.gridPets.MasterTemplate.AllowEditRow = false;
-            this.gridPets.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn9.EnableExpressionEditor = false;
-            gridViewTextBoxColumn9.FieldName = "Id";
-            gridViewTextBoxColumn9.HeaderText = "Id";
-            gridViewTextBoxColumn9.IsVisible = false;
-            gridViewTextBoxColumn9.Name = "Id";
-            gridViewTextBoxColumn9.Width = 44;
-            gridViewTextBoxColumn10.EnableExpressionEditor = false;
-            gridViewTextBoxColumn10.FieldName = "Name";
-            gridViewTextBoxColumn10.HeaderText = "Name";
-            gridViewTextBoxColumn10.Name = "Name";
-            gridViewTextBoxColumn10.ReadOnly = true;
-            gridViewTextBoxColumn10.Width = 87;
-            gridViewTextBoxColumn11.EnableExpressionEditor = false;
-            gridViewTextBoxColumn11.FieldName = "Temperment";
-            gridViewTextBoxColumn11.HeaderText = "Temperment";
-            gridViewTextBoxColumn11.Name = "Temperment";
-            gridViewTextBoxColumn11.Width = 79;
-            gridViewTextBoxColumn12.EnableExpressionEditor = false;
-            gridViewTextBoxColumn12.FieldName = "Species";
-            gridViewTextBoxColumn12.HeaderText = "Species";
-            gridViewTextBoxColumn12.Name = "Species";
-            gridViewTextBoxColumn12.Width = 65;
-            gridViewTextBoxColumn13.EnableExpressionEditor = false;
-            gridViewTextBoxColumn13.FieldName = "Breed";
-            gridViewTextBoxColumn13.HeaderText = "Breed";
-            gridViewTextBoxColumn13.Name = "Breed";
-            gridViewTextBoxColumn13.Width = 46;
-            gridViewTextBoxColumn14.EnableExpressionEditor = false;
-            gridViewTextBoxColumn14.FieldName = "Age";
-            gridViewTextBoxColumn14.HeaderText = "Age";
-            gridViewTextBoxColumn14.Name = "Age";
-            gridViewTextBoxColumn14.Width = 51;
-            gridViewTextBoxColumn15.EnableExpressionEditor = false;
-            gridViewTextBoxColumn15.FieldName = "Color";
-            gridViewTextBoxColumn15.HeaderText = "Color";
-            gridViewTextBoxColumn15.Name = "Color";
-            gridViewTextBoxColumn15.Width = 54;
-            gridViewTextBoxColumn16.EnableExpressionEditor = false;
-            gridViewTextBoxColumn16.FieldName = "Size";
-            gridViewTextBoxColumn16.HeaderText = "Size";
-            gridViewTextBoxColumn16.Name = "Size";
-            gridViewTextBoxColumn16.Width = 60;
-            gridViewTextBoxColumn17.EnableExpressionEditor = false;
-            gridViewTextBoxColumn17.FieldName = "Weight";
-            gridViewTextBoxColumn17.HeaderText = "Weight";
-            gridViewTextBoxColumn17.Name = "Weight";
-            gridViewTextBoxColumn17.Width = 52;
-            gridViewTextBoxColumn18.EnableExpressionEditor = false;
-            gridViewTextBoxColumn18.FieldName = "Diet";
-            gridViewTextBoxColumn18.HeaderText = "Diet";
-            gridViewTextBoxColumn18.Name = "Diet";
-            gridViewTextBoxColumn18.Width = 69;
-            gridViewTextBoxColumn19.EnableExpressionEditor = false;
-            gridViewTextBoxColumn19.FieldName = "Notes";
-            gridViewTextBoxColumn19.HeaderText = "Notes";
-            gridViewTextBoxColumn19.Name = "Notes";
-            gridViewTextBoxColumn19.Width = 59;
-            this.gridPets.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn9,
-            gridViewTextBoxColumn10,
-            gridViewTextBoxColumn11,
-            gridViewTextBoxColumn12,
-            gridViewTextBoxColumn13,
-            gridViewTextBoxColumn14,
-            gridViewTextBoxColumn15,
-            gridViewTextBoxColumn16,
-            gridViewTextBoxColumn17,
-            gridViewTextBoxColumn18,
-            gridViewTextBoxColumn19});
-            this.gridPets.MasterTemplate.EnableGrouping = false;
-            this.gridPets.MasterTemplate.ShowFilteringRow = false;
-            this.gridPets.MasterTemplate.ShowRowHeaderColumn = false;
-            this.gridPets.Name = "gridPets";
-            this.gridPets.ReadOnly = true;
-            this.gridPets.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.gridPets.ShowGroupPanel = false;
-            this.gridPets.Size = new System.Drawing.Size(615, 119);
-            this.gridPets.TabIndex = 7;
-            this.gridPets.ThemeName = "TelerikMetro";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.radLabel23);
-            this.groupBox3.Controls.Add(this.ddlPetSex);
-            this.groupBox3.Controls.Add(this.ddlSize);
-            this.groupBox3.Controls.Add(this.btnAdd);
-            this.groupBox3.Controls.Add(this.linklblChooseImage);
-            this.groupBox3.Controls.Add(this.picPet);
-            this.groupBox3.Controls.Add(this.radLabel12);
-            this.groupBox3.Controls.Add(this.ddlTemperment);
-            this.groupBox3.Controls.Add(this.radLabel11);
-            this.groupBox3.Controls.Add(this.ddlBreedList);
-            this.groupBox3.Controls.Add(this.ddlSpecies);
-            this.groupBox3.Controls.Add(this.chkVaccinated);
-            this.groupBox3.Controls.Add(this.chkDeceased);
-            this.groupBox3.Controls.Add(this.chkBiter);
-            this.groupBox3.Controls.Add(this.txtNotes);
-            this.groupBox3.Controls.Add(this.txtColor);
-            this.groupBox3.Controls.Add(this.txtDiet);
-            this.groupBox3.Controls.Add(this.radLabel10);
-            this.groupBox3.Controls.Add(this.txtWeight);
-            this.groupBox3.Controls.Add(this.txtAge);
-            this.groupBox3.Controls.Add(this.txtName);
-            this.groupBox3.Controls.Add(this.radLabel9);
-            this.groupBox3.Controls.Add(this.radLabel8);
-            this.groupBox3.Controls.Add(this.radLabel7);
-            this.groupBox3.Controls.Add(this.radLabel6);
-            this.groupBox3.Controls.Add(this.radLabel5);
-            this.groupBox3.Controls.Add(this.radLabel13);
-            this.groupBox3.Controls.Add(this.radLabel14);
-            this.groupBox3.Controls.Add(this.radLabel15);
-            this.groupBox3.Controls.Add(this.radLabel16);
-            this.groupBox3.Location = new System.Drawing.Point(13, 13);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(659, 328);
-            this.groupBox3.TabIndex = 3;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Pets";
-            // 
-            // radLabel23
-            // 
-            this.radLabel23.Location = new System.Drawing.Point(478, 63);
-            this.radLabel23.Name = "radLabel23";
-            this.radLabel23.Size = new System.Drawing.Size(26, 18);
-            this.radLabel23.TabIndex = 59;
-            this.radLabel23.Text = "Sex:";
-            // 
-            // ddlPetSex
-            // 
-            this.ddlPetSex.DropDownAnimationEnabled = true;
-            this.ddlPetSex.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
-            this.ddlPetSex.Location = new System.Drawing.Point(530, 58);
-            this.ddlPetSex.MaxDropDownItems = 0;
-            this.ddlPetSex.Name = "ddlPetSex";
-            this.ddlPetSex.ShowImageInEditorArea = true;
-            this.ddlPetSex.Size = new System.Drawing.Size(106, 22);
-            this.ddlPetSex.TabIndex = 58;
-            this.ddlPetSex.ThemeName = "Windows7";
-            // 
-            // ddlSize
-            // 
-            this.ddlSize.DropDownAnimationEnabled = true;
-            this.ddlSize.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
-            this.ddlSize.Location = new System.Drawing.Point(56, 101);
-            this.ddlSize.MaxDropDownItems = 0;
-            this.ddlSize.Name = "ddlSize";
-            this.ddlSize.ShowImageInEditorArea = true;
-            this.ddlSize.Size = new System.Drawing.Size(106, 20);
-            this.ddlSize.TabIndex = 46;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(281, 292);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(97, 24);
-            this.btnAdd.TabIndex = 57;
-            this.btnAdd.Text = "Save";
-            this.btnAdd.ThemeName = "TelerikMetro";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // linklblChooseImage
-            // 
-            this.linklblChooseImage.AutoSize = true;
-            this.linklblChooseImage.Location = new System.Drawing.Point(452, 194);
-            this.linklblChooseImage.Name = "linklblChooseImage";
-            this.linklblChooseImage.Size = new System.Drawing.Size(83, 15);
-            this.linklblChooseImage.TabIndex = 56;
-            this.linklblChooseImage.TabStop = true;
-            this.linklblChooseImage.Text = "Choose Image";
-            this.linklblChooseImage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblChooseImage_LinkClicked);
-            // 
-            // picPet
-            // 
-            this.picPet.Location = new System.Drawing.Point(452, 101);
-            this.picPet.Name = "picPet";
-            this.picPet.Size = new System.Drawing.Size(110, 83);
-            this.picPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPet.TabIndex = 55;
-            this.picPet.TabStop = false;
-            // 
-            // radLabel12
-            // 
-            this.radLabel12.Location = new System.Drawing.Point(403, 101);
-            this.radLabel12.Name = "radLabel12";
-            this.radLabel12.Size = new System.Drawing.Size(43, 18);
-            this.radLabel12.TabIndex = 54;
-            this.radLabel12.Text = "Picture:";
-            // 
-            // ddlTemperment
-            // 
-            this.ddlTemperment.DropDownAnimationEnabled = true;
-            this.ddlTemperment.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
-            this.ddlTemperment.Location = new System.Drawing.Point(260, 101);
-            this.ddlTemperment.MaxDropDownItems = 0;
-            this.ddlTemperment.Name = "ddlTemperment";
-            this.ddlTemperment.ShowImageInEditorArea = true;
-            this.ddlTemperment.Size = new System.Drawing.Size(106, 22);
-            this.ddlTemperment.TabIndex = 47;
-            this.ddlTemperment.ThemeName = "Windows7";
-            // 
-            // radLabel11
-            // 
-            this.radLabel11.Location = new System.Drawing.Point(181, 101);
-            this.radLabel11.Name = "radLabel11";
-            this.radLabel11.Size = new System.Drawing.Size(73, 18);
-            this.radLabel11.TabIndex = 53;
-            this.radLabel11.Text = "Temperment:";
-            // 
-            // ddlBreedList
-            // 
-            this.ddlBreedList.DropDownAnimationEnabled = true;
-            this.ddlBreedList.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
-            this.ddlBreedList.Location = new System.Drawing.Point(373, 22);
-            this.ddlBreedList.MaxDropDownItems = 0;
-            this.ddlBreedList.Name = "ddlBreedList";
-            this.ddlBreedList.ShowImageInEditorArea = true;
-            this.ddlBreedList.Size = new System.Drawing.Size(166, 22);
-            this.ddlBreedList.TabIndex = 36;
-            this.ddlBreedList.ThemeName = "Windows7";
-            // 
-            // ddlSpecies
-            // 
-            this.ddlSpecies.DropDownAnimationEnabled = true;
-            this.ddlSpecies.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
-            this.ddlSpecies.Location = new System.Drawing.Point(220, 22);
-            this.ddlSpecies.MaxDropDownItems = 0;
-            this.ddlSpecies.Name = "ddlSpecies";
-            this.ddlSpecies.ShowImageInEditorArea = true;
-            this.ddlSpecies.Size = new System.Drawing.Size(106, 22);
-            this.ddlSpecies.TabIndex = 34;
-            this.ddlSpecies.ThemeName = "Windows7";
-            this.ddlSpecies.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(this.ddlSpecies_SelectedIndexChanged);
-            // 
-            // chkVaccinated
-            // 
-            this.chkVaccinated.Location = new System.Drawing.Point(9, 190);
-            this.chkVaccinated.Name = "chkVaccinated";
-            this.chkVaccinated.Size = new System.Drawing.Size(83, 19);
-            this.chkVaccinated.TabIndex = 50;
-            this.chkVaccinated.Text = "Vaccinated";
-            this.chkVaccinated.ThemeName = "TelerikMetro";
-            // 
-            // chkDeceased
-            // 
-            this.chkDeceased.Location = new System.Drawing.Point(9, 166);
-            this.chkDeceased.Name = "chkDeceased";
-            this.chkDeceased.Size = new System.Drawing.Size(76, 19);
-            this.chkDeceased.TabIndex = 49;
-            this.chkDeceased.Text = "Deceased";
-            this.chkDeceased.ThemeName = "TelerikMetro";
-            // 
-            // chkBiter
-            // 
-            this.chkBiter.Location = new System.Drawing.Point(9, 142);
-            this.chkBiter.Name = "chkBiter";
-            this.chkBiter.Size = new System.Drawing.Size(49, 19);
-            this.chkBiter.TabIndex = 48;
-            this.chkBiter.Text = "Biter";
-            this.chkBiter.ThemeName = "TelerikMetro";
-            // 
-            // txtNotes
-            // 
-            this.txtNotes.Location = new System.Drawing.Point(54, 230);
-            this.txtNotes.Multiline = true;
-            this.txtNotes.Name = "txtNotes";
-            this.txtNotes.Size = new System.Drawing.Size(563, 53);
-            this.txtNotes.TabIndex = 51;
-            // 
-            // txtColor
-            // 
-            this.txtColor.Location = new System.Drawing.Point(372, 59);
-            this.txtColor.Name = "txtColor";
-            this.txtColor.Size = new System.Drawing.Size(74, 20);
-            this.txtColor.TabIndex = 44;
-            // 
-            // txtDiet
-            // 
-            this.txtDiet.Location = new System.Drawing.Point(234, 63);
-            this.txtDiet.Name = "txtDiet";
-            this.txtDiet.Size = new System.Drawing.Size(80, 20);
-            this.txtDiet.TabIndex = 42;
-            // 
-            // radLabel10
-            // 
-            this.radLabel10.Location = new System.Drawing.Point(162, 65);
-            this.radLabel10.Name = "radLabel10";
-            this.radLabel10.Size = new System.Drawing.Size(20, 18);
-            this.radLabel10.TabIndex = 52;
-            this.radLabel10.Text = "lbs";
-            // 
-            // txtWeight
-            // 
-            this.txtWeight.Location = new System.Drawing.Point(54, 63);
-            this.txtWeight.Name = "txtWeight";
-            this.txtWeight.Size = new System.Drawing.Size(108, 20);
-            this.txtWeight.TabIndex = 40;
-            // 
-            // txtAge
-            // 
-            this.txtAge.Location = new System.Drawing.Point(579, 22);
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(57, 20);
-            this.txtAge.TabIndex = 38;
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(54, 22);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(108, 20);
-            this.txtName.TabIndex = 31;
-            // 
-            // radLabel9
-            // 
-            this.radLabel9.Location = new System.Drawing.Point(330, 22);
-            this.radLabel9.Name = "radLabel9";
-            this.radLabel9.Size = new System.Drawing.Size(38, 18);
-            this.radLabel9.TabIndex = 45;
-            this.radLabel9.Text = "Breed:";
-            // 
-            // radLabel8
-            // 
-            this.radLabel8.Location = new System.Drawing.Point(168, 22);
-            this.radLabel8.Name = "radLabel8";
-            this.radLabel8.Size = new System.Drawing.Size(46, 18);
-            this.radLabel8.TabIndex = 43;
-            this.radLabel8.Text = "Species:";
-            // 
-            // radLabel7
-            // 
-            this.radLabel7.Location = new System.Drawing.Point(330, 63);
-            this.radLabel7.Name = "radLabel7";
-            this.radLabel7.Size = new System.Drawing.Size(36, 18);
-            this.radLabel7.TabIndex = 41;
-            this.radLabel7.Text = "Color:";
-            // 
-            // radLabel6
-            // 
-            this.radLabel6.Location = new System.Drawing.Point(199, 63);
-            this.radLabel6.Name = "radLabel6";
-            this.radLabel6.Size = new System.Drawing.Size(29, 18);
-            this.radLabel6.TabIndex = 39;
-            this.radLabel6.Text = "Diet:";
-            // 
-            // radLabel5
-            // 
-            this.radLabel5.Location = new System.Drawing.Point(9, 63);
-            this.radLabel5.Name = "radLabel5";
-            this.radLabel5.Size = new System.Drawing.Size(45, 18);
-            this.radLabel5.TabIndex = 37;
-            this.radLabel5.Text = "Weight:";
-            // 
-            // radLabel13
-            // 
-            this.radLabel13.Location = new System.Drawing.Point(9, 100);
-            this.radLabel13.Name = "radLabel13";
-            this.radLabel13.Size = new System.Drawing.Size(45, 18);
-            this.radLabel13.TabIndex = 35;
-            this.radLabel13.Text = "PetSize:";
-            // 
-            // radLabel14
-            // 
-            this.radLabel14.Location = new System.Drawing.Point(9, 230);
-            this.radLabel14.Name = "radLabel14";
-            this.radLabel14.Size = new System.Drawing.Size(38, 18);
-            this.radLabel14.TabIndex = 33;
-            this.radLabel14.Text = "Notes:";
-            // 
-            // radLabel15
-            // 
-            this.radLabel15.Location = new System.Drawing.Point(544, 22);
-            this.radLabel15.Name = "radLabel15";
-            this.radLabel15.Size = new System.Drawing.Size(29, 18);
-            this.radLabel15.TabIndex = 32;
-            this.radLabel15.Text = "Age:";
-            // 
-            // radLabel16
-            // 
-            this.radLabel16.Location = new System.Drawing.Point(9, 22);
-            this.radLabel16.Name = "radLabel16";
-            this.radLabel16.Size = new System.Drawing.Size(39, 18);
-            this.radLabel16.TabIndex = 30;
-            this.radLabel16.Text = "Name:";
-            // 
             // tabDiscountsandBalance
             // 
             this.tabDiscountsandBalance.Controls.Add(this.groupBox6);
@@ -1621,42 +1111,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtStreet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblStreet)).EndInit();
-            this.tabPets.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnEditPet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridPets.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridPets)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlPetSex)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlSize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlTemperment)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlBreedList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlSpecies)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkVaccinated)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkDeceased)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkBiter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNotes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtColor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtWeight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAge)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).EndInit();
             this.tabDiscountsandBalance.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
@@ -1711,34 +1165,6 @@
         private Telerik.WinControls.UI.RadButton btnAddCustomer;
         private Telerik.WinControls.UI.RadButton btnAddAddress;
         private Telerik.WinControls.UI.RadLabel radLabel1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.LinkLabel linklblChooseImage;
-        private System.Windows.Forms.PictureBox picPet;
-        private Telerik.WinControls.UI.RadLabel radLabel12;
-        private Telerik.WinControls.UI.RadDropDownList ddlTemperment;
-        private Telerik.WinControls.UI.RadLabel radLabel11;
-        private Telerik.WinControls.UI.RadDropDownList ddlSize;
-        private Telerik.WinControls.UI.RadDropDownList ddlBreedList;
-        private Telerik.WinControls.UI.RadDropDownList ddlSpecies;
-        private Telerik.WinControls.UI.RadCheckBox chkVaccinated;
-        private Telerik.WinControls.UI.RadCheckBox chkDeceased;
-        private Telerik.WinControls.UI.RadCheckBox chkBiter;
-        private Telerik.WinControls.UI.RadTextBoxControl txtNotes;
-        private Telerik.WinControls.UI.RadTextBoxControl txtColor;
-        private Telerik.WinControls.UI.RadTextBoxControl txtDiet;
-        private Telerik.WinControls.UI.RadLabel radLabel10;
-        private Telerik.WinControls.UI.RadTextBoxControl txtWeight;
-        private Telerik.WinControls.UI.RadTextBoxControl txtAge;
-        private Telerik.WinControls.UI.RadTextBoxControl txtName;
-        private Telerik.WinControls.UI.RadLabel radLabel9;
-        private Telerik.WinControls.UI.RadLabel radLabel8;
-        private Telerik.WinControls.UI.RadLabel radLabel7;
-        private Telerik.WinControls.UI.RadLabel radLabel6;
-        private Telerik.WinControls.UI.RadLabel radLabel5;
-        private Telerik.WinControls.UI.RadLabel radLabel13;
-        private Telerik.WinControls.UI.RadLabel radLabel14;
-        private Telerik.WinControls.UI.RadLabel radLabel15;
-        private Telerik.WinControls.UI.RadLabel radLabel16;
         private Telerik.WinControls.Themes.TelerikMetroBlueTheme telerikMetroBlueTheme1;
         private Telerik.WinControls.UI.RadMultiColumnComboBox cboCustomerList;
         private Telerik.WinControls.UI.RadTextBoxControl txtCustomerNotes;
@@ -1750,10 +1176,6 @@
         private Telerik.WinControls.UI.RadButton btnDeleteAddress;
         private Telerik.WinControls.UI.RadButton btnEditAddress;
         private Telerik.WinControls.UI.RadGridView gridAddresses;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private Telerik.WinControls.UI.RadGridView gridPets;
-        private Telerik.WinControls.UI.RadButton btnAdd;
-        private Telerik.WinControls.UI.RadButton btnEditPet;
         private Telerik.WinControls.UI.RadLabel radLabel20;
         private Telerik.WinControls.UI.RadTextBoxControl txtDiscount;
         private Telerik.WinControls.UI.RadLabel radLabel19;
@@ -1773,10 +1195,7 @@
         private Telerik.WinControls.UI.RadPageView tabParent;
         private Telerik.WinControls.UI.RadPageViewPage tabPerson;
         private Telerik.WinControls.UI.RadPageViewPage tabAddresses;
-        private Telerik.WinControls.UI.RadPageViewPage tabPets;
         private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
-        private Telerik.WinControls.UI.RadLabel radLabel23;
-        private Telerik.WinControls.UI.RadDropDownList ddlPetSex;
         private Telerik.WinControls.Themes.Windows7Theme windows7Theme1;
         private Telerik.WinControls.UI.RadPageViewPage tabDiscountsandBalance;
         private System.Windows.Forms.GroupBox groupBox6;

@@ -57,15 +57,10 @@ namespace PerfectPet
                 this.Text = Program.AppTitle + " - " + "Customers and Pets";
                 tabPerson.Enabled = false;
                 tabAddresses.Enabled = false;
-                tabPets.Enabled = false;
                 BindPersonTypeList();
                 BindCustomerList();
                 BindAddressTypeList();
                 BindStateList();
-                GetSpeciesList();
-                GetSizeList();
-                BindPetSexList();
-                GetTempermentList();
                 GetPhoneTypeList();
                 BindPhoneList();
                 Cursor.Current = Cursors.Default;
@@ -225,82 +220,6 @@ namespace PerfectPet
             }
         }
 
-        private void GetSpeciesList()
-        {
-            try
-            {
-                var bindsrc = new BindingSource();
-                bindsrc.DataSource = Enum.GetValues(typeof(Species));
-                ddlSpecies.DataSource = bindsrc.DataSource;
-            }
-            catch (Exception exception)
-            {
-
-            }
-        }
-
-        private void GetSizeList()
-        {
-            try
-            {
-                var bindsrc = new BindingSource();
-                bindsrc.DataSource = EnumerationParser.GetEnumDescriptions(typeof(PetSize));
-                ddlSize.DataSource = bindsrc.DataSource;
-            }
-            catch (Exception exception)
-            {
-
-            }
-        }
-
-        private void GetTempermentList()
-        {
-            try
-            {
-                var bindsrc = new BindingSource();
-                bindsrc.DataSource = Enum.GetValues(typeof(Temperment));
-                ddlTemperment.DataSource = bindsrc.DataSource;
-            }
-            catch (Exception exception)
-            {
-
-            }
-        }
-        private void BindFelineBreedList()
-        {
-            try
-            {
-                var item = ObjectFactory.GetInstance<ICatBreed>();
-                var bindsrc = new BindingSource();
-                bindsrc.DataSource = item.GetAll();
-                ddlBreedList.DataSource = bindsrc.DataSource;
-                ddlBreedList.ValueMember = "Name";
-                ddlBreedList.DataMember = "Id";
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
-        private void BindDogBreedList()
-        {
-            try
-            {
-                var item = ObjectFactory.GetInstance<IDogBreed>();
-                var bindsrc = new BindingSource();
-                bindsrc.DataSource = item.GetAll();
-                ddlBreedList.DataSource = bindsrc.DataSource;
-                ddlBreedList.ValueMember = "Name";
-                ddlBreedList.DataMember = "Id";
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
 
         private void GetAddressDetails(int addressid)
         {
@@ -346,47 +265,6 @@ namespace PerfectPet
                 SetStatusBarText("");
                 throw;
             }
-        }
-
-        private void SavePet()
-        {
-            try
-            {
-                SetStatusBarText("Saving Pet...");
-                int Age;
-                bool result = Int32.TryParse(txtAge.Text, out Age);
-                var personitem = ObjectFactory.GetInstance<IPerson>();
-                person = personitem.GetById(PersonId);
-                var petitem = ObjectFactory.GetInstance<IPet>();
-                var petobj = petitem.Get();
-                petobj.Name = txtName.Text;
-                petobj.Age = Age;
-                petobj.Weight = txtWeight.Text;
-                petobj.Color = txtColor.Text;
-                petobj.Size = ddlSize.SelectedValue.ToString();
-                petobj.Species = ddlSpecies.SelectedValue.ToString();
-                petobj.Biter = chkBiter.Checked;
-                petobj.Breed = ddlBreedList.SelectedValue.ToString();
-                petobj.Temperment = ddlTemperment.SelectedValue.ToString();
-                petobj.Deceased = chkDeceased.Checked;
-                petobj.CreatedDate = DateTime.Now;
-                petobj.Diet = txtDiet.Text;
-                petobj.Notes = txtNotes.Text;
-                petobj.Sex = ddlPetSex.SelectedValue.ToString();
-                petobj.Person = person;
-                if (picPet.Image != null)
-                {
-                    petobj.Picture = ImageTool.ConvertImageToByteArray(picPet.Image, System.Drawing.Imaging.ImageFormat.Jpeg);
-                }
-                petitem.Save(petobj);
-                SetStatusBarText("Pet Saved");
-            }
-            catch (Exception)
-            {
-                SetStatusBarText(""); 
-                throw;
-            }
-
         }
 
         private void BindCustomerList()
@@ -485,7 +363,6 @@ namespace PerfectPet
                 txtBalance.Text = 0.ToString();
                 tabPerson.Enabled = false;
                 tabAddresses.Enabled = false;
-                tabPets.Enabled = false;
             }
             catch (Exception)
             {
@@ -509,25 +386,6 @@ namespace PerfectPet
             }    
         }
 
-        private void ResetPetFields()
-        {
-            try
-            {
-                txtName.Clear();
-                txtWeight.Clear();
-                txtDiet.Clear();
-                txtNotes.Clear();
-                txtAge.Clear();
-                chkBiter.Checked = false;
-                chkDeceased.Checked = false;
-                chkVaccinated.Checked = false;
-            }
-            catch (Exception)
-            {
-                
-                throw;
-            }    
-        }
 
         private void GetPersonDetails()
         {
@@ -546,7 +404,6 @@ namespace PerfectPet
                 txtBalance.Text = personobj.Balance.ToString();
                 tabPerson.Enabled = true;
                 tabAddresses.Enabled = true;
-                tabPets.Enabled = true;
             }
             catch (Exception)
             {
@@ -561,21 +418,6 @@ namespace PerfectPet
                 var bindsrc = new BindingSource();
                 bindsrc.DataSource = EnumerationParser.GetEnumDescriptions(typeof(States));
                 ddlState.DataSource = bindsrc.DataSource;
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
-        private void BindPetSexList()
-        {
-            try
-            {
-                var bindsrc = new BindingSource();
-                bindsrc.DataSource = EnumerationParser.GetEnumDescriptions(typeof(PetSexes));
-                ddlPetSex.DataSource = bindsrc.DataSource;
             }
             catch (Exception)
             {
@@ -647,22 +489,6 @@ namespace PerfectPet
             }
         }
 
-        private void BindPetGrid()
-        {
-            try
-            {
-                var item = ObjectFactory.GetInstance<IPet>();
-                var petobj = item.GetByPersonId(PersonId);
-                var bindsrc = new BindingSource();
-                bindsrc.DataSource = petobj;
-                gridPets.DataSource = bindsrc.DataSource;
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
         #endregion
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
@@ -676,7 +502,6 @@ namespace PerfectPet
             BindCustomerList();
             ResetAddressFields();
             ResetPersonFields();
-            ResetPetFields();
         }
 
         private void menuNew_Click(object sender, EventArgs e)
@@ -685,11 +510,9 @@ namespace PerfectPet
             IsNewAddress = true;
             ResetPersonFields();
             ResetAddressFields();
-            ResetPetFields();
             txtFirstName.Focus();
             tabPerson.Enabled = true;
             tabAddresses.Enabled = true;
-            tabPets.Enabled = true;
         }
 
         private void menuSave_Click(object sender, EventArgs e)
@@ -710,14 +533,10 @@ namespace PerfectPet
                     SaveAddress();
                     BindAddressGrid();
                     break;
-                case 2:
-                    BindPetGrid();
-                    break;
                 default:
                     break;
             }            
             ResetPersonFields();
-            ResetPetFields();
             ResetAddressFields();
             PersonId = 0;
             AddressId = 0;
@@ -735,11 +554,9 @@ namespace PerfectPet
                 IsNewCustomer = true;
                 ResetPersonFields();
                 ResetAddressFields();
-                ResetPetFields();
                 txtFirstName.Focus();
                 tabPerson.Enabled = true;
                 tabAddresses.Enabled = true;
-                tabPets.Enabled = true;
                 return;
             }
             var row = cboCustomerList.EditorControl.CurrentRow;
@@ -747,7 +564,6 @@ namespace PerfectPet
             IsNewCustomer = false;
             GetPersonDetails();
             BindAddressGrid();
-            BindPetGrid();
             BindPhoneList();
         }
 
@@ -761,62 +577,6 @@ namespace PerfectPet
             SaveAddress();
             BindAddressGrid();
             ResetAddressFields();
-        }
-
-        private void linklblChooseImage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            try
-            {
-                OpenFileDialog dlg = new OpenFileDialog();
-                dlg.Title = "JPG Image of Pet";
-                dlg.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif";
-                if (dlg.ShowDialog() == DialogResult.OK)
-                {
-                    this.picPet.Image = new Bitmap(dlg.OpenFile());
-                }
-                dlg.Dispose();
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                SavePet();
-                ResetPetFields();
-                BindPetGrid();
-            }
-            catch (Exception)
-            {
-                
-                throw;
-            }
-        }
-
-        private void ddlSpecies_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-        {
-            try
-            {
-                var row = ddlSpecies.SelectedValue.ToString();
-                if (row == Species.Canine.ToString())
-                {
-                    BindDogBreedList();
-                }
-                if (row == Species.Feline.ToString())
-                {
-                    BindFelineBreedList();
-                }
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
         }
 
         private void btnEditAddress_Click(object sender, EventArgs e)
@@ -865,7 +625,6 @@ namespace PerfectPet
                 lblPersonTypeList.Text = "Customer List";
                 ResetPersonFields();
                 ResetAddressFields();
-                ResetPetFields();
                 BindCustomerList();
             }catch
             {
@@ -881,7 +640,6 @@ namespace PerfectPet
                 lblPersonTypeList.Text = "Employee List";
                 ResetPersonFields();
                 ResetAddressFields();
-                ResetPetFields();
                 BindEmployeeList();
             }catch
             {
