@@ -135,6 +135,12 @@
     <Compile Include="frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPet.Designer.cs">
+      <DependentUpon>frmPet.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmResources.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPet.resx">
+      <DependentUpon>frmPet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmResources.resx">
       <DependentUpon>frmResources.cs</DependentUpon>
@@ -387,6 +396,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\book_blue_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fox_terrier_dog_icon32.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />

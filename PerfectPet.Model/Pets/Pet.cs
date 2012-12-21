@@ -26,6 +26,7 @@ namespace PerfectPet.Model.Pets
         public virtual string Diet { get; set; }
         public virtual int Age { get; set; }
         public virtual string Species { get; set; }
+        public virtual bool HasMedications { get; set; }
         public virtual bool MixedBreed { get; set; }
         public virtual bool Vaccintated { get; set; }
         public virtual bool Biter { get; set; }

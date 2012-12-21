@@ -20,6 +20,7 @@ namespace PerfectPet.Model.Mappings
             HasMany(x => x.Medications);
             Map(x => x.Species);
             Map(x => x.Notes);
+            Map(x => x.HasMedications);
             Map(x => x.Biter);
             Map(x => x.MixedBreed);
             Map(x => x.Vaccintated);

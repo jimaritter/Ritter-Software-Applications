@@ -149,19 +149,19 @@
             this.radLabel14 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel15 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel16 = new Telerik.WinControls.UI.RadLabel();
+            this.tabDiscountsandBalance = new Telerik.WinControls.UI.RadPageViewPage();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.radLabel25 = new Telerik.WinControls.UI.RadLabel();
+            this.listInvoices = new Telerik.WinControls.UI.RadListView();
+            this.txtBalance = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.radLabel24 = new Telerik.WinControls.UI.RadLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.telerikMetroBlueTheme1 = new Telerik.WinControls.Themes.TelerikMetroBlueTheme();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.StripStatus = new Telerik.WinControls.UI.RadStatusStrip();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
             this.windows7Theme1 = new Telerik.WinControls.Themes.Windows7Theme();
-            this.tabDiscountsandBalance = new Telerik.WinControls.UI.RadPageViewPage();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.radLabel24 = new Telerik.WinControls.UI.RadLabel();
-            this.txtBalance = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.listInvoices = new Telerik.WinControls.UI.RadListView();
-            this.radLabel25 = new Telerik.WinControls.UI.RadLabel();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
             this.radSplitContainer1.SuspendLayout();
@@ -253,15 +253,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StripStatus)).BeginInit();
             this.tabDiscountsandBalance.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBalance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listInvoices)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listInvoices)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBalance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StripStatus)).BeginInit();
             this.SuspendLayout();
             // 
             // radMenu1
@@ -434,7 +434,7 @@
             this.cboCustomerList.EditorControl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cboCustomerList.EditorControl.Location = new System.Drawing.Point(0, 0);
             // 
-            // cboCustomerList.NestedRadGridView
+            // 
             // 
             this.cboCustomerList.EditorControl.MasterTemplate.AllowAddNewRow = false;
             this.cboCustomerList.EditorControl.MasterTemplate.AllowCellContextMenu = false;
@@ -524,7 +524,7 @@
             this.tabParent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabParent.Location = new System.Drawing.Point(0, 0);
             this.tabParent.Name = "tabParent";
-            this.tabParent.SelectedPage = this.tabPerson;
+            this.tabParent.SelectedPage = this.tabPets;
             this.tabParent.Size = new System.Drawing.Size(735, 619);
             this.tabParent.TabIndex = 1;
             this.tabParent.ThemeName = "TelerikMetro";
@@ -1469,22 +1469,6 @@
             this.radLabel16.TabIndex = 30;
             this.radLabel16.Text = "Name:";
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            this.errorProvider1.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider1.Icon")));
-            // 
-            // StripStatus
-            // 
-            this.StripStatus.AutoSize = true;
-            this.StripStatus.LayoutStyle = Telerik.WinControls.UI.RadStatusBarLayoutStyle.Stack;
-            this.StripStatus.Location = new System.Drawing.Point(0, 655);
-            this.StripStatus.Name = "StripStatus";
-            this.StripStatus.Size = new System.Drawing.Size(966, 25);
-            this.StripStatus.TabIndex = 2;
-            this.StripStatus.Text = "radStatusStrip1";
-            this.StripStatus.ThemeName = "TelerikMetro";
-            // 
             // tabDiscountsandBalance
             // 
             this.tabDiscountsandBalance.Controls.Add(this.groupBox6);
@@ -1507,21 +1491,22 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Invoices and Balance";
             // 
-            // radLabel24
+            // radButton1
             // 
-            this.radLabel24.Location = new System.Drawing.Point(22, 33);
-            this.radLabel24.Name = "radLabel24";
-            this.radLabel24.Size = new System.Drawing.Size(88, 18);
-            this.radLabel24.TabIndex = 0;
-            this.radLabel24.Text = "Current Balance:";
+            this.radButton1.Location = new System.Drawing.Point(295, 81);
+            this.radButton1.Name = "radButton1";
+            this.radButton1.Size = new System.Drawing.Size(97, 24);
+            this.radButton1.TabIndex = 58;
+            this.radButton1.Text = "View";
+            this.radButton1.ThemeName = "TelerikMetro";
             // 
-            // txtBalance
+            // radLabel25
             // 
-            this.txtBalance.Location = new System.Drawing.Point(126, 33);
-            this.txtBalance.Name = "txtBalance";
-            this.txtBalance.Size = new System.Drawing.Size(108, 20);
-            this.txtBalance.TabIndex = 1;
-            this.txtBalance.Text = "0";
+            this.radLabel25.Location = new System.Drawing.Point(22, 81);
+            this.radLabel25.Name = "radLabel25";
+            this.radLabel25.Size = new System.Drawing.Size(49, 18);
+            this.radLabel25.TabIndex = 3;
+            this.radLabel25.Text = "Invoices:";
             // 
             // listInvoices
             // 
@@ -1533,22 +1518,37 @@
             this.listInvoices.TabIndex = 2;
             this.listInvoices.Text = "radListView1";
             // 
-            // radLabel25
+            // txtBalance
             // 
-            this.radLabel25.Location = new System.Drawing.Point(22, 81);
-            this.radLabel25.Name = "radLabel25";
-            this.radLabel25.Size = new System.Drawing.Size(49, 18);
-            this.radLabel25.TabIndex = 3;
-            this.radLabel25.Text = "Invoices:";
+            this.txtBalance.Location = new System.Drawing.Point(126, 33);
+            this.txtBalance.Name = "txtBalance";
+            this.txtBalance.Size = new System.Drawing.Size(108, 20);
+            this.txtBalance.TabIndex = 1;
+            this.txtBalance.Text = "0";
             // 
-            // radButton1
+            // radLabel24
             // 
-            this.radButton1.Location = new System.Drawing.Point(295, 81);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(97, 24);
-            this.radButton1.TabIndex = 58;
-            this.radButton1.Text = "View";
-            this.radButton1.ThemeName = "TelerikMetro";
+            this.radLabel24.Location = new System.Drawing.Point(22, 33);
+            this.radLabel24.Name = "radLabel24";
+            this.radLabel24.Size = new System.Drawing.Size(88, 18);
+            this.radLabel24.TabIndex = 0;
+            this.radLabel24.Text = "Current Balance:";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            this.errorProvider1.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider1.Icon")));
+            // 
+            // StripStatus
+            // 
+            this.StripStatus.AutoSize = true;
+            this.StripStatus.LayoutStyle = Telerik.WinControls.UI.RadStatusBarLayoutStyle.Stack;
+            this.StripStatus.Location = new System.Drawing.Point(0, 655);
+            this.StripStatus.Name = "StripStatus";
+            this.StripStatus.Size = new System.Drawing.Size(966, 25);
+            this.StripStatus.TabIndex = 2;
+            this.StripStatus.Text = "radStatusStrip1";
+            this.StripStatus.ThemeName = "TelerikMetro";
             // 
             // frmCustomer
             // 
@@ -1657,16 +1657,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StripStatus)).EndInit();
             this.tabDiscountsandBalance.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBalance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listInvoices)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listInvoices)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBalance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StripStatus)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

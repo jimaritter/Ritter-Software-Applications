@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
             this.grpActivities = new Telerik.WinControls.UI.RadGroupBox();
+            this.linkCheckOut = new System.Windows.Forms.LinkLabel();
+            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
+            this.linkCheckIn = new System.Windows.Forms.LinkLabel();
             this.linkViewWorkOrder = new System.Windows.Forms.LinkLabel();
             this.linkNewWorkOrder = new System.Windows.Forms.LinkLabel();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
@@ -48,13 +51,12 @@
             this.linkSystemSettings = new System.Windows.Forms.LinkLabel();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
-            this.linkCheckIn = new System.Windows.Forms.LinkLabel();
-            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
-            this.linkCheckOut = new System.Windows.Forms.LinkLabel();
+            this.linkPets = new System.Windows.Forms.LinkLabel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -62,6 +64,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.grpActivities)).BeginInit();
             this.grpActivities.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpToday)).BeginInit();
             this.grpToday.SuspendLayout();
@@ -71,11 +74,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblApplicationVersion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -86,6 +89,8 @@
             // grpActivities
             // 
             this.grpActivities.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this.grpActivities.Controls.Add(this.pictureBox10);
+            this.grpActivities.Controls.Add(this.linkPets);
             this.grpActivities.Controls.Add(this.pictureBox4);
             this.grpActivities.Controls.Add(this.linkCheckOut);
             this.grpActivities.Controls.Add(this.radLabel4);
@@ -118,6 +123,41 @@
             this.grpActivities.TabIndex = 0;
             this.grpActivities.Text = "Dashboard";
             this.grpActivities.ThemeName = "TelerikMetro";
+            // 
+            // linkCheckOut
+            // 
+            this.linkCheckOut.AutoSize = true;
+            this.linkCheckOut.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.linkCheckOut.LinkColor = System.Drawing.Color.Blue;
+            this.linkCheckOut.Location = new System.Drawing.Point(82, 128);
+            this.linkCheckOut.Name = "linkCheckOut";
+            this.linkCheckOut.Size = new System.Drawing.Size(61, 13);
+            this.linkCheckOut.TabIndex = 16;
+            this.linkCheckOut.TabStop = true;
+            this.linkCheckOut.Text = "Check Out";
+            this.linkCheckOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkCheckOut_LinkClicked);
+            // 
+            // radLabel4
+            // 
+            this.radLabel4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel4.Location = new System.Drawing.Point(73, 83);
+            this.radLabel4.Name = "radLabel4";
+            this.radLabel4.Size = new System.Drawing.Size(51, 18);
+            this.radLabel4.TabIndex = 15;
+            this.radLabel4.Text = "Booking";
+            // 
+            // linkCheckIn
+            // 
+            this.linkCheckIn.AutoSize = true;
+            this.linkCheckIn.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.linkCheckIn.LinkColor = System.Drawing.Color.Blue;
+            this.linkCheckIn.Location = new System.Drawing.Point(82, 104);
+            this.linkCheckIn.Name = "linkCheckIn";
+            this.linkCheckIn.Size = new System.Drawing.Size(51, 13);
+            this.linkCheckIn.TabIndex = 14;
+            this.linkCheckIn.TabStop = true;
+            this.linkCheckIn.Text = "Check In";
+            this.linkCheckIn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkCheckIn_LinkClicked);
             // 
             // linkViewWorkOrder
             // 
@@ -154,7 +194,7 @@
             this.linkResources.AutoSize = true;
             this.linkResources.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.linkResources.LinkColor = System.Drawing.Color.Blue;
-            this.linkResources.Location = new System.Drawing.Point(71, 273);
+            this.linkResources.Location = new System.Drawing.Point(71, 319);
             this.linkResources.Name = "linkResources";
             this.linkResources.Size = new System.Drawing.Size(59, 13);
             this.linkResources.TabIndex = 6;
@@ -169,10 +209,10 @@
             this.linkCustomerAndPets.LinkColor = System.Drawing.Color.Blue;
             this.linkCustomerAndPets.Location = new System.Drawing.Point(71, 233);
             this.linkCustomerAndPets.Name = "linkCustomerAndPets";
-            this.linkCustomerAndPets.Size = new System.Drawing.Size(108, 13);
+            this.linkCustomerAndPets.Size = new System.Drawing.Size(61, 13);
             this.linkCustomerAndPets.TabIndex = 4;
             this.linkCustomerAndPets.TabStop = true;
-            this.linkCustomerAndPets.Text = "Customers and Pets";
+            this.linkCustomerAndPets.Text = "Customers";
             this.linkCustomerAndPets.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkCustomerAndPets_LinkClicked);
             // 
             // linkBookings
@@ -323,40 +363,18 @@
             this.radGroupBox1.Text = "System";
             this.radGroupBox1.ThemeName = "TelerikMetro";
             // 
-            // linkCheckIn
+            // linkPets
             // 
-            this.linkCheckIn.AutoSize = true;
-            this.linkCheckIn.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.linkCheckIn.LinkColor = System.Drawing.Color.Blue;
-            this.linkCheckIn.Location = new System.Drawing.Point(82, 104);
-            this.linkCheckIn.Name = "linkCheckIn";
-            this.linkCheckIn.Size = new System.Drawing.Size(51, 13);
-            this.linkCheckIn.TabIndex = 14;
-            this.linkCheckIn.TabStop = true;
-            this.linkCheckIn.Text = "Check In";
-            this.linkCheckIn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkCheckIn_LinkClicked);
-            // 
-            // radLabel4
-            // 
-            this.radLabel4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel4.Location = new System.Drawing.Point(73, 83);
-            this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(51, 18);
-            this.radLabel4.TabIndex = 15;
-            this.radLabel4.Text = "Booking";
-            // 
-            // linkCheckOut
-            // 
-            this.linkCheckOut.AutoSize = true;
-            this.linkCheckOut.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.linkCheckOut.LinkColor = System.Drawing.Color.Blue;
-            this.linkCheckOut.Location = new System.Drawing.Point(82, 128);
-            this.linkCheckOut.Name = "linkCheckOut";
-            this.linkCheckOut.Size = new System.Drawing.Size(61, 13);
-            this.linkCheckOut.TabIndex = 16;
-            this.linkCheckOut.TabStop = true;
-            this.linkCheckOut.Text = "Check Out";
-            this.linkCheckOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkCheckOut_LinkClicked);
+            this.linkPets.AutoSize = true;
+            this.linkPets.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.linkPets.LinkColor = System.Drawing.Color.Blue;
+            this.linkPets.Location = new System.Drawing.Point(71, 277);
+            this.linkPets.Name = "linkPets";
+            this.linkPets.Size = new System.Drawing.Size(28, 13);
+            this.linkPets.TabIndex = 18;
+            this.linkPets.TabStop = true;
+            this.linkPets.Text = "Pets";
+            this.linkPets.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkPets_LinkClicked);
             // 
             // pictureBox3
             // 
@@ -397,6 +415,16 @@
             this.pictureBox8.TabIndex = 6;
             this.pictureBox8.TabStop = false;
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::PerfectPet.Properties.Resources.fox_terrier_dog_icon32;
+            this.pictureBox10.Location = new System.Drawing.Point(30, 268);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox10.TabIndex = 19;
+            this.pictureBox10.TabStop = false;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::PerfectPet.Properties.Resources.book_open1;
@@ -410,7 +438,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::PerfectPet.Properties.Resources.cabinet;
-            this.pictureBox7.Location = new System.Drawing.Point(30, 267);
+            this.pictureBox7.Location = new System.Drawing.Point(30, 313);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(32, 32);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -468,6 +496,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.grpActivities)).EndInit();
             this.grpActivities.ResumeLayout(false);
             this.grpActivities.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpToday)).EndInit();
             this.grpToday.ResumeLayout(false);
@@ -479,11 +508,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -527,5 +556,7 @@
         private System.Windows.Forms.LinkLabel linkCheckIn;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.LinkLabel linkPets;
     }
 }

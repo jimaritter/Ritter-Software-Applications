@@ -22,6 +22,7 @@ namespace PerfectPet
         private frmInvoice _formInvoice;
         private frmCheckIn _formCheckIn;
         private frmCheckOut _formCheckOut;
+        private frmPet _formPet;
 
         public frmHome()
         {
@@ -124,6 +125,14 @@ namespace PerfectPet
             Cursor.Current = Cursors.WaitCursor;
             _formCheckOut = new frmCheckOut();
             _formCheckOut.ShowDialog(this);
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void linkPets_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            _formPet = new frmPet();
+            _formPet.ShowDialog(this);
             Cursor.Current = Cursors.Default;
         }
     }

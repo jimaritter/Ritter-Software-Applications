@@ -19,6 +19,7 @@ namespace PerfectPet.Model.Mappings
             Map(x => x.Active);
             Map(x => x.Type);
             Map(x => x.Discount);
+            Map(x => x.Balance);
             Map(x => x.CreatedDate);
             Map(x => x.ModifiedDate);
             HasMany(x => x.Addresses);

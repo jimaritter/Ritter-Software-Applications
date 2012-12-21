@@ -22,6 +22,7 @@ namespace PerfectPet.Model.People
         public virtual string Notes { get; set; }
         public virtual string Type { get; set; }
         public virtual double Discount { get; set; }
+        public virtual double Balance { get; set; }
         public virtual IList<Address> Addresses { get; private set; }
         public virtual IList<Phone> Phones { get; private set; }
         public virtual IList<Pet> Pets { get; private set; }

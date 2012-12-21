@@ -336,6 +336,7 @@ namespace PerfectPet
                 person.Number = txtCustomerNumber.Text;
                 person.Notes = txtCustomerNotes.Text;
                 person.Discount = Convert.ToDouble(txtDiscount.Text);
+                person.Balance = Convert.ToDouble(txtBalance.Text);
                 person.Type = ddlPersonType.SelectedValue.ToString();
                 person.Save(person);
                 SetStatusBarText("Person Saved");
@@ -481,6 +482,7 @@ namespace PerfectPet
                 txtPhone.Clear();
                 txtFirstName.Focus();
                 txtDiscount.Text = 0.ToString();
+                txtBalance.Text = 0.ToString();
                 tabPerson.Enabled = false;
                 tabAddresses.Enabled = false;
                 tabPets.Enabled = false;
@@ -541,6 +543,7 @@ namespace PerfectPet
                 txtCustomerNumber.Text = personobj.Number;
                 txtCustomerNotes.Text = personobj.Notes;
                 txtDiscount.Text = personobj.Discount.ToString();
+                txtBalance.Text = personobj.Balance.ToString();
                 tabPerson.Enabled = true;
                 tabAddresses.Enabled = true;
                 tabPets.Enabled = true;
