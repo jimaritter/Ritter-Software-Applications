@@ -281,7 +281,7 @@
             // 
             this.lblInvoiceSaved.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.lblInvoiceSaved.ForeColor = System.Drawing.Color.Maroon;
-            this.lblInvoiceSaved.Location = new System.Drawing.Point(122, 53);
+            this.lblInvoiceSaved.Location = new System.Drawing.Point(133, 53);
             this.lblInvoiceSaved.Name = "lblInvoiceSaved";
             this.lblInvoiceSaved.Size = new System.Drawing.Size(79, 18);
             this.lblInvoiceSaved.TabIndex = 18;
