@@ -36,6 +36,7 @@ namespace PerfectPet
         private InvoiceNumber invoiceNumber;
         private GridViewComboBoxColumn productcombo;
         private GridViewComboBoxColumn servicecombo;
+        private frmViewInvoiceReport formInvoiceReport;
 
         public frmInvoice()
         {
@@ -359,6 +360,7 @@ namespace PerfectPet
                         gridProducts.CurrentRow.Cells["Description"].Value = product.Description;
                         gridProducts.CurrentRow.Cells["Cost"].Value = product.Cost;
                         gridProducts.CurrentRow.Cells["Retail"].Value = product.Retail;
+                        gridProducts.CurrentRow.Cells["Name"].Value = product.Name;
                     }
                     if (e.Column.Name == "Quantity")
                     {
@@ -401,6 +403,7 @@ namespace PerfectPet
                 lineitem.Product = product;
                 lineitem.LineTotal = Convert.ToDouble(row.Cells["Subtotal"].Value);
                 lineitem.UnitPrice = Convert.ToDouble(row.Cells["Retail"].Value);
+                lineitem.Name = row.Cells["Name"].Value.ToString();
                 lineitem.CreatedDate = DateTime.Now;
                 lineitem.Description = row.Cells["Description"].Value.ToString();
                 lineItems.Add(lineitem);
@@ -449,6 +452,7 @@ namespace PerfectPet
                         calc = total;
                     }
                 }
+                gridServices.CurrentRow.Cells["Subtotal"].Value = calc;
                 txtServiceTotal.Text = calc.ToString();
             }
 
@@ -502,6 +506,51 @@ namespace PerfectPet
                     item.Invoice = invoice;
                     _lineitems.Save(item);
                 }
+                btnPrintInvoice.Enabled = true;
+                lblInvoiceSaved.Visible = true;
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        }
+
+        private void ResetInvoiceForm()
+        {
+            try
+            {
+                listviewPets.DataSource = null;
+                listViewAddresses.DataSource = null;
+                listviewHeaderPets.DataSource = null;
+                txtInvoiceDescription.Clear();
+                txtProductTotal.Clear();
+                txtServiceTotal.Clear();
+                lblHeaderAddress.Text = "";
+                lblHeaderCustomer.Text = "";
+                lblInvoiceSaved.Visible = false;
+                chkIncludeBalance.Checked = false;
+                gridProducts.Rows.Clear();
+                gridServices.Rows.Clear();
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        }
+
+        private void btnNewInvoice_Click(object sender, EventArgs e)
+        {
+            ResetInvoiceForm();
+        }
+
+        private void btnPrintInvoice_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                formInvoiceReport = new frmViewInvoiceReport();
+                formInvoiceReport.Show();
             }
             catch (Exception)
             {

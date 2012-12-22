@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using NHibernate;
 using PerfectPet.Model.Products;
 using PerfectPet.Model.Repository;
@@ -12,6 +13,7 @@ namespace PerfectPet.Model.Sales
         private readonly ILineItem _lineItem;
         public virtual int Id { get; set; }
         public virtual int LineNumber { get; set; }
+        public virtual string Name { get; set; }
         public virtual string Description { get; set; }
         public virtual Product Product { get; set; }
         public virtual Service Service { get; set; }
@@ -19,7 +21,7 @@ namespace PerfectPet.Model.Sales
         public virtual int Quantity { get; set; }
         public virtual Double UnitPrice { get; set; }
         public virtual Double Tax { get; set; }
-        public virtual Double LineTotal { get { return Total(); } set { value = Total(); } }
+        public virtual Double LineTotal { get; set; }
         public virtual DateTime CreatedDate { get; set; }
         public virtual DateTime ModifiedDate { get; set; }
         protected ISession _session = null;
@@ -62,6 +64,29 @@ namespace PerfectPet.Model.Sales
                 throw;
             }  
         }
+
+        public IList<LineItem> GetAllByInvoiceId(int invoiceId)
+        {
+            try
+            {
+                if (_session == null)
+                {
+                    _session = SessionManager.OpenSession();
+                }
+                var lineitemlist = _session.CreateCriteria(typeof(LineItem)).List<LineItem>();
+                var query = from item in lineitemlist
+                            where item.Invoice.InvoiceId == invoiceId
+                            select item;
+
+                return query.ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }  
+        }
+
 
         public LineItem GetById(int id)
         {

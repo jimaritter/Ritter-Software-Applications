@@ -10,6 +10,7 @@ namespace PerfectPet.Model.Mappings
             Not.LazyLoad();
             Id(x => x.Id).GeneratedBy.HiLo("1001");
             Map(x => x.LineNumber);
+            Map(x => x.Name);
             Map(x => x.Description);
             Map(x => x.Quantity);
             Map(x => x.UnitPrice);

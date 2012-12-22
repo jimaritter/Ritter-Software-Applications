@@ -23,8 +23,10 @@ namespace PerfectPet.Model.People
         public virtual string Type { get; set; }
         public virtual double Discount { get; set; }
         public virtual double Balance { get; set; }
+        public virtual string Phone { get; set; }
+        public virtual string Mobile { get; set; }
+        public virtual string Fax { get; set; }
         public virtual IList<Address> Addresses { get; private set; }
-        public virtual IList<Phone> Phones { get; private set; }
         public virtual IList<Pet> Pets { get; private set; }
         public virtual bool Active { get; set; }
         public virtual DateTime CreatedDate { get; set; }

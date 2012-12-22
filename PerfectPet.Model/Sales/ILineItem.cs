@@ -6,6 +6,7 @@ namespace PerfectPet.Model.Sales
     {
         LineItem Get();
         IList<LineItem> GetAll();
+        IList<LineItem> GetAllByInvoiceId(int invoiceId);
         LineItem GetById(int id);
         void Save(LineItem lineitem);
         void Delete(LineItem lineitem);

@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn1 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn2 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Phone");
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
@@ -61,10 +59,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radLabel22 = new Telerik.WinControls.UI.RadLabel();
             this.ddlPersonType = new System.Windows.Forms.ComboBox();
-            this.listPhones = new Telerik.WinControls.UI.RadListView();
-            this.picAddPhone = new System.Windows.Forms.PictureBox();
-            this.lblPhoneType = new Telerik.WinControls.UI.RadLabel();
-            this.ddlPhoneType = new Telerik.WinControls.UI.RadDropDownList();
             this.txtPhone = new System.Windows.Forms.MaskedTextBox();
             this.txtEmail = new System.Windows.Forms.MaskedTextBox();
             this.radLabel21 = new Telerik.WinControls.UI.RadLabel();
@@ -116,6 +110,10 @@
             this.StripStatus = new Telerik.WinControls.UI.RadStatusStrip();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
             this.windows7Theme1 = new Telerik.WinControls.Themes.Windows7Theme();
+            this.txtMobile = new System.Windows.Forms.MaskedTextBox();
+            this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
+            this.txtFax = new System.Windows.Forms.MaskedTextBox();
+            this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
             this.radSplitContainer1.SuspendLayout();
@@ -132,10 +130,6 @@
             this.tabPerson.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listPhones)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAddPhone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblPhoneType)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlPhoneType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiscount)).BeginInit();
@@ -181,6 +175,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StripStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
             this.SuspendLayout();
             // 
             // radMenu1
@@ -353,7 +349,7 @@
             this.cboCustomerList.EditorControl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cboCustomerList.EditorControl.Location = new System.Drawing.Point(0, 0);
             // 
-            // 
+            // cboCustomerList.NestedRadGridView
             // 
             this.cboCustomerList.EditorControl.MasterTemplate.AllowAddNewRow = false;
             this.cboCustomerList.EditorControl.MasterTemplate.AllowCellContextMenu = false;
@@ -458,12 +454,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtFax);
+            this.groupBox1.Controls.Add(this.radLabel6);
+            this.groupBox1.Controls.Add(this.txtMobile);
+            this.groupBox1.Controls.Add(this.radLabel5);
             this.groupBox1.Controls.Add(this.radLabel22);
             this.groupBox1.Controls.Add(this.ddlPersonType);
-            this.groupBox1.Controls.Add(this.listPhones);
-            this.groupBox1.Controls.Add(this.picAddPhone);
-            this.groupBox1.Controls.Add(this.lblPhoneType);
-            this.groupBox1.Controls.Add(this.ddlPhoneType);
             this.groupBox1.Controls.Add(this.txtPhone);
             this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.radLabel21);
@@ -507,66 +503,6 @@
             this.ddlPersonType.Name = "ddlPersonType";
             this.ddlPersonType.Size = new System.Drawing.Size(124, 21);
             this.ddlPersonType.TabIndex = 59;
-            // 
-            // listPhones
-            // 
-            listViewDetailColumn1.HeaderText = "Id";
-            listViewDetailColumn1.Visible = false;
-            listViewDetailColumn2.HeaderText = "Phone";
-            this.listPhones.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
-            listViewDetailColumn1,
-            listViewDetailColumn2});
-            this.listPhones.DisplayMember = "Phone";
-            this.listPhones.GroupItemSize = new System.Drawing.Size(200, 20);
-            this.listPhones.ItemSize = new System.Drawing.Size(200, 20);
-            this.listPhones.ItemSpacing = -1;
-            this.listPhones.Location = new System.Drawing.Point(399, 184);
-            this.listPhones.Name = "listPhones";
-            // 
-            // 
-            // 
-            this.listPhones.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.Auto;
-            this.listPhones.ShowColumnHeaders = false;
-            this.listPhones.ShowGridLines = true;
-            this.listPhones.Size = new System.Drawing.Size(204, 101);
-            this.listPhones.TabIndex = 58;
-            this.listPhones.Text = "radListView1";
-            this.listPhones.ThemeName = "Office2010Silver";
-            this.listPhones.ValueMember = "Id";
-            this.listPhones.ViewType = Telerik.WinControls.UI.ListViewType.DetailsView;
-            // 
-            // picAddPhone
-            // 
-            this.picAddPhone.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picAddPhone.Image = global::PerfectPet.Properties.Resources.add21;
-            this.picAddPhone.Location = new System.Drawing.Point(356, 188);
-            this.picAddPhone.Name = "picAddPhone";
-            this.picAddPhone.Size = new System.Drawing.Size(16, 16);
-            this.picAddPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picAddPhone.TabIndex = 57;
-            this.picAddPhone.TabStop = false;
-            this.toolTip1.SetToolTip(this.picAddPhone, "Add Phone");
-            this.picAddPhone.Click += new System.EventHandler(this.picAddPhone_Click);
-            // 
-            // lblPhoneType
-            // 
-            this.lblPhoneType.Location = new System.Drawing.Point(185, 184);
-            this.lblPhoneType.Name = "lblPhoneType";
-            this.lblPhoneType.Size = new System.Drawing.Size(33, 18);
-            this.lblPhoneType.TabIndex = 56;
-            this.lblPhoneType.Text = "Type:";
-            // 
-            // ddlPhoneType
-            // 
-            this.ddlPhoneType.DropDownAnimationEnabled = true;
-            this.ddlPhoneType.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
-            this.ddlPhoneType.Location = new System.Drawing.Point(231, 184);
-            this.ddlPhoneType.MaxDropDownItems = 0;
-            this.ddlPhoneType.Name = "ddlPhoneType";
-            this.ddlPhoneType.ShowImageInEditorArea = true;
-            this.ddlPhoneType.Size = new System.Drawing.Size(106, 22);
-            this.ddlPhoneType.TabIndex = 9;
-            this.ddlPhoneType.ThemeName = "Windows7";
             // 
             // txtPhone
             // 
@@ -1040,6 +976,38 @@
             this.StripStatus.Text = "radStatusStrip1";
             this.StripStatus.ThemeName = "TelerikMetro";
             // 
+            // txtMobile
+            // 
+            this.txtMobile.Location = new System.Drawing.Point(231, 186);
+            this.txtMobile.Mask = "(999) 000-0000";
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.Size = new System.Drawing.Size(94, 20);
+            this.txtMobile.TabIndex = 61;
+            // 
+            // radLabel5
+            // 
+            this.radLabel5.Location = new System.Drawing.Point(185, 186);
+            this.radLabel5.Name = "radLabel5";
+            this.radLabel5.Size = new System.Drawing.Size(44, 18);
+            this.radLabel5.TabIndex = 62;
+            this.radLabel5.Text = "Mobile:";
+            // 
+            // txtFax
+            // 
+            this.txtFax.Location = new System.Drawing.Point(400, 186);
+            this.txtFax.Mask = "(999) 000-0000";
+            this.txtFax.Name = "txtFax";
+            this.txtFax.Size = new System.Drawing.Size(94, 20);
+            this.txtFax.TabIndex = 63;
+            // 
+            // radLabel6
+            // 
+            this.radLabel6.Location = new System.Drawing.Point(354, 186);
+            this.radLabel6.Name = "radLabel6";
+            this.radLabel6.Size = new System.Drawing.Size(40, 18);
+            this.radLabel6.TabIndex = 64;
+            this.radLabel6.Text = "Phone:";
+            // 
             // frmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1070,10 +1038,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listPhones)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAddPhone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblPhoneType)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlPhoneType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiscount)).EndInit();
@@ -1121,6 +1085,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StripStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1183,10 +1149,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.MaskedTextBox txtEmail;
         private System.Windows.Forms.MaskedTextBox txtPhone;
-        private Telerik.WinControls.UI.RadLabel lblPhoneType;
-        private Telerik.WinControls.UI.RadDropDownList ddlPhoneType;
-        private System.Windows.Forms.PictureBox picAddPhone;
-        private Telerik.WinControls.UI.RadListView listPhones;
         private System.Windows.Forms.LinkLabel linkEmployees;
         private System.Windows.Forms.LinkLabel linkCustomers;
         private Telerik.WinControls.UI.RadLabel radLabel22;
@@ -1204,5 +1166,9 @@
         private Telerik.WinControls.UI.RadButton radButton1;
         private Telerik.WinControls.UI.RadLabel radLabel25;
         private Telerik.WinControls.UI.RadListView listInvoices;
+        private System.Windows.Forms.MaskedTextBox txtFax;
+        private Telerik.WinControls.UI.RadLabel radLabel6;
+        private System.Windows.Forms.MaskedTextBox txtMobile;
+        private Telerik.WinControls.UI.RadLabel radLabel5;
     }
 }

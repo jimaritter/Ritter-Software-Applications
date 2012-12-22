@@ -22,9 +22,11 @@ namespace PerfectPet.Model.Mappings
             Map(x => x.Balance);
             Map(x => x.CreatedDate);
             Map(x => x.ModifiedDate);
+            Map(x => x.Phone);
+            Map(x => x.Mobile);
+            Map(x => x.Fax);
             HasMany(x => x.Addresses);
             HasMany(x => x.Pets);
-            HasMany(x => x.Phones);
 
         }
     }

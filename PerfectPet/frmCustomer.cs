@@ -61,8 +61,6 @@ namespace PerfectPet
                 BindCustomerList();
                 BindAddressTypeList();
                 BindStateList();
-                GetPhoneTypeList();
-                BindPhoneList();
                 Cursor.Current = Cursors.Default;
             }
             catch (Exception)
@@ -75,64 +73,10 @@ namespace PerfectPet
 
         #region
 
-        private void SavePhone()
-        {
-            try
-            {
-                SetStatusBarText("Saving Phone...");
-                var item = ObjectFactory.GetInstance<IPhone>();
-                var personobj = ObjectFactory.GetInstance<IPerson>();
-                person = personobj.GetById(PersonId);
-                phone = item.Get();
-                phone.Number = txtPhone.Text;//gridPhones.CurrentRow.Cells[2].Value.ToString();
-                phone.Type = ddlPhoneType.SelectedValue.ToString();//gridPhones.CurrentRow.Cells[1].Value.ToString();
-                phone.CreatedDate = DateTime.Now;
-                phone.Person = person;
-                item.Save(phone);
-                BindPhoneList();
-                SetStatusBarText("Phone Saved");
-            }
-            catch (Exception)
-            {
-
-                SetStatusBarText("");
-                throw;
-            }
-        }
 
         private void SetStatusBarText(string statustext)
         {
             StripStatus.Text = statustext;
-        }
-
-        private void BindPhoneList()
-        {
-            try
-            {
-                var phone = ObjectFactory.GetInstance<IPhone>();
-                var bindsrc = new BindingSource();
-                if(PersonId == 0)
-                {
-                    var phones = phone.Get();
-                    bindsrc.DataSource = phones;
-                    listPhones.DataSource = bindsrc.DataSource;
-                }else
-                {
-                    var phones = phone.GetAllByPersonId(PersonId);
-                    var query = from p in phones
-                                select new { Phone = p.Type + " - " + p.Number };
-
-
-                    bindsrc.DataSource = query;
-                    listPhones.DataSource = bindsrc.DataSource;                   
-
-                }
-            }
-            catch (Exception)
-            {
-                
-                throw;
-            }
         }
 
         private void GetAddressList(int personid)
@@ -146,19 +90,6 @@ namespace PerfectPet
             catch (Exception)
             {
 
-                throw;
-            }
-        }
-
-        private void GetPhoneTypeList()
-        {
-            try
-            {
-                ddlPhoneType.DataSource = EnumerationParser.GetEnumDescriptions(typeof(PhoneTypeList));
-            }
-            catch (Exception)
-            {
-                
                 throw;
             }
         }
@@ -257,6 +188,9 @@ namespace PerfectPet
                 person.Discount = Convert.ToDouble(txtDiscount.Text);
                 person.Balance = Convert.ToDouble(txtBalance.Text);
                 person.Type = ddlPersonType.SelectedValue.ToString();
+                person.Phone = txtPhone.Text;
+                person.Mobile = txtMobile.Text;
+                person.Fax = txtFax.Text;
                 person.Save(person);
                 SetStatusBarText("Person Saved");
             }
@@ -358,6 +292,8 @@ namespace PerfectPet
                 txtCustomerNumber.Clear();
                 txtCustomerNotes.Clear();
                 txtPhone.Clear();
+                txtMobile.Clear();
+                txtFax.Clear();
                 txtFirstName.Focus();
                 txtDiscount.Text = 0.ToString();
                 txtBalance.Text = 0.ToString();
@@ -402,6 +338,9 @@ namespace PerfectPet
                 txtCustomerNotes.Text = personobj.Notes;
                 txtDiscount.Text = personobj.Discount.ToString();
                 txtBalance.Text = personobj.Balance.ToString();
+                txtPhone.Text = personobj.Phone;
+                txtMobile.Text = personobj.Mobile;
+                txtFax.Text = personobj.Fax;
                 tabPerson.Enabled = true;
                 tabAddresses.Enabled = true;
             }
@@ -527,7 +466,6 @@ namespace PerfectPet
                 case 0:
                     SavePerson();
                         BindCustomerList();
-                        BindPhoneList();
                     break;
                 case 1:
                     SaveAddress();
@@ -564,7 +502,6 @@ namespace PerfectPet
             IsNewCustomer = false;
             GetPersonDetails();
             BindAddressGrid();
-            BindPhoneList();
         }
 
         private void btnAddAddress_Click(object sender, EventArgs e)
@@ -590,26 +527,6 @@ namespace PerfectPet
                 AddressId= (int)gridAddresses.CurrentRow.Cells[0].Value;
                 IsNewAddress = false;
                 GetAddressDetails(AddressId);
-            }
-            catch (Exception)
-            {
-                
-                throw;
-            }
-        }
-
-        private void picAddPhone_Click(object sender, EventArgs e)
-        {
-            try
-            {
-             
-
-                if(txtPhone.Text == string.Empty)
-                {
-                    return;
-                }
-                SavePhone();
-                BindPhoneList();
             }
             catch (Exception)
             {

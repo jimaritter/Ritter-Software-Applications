@@ -23,6 +23,7 @@ namespace PerfectPet
         private frmCheckIn _formCheckIn;
         private frmCheckOut _formCheckOut;
         private frmPet _formPet;
+        private frmViewInvoiceReport formInvoiceReport;
 
         public frmHome()
         {
@@ -134,6 +135,12 @@ namespace PerfectPet
             _formPet = new frmPet();
             _formPet.ShowDialog(this);
             Cursor.Current = Cursors.Default;
+        }
+
+        private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            formInvoiceReport = new frmViewInvoiceReport();
+            formInvoiceReport.Show();
         }
     }
 }
