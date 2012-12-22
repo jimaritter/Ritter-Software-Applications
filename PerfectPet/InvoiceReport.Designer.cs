@@ -215,14 +215,14 @@ namespace PerfectPet
             this.txtTax.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.7000007629394531D), Telerik.Reporting.Drawing.Unit.Inch(0.19992160797119141D));
             this.txtTax.Name = "txtTax";
             this.txtTax.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(0.99999970197677612D), Telerik.Reporting.Drawing.Unit.Inch(0.19999980926513672D));
-            this.txtTax.Value = "textBox8";
+            this.txtTax.Value = ".06";
             // 
             // txtTotal
             // 
             this.txtTotal.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.7000002861022949D), Telerik.Reporting.Drawing.Unit.Inch(0.5D));
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(0.99999970197677612D), Telerik.Reporting.Drawing.Unit.Inch(0.19999980926513672D));
-            this.txtTotal.Value = "textBox8";
+            this.txtTotal.Value = "= Sum(Fields.LineTotal) + (Sum(Fields.LineTotal) * .06)";
             // 
             // groupHeaderSection1
             // 
