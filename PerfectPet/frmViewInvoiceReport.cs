@@ -15,6 +15,9 @@ namespace PerfectPet
 {
     public partial class frmViewInvoiceReport : Form
     {
+        public int CompanyId { get; set; }
+        public int InvoiceId { get; set; }
+ 
         public frmViewInvoiceReport()
         {
             InitializeComponent();
@@ -23,11 +26,11 @@ namespace PerfectPet
         private void frmViewInvoiceReport_Load(object sender, EventArgs e)
         {
             var _company = ObjectFactory.GetInstance<ICompany>();
-            var company = _company.GetById(1002);
+            var company = _company.GetById(CompanyId);
             var _invoice = ObjectFactory.GetInstance<IInvoice>();
-            var invoice = _invoice.GetById(95190);
+            var invoice = _invoice.GetById(InvoiceId);
             var _lineitems = ObjectFactory.GetInstance<ILineItem>();
-            var lineitems = _lineitems.GetAllByInvoiceId(95190);
+            var lineitems = _lineitems.GetAllByInvoiceId(InvoiceId);
 
 
             var rpt = new InvoiceReport(company, invoice, lineitems);

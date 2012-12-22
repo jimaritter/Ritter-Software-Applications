@@ -24,6 +24,7 @@ namespace PerfectPet
     {
         public int PersonId { get; set; }
         public int AddressId { get; set; }
+        public int InvoiceId { get; set; }
         public IList<Pet> Pets { get; set; }
         private ICompany _company;
         private Company company;
@@ -349,49 +350,49 @@ namespace PerfectPet
             }
         #endregion
 
-            private void MasterTemplate_CellValueChanged(object sender, GridViewCellEventArgs e)
+        private void MasterTemplate_CellValueChanged(object sender, GridViewCellEventArgs e)
+        {
+            try
             {
-                try
+                if (e.Column is GridViewComboBoxColumn)
                 {
-                    if (e.Column is GridViewComboBoxColumn)
-                    {
-                        var _product = ObjectFactory.GetInstance<IProduct>();
-                        var product = _product.GetById((int) gridProducts.CurrentRow.Cells["Product"].Value);
-                        gridProducts.CurrentRow.Cells["Description"].Value = product.Description;
-                        gridProducts.CurrentRow.Cells["Cost"].Value = product.Cost;
-                        gridProducts.CurrentRow.Cells["Retail"].Value = product.Retail;
-                        gridProducts.CurrentRow.Cells["Name"].Value = product.Name;
-                    }
-                    if (e.Column.Name == "Quantity")
-                    {
-                        gridProducts.CurrentRow.Cells["Subtotal"].Value = (decimal)gridProducts.CurrentRow.Cells["Retail"].Value *
-                                                                          (decimal)gridProducts.CurrentRow.Cells["Quantity"].
-                                                                                       Value;                        
-                    }
+                    var _product = ObjectFactory.GetInstance<IProduct>();
+                    var product = _product.GetById((int) gridProducts.CurrentRow.Cells["Product"].Value);
+                    gridProducts.CurrentRow.Cells["Description"].Value = product.Description;
+                    gridProducts.CurrentRow.Cells["Cost"].Value = product.Cost;
+                    gridProducts.CurrentRow.Cells["Retail"].Value = product.Retail;
+                    gridProducts.CurrentRow.Cells["Name"].Value = product.Name;
                 }
-                catch (Exception)
+                if (e.Column.Name == "Quantity")
                 {
+                    gridProducts.CurrentRow.Cells["Subtotal"].Value = (decimal)gridProducts.CurrentRow.Cells["Retail"].Value *
+                                                                        (decimal)gridProducts.CurrentRow.Cells["Quantity"].
+                                                                                    Value;                        
+                }
+            }
+            catch (Exception)
+            {
                     
-                    throw;
-                }
+                throw;
             }
+        }
 
-            private void MasterTemplate_UserAddedRow(object sender, GridViewRowEventArgs e)
+        private void MasterTemplate_UserAddedRow(object sender, GridViewRowEventArgs e)
+        {
+            decimal calc = 0;
+            foreach (var row in gridProducts.Rows)
             {
-                decimal calc = 0;
-                foreach (var row in gridProducts.Rows)
+                if(row.Cells["Subtotal"].Value != null)
                 {
-                    if(row.Cells["Subtotal"].Value != null)
-                    {
-                        var total = (decimal)row.Cells["Subtotal"].Value + calc;
-                        calc = total;
-                    }
+                    var total = (decimal)row.Cells["Subtotal"].Value + calc;
+                    calc = total;
                 }
-                AddProductLineItem(gridProducts.CurrentRow);
-                txtProductTotal.Text = calc.ToString();
             }
+            AddProductLineItem(gridProducts.CurrentRow);
+            txtProductTotal.Text = calc.ToString();
+        }
 
-            private void AddProductLineItem(GridViewRowInfo row)
+        private void AddProductLineItem(GridViewRowInfo row)
         {
             try
             {
@@ -415,51 +416,81 @@ namespace PerfectPet
             }
         }
 
+        private void AddServiceLineItem(GridViewRowInfo row)
+        {
+            try
+            {
+                var _lineitem = ObjectFactory.GetInstance<ILineItem>();
+                var lineitem = _lineitem.Get();
+                lineitem.Quantity = Convert.ToInt32(row.Cells["Quantity"].Value);
+                var _service = ObjectFactory.GetInstance<IService>();
+                var service = _service.GetById(Convert.ToInt32(row.Cells["Service"].Value));
+                lineitem.Service = service;
+                lineitem.LineTotal = Convert.ToDouble(row.Cells["Subtotal"].Value);
+                lineitem.UnitPrice = Convert.ToDouble(row.Cells["Retail"].Value);
+                lineitem.Name = row.Cells["Name"].Value.ToString();
+                lineitem.CreatedDate = DateTime.Now;
+                lineitem.Description = row.Cells["Description"].Value.ToString();
+                lineItems.Add(lineitem);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         private void gridServices_CellValueChanged(object sender, GridViewCellEventArgs e)
+        {
+            try
             {
-                try
+                if (e.Column is GridViewComboBoxColumn)
                 {
-                    if (e.Column is GridViewComboBoxColumn)
-                    {
-                        var _service = ObjectFactory.GetInstance<IService>();
-                        var service = _service.GetById((int)gridServices.CurrentRow.Cells["Service"].Value);
-                        gridServices.CurrentRow.Cells["Description"].Value = service.Description;
-                        gridServices.CurrentRow.Cells["Cost"].Value = service.Cost;
-                        gridServices.CurrentRow.Cells["Retail"].Value = service.Retail;
-                    }
-                    if (e.Column.Name == "Quantity")
-                    {
-                        gridServices.CurrentRow.Cells["Subtotal"].Value = (decimal)gridServices.CurrentRow.Cells["Retail"].Value *
-                                                                          (decimal)gridServices.CurrentRow.Cells["Quantity"].
-                                                                                       Value;
-                    }
+                    var _service = ObjectFactory.GetInstance<IService>();
+                    var service = _service.GetById((int)gridServices.CurrentRow.Cells["Service"].Value);
+                    gridServices.CurrentRow.Cells["Description"].Value = service.Description;
+                    gridServices.CurrentRow.Cells["Cost"].Value = service.Cost;
+                    gridServices.CurrentRow.Cells["Retail"].Value = service.Retail;
+                    gridServices.CurrentRow.Cells["Name"].Value = service.Name;
                 }
-                catch (Exception)
+                if (e.Column.Name == "Quantity")
                 {
-
-                    throw;
+                    gridServices.CurrentRow.Cells["Subtotal"].Value = (decimal)gridServices.CurrentRow.Cells["Retail"].Value *
+                                                                        (decimal)gridServices.CurrentRow.Cells["Quantity"].
+                                                                                    Value;
                 }
             }
-
-            private void gridServices_UserAddedRow(object sender, GridViewRowEventArgs e)
+            catch (Exception)
             {
-                decimal calc = 0;
-                foreach (var row in gridServices.Rows)
-                {
-                    if (row.Cells["Subtotal"].Value != null)
-                    {
-                        var total = (decimal)row.Cells["Subtotal"].Value + calc;
-                        calc = total;
-                    }
-                }
-                gridServices.CurrentRow.Cells["Subtotal"].Value = calc;
-                txtServiceTotal.Text = calc.ToString();
-            }
 
-            private void btnSaveInvoice_Click(object sender, EventArgs e)
+                throw;
+            }
+        }
+
+        private void gridServices_UserAddedRow(object sender, GridViewRowEventArgs e)
+        {
+            decimal calc = 0;
+            foreach (var row in gridServices.Rows)
+            {
+                if (row.Cells["Subtotal"].Value != null)
+                {
+                    var total = (decimal)row.Cells["Subtotal"].Value + calc;
+                    calc = total;
+                }
+            }
+            AddServiceLineItem(gridServices.CurrentRow);
+            txtServiceTotal.Text = calc.ToString();
+        }
+
+        private void btnSaveInvoice_Click(object sender, EventArgs e)
+        {
+            var dlgresult = DialogResult;
+            if(MessageBox.Show("This will finalize this invoice and generate a new invoice number. Continue?","Save Invoice", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 SaveNewInvoice();
-            }
+                btnSaveInvoice.Enabled = false;
+            }                
+        }
 
         private void SaveNewInvoice()
         {
@@ -506,6 +537,7 @@ namespace PerfectPet
                     item.Invoice = invoice;
                     _lineitems.Save(item);
                 }
+                InvoiceId = invoice.InvoiceId;
                 btnPrintInvoice.Enabled = true;
                 lblInvoiceSaved.Visible = true;
             }
@@ -550,6 +582,8 @@ namespace PerfectPet
             try
             {
                 formInvoiceReport = new frmViewInvoiceReport();
+                formInvoiceReport.InvoiceId = InvoiceId;
+                formInvoiceReport.CompanyId = 1002;
                 formInvoiceReport.Show();
             }
             catch (Exception)
