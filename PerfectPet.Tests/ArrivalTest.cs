@@ -51,8 +51,8 @@ namespace PerfectPet.Tests
             try
             {
                 var _arrival = ObjectFactory.GetInstance<IArrivalDeparture>();
-                var arrival = _arrival.GetById(43086);
-                _arrival.Delete(arrival);             
+                var arrival = _arrival.GetAll();
+                Assert.IsNotNull(arrival);            
              }
             catch (Exception)
             {

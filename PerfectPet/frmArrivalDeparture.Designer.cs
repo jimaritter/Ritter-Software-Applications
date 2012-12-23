@@ -48,8 +48,8 @@
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
             this.gridArrivals = new Telerik.WinControls.UI.RadGridView();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
-            this.gridDepartures = new Telerik.WinControls.UI.RadGridView();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
+            this.gridDepartures = new Telerik.WinControls.UI.RadGridView();
             ((System.ComponentModel.ISupportInitialize)(this.tabParent)).BeginInit();
             this.tabParent.SuspendLayout();
             this.tabArrivals.SuspendLayout();
@@ -61,9 +61,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridArrivals.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
             this.radGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDepartures)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDepartures.MasterTemplate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabParent
@@ -73,8 +73,8 @@
             this.tabParent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabParent.Location = new System.Drawing.Point(0, 0);
             this.tabParent.Name = "tabParent";
-            this.tabParent.SelectedPage = this.tabDepartures;
-            this.tabParent.Size = new System.Drawing.Size(664, 355);
+            this.tabParent.SelectedPage = this.tabArrivals;
+            this.tabParent.Size = new System.Drawing.Size(861, 355);
             this.tabParent.TabIndex = 0;
             this.tabParent.Text = "radPageView1";
             this.tabParent.ThemeName = "TelerikMetro";
@@ -86,7 +86,7 @@
             this.tabArrivals.Controls.Add(this.radLabel1);
             this.tabArrivals.Location = new System.Drawing.Point(5, 31);
             this.tabArrivals.Name = "tabArrivals";
-            this.tabArrivals.Size = new System.Drawing.Size(654, 319);
+            this.tabArrivals.Size = new System.Drawing.Size(851, 319);
             this.tabArrivals.Text = "Arrivals";
             // 
             // tabDepartures
@@ -95,7 +95,7 @@
             this.tabDepartures.Controls.Add(this.radLabel2);
             this.tabDepartures.Location = new System.Drawing.Point(5, 31);
             this.tabDepartures.Name = "tabDepartures";
-            this.tabDepartures.Size = new System.Drawing.Size(654, 319);
+            this.tabDepartures.Size = new System.Drawing.Size(851, 319);
             this.tabDepartures.Text = "Departures";
             // 
             // radLabel1
@@ -120,7 +120,7 @@
             this.radGroupBox1.Location = new System.Drawing.Point(21, 53);
             this.radGroupBox1.Name = "radGroupBox1";
             this.radGroupBox1.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
-            this.radGroupBox1.Size = new System.Drawing.Size(610, 246);
+            this.radGroupBox1.Size = new System.Drawing.Size(810, 246);
             this.radGroupBox1.TabIndex = 1;
             this.radGroupBox1.Text = "Arrivals";
             this.radGroupBox1.ThemeName = "TelerikMetro";
@@ -146,27 +146,27 @@
             gridViewTextBoxColumn2.FormatString = "";
             gridViewTextBoxColumn2.HeaderText = "Name";
             gridViewTextBoxColumn2.Name = "Name";
-            gridViewTextBoxColumn2.Width = 108;
+            gridViewTextBoxColumn2.Width = 148;
             gridViewTextBoxColumn3.FieldName = "Description";
             gridViewTextBoxColumn3.FormatString = "";
             gridViewTextBoxColumn3.HeaderText = "Description";
             gridViewTextBoxColumn3.Name = "Description";
-            gridViewTextBoxColumn3.Width = 108;
+            gridViewTextBoxColumn3.Width = 148;
             gridViewTextBoxColumn4.FieldName = "Notes";
             gridViewTextBoxColumn4.FormatString = "";
             gridViewTextBoxColumn4.HeaderText = "Notes";
             gridViewTextBoxColumn4.Name = "Notes";
-            gridViewTextBoxColumn4.Width = 108;
+            gridViewTextBoxColumn4.Width = 148;
             gridViewDateTimeColumn1.FieldName = "ArriveDate";
             gridViewDateTimeColumn1.FormatString = "";
-            gridViewDateTimeColumn1.HeaderText = "Arrive Date";
+            gridViewDateTimeColumn1.HeaderText = "Date";
             gridViewDateTimeColumn1.Name = "ArriveDate";
-            gridViewDateTimeColumn1.Width = 108;
-            gridViewDateTimeColumn2.FieldName = "DepartureDate";
+            gridViewDateTimeColumn1.Width = 148;
+            gridViewDateTimeColumn2.FieldName = "ArriveTime";
             gridViewDateTimeColumn2.FormatString = "";
-            gridViewDateTimeColumn2.HeaderText = "Departure Date";
-            gridViewDateTimeColumn2.Name = "DepartureDate";
-            gridViewDateTimeColumn2.Width = 107;
+            gridViewDateTimeColumn2.HeaderText = "Time";
+            gridViewDateTimeColumn2.Name = "ArriveTime";
+            gridViewDateTimeColumn2.Width = 145;
             this.gridArrivals.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,
@@ -176,7 +176,7 @@
             gridViewDateTimeColumn2});
             this.gridArrivals.MasterTemplate.EnableGrouping = false;
             this.gridArrivals.Name = "gridArrivals";
-            this.gridArrivals.Size = new System.Drawing.Size(557, 200);
+            this.gridArrivals.Size = new System.Drawing.Size(755, 200);
             this.gridArrivals.TabIndex = 0;
             this.gridArrivals.ThemeName = "TelerikMetro";
             // 
@@ -197,14 +197,23 @@
             // 
             // 
             this.radGroupBox2.RootElement.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
-            this.radGroupBox2.Size = new System.Drawing.Size(610, 246);
+            this.radGroupBox2.Size = new System.Drawing.Size(807, 246);
             this.radGroupBox2.TabIndex = 3;
             this.radGroupBox2.Text = "Arrivals";
             this.radGroupBox2.ThemeName = "TelerikMetro";
             // 
+            // radLabel2
+            // 
+            this.radLabel2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.radLabel2.Location = new System.Drawing.Point(22, 17);
+            this.radLabel2.Name = "radLabel2";
+            this.radLabel2.Size = new System.Drawing.Size(106, 21);
+            this.radLabel2.TabIndex = 2;
+            this.radLabel2.Text = "Todays Arrivals";
+            // 
             // gridDepartures
             // 
-            this.gridDepartures.Location = new System.Drawing.Point(29, 25);
+            this.gridDepartures.Location = new System.Drawing.Point(26, 23);
             // 
             // gridDepartures
             // 
@@ -223,27 +232,27 @@
             gridViewTextBoxColumn6.FormatString = "";
             gridViewTextBoxColumn6.HeaderText = "Name";
             gridViewTextBoxColumn6.Name = "Name";
-            gridViewTextBoxColumn6.Width = 108;
+            gridViewTextBoxColumn6.Width = 148;
             gridViewTextBoxColumn7.FieldName = "Description";
             gridViewTextBoxColumn7.FormatString = "";
             gridViewTextBoxColumn7.HeaderText = "Description";
             gridViewTextBoxColumn7.Name = "Description";
-            gridViewTextBoxColumn7.Width = 108;
+            gridViewTextBoxColumn7.Width = 148;
             gridViewTextBoxColumn8.FieldName = "Notes";
             gridViewTextBoxColumn8.FormatString = "";
             gridViewTextBoxColumn8.HeaderText = "Notes";
             gridViewTextBoxColumn8.Name = "Notes";
-            gridViewTextBoxColumn8.Width = 108;
-            gridViewDateTimeColumn3.FieldName = "ArriveDate";
+            gridViewTextBoxColumn8.Width = 148;
+            gridViewDateTimeColumn3.FieldName = "DepartureDate";
             gridViewDateTimeColumn3.FormatString = "";
-            gridViewDateTimeColumn3.HeaderText = "Arrive Date";
-            gridViewDateTimeColumn3.Name = "ArriveDate";
-            gridViewDateTimeColumn3.Width = 108;
-            gridViewDateTimeColumn4.FieldName = "DepartureDate";
+            gridViewDateTimeColumn3.HeaderText = "Date";
+            gridViewDateTimeColumn3.Name = "DepartureDate";
+            gridViewDateTimeColumn3.Width = 148;
+            gridViewDateTimeColumn4.FieldName = "DepartureTime";
             gridViewDateTimeColumn4.FormatString = "";
-            gridViewDateTimeColumn4.HeaderText = "Departure Date";
-            gridViewDateTimeColumn4.Name = "DepartureDate";
-            gridViewDateTimeColumn4.Width = 107;
+            gridViewDateTimeColumn4.HeaderText = "Time";
+            gridViewDateTimeColumn4.Name = "DepartureTime";
+            gridViewDateTimeColumn4.Width = 145;
             this.gridDepartures.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn5,
             gridViewTextBoxColumn6,
@@ -253,24 +262,15 @@
             gridViewDateTimeColumn4});
             this.gridDepartures.MasterTemplate.EnableGrouping = false;
             this.gridDepartures.Name = "gridDepartures";
-            this.gridDepartures.Size = new System.Drawing.Size(557, 200);
-            this.gridDepartures.TabIndex = 0;
+            this.gridDepartures.Size = new System.Drawing.Size(755, 200);
+            this.gridDepartures.TabIndex = 1;
             this.gridDepartures.ThemeName = "TelerikMetro";
-            // 
-            // radLabel2
-            // 
-            this.radLabel2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.radLabel2.Location = new System.Drawing.Point(22, 17);
-            this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(106, 21);
-            this.radLabel2.TabIndex = 2;
-            this.radLabel2.Text = "Todays Arrivals";
             // 
             // frmArrivalDeparture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 355);
+            this.ClientSize = new System.Drawing.Size(861, 355);
             this.Controls.Add(this.tabParent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmArrivalDeparture";
@@ -290,9 +290,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridArrivals)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).EndInit();
             this.radGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDepartures.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDepartures)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -307,7 +307,7 @@
         private Telerik.WinControls.UI.RadPageViewPage tabDepartures;
         private Telerik.WinControls.UI.RadGridView gridArrivals;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox2;
-        private Telerik.WinControls.UI.RadGridView gridDepartures;
         private Telerik.WinControls.UI.RadLabel radLabel2;
+        private Telerik.WinControls.UI.RadGridView gridDepartures;
     }
 }
