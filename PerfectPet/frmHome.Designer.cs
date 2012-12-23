@@ -31,19 +31,27 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
             this.grpActivities = new Telerik.WinControls.UI.RadGroupBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.linkPets = new System.Windows.Forms.LinkLabel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.linkCheckOut = new System.Windows.Forms.LinkLabel();
             this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             this.linkCheckIn = new System.Windows.Forms.LinkLabel();
             this.linkViewWorkOrder = new System.Windows.Forms.LinkLabel();
             this.linkNewWorkOrder = new System.Windows.Forms.LinkLabel();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.linkResources = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkCustomerAndPets = new System.Windows.Forms.LinkLabel();
             this.linkBookings = new System.Windows.Forms.LinkLabel();
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
             this.grpToday = new Telerik.WinControls.UI.RadGroupBox();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.linkArrivalsDepartures = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.lblTodaysDate = new Telerik.WinControls.UI.RadLabel();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
@@ -51,44 +59,36 @@
             this.lblApplicationVersion = new Telerik.WinControls.UI.RadLabel();
             this.linkCompanyInformation = new System.Windows.Forms.LinkLabel();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
-            this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
-            this.linkProductsServices = new System.Windows.Forms.LinkLabel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.linkProductsServices = new System.Windows.Forms.LinkLabel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.grpActivities)).BeginInit();
             this.grpActivities.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpToday)).BeginInit();
             this.grpToday.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblTodaysDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblApplicationVersion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // grpActivities
@@ -129,6 +129,16 @@
             this.grpActivities.Text = "Dashboard";
             this.grpActivities.ThemeName = "TelerikMetro";
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::PerfectPet.Properties.Resources.fox_terrier_dog_icon32;
+            this.pictureBox10.Location = new System.Drawing.Point(30, 268);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox10.TabIndex = 19;
+            this.pictureBox10.TabStop = false;
+            // 
             // linkPets
             // 
             this.linkPets.AutoSize = true;
@@ -141,6 +151,16 @@
             this.linkPets.TabStop = true;
             this.linkPets.Text = "Pets";
             this.linkPets.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkPets_LinkClicked);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::PerfectPet.Properties.Resources.book_open1;
+            this.pictureBox4.Location = new System.Drawing.Point(30, 85);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 17;
+            this.pictureBox4.TabStop = false;
             // 
             // linkCheckOut
             // 
@@ -207,6 +227,36 @@
             this.radLabel3.TabIndex = 9;
             this.radLabel3.Text = "Accounting";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::PerfectPet.Properties.Resources.cabinet;
+            this.pictureBox7.Location = new System.Drawing.Point(30, 313);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox7.TabIndex = 8;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PerfectPet.Properties.Resources.calendar2;
+            this.pictureBox2.Location = new System.Drawing.Point(30, 38);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::PerfectPet.Properties.Resources.businessmen;
+            this.pictureBox5.Location = new System.Drawing.Point(30, 224);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            // 
             // linkResources
             // 
             this.linkResources.AutoSize = true;
@@ -219,6 +269,16 @@
             this.linkResources.TabStop = true;
             this.linkResources.Text = "Resources";
             this.linkResources.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkResources_LinkClicked);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PerfectPet.Properties.Resources.money21;
+            this.pictureBox1.Location = new System.Drawing.Point(30, 152);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // linkCustomerAndPets
             // 
@@ -264,7 +324,7 @@
             this.grpToday.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this.grpToday.Controls.Add(this.pictureBox9);
             this.grpToday.Controls.Add(this.pictureBox8);
-            this.grpToday.Controls.Add(this.linkLabel3);
+            this.grpToday.Controls.Add(this.linkArrivalsDepartures);
             this.grpToday.Controls.Add(this.linkLabel2);
             this.grpToday.FooterImageIndex = -1;
             this.grpToday.FooterImageKey = "";
@@ -285,17 +345,38 @@
             this.grpToday.Text = "Happening Today";
             this.grpToday.ThemeName = "TelerikMetro";
             // 
-            // linkLabel3
+            // pictureBox9
             // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.linkLabel3.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabel3.Location = new System.Drawing.Point(55, 88);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(125, 13);
-            this.linkLabel3.TabIndex = 3;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "View Today\'s Bookings";
+            this.pictureBox9.Image = global::PerfectPet.Properties.Resources.book_blue_preferences;
+            this.pictureBox9.Location = new System.Drawing.Point(17, 83);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox9.TabIndex = 7;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::PerfectPet.Properties.Resources.alarmclock;
+            this.pictureBox8.Location = new System.Drawing.Point(17, 38);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox8.TabIndex = 6;
+            this.pictureBox8.TabStop = false;
+            // 
+            // linkArrivalsDepartures
+            // 
+            this.linkArrivalsDepartures.AutoSize = true;
+            this.linkArrivalsDepartures.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.linkArrivalsDepartures.LinkColor = System.Drawing.Color.Blue;
+            this.linkArrivalsDepartures.Location = new System.Drawing.Point(55, 88);
+            this.linkArrivalsDepartures.Name = "linkArrivalsDepartures";
+            this.linkArrivalsDepartures.Size = new System.Drawing.Size(168, 13);
+            this.linkArrivalsDepartures.TabIndex = 3;
+            this.linkArrivalsDepartures.TabStop = true;
+            this.linkArrivalsDepartures.Text = "Today\'s Arrivals and Departures";
+            this.linkArrivalsDepartures.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkArrivalsDepartures_LinkClicked);
             // 
             // linkLabel2
             // 
@@ -385,6 +466,26 @@
             this.radGroupBox1.Text = "System";
             this.radGroupBox1.ThemeName = "TelerikMetro";
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::PerfectPet.Properties.Resources.chart;
+            this.pictureBox12.Location = new System.Drawing.Point(27, 131);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox12.TabIndex = 13;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::PerfectPet.Properties.Resources.box_tall1;
+            this.pictureBox11.Location = new System.Drawing.Point(27, 84);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox11.TabIndex = 12;
+            this.pictureBox11.TabStop = false;
+            // 
             // linkProductsServices
             // 
             this.linkProductsServices.AutoSize = true;
@@ -397,16 +498,6 @@
             this.linkProductsServices.TabStop = true;
             this.linkProductsServices.Text = "Products and Services";
             this.linkProductsServices.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkProductsServices_LinkClicked);
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::PerfectPet.Properties.Resources.box_tall1;
-            this.pictureBox11.Location = new System.Drawing.Point(27, 84);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox11.TabIndex = 12;
-            this.pictureBox11.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -426,96 +517,6 @@
             this.pictureBox6.Size = new System.Drawing.Size(68, 68);
             this.pictureBox6.TabIndex = 8;
             this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::PerfectPet.Properties.Resources.book_blue_preferences;
-            this.pictureBox9.Location = new System.Drawing.Point(17, 83);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox9.TabIndex = 7;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::PerfectPet.Properties.Resources.alarmclock;
-            this.pictureBox8.Location = new System.Drawing.Point(17, 38);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox8.TabIndex = 6;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::PerfectPet.Properties.Resources.fox_terrier_dog_icon32;
-            this.pictureBox10.Location = new System.Drawing.Point(30, 268);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox10.TabIndex = 19;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::PerfectPet.Properties.Resources.book_open1;
-            this.pictureBox4.Location = new System.Drawing.Point(30, 85);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 17;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::PerfectPet.Properties.Resources.cabinet;
-            this.pictureBox7.Location = new System.Drawing.Point(30, 313);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox7.TabIndex = 8;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PerfectPet.Properties.Resources.calendar2;
-            this.pictureBox2.Location = new System.Drawing.Point(30, 38);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::PerfectPet.Properties.Resources.businessmen;
-            this.pictureBox5.Location = new System.Drawing.Point(30, 224);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PerfectPet.Properties.Resources.money21;
-            this.pictureBox1.Location = new System.Drawing.Point(30, 152);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::PerfectPet.Properties.Resources.chart;
-            this.pictureBox12.Location = new System.Drawing.Point(27, 131);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox12.TabIndex = 13;
-            this.pictureBox12.TabStop = false;
             // 
             // frmHome
             // 
@@ -538,11 +539,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.grpActivities)).EndInit();
             this.grpActivities.ResumeLayout(false);
             this.grpActivities.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpToday)).EndInit();
             this.grpToday.ResumeLayout(false);
             this.grpToday.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblTodaysDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
@@ -550,18 +559,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -577,7 +578,7 @@
         private Telerik.WinControls.UI.RadLabel radLabel1;
         private Telerik.WinControls.UI.RadLabel radLabel2;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.LinkLabel linkArrivalsDepartures;
         private System.Windows.Forms.LinkLabel linkCustomerAndPets;
         private System.Windows.Forms.LinkLabel linkLabel8;
         private System.Windows.Forms.PictureBox pictureBox1;

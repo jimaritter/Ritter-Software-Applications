@@ -83,6 +83,12 @@
       <DependentUpon>AppointmentsDs.xsd</DependentUpon>
     </Compile>
     <Compile Include="Container\Bootstrapper.cs" />
+    <Compile Include="frmArrivalDeparture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrivalDeparture.Designer.cs">
+      <DependentUpon>frmArrivalDeparture.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCheckOut.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
       </SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmArrivalDeparture.resx">
+      <DependentUpon>frmArrivalDeparture.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCheckOut.resx">
       <DependentUpon>frmCheckOut.cs</DependentUpon>
     </EmbeddedResource>

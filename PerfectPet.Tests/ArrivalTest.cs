@@ -45,6 +45,22 @@ namespace PerfectPet.Tests
             }           
         }
 
+        [Test]
+        public void can_delete_arrivals()
+        {
+            try
+            {
+                var _arrival = ObjectFactory.GetInstance<IArrivalDeparture>();
+                var arrival = _arrival.GetById(43086);
+                _arrival.Delete(arrival);             
+             }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         [TearDown]
         public void Cleanup()
         {

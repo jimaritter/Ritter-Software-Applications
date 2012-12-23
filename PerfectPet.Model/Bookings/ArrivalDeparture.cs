@@ -17,8 +17,10 @@ namespace PerfectPet.Model.Bookings
         public virtual string Description { get; set; }
         public virtual string Notes { get; set; }
         public virtual Pet Pet { get; set; }
-        public virtual DateTime ArriveDate { get; set; }
-        public virtual DateTime DepartureDate { get; set; }
+        public virtual string ArriveDate { get; set; }
+        public virtual string DepartureDate { get; set; }
+        public virtual string ArriveTime { get; set; }
+        public virtual string DepartureTime { get; set; }
         public virtual bool CheckedIn { get; set; }
         public virtual bool CheckedOut { get; set; }
         public virtual DateTime CreatedDate { get; set; }

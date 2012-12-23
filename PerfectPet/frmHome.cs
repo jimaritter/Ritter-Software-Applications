@@ -25,6 +25,7 @@ namespace PerfectPet
         private frmPet _formPet;
         private frmViewInvoiceReport formInvoiceReport;
         private frmProductServices formProductsServices;
+        private frmArrivalDeparture formArrivalDeparture;
 
         public frmHome()
         {
@@ -149,6 +150,14 @@ namespace PerfectPet
             Cursor.Current = Cursors.WaitCursor;
             formProductsServices = new frmProductServices();
             formProductsServices.ShowDialog(this);
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void linkArrivalsDepartures_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            formArrivalDeparture = new frmArrivalDeparture();
+            formArrivalDeparture.ShowDialog(this);
             Cursor.Current = Cursors.Default;
         }
     }

@@ -52,9 +52,12 @@
             this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
             this.txtNotes = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
-            this.dateCheckOut = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.dateCheckOutDate = new Telerik.WinControls.UI.RadDateTimePicker();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
-            this.dateCheckIn = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.dateCheckInDate = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
+            this.dateCheckInTime = new Telerik.WinControls.UI.RadTimePicker();
+            this.dateCheckOutTime = new Telerik.WinControls.UI.RadTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.ddlCustomerDropDownList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlCustomerDropDownList.EditorControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlCustomerDropDownList.EditorControl.MasterTemplate)).BeginInit();
@@ -83,9 +86,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNotes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateCheckOut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateCheckOutDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateCheckIn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateCheckInDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateCheckInTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateCheckOutTime)).BeginInit();
             this.SuspendLayout();
             // 
             // ddlCustomerDropDownList
@@ -101,7 +106,7 @@
             this.ddlCustomerDropDownList.EditorControl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ddlCustomerDropDownList.EditorControl.Location = new System.Drawing.Point(0, 0);
             // 
-            // 
+            // ddlCustomerDropDownList.NestedRadGridView
             // 
             this.ddlCustomerDropDownList.EditorControl.MasterTemplate.AllowAddNewRow = false;
             this.ddlCustomerDropDownList.EditorControl.MasterTemplate.AllowCellContextMenu = false;
@@ -190,7 +195,7 @@
             this.ddlPet.EditorControl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ddlPet.EditorControl.Location = new System.Drawing.Point(0, 0);
             // 
-            // 
+            // ddlPet.NestedRadGridView
             // 
             this.ddlPet.EditorControl.MasterTemplate.AllowAddNewRow = false;
             this.ddlPet.EditorControl.MasterTemplate.AllowCellContextMenu = false;
@@ -317,10 +322,13 @@
             this.radPageView1.Size = new System.Drawing.Size(411, 374);
             this.radPageView1.TabIndex = 0;
             this.radPageView1.Text = "radPageView1";
+            this.radPageView1.ThemeName = "TelerikMetro";
             ((Telerik.WinControls.UI.RadPageViewStripElement)(this.radPageView1.GetChildAt(0))).StripButtons = Telerik.WinControls.UI.StripViewButtons.None;
             // 
             // tabCheckIn
             // 
+            this.tabCheckIn.Controls.Add(this.dateCheckOutTime);
+            this.tabCheckIn.Controls.Add(this.dateCheckInTime);
             this.tabCheckIn.Controls.Add(this.lblPet);
             this.tabCheckIn.Controls.Add(this.lblCustomer);
             this.tabCheckIn.Controls.Add(this.radLabel7);
@@ -330,13 +338,13 @@
             this.tabCheckIn.Controls.Add(this.radLabel5);
             this.tabCheckIn.Controls.Add(this.txtNotes);
             this.tabCheckIn.Controls.Add(this.radLabel4);
-            this.tabCheckIn.Controls.Add(this.dateCheckOut);
+            this.tabCheckIn.Controls.Add(this.dateCheckOutDate);
             this.tabCheckIn.Controls.Add(this.radLabel3);
-            this.tabCheckIn.Controls.Add(this.dateCheckIn);
+            this.tabCheckIn.Controls.Add(this.dateCheckInDate);
             this.tabCheckIn.Enabled = false;
-            this.tabCheckIn.Location = new System.Drawing.Point(10, 37);
+            this.tabCheckIn.Location = new System.Drawing.Point(5, 31);
             this.tabCheckIn.Name = "tabCheckIn";
-            this.tabCheckIn.Size = new System.Drawing.Size(390, 326);
+            this.tabCheckIn.Size = new System.Drawing.Size(401, 338);
             this.tabCheckIn.Text = "Check In";
             // 
             // lblPet
@@ -414,20 +422,20 @@
             this.radLabel4.TabIndex = 4;
             this.radLabel4.Text = "Check Out Date:";
             // 
-            // dateCheckOut
+            // dateCheckOutDate
             // 
-            this.dateCheckOut.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateCheckOut.Location = new System.Drawing.Point(121, 112);
-            this.dateCheckOut.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dateCheckOut.MinDate = new System.DateTime(((long)(0)));
-            this.dateCheckOut.Name = "dateCheckOut";
-            this.dateCheckOut.NullableValue = new System.DateTime(2012, 12, 19, 14, 37, 41, 268);
-            this.dateCheckOut.NullDate = new System.DateTime(((long)(0)));
-            this.dateCheckOut.Size = new System.Drawing.Size(207, 20);
-            this.dateCheckOut.TabIndex = 3;
-            this.dateCheckOut.TabStop = false;
-            this.dateCheckOut.Text = "Wednesday, December 19, 2012";
-            this.dateCheckOut.Value = new System.DateTime(2012, 12, 19, 14, 37, 41, 268);
+            this.dateCheckOutDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateCheckOutDate.Location = new System.Drawing.Point(121, 112);
+            this.dateCheckOutDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateCheckOutDate.MinDate = new System.DateTime(((long)(0)));
+            this.dateCheckOutDate.Name = "dateCheckOutDate";
+            this.dateCheckOutDate.NullableValue = new System.DateTime(2012, 12, 19, 14, 37, 41, 268);
+            this.dateCheckOutDate.NullDate = new System.DateTime(((long)(0)));
+            this.dateCheckOutDate.Size = new System.Drawing.Size(92, 20);
+            this.dateCheckOutDate.TabIndex = 3;
+            this.dateCheckOutDate.TabStop = false;
+            this.dateCheckOutDate.Text = "Wednesday, December 19, 2012";
+            this.dateCheckOutDate.Value = new System.DateTime(2012, 12, 19, 14, 37, 41, 268);
             // 
             // radLabel3
             // 
@@ -438,20 +446,42 @@
             this.radLabel3.TabIndex = 2;
             this.radLabel3.Text = "Check In Date:";
             // 
-            // dateCheckIn
+            // dateCheckInDate
             // 
-            this.dateCheckIn.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateCheckIn.Location = new System.Drawing.Point(121, 75);
-            this.dateCheckIn.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dateCheckIn.MinDate = new System.DateTime(((long)(0)));
-            this.dateCheckIn.Name = "dateCheckIn";
-            this.dateCheckIn.NullableValue = new System.DateTime(2012, 12, 19, 14, 37, 41, 268);
-            this.dateCheckIn.NullDate = new System.DateTime(((long)(0)));
-            this.dateCheckIn.Size = new System.Drawing.Size(207, 20);
-            this.dateCheckIn.TabIndex = 0;
-            this.dateCheckIn.TabStop = false;
-            this.dateCheckIn.Text = "Wednesday, December 19, 2012";
-            this.dateCheckIn.Value = new System.DateTime(2012, 12, 19, 14, 37, 41, 268);
+            this.dateCheckInDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateCheckInDate.Location = new System.Drawing.Point(121, 75);
+            this.dateCheckInDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateCheckInDate.MinDate = new System.DateTime(((long)(0)));
+            this.dateCheckInDate.Name = "dateCheckInDate";
+            this.dateCheckInDate.NullableValue = new System.DateTime(2012, 12, 19, 0, 0, 0, 0);
+            this.dateCheckInDate.NullDate = new System.DateTime(((long)(0)));
+            this.dateCheckInDate.Size = new System.Drawing.Size(92, 20);
+            this.dateCheckInDate.TabIndex = 0;
+            this.dateCheckInDate.TabStop = false;
+            this.dateCheckInDate.Text = "Wednesday, December 19, 2012";
+            this.dateCheckInDate.Value = new System.DateTime(2012, 12, 19, 0, 0, 0, 0);
+            // 
+            // dateCheckInTime
+            // 
+            this.dateCheckInTime.HeadersHeight = 19;
+            this.dateCheckInTime.Location = new System.Drawing.Point(222, 75);
+            this.dateCheckInTime.Name = "dateCheckInTime";
+            this.dateCheckInTime.Size = new System.Drawing.Size(106, 20);
+            this.dateCheckInTime.TabIndex = 13;
+            this.dateCheckInTime.TabStop = false;
+            this.dateCheckInTime.Text = "radTimePicker1";
+            this.dateCheckInTime.Value = new System.DateTime(2012, 12, 23, 12, 11, 37, 0);
+            // 
+            // dateCheckOutTime
+            // 
+            this.dateCheckOutTime.HeadersHeight = 19;
+            this.dateCheckOutTime.Location = new System.Drawing.Point(222, 112);
+            this.dateCheckOutTime.Name = "dateCheckOutTime";
+            this.dateCheckOutTime.Size = new System.Drawing.Size(106, 20);
+            this.dateCheckOutTime.TabIndex = 14;
+            this.dateCheckOutTime.TabStop = false;
+            this.dateCheckOutTime.Text = "radTimePicker1";
+            this.dateCheckOutTime.Value = new System.DateTime(2012, 12, 23, 12, 11, 37, 0);
             // 
             // frmCheckIn
             // 
@@ -495,9 +525,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNotes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateCheckOut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateCheckOutDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateCheckIn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateCheckInDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateCheckInTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateCheckOutTime)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -516,9 +548,9 @@
         private Telerik.WinControls.UI.RadPageView radPageView1;
         private Telerik.WinControls.UI.RadPageViewPage tabCheckIn;
         private Telerik.WinControls.UI.RadLabel radLabel4;
-        private Telerik.WinControls.UI.RadDateTimePicker dateCheckOut;
+        private Telerik.WinControls.UI.RadDateTimePicker dateCheckOutDate;
         private Telerik.WinControls.UI.RadLabel radLabel3;
-        private Telerik.WinControls.UI.RadDateTimePicker dateCheckIn;
+        private Telerik.WinControls.UI.RadDateTimePicker dateCheckInDate;
         private Telerik.WinControls.UI.RadLabel radLabel5;
         private Telerik.WinControls.UI.RadTextBoxControl txtNotes;
         private Telerik.WinControls.UI.RadButton btnSave;
@@ -527,5 +559,8 @@
         private Telerik.WinControls.UI.RadLabel lblCustomer;
         private Telerik.WinControls.UI.RadLabel radLabel7;
         private Telerik.WinControls.UI.RadLabel radLabel6;
+        private Telerik.WinControls.UI.RadTimePicker dateCheckInTime;
+        private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
+        private Telerik.WinControls.UI.RadTimePicker dateCheckOutTime;
     }
 }

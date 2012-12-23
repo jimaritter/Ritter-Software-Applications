@@ -19,6 +19,8 @@ namespace PerfectPet.Model.Mappings
             Map(x => x.Notes);
             Map(x => x.ArriveDate);
             Map(x => x.DepartureDate);
+            Map(x => x.ArriveTime);
+            Map(x => x.DepartureTime);
             Map(x => x.CheckedIn);
             Map(x => x.CheckedOut);
             Map(x => x.CreatedDate);

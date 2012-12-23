@@ -133,8 +133,8 @@ namespace PerfectPet
                 var pet = _pet.GetById(PetId);
                 checkin.Pet = pet;
                 checkin.Name = pet.Name;
-                checkin.ArriveDate = Convert.ToDateTime(dateCheckIn.Text);
-                checkin.DepartureDate = Convert.ToDateTime(dateCheckOut.Text);
+                checkin.ArriveDate = Convert.ToDateTime(dateCheckIn.Text).ToShortDateString();
+                checkin.DepartureDate = Convert.ToDateTime(dateCheckOut.Text).ToShortDateString();
                 checkin.Notes = txtNotes.Text;
                 pet.IsCheckedIn = true;
                 _checkin.Save(checkin);
