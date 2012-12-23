@@ -203,6 +203,26 @@ namespace PerfectPet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap box_tall {
+            get {
+                object obj = ResourceManager.GetObject("box_tall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap box_tall1 {
+            get {
+                object obj = ResourceManager.GetObject("box_tall1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap businessmen {
             get {
                 object obj = ResourceManager.GetObject("businessmen", resourceCulture);
@@ -246,6 +266,16 @@ namespace PerfectPet.Properties {
         internal static System.Drawing.Bitmap calendar2 {
             get {
                 object obj = ResourceManager.GetObject("calendar2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chart {
+            get {
+                object obj = ResourceManager.GetObject("chart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

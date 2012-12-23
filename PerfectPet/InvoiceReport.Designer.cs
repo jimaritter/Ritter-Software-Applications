@@ -41,11 +41,12 @@ namespace PerfectPet
             this.textBox4 = new Telerik.Reporting.TextBox();
             this.textBox5 = new Telerik.Reporting.TextBox();
             this.objectDataSource1 = new Telerik.Reporting.ObjectDataSource();
+            this.txtTaxNumber = new Telerik.Reporting.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // pageHeaderSection1
             // 
-            this.pageHeaderSection1.Height = Telerik.Reporting.Drawing.Unit.Inch(1.5D);
+            this.pageHeaderSection1.Height = Telerik.Reporting.Drawing.Unit.Inch(1.5520833730697632D);
             this.pageHeaderSection1.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
             this.picLogo,
             this.txtCompany,
@@ -56,7 +57,8 @@ namespace PerfectPet
             this.txtBillToName,
             this.txtBillToAddress,
             this.txtBillToPhone,
-            this.shape1});
+            this.shape1,
+            this.txtTaxNumber});
             this.pageHeaderSection1.Name = "pageHeaderSection1";
             // 
             // picLogo
@@ -124,7 +126,7 @@ namespace PerfectPet
             // 
             // shape1
             // 
-            this.shape1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(3.9418537198798731E-05D), Telerik.Reporting.Drawing.Unit.Inch(1.4000000953674316D));
+            this.shape1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(3.9418537198798731E-05D), Telerik.Reporting.Drawing.Unit.Inch(1.5D));
             this.shape1.Name = "shape1";
             this.shape1.ShapeType = new Telerik.Reporting.Drawing.Shapes.LineShape(Telerik.Reporting.Drawing.Shapes.LineDirection.EW);
             this.shape1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(7.9999213218688965D), Telerik.Reporting.Drawing.Unit.Inch(0.0520833320915699D));
@@ -278,6 +280,13 @@ namespace PerfectPet
             this.objectDataSource1.Parameters.AddRange(new Telerik.Reporting.ObjectDataSourceParameter[] {
             new Telerik.Reporting.ObjectDataSourceParameter("invoiceId", typeof(int), "=Parameters.invoiceId.Value")});
             // 
+            // txtTaxNumber
+            // 
+            this.txtTaxNumber.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(1.2999998331069946D), Telerik.Reporting.Drawing.Unit.Inch(1.1797178983688355D));
+            this.txtTaxNumber.Name = "txtTaxNumber";
+            this.txtTaxNumber.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(2.1000003814697266D), Telerik.Reporting.Drawing.Unit.Inch(0.19999997317790985D));
+            this.txtTaxNumber.Value = "textBox1";
+            // 
             // InvoiceReport
             // 
             this.DataSource = this.objectDataSource1;
@@ -337,5 +346,6 @@ namespace PerfectPet
         private Telerik.Reporting.TextBox txtTax;
         private Telerik.Reporting.TextBox txtTotal;
         private Telerik.Reporting.ObjectDataSource objectDataSource1;
+        private Telerik.Reporting.TextBox txtTaxNumber;
     }
 }

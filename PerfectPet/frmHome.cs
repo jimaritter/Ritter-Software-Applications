@@ -24,6 +24,7 @@ namespace PerfectPet
         private frmCheckOut _formCheckOut;
         private frmPet _formPet;
         private frmViewInvoiceReport formInvoiceReport;
+        private frmProductServices formProductsServices;
 
         public frmHome()
         {
@@ -63,14 +64,6 @@ namespace PerfectPet
         {
             get { return base.Text; }
             set { base.Text = value; }
-        }
-
-        private void linkSystemSettings_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Cursor.Current = Cursors.WaitCursor;
-            formSettings = new frmSettings();
-            formSettings.ShowDialog(this);
-            Cursor.Current = Cursors.Default;
         }
 
         private void linkBookings_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -141,6 +134,22 @@ namespace PerfectPet
         {
             formInvoiceReport = new frmViewInvoiceReport();
             formInvoiceReport.Show();
+        }
+
+        private void linkCompanyInformation_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            formSettings = new frmSettings();
+            formSettings.ShowDialog(this);
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void linkProductsServices_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            formProductsServices = new frmProductServices();
+            formProductsServices.ShowDialog(this);
+            Cursor.Current = Cursors.Default;
         }
     }
 }

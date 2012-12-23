@@ -77,6 +77,8 @@ namespace PerfectPet
                 txtAddress.Value = Company.Street + " " + Company.City + " " + Company.State + " " + Company.Zip;
                 txtPhone.Value = Company.Phone;
                 txtWeb.Value = Company.Web;
+                txtTax.Value = Company.TaxRate.ToString();
+                txtTaxNumber.Value = Company.TaxNumber;
             }
             catch (Exception)
             {
