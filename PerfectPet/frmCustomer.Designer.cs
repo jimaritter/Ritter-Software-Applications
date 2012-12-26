@@ -57,6 +57,10 @@
             this.tabParent = new Telerik.WinControls.UI.RadPageView();
             this.tabPerson = new Telerik.WinControls.UI.RadPageViewPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtFax = new System.Windows.Forms.MaskedTextBox();
+            this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
+            this.txtMobile = new System.Windows.Forms.MaskedTextBox();
+            this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel22 = new Telerik.WinControls.UI.RadLabel();
             this.ddlPersonType = new System.Windows.Forms.ComboBox();
             this.txtPhone = new System.Windows.Forms.MaskedTextBox();
@@ -110,10 +114,6 @@
             this.StripStatus = new Telerik.WinControls.UI.RadStatusStrip();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
             this.windows7Theme1 = new Telerik.WinControls.Themes.Windows7Theme();
-            this.txtMobile = new System.Windows.Forms.MaskedTextBox();
-            this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
-            this.txtFax = new System.Windows.Forms.MaskedTextBox();
-            this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
             this.radSplitContainer1.SuspendLayout();
@@ -129,6 +129,8 @@
             this.tabParent.SuspendLayout();
             this.tabPerson.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).BeginInit();
@@ -175,8 +177,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StripStatus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
             this.SuspendLayout();
             // 
             // radMenu1
@@ -192,7 +192,7 @@
             // 
             // 
             this.radMenu1.RootElement.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
-            this.radMenu1.Size = new System.Drawing.Size(966, 61);
+            this.radMenu1.Size = new System.Drawing.Size(966, 45);
             this.radMenu1.TabIndex = 0;
             this.radMenu1.Text = "radMenu1";
             this.radMenu1.ThemeName = "TelerikMetro";
@@ -201,8 +201,8 @@
             // 
             this.menuExit.AccessibleDescription = "Exit";
             this.menuExit.AccessibleName = "Exit";
-            this.menuExit.Image = global::PerfectPet.Properties.Resources.item424x24_24_bit;
-            this.menuExit.ImageAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menuExit.Image = global::PerfectPet.Properties.Resources.delete2;
+            this.menuExit.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.menuExit.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuSeparatorItem1});
             this.menuExit.Name = "menuExit";
@@ -223,7 +223,8 @@
             // 
             this.menuNew.AccessibleDescription = "New";
             this.menuNew.AccessibleName = "New";
-            this.menuNew.Image = global::PerfectPet.Properties.Resources.add;
+            this.menuNew.Image = global::PerfectPet.Properties.Resources.add22;
+            this.menuNew.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.menuNew.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuSeparatorItem3});
             this.menuNew.Name = "menuNew";
@@ -244,7 +245,8 @@
             // 
             this.menuSave.AccessibleDescription = "Save";
             this.menuSave.AccessibleName = "Save";
-            this.menuSave.Image = global::PerfectPet.Properties.Resources.disk_blue;
+            this.menuSave.Image = global::PerfectPet.Properties.Resources.disk_blue1;
+            this.menuSave.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.menuSave.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuSeparatorItem2});
             this.menuSave.Name = "menuSave";
@@ -267,13 +269,13 @@
             this.radSplitContainer1.Controls.Add(this.splitPanel1);
             this.radSplitContainer1.Controls.Add(this.splitPanel2);
             this.radSplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radSplitContainer1.Location = new System.Drawing.Point(0, 61);
+            this.radSplitContainer1.Location = new System.Drawing.Point(0, 45);
             this.radSplitContainer1.Name = "radSplitContainer1";
             // 
             // 
             // 
             this.radSplitContainer1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.radSplitContainer1.Size = new System.Drawing.Size(966, 619);
+            this.radSplitContainer1.Size = new System.Drawing.Size(966, 635);
             this.radSplitContainer1.TabIndex = 1;
             this.radSplitContainer1.TabStop = false;
             this.radSplitContainer1.Text = "radSplitContainer1";
@@ -293,7 +295,7 @@
             // 
             // 
             this.splitPanel1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel1.Size = new System.Drawing.Size(228, 619);
+            this.splitPanel1.Size = new System.Drawing.Size(228, 635);
             this.splitPanel1.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.2630058F, 0F);
             this.splitPanel1.SizeInfo.SplitterCorrection = new System.Drawing.Size(-227, 0);
             this.splitPanel1.TabIndex = 0;
@@ -349,7 +351,7 @@
             this.cboCustomerList.EditorControl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cboCustomerList.EditorControl.Location = new System.Drawing.Point(0, 0);
             // 
-            // cboCustomerList.NestedRadGridView
+            // 
             // 
             this.cboCustomerList.EditorControl.MasterTemplate.AllowAddNewRow = false;
             this.cboCustomerList.EditorControl.MasterTemplate.AllowCellContextMenu = false;
@@ -422,7 +424,7 @@
             // 
             // 
             this.splitPanel2.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel2.Size = new System.Drawing.Size(735, 619);
+            this.splitPanel2.Size = new System.Drawing.Size(735, 635);
             this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.2630058F, 0F);
             this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(227, 0);
             this.splitPanel2.TabIndex = 1;
@@ -439,7 +441,7 @@
             this.tabParent.Location = new System.Drawing.Point(0, 0);
             this.tabParent.Name = "tabParent";
             this.tabParent.SelectedPage = this.tabPerson;
-            this.tabParent.Size = new System.Drawing.Size(735, 619);
+            this.tabParent.Size = new System.Drawing.Size(735, 635);
             this.tabParent.TabIndex = 1;
             this.tabParent.ThemeName = "TelerikMetro";
             ((Telerik.WinControls.UI.RadPageViewStripElement)(this.tabParent.GetChildAt(0))).StripButtons = Telerik.WinControls.UI.StripViewButtons.None;
@@ -449,7 +451,7 @@
             this.tabPerson.Controls.Add(this.groupBox1);
             this.tabPerson.Location = new System.Drawing.Point(5, 31);
             this.tabPerson.Name = "tabPerson";
-            this.tabPerson.Size = new System.Drawing.Size(725, 583);
+            this.tabPerson.Size = new System.Drawing.Size(725, 599);
             this.tabPerson.Text = "Person";
             // 
             // groupBox1
@@ -487,6 +489,38 @@
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Person Details";
+            // 
+            // txtFax
+            // 
+            this.txtFax.Location = new System.Drawing.Point(400, 186);
+            this.txtFax.Mask = "(999) 000-0000";
+            this.txtFax.Name = "txtFax";
+            this.txtFax.Size = new System.Drawing.Size(94, 20);
+            this.txtFax.TabIndex = 63;
+            // 
+            // radLabel6
+            // 
+            this.radLabel6.Location = new System.Drawing.Point(354, 186);
+            this.radLabel6.Name = "radLabel6";
+            this.radLabel6.Size = new System.Drawing.Size(40, 18);
+            this.radLabel6.TabIndex = 64;
+            this.radLabel6.Text = "Phone:";
+            // 
+            // txtMobile
+            // 
+            this.txtMobile.Location = new System.Drawing.Point(231, 186);
+            this.txtMobile.Mask = "(999) 000-0000";
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.Size = new System.Drawing.Size(94, 20);
+            this.txtMobile.TabIndex = 61;
+            // 
+            // radLabel5
+            // 
+            this.radLabel5.Location = new System.Drawing.Point(185, 186);
+            this.radLabel5.Name = "radLabel5";
+            this.radLabel5.Size = new System.Drawing.Size(44, 18);
+            this.radLabel5.TabIndex = 62;
+            this.radLabel5.Text = "Mobile:";
             // 
             // radLabel22
             // 
@@ -976,38 +1010,6 @@
             this.StripStatus.Text = "radStatusStrip1";
             this.StripStatus.ThemeName = "TelerikMetro";
             // 
-            // txtMobile
-            // 
-            this.txtMobile.Location = new System.Drawing.Point(231, 186);
-            this.txtMobile.Mask = "(999) 000-0000";
-            this.txtMobile.Name = "txtMobile";
-            this.txtMobile.Size = new System.Drawing.Size(94, 20);
-            this.txtMobile.TabIndex = 61;
-            // 
-            // radLabel5
-            // 
-            this.radLabel5.Location = new System.Drawing.Point(185, 186);
-            this.radLabel5.Name = "radLabel5";
-            this.radLabel5.Size = new System.Drawing.Size(44, 18);
-            this.radLabel5.TabIndex = 62;
-            this.radLabel5.Text = "Mobile:";
-            // 
-            // txtFax
-            // 
-            this.txtFax.Location = new System.Drawing.Point(400, 186);
-            this.txtFax.Mask = "(999) 000-0000";
-            this.txtFax.Name = "txtFax";
-            this.txtFax.Size = new System.Drawing.Size(94, 20);
-            this.txtFax.TabIndex = 63;
-            // 
-            // radLabel6
-            // 
-            this.radLabel6.Location = new System.Drawing.Point(354, 186);
-            this.radLabel6.Name = "radLabel6";
-            this.radLabel6.Size = new System.Drawing.Size(40, 18);
-            this.radLabel6.TabIndex = 64;
-            this.radLabel6.Text = "Phone:";
-            // 
             // frmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1037,6 +1039,8 @@
             this.tabPerson.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).EndInit();
@@ -1085,8 +1089,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StripStatus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
