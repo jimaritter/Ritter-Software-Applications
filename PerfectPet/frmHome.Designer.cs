@@ -37,7 +37,7 @@
             this.linkCheckOut = new System.Windows.Forms.LinkLabel();
             this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             this.linkCheckIn = new System.Windows.Forms.LinkLabel();
-            this.linkViewWorkOrder = new System.Windows.Forms.LinkLabel();
+            this.linkInvoiceLookup = new System.Windows.Forms.LinkLabel();
             this.linkNewWorkOrder = new System.Windows.Forms.LinkLabel();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -100,7 +100,7 @@
             this.grpActivities.Controls.Add(this.linkCheckOut);
             this.grpActivities.Controls.Add(this.radLabel4);
             this.grpActivities.Controls.Add(this.linkCheckIn);
-            this.grpActivities.Controls.Add(this.linkViewWorkOrder);
+            this.grpActivities.Controls.Add(this.linkInvoiceLookup);
             this.grpActivities.Controls.Add(this.linkNewWorkOrder);
             this.grpActivities.Controls.Add(this.radLabel3);
             this.grpActivities.Controls.Add(this.pictureBox7);
@@ -197,15 +197,16 @@
             this.linkCheckIn.Text = "Check In";
             this.linkCheckIn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkCheckIn_LinkClicked);
             // 
-            // linkViewWorkOrder
+            // linkInvoiceLookup
             // 
-            this.linkViewWorkOrder.AutoSize = true;
-            this.linkViewWorkOrder.Location = new System.Drawing.Point(82, 203);
-            this.linkViewWorkOrder.Name = "linkViewWorkOrder";
-            this.linkViewWorkOrder.Size = new System.Drawing.Size(84, 13);
-            this.linkViewWorkOrder.TabIndex = 13;
-            this.linkViewWorkOrder.TabStop = true;
-            this.linkViewWorkOrder.Text = "Search Invoices";
+            this.linkInvoiceLookup.AutoSize = true;
+            this.linkInvoiceLookup.Location = new System.Drawing.Point(82, 203);
+            this.linkInvoiceLookup.Name = "linkInvoiceLookup";
+            this.linkInvoiceLookup.Size = new System.Drawing.Size(84, 13);
+            this.linkInvoiceLookup.TabIndex = 13;
+            this.linkInvoiceLookup.TabStop = true;
+            this.linkInvoiceLookup.Text = "Search Invoices";
+            this.linkInvoiceLookup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkInvoiceLookup_LinkClicked);
             // 
             // linkNewWorkOrder
             // 
@@ -592,7 +593,7 @@
         private Telerik.WinControls.UI.RadLabel radLabel3;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.LinkLabel linkResources;
-        private System.Windows.Forms.LinkLabel linkViewWorkOrder;
+        private System.Windows.Forms.LinkLabel linkInvoiceLookup;
         private System.Windows.Forms.LinkLabel linkNewWorkOrder;
         private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
         private System.Windows.Forms.PictureBox pictureBox4;

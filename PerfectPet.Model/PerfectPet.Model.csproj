@@ -77,6 +77,8 @@
     <Compile Include="Common\EnumerableExtension.cs" />
     <Compile Include="Common\EnumerationParser.cs" />
     <Compile Include="Common\ImageTool.cs" />
+    <Compile Include="Common\PaymentMethods.cs" />
+    <Compile Include="Common\PaymentTerms.cs" />
     <Compile Include="Common\ResourceType.cs" />
     <Compile Include="Common\ObjectExtension.cs" />
     <Compile Include="Common\PersonTypeList.cs" />
@@ -103,8 +105,6 @@
     <Compile Include="Mappings\DogBreedMap.cs" />
     <Compile Include="Mappings\InvoiceMap.cs" />
     <Compile Include="Mappings\InvoiceNumberMap.cs" />
-    <Compile Include="Mappings\InvoicesPetsMap.cs" />
-    <Compile Include="Mappings\InvoiceToPetMap.cs" />
     <Compile Include="Mappings\KennelMap.cs" />
     <Compile Include="Mappings\LineItemMap.cs" />
     <Compile Include="Mappings\MedicationMap.cs" />
@@ -115,13 +115,12 @@
     <Compile Include="Mappings\PetStatusMap.cs" />
     <Compile Include="Mappings\PhoneMap.cs" />
     <Compile Include="Mappings\PhoneTypeMap.cs" />
-    <Compile Include="Mappings\ProductMap.cs" />
+    <Compile Include="Mappings\InventoryMap.cs" />
     <Compile Include="Mappings\ResourcesMap.cs" />
     <Compile Include="Mappings\ServiceMap.cs" />
     <Compile Include="Mappings\StatusMap.cs" />
     <Compile Include="Mappings\TaskMap.cs" />
     <Compile Include="Mappings\UserMap.cs" />
-    <Compile Include="Mappings\WorkorderMap.cs" />
     <Compile Include="People\IPerson.cs" />
     <Compile Include="People\IPersonType.cs" />
     <Compile Include="People\Person.cs" />
@@ -145,8 +144,8 @@
     <Compile Include="Phones\IPhoneType.cs" />
     <Compile Include="Phones\Phone.cs" />
     <Compile Include="Phones\PhoneType.cs" />
-    <Compile Include="Products\IProduct.cs" />
-    <Compile Include="Products\Product.cs" />
+    <Compile Include="Inventories\IInventory.cs" />
+    <Compile Include="Inventories\Inventory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -161,13 +160,9 @@
     <Compile Include="Sales\Discount.cs" />
     <Compile Include="Sales\IDiscount.cs" />
     <Compile Include="Sales\IInvoice.cs" />
-    <Compile Include="Sales\IInvoicesPets.cs" />
-    <Compile Include="Sales\IInvoiceToPet.cs" />
     <Compile Include="Sales\ILineItem.cs" />
     <Compile Include="Sales\Invoice.cs" />
     <Compile Include="Sales\InvoiceNumber.cs" />
-    <Compile Include="Sales\InvoicesPets.cs" />
-    <Compile Include="Sales\InvoiceToPet.cs" />
     <Compile Include="Sales\IOrder.cs" />
     <Compile Include="Sales\LineItem.cs" />
     <Compile Include="Sales\Order.cs" />
@@ -181,8 +176,6 @@
     <Compile Include="Users\IUser.cs" />
     <Compile Include="Users\Role.cs" />
     <Compile Include="Users\User.cs" />
-    <Compile Include="Workorders\IWorkorder.cs" />
-    <Compile Include="Workorders\Workorder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

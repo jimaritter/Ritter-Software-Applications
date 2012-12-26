@@ -123,7 +123,6 @@ namespace PerfectPet.Model.Sales
                 _session.Save(invoice);
                 _session.Transaction.Commit();
                 _session.Flush();
-                _session.Close();
             }
             catch (Exception)
             {

@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using NHibernate;
 using PerfectPet.Model.Repository;
 
-namespace PerfectPet.Model.Products
+namespace PerfectPet.Model.Inventories
 {
-    public class Product : Business<Product>, IProduct
+    public class Inventory : Business<Inventory>, IInventory
     {
-        private readonly IProduct _product;
+        private readonly IInventory _inventory;
         protected ISession _session = null;
 
         private DateTime _createdDate = DateTime.Now;
         public virtual int Id { get; set; }
-        public virtual string ProductNumber { get; set; }
+        public virtual string Number { get; set; }
         public virtual string Name { get; set; }
         public virtual string Description { get; set; }
         public virtual Double Cost { get; set; }
@@ -23,22 +23,22 @@ namespace PerfectPet.Model.Products
         public virtual DateTime? ModifiedDate { get; set; }
 
 
-        public Product()
+        public Inventory()
         {
   
         }
 
-        public Product(IProduct product)
+        public Inventory(IInventory inventory)
         {
-            _product = product;
+            _inventory = inventory;
         }
 
-        public Product Get()
+        public Inventory Get()
         {
-            return new Product();
+            return new Inventory();
         }
 
-        public IList<Product> GetAll()
+        public IList<Inventory> GetAll()
         {
             try
             {
@@ -46,7 +46,7 @@ namespace PerfectPet.Model.Products
                 {
                     _session = SessionManager.OpenSession();
                 }
-                var productlist = _session.CreateCriteria(typeof(Product)).List<Product>();
+                var productlist = _session.CreateCriteria(typeof(Inventory)).List<Inventory>();
                 return productlist;
             }
             catch (Exception)
@@ -56,16 +56,16 @@ namespace PerfectPet.Model.Products
             }   
         }
 
-        public Product GetById(int id)
+        public Inventory GetById(int id)
         {
             using (RepositoryBase repository = new RepositoryBase())
             {
                 try
                 {
                     repository.BeginTransaction();
-                    var product = repository.GetById(typeof(Product), id);
+                    var product = repository.GetById(typeof(Inventory), id);
                     repository.CommitTransaction();
-                    return product as Product;
+                    return product as Inventory;
                 }
                 catch (Exception)
                 {
@@ -75,14 +75,14 @@ namespace PerfectPet.Model.Products
             }            
         }
 
-        public void Save(Product product)
+        public void Save(Inventory inventory)
         {
             using (RepositoryBase repository = new RepositoryBase())
             {
                 try
                 {
                     repository.BeginTransaction();
-                    repository.Save(product);
+                    repository.Save(inventory);
                     repository.CommitTransaction();
                 }
                 catch (Exception)
@@ -93,14 +93,14 @@ namespace PerfectPet.Model.Products
             }
         }
 
-        public void Delete(Product product)
+        public void Delete(Inventory inventory)
         {
             using (RepositoryBase repository = new RepositoryBase())
             {
                 try
                 {
                     repository.BeginTransaction();
-                    repository.Delete(product);
+                    repository.Delete(inventory);
                     repository.CommitTransaction();
                 }
                 catch (Exception)

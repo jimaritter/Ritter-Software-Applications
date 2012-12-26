@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PerfectPet.Model.Addresses;
 using PerfectPet.Model.Companies;
+using PerfectPet.Model.Inventories;
 using PerfectPet.Model.People;
 using PerfectPet.Model.Pets;
-using PerfectPet.Model.Products;
 using PerfectPet.Model.Sales;
 using PerfectPet.Model.Services;
-using PerfectPet.Model.Workorders;
 using StructureMap;
 using Telerik.WinControls.UI;
 
@@ -52,7 +52,6 @@ namespace PerfectPet
                 {
                     Cursor.Current = Cursors.Default;
                     this.WindowState = FormWindowState.Maximized;
-                    gridProducts.CellEditorInitialized += new GridViewCellEventHandler(gridProducts_CellEditorInitialized);
                     lineItems = new List<LineItem>();
                     Pets = new List<Pet>();
                     _company = ObjectFactory.GetInstance<ICompany>();
@@ -65,8 +64,8 @@ namespace PerfectPet
                     lblTaxIdNumber.Text = company.TaxNumber;
                     lblInvoiceNumber.Text = invoiceNumber.Number.ToString();
                     BindCustomerDropDown();
-                    BindProductGrid();
-                    BindServiceGrid();
+      
+                    BindInventoryList();
                 }
                 catch (Exception)
                 {
@@ -74,26 +73,7 @@ namespace PerfectPet
                     throw;
                 }
             }
-
-        private void gridProducts_CellEditorInitialized(object sender, GridViewCellEventArgs e)
-        {
-            if (e.Row is GridViewNewRowInfo)
-            {
-
-                var editor = e.ActiveEditor as RadDropDownListEditor;
-
-                if (editor != null)
-                {
-
-                    editor.ValueChanged -= new EventHandler(editor_ValueChanged);
-
-                    editor.ValueChanged += new EventHandler(editor_ValueChanged);
-
-                }
-
-            }
-        }
-
+      
         private void editor_ValueChanged(object sender, EventArgs e)
         {
             Console.WriteLine(sender.GetType().ToString());
@@ -161,6 +141,13 @@ namespace PerfectPet
                     listviewHeaderPets.DataSource = null;
                     listviewHeaderPets.Items.Clear();
                     lblHeaderAddress.Text = "";
+                    numericQuantity.Text = 0.ToString();
+                    txtInventoryCost.Clear();
+                    txtInventoryDescription.Clear();
+                    txtInventoryName.Clear();
+                    txtInventoryRetail.Clear();
+                    chkTaxExempt.Checked = false;
+                    gridInventory.Rows.Clear();
 
                 }
                 catch (Exception)
@@ -188,50 +175,6 @@ namespace PerfectPet
                     
                     throw;
                 }        
-            }
-
-            private void BindProductGrid()
-            {
-                try
-                {
-                    var _products = ObjectFactory.GetInstance<IProduct>();
-                    var products = _products.GetAll();
-
-                    var query = from product in products
-                                select new {Id = product.Id, Product = product.Name};
-
-                    productcombo = (GridViewComboBoxColumn)gridProducts.Columns[1];
-                    productcombo.DataSource = query;
-                    productcombo.DisplayMember = "Product";
-                    productcombo.ValueMember = "Id";
-                }
-                catch (Exception)
-                {
-                    
-                    throw;
-                }        
-            }
-
-            private void BindServiceGrid()
-            {
-                try
-                {
-                    var _services = ObjectFactory.GetInstance<IService>();
-                    var services = _services.GetAll();
-
-                    var query = from service in services
-                                select new { Id = service.Id, Service = service.Name };
-
-                    servicecombo = (GridViewComboBoxColumn)gridServices.Columns[1];
-                    servicecombo.DataSource = query;
-                    servicecombo.DisplayMember = "Service";
-                    servicecombo.ValueMember = "Id";
-                }
-                catch (Exception)
-                {
-
-                    throw;
-                }
             }
 
             private void BindCustomerDropDown()
@@ -320,6 +263,29 @@ namespace PerfectPet
                 }
             }
 
+            private void BindInventoryList()
+            {
+                try
+                {
+                    var _inventory = ObjectFactory.GetInstance<IInventory>();
+                    var inventory = _inventory.GetAll();
+
+                    var query = from inv in inventory
+                                where inv.Active == true
+                                orderby inv.Name ascending 
+                                select new {Id = inv.Id, Item = inv.Name};
+
+                    ddlInventoryList.DataSource = query.ToList();
+                    ddlInventoryList.DisplayMember = "Item";
+                    ddlInventoryList.ValueMember = "Id";
+                }
+                catch (Exception)
+                {
+                    
+                    throw;
+                }   
+            }
+
             private void AddPetsToHeaderListView()
             {
                 try
@@ -348,49 +314,46 @@ namespace PerfectPet
                     throw;
                 }
             }
+
+            private void GetInventoryItemDetails()
+            {
+                try
+                {
+                    var _inventory = ObjectFactory.GetInstance<IInventory>();
+                    var inventory = _inventory.GetById((int)ddlInventoryList.SelectedValue);
+                    txtInventoryName.Text = inventory.Name;
+                    txtInventoryDescription.Text = inventory.Description;
+                    txtInventoryCost.Text = inventory.Cost.ToString();
+                    txtInventoryRetail.Text = inventory.Retail.ToString();
+                    chkTaxExempt.Checked = inventory.TaxExempt;
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
+
+            private void AddInventoryItem()
+            {
+                try
+                {
+                    var _inventory = ObjectFactory.GetInstance<IInventory>();
+                    var inventory = _inventory.GetById((int)ddlInventoryList.SelectedValue);
+
+                    gridInventory.Rows.Add(inventory.Id, inventory.Name, inventory.Description, inventory.Cost,
+                                           inventory.Retail, numericQuantity.Text, (inventory.Retail * Convert.ToDouble(numericQuantity.Text)));
+
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }                
+            }
+
         #endregion
 
-        private void MasterTemplate_CellValueChanged(object sender, GridViewCellEventArgs e)
-        {
-            try
-            {
-                if (e.Column is GridViewComboBoxColumn)
-                {
-                    var _product = ObjectFactory.GetInstance<IProduct>();
-                    var product = _product.GetById((int) gridProducts.CurrentRow.Cells["Product"].Value);
-                    gridProducts.CurrentRow.Cells["Description"].Value = product.Description;
-                    gridProducts.CurrentRow.Cells["Cost"].Value = product.Cost;
-                    gridProducts.CurrentRow.Cells["Retail"].Value = product.Retail;
-                    gridProducts.CurrentRow.Cells["Name"].Value = product.Name;
-                }
-                if (e.Column.Name == "Quantity")
-                {
-                    gridProducts.CurrentRow.Cells["Subtotal"].Value = (decimal)gridProducts.CurrentRow.Cells["Retail"].Value *
-                                                                        (decimal)gridProducts.CurrentRow.Cells["Quantity"].
-                                                                                    Value;                        
-                }
-            }
-            catch (Exception)
-            {
-                    
-                throw;
-            }
-        }
-
-        private void MasterTemplate_UserAddedRow(object sender, GridViewRowEventArgs e)
-        {
-            decimal calc = 0;
-            foreach (var row in gridProducts.Rows)
-            {
-                if(row.Cells["Subtotal"].Value != null)
-                {
-                    var total = (decimal)row.Cells["Subtotal"].Value + calc;
-                    calc = total;
-                }
-            }
-            AddProductLineItem(gridProducts.CurrentRow);
-            txtProductTotal.Text = calc.ToString();
-        }
 
         private void AddProductLineItem(GridViewRowInfo row)
         {
@@ -399,9 +362,9 @@ namespace PerfectPet
                 var _lineitem = ObjectFactory.GetInstance<ILineItem>();
                 var lineitem = _lineitem.Get();
                 lineitem.Quantity = Convert.ToInt32(row.Cells["Quantity"].Value);
-                var _product = ObjectFactory.GetInstance<IProduct>();
-                var product = _product.GetById(Convert.ToInt32(row.Cells["Product"].Value));
-                lineitem.Product = product;
+                var _product = ObjectFactory.GetInstance<IInventory>();
+                var product = _product.GetById(Convert.ToInt32(row.Cells["Inventory"].Value));
+                lineitem.Inventory = product;
                 lineitem.LineTotal = Convert.ToDouble(row.Cells["Subtotal"].Value);
                 lineitem.UnitPrice = Convert.ToDouble(row.Cells["Retail"].Value);
                 lineitem.Name = row.Cells["Name"].Value.ToString();
@@ -440,48 +403,6 @@ namespace PerfectPet
             }
         }
 
-        private void gridServices_CellValueChanged(object sender, GridViewCellEventArgs e)
-        {
-            try
-            {
-                if (e.Column is GridViewComboBoxColumn)
-                {
-                    var _service = ObjectFactory.GetInstance<IService>();
-                    var service = _service.GetById((int)gridServices.CurrentRow.Cells["Service"].Value);
-                    gridServices.CurrentRow.Cells["Description"].Value = service.Description;
-                    gridServices.CurrentRow.Cells["Cost"].Value = service.Cost;
-                    gridServices.CurrentRow.Cells["Retail"].Value = service.Retail;
-                    gridServices.CurrentRow.Cells["Name"].Value = service.Name;
-                }
-                if (e.Column.Name == "Quantity")
-                {
-                    gridServices.CurrentRow.Cells["Subtotal"].Value = (decimal)gridServices.CurrentRow.Cells["Retail"].Value *
-                                                                        (decimal)gridServices.CurrentRow.Cells["Quantity"].
-                                                                                    Value;
-                }
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
-        private void gridServices_UserAddedRow(object sender, GridViewRowEventArgs e)
-        {
-            decimal calc = 0;
-            foreach (var row in gridServices.Rows)
-            {
-                if (row.Cells["Subtotal"].Value != null)
-                {
-                    var total = (decimal)row.Cells["Subtotal"].Value + calc;
-                    calc = total;
-                }
-            }
-            AddServiceLineItem(gridServices.CurrentRow);
-            txtServiceTotal.Text = calc.ToString();
-        }
-
         private void btnSaveInvoice_Click(object sender, EventArgs e)
         {
             var dlgresult = DialogResult;
@@ -508,12 +429,11 @@ namespace PerfectPet
                 _invoiceNumber.Save(tempinvnumber);
 
                 var _lineitems = ObjectFactory.GetInstance<ILineItem>();
-                var _invoicetopet = ObjectFactory.GetInstance<IInvoiceToPet>();
-                var invoicetopet = _invoicetopet.Get();
+
 
                 //Fill Invoice Data
                 invoice = _invoice.Get();
-                invoice.Number = invoiceNumber.ToString();
+                invoice.Number = invoiceNumber.Number.ToString(CultureInfo.InvariantCulture);
                 invoice.InvoiceDate = Convert.ToDateTime(dateInvoiceDate.Text);
                 invoice.Person = customer;
                 invoice.InvoiceAddress = address;
@@ -523,13 +443,6 @@ namespace PerfectPet
                 invoice.CreatedDate = DateTime.Now;          
                 _invoice.Save(invoice);
 
-                //Save Invoice To Pet Table Data
-                foreach (var pet in Pets)
-                {
-                    invoicetopet.Pet = pet;
-                    invoicetopet.Invoice = invoice;
-                    _invoicetopet.Save(invoicetopet);
-                }
 
                 //Save Invoice Line Items
                 foreach (var item in lineItems)
@@ -556,14 +469,17 @@ namespace PerfectPet
                 listViewAddresses.DataSource = null;
                 listviewHeaderPets.DataSource = null;
                 txtInvoiceDescription.Clear();
-                txtProductTotal.Clear();
-                txtServiceTotal.Clear();
                 lblHeaderAddress.Text = "";
                 lblHeaderCustomer.Text = "";
                 lblInvoiceSaved.Visible = false;
                 chkIncludeBalance.Checked = false;
-                gridProducts.Rows.Clear();
-                gridServices.Rows.Clear();
+                numericQuantity.Text = 0.ToString();
+                txtInventoryCost.Clear();
+                txtInventoryDescription.Clear();
+                txtInventoryName.Clear();
+                txtInventoryRetail.Clear();
+                chkTaxExempt.Checked = false;
+                gridInventory.Rows.Clear();
             }
             catch (Exception)
             {
@@ -592,5 +508,30 @@ namespace PerfectPet
                 throw;
             }
         }
+
+        private void btnSelectInventoryItem_Click(object sender, EventArgs e)
+        {
+            numericQuantity.Text = 0.ToString();
+            GetInventoryItemDetails();
+        }
+
+        private void btnAddInventoryItem_Click(object sender, EventArgs e)
+        {            
+            AddInventoryItem();
+        }
+
+        private void btnDeleteInventoryItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                gridInventory.Rows.Remove(gridInventory.CurrentRow);
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        }
+
     }
 }

@@ -93,7 +93,7 @@ namespace PerfectPet
             {
                 foreach (var item in LineItems)
                 {
-                    txtItem.Value = item.Product.Name;
+                    txtItem.Value = item.Inventory.Name;
                     txtRetail.Value = item.UnitPrice.ToString();
                     txtQuantity.Value = item.Quantity.ToString();
                     txtSubTotal.Value = item.LineTotal.ToString();
