@@ -33,6 +33,8 @@ namespace PerfectPet
             try
             {
                 Cursor.Current = Cursors.Default;
+                tabDetails.Enabled = false;
+                tabMedication.Enabled = false;
                 BindCustomerList();
                 GetTempermentList();
                 GetSizeList();
@@ -52,6 +54,10 @@ namespace PerfectPet
             {
                 return;
             }
+            ClearPetDetails();
+            ClearMedicationDetails();
+            tabDetails.Enabled = false;
+            tabMedication.Enabled = false;
             BindPetListView();
         }
 
@@ -168,6 +174,8 @@ namespace PerfectPet
                     MemoryStream stmBLOBData = new MemoryStream(pet.Picture);
                     picPet.Image = Image.FromStream(stmBLOBData);
                 }
+                tabDetails.Enabled = true;
+                tabMedication.Enabled = true;
             }
             catch (Exception)
             {
@@ -270,6 +278,7 @@ namespace PerfectPet
                 txtMedicationDirections.Clear();
                 txtMedicationQuantity.Clear();
                 txtMedicationName.Focus();
+                tabMedication.Enabled = false;
             }
             catch (Exception)
             {
@@ -298,6 +307,7 @@ namespace PerfectPet
                 chkMedications.Checked = false;
                 chkVaccinated.Checked = false;
                 picPet.Image = null;
+                tabDetails.Enabled = false;
             }
             catch (Exception)
             {

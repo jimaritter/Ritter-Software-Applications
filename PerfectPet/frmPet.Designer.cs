@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn8 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn9 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn1 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn2 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn4 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn5 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 2", "Description");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn6 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 3", "Directions");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn7 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 4", "Quantity");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn10 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 2", "Description");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn11 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 3", "Directions");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn12 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 4", "Quantity");
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
             this.windows7Theme1 = new Telerik.WinControls.Themes.Windows7Theme();
             this.radSplitContainer1 = new Telerik.WinControls.UI.RadSplitContainer();
@@ -94,6 +94,7 @@
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.txtMedicationName = new Telerik.WinControls.UI.RadTextBoxControl();
             this.listMedications = new Telerik.WinControls.UI.RadListView();
+            this.btnClose = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
             this.radSplitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
@@ -156,6 +157,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMedicationName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listMedications)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // radSplitContainer1
@@ -176,6 +178,7 @@
             // 
             // splitPanel1
             // 
+            this.splitPanel1.Controls.Add(this.btnClose);
             this.splitPanel1.Controls.Add(this.radLabel19);
             this.splitPanel1.Controls.Add(this.btnNew);
             this.splitPanel1.Controls.Add(this.radLabel2);
@@ -212,6 +215,7 @@
             this.btnNew.Size = new System.Drawing.Size(71, 24);
             this.btnNew.TabIndex = 65;
             this.btnNew.Text = "New";
+            this.btnNew.ThemeName = "TelerikMetro";
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // radLabel2
@@ -226,12 +230,12 @@
             // 
             this.listPets.AllowEdit = false;
             this.listPets.AllowRemove = false;
-            listViewDetailColumn1.HeaderText = "Id";
-            listViewDetailColumn1.Visible = false;
-            listViewDetailColumn2.HeaderText = "Name";
+            listViewDetailColumn8.HeaderText = "Id";
+            listViewDetailColumn8.Visible = false;
+            listViewDetailColumn9.HeaderText = "Name";
             this.listPets.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
-            listViewDetailColumn1,
-            listViewDetailColumn2});
+            listViewDetailColumn8,
+            listViewDetailColumn9});
             this.listPets.GroupItemSize = new System.Drawing.Size(200, 20);
             this.listPets.ItemSize = new System.Drawing.Size(200, 20);
             this.listPets.Location = new System.Drawing.Point(12, 143);
@@ -249,6 +253,7 @@
             this.btnSelectCustomer.Size = new System.Drawing.Size(71, 24);
             this.btnSelectCustomer.TabIndex = 62;
             this.btnSelectCustomer.Text = "Select";
+            this.btnSelectCustomer.ThemeName = "TelerikMetro";
             this.btnSelectCustomer.Click += new System.EventHandler(this.btnSelectCustomer_Click);
             // 
             // radLabel1
@@ -759,18 +764,18 @@
             // 
             this.listMedications.AllowEdit = false;
             this.listMedications.AllowRemove = false;
-            listViewDetailColumn3.HeaderText = "Id";
-            listViewDetailColumn3.Visible = false;
-            listViewDetailColumn4.HeaderText = "Name";
-            listViewDetailColumn5.HeaderText = "Description";
-            listViewDetailColumn6.HeaderText = "Directions";
-            listViewDetailColumn7.HeaderText = "Quantity";
+            listViewDetailColumn1.HeaderText = "Id";
+            listViewDetailColumn1.Visible = false;
+            listViewDetailColumn2.HeaderText = "Name";
+            listViewDetailColumn10.HeaderText = "Description";
+            listViewDetailColumn11.HeaderText = "Directions";
+            listViewDetailColumn12.HeaderText = "Quantity";
             this.listMedications.Columns.AddRange(new Telerik.WinControls.UI.ListViewDetailColumn[] {
-            listViewDetailColumn3,
-            listViewDetailColumn4,
-            listViewDetailColumn5,
-            listViewDetailColumn6,
-            listViewDetailColumn7});
+            listViewDetailColumn1,
+            listViewDetailColumn2,
+            listViewDetailColumn10,
+            listViewDetailColumn11,
+            listViewDetailColumn12});
             this.listMedications.GroupItemSize = new System.Drawing.Size(200, 20);
             this.listMedications.ItemSize = new System.Drawing.Size(200, 20);
             this.listMedications.Location = new System.Drawing.Point(32, 25);
@@ -782,10 +787,21 @@
             this.listMedications.Text = "radListView1";
             this.listMedications.ItemMouseClick += new Telerik.WinControls.UI.ListViewItemEventHandler(this.listMedications_ItemMouseClick);
             // 
+            // btnClose
+            // 
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnClose.Location = new System.Drawing.Point(129, 415);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(71, 24);
+            this.btnClose.TabIndex = 67;
+            this.btnClose.Text = "Close";
+            this.btnClose.ThemeName = "TelerikMetro";
+            // 
             // frmPet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(1119, 470);
             this.Controls.Add(this.radSplitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -858,6 +874,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMedicationName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listMedications)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -923,5 +940,6 @@
         private Telerik.WinControls.UI.RadTextBoxControl txtMedicationName;
         private Telerik.WinControls.UI.RadLabel radLabel19;
         private Telerik.WinControls.UI.RadButton btnNewMedication;
+        private Telerik.WinControls.UI.RadButton btnClose;
     }
 }

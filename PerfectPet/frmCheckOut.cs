@@ -70,7 +70,7 @@ namespace PerfectPet
                     lblCustomer.Text = "";
                     ddlPet.Enabled = false;
                     btnSelectPet.Enabled = false;
-                    tabCheckIn.Enabled = false;
+                    tabCheckOut.Enabled = false;
                 }
 
              }
@@ -110,7 +110,7 @@ namespace PerfectPet
                 {
                     var _person = ObjectFactory.GetInstance<IPerson>();
                     var person = _person.GetById(PersonId);
-                    tabCheckIn.Enabled = true;
+                    tabCheckOut.Enabled = true;
                     PetId = (int) ddlPet.SelectedValue;
                     lblCustomer.Text = person.FirstName + " " + person.LastName;
                     lblPet.Text = ddlPet.Text;
@@ -133,10 +133,10 @@ namespace PerfectPet
                 var pet = _pet.GetById(PetId);
                 checkin.Pet = pet;
                 checkin.Name = pet.Name;
-                checkin.ArriveDate = Convert.ToDateTime(dateCheckIn.Text).ToShortDateString();
-                checkin.DepartureDate = Convert.ToDateTime(dateCheckOut.Text).ToShortDateString();
+                checkin.DepartureDate = Convert.ToDateTime(dateCheckOutDate.Text).ToShortDateString();
+                checkin.DepartureTime = Convert.ToDateTime(dateCheckOutTime.Value).ToShortTimeString();
                 checkin.Notes = txtNotes.Text;
-                pet.IsCheckedIn = true;
+                pet.IsCheckedIn = false;
                 _checkin.Save(checkin);
                 _pet.Save(pet);
                 this.Close();

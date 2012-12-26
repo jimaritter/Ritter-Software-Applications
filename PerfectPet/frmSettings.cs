@@ -57,6 +57,7 @@ namespace PerfectPet
                     return;
                 }
                 SaveCompanyInformation();
+                this.Close();
             }
             catch (Exception)
             {
