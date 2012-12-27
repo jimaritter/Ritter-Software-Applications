@@ -28,13 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn1 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn2 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Name");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn4 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
-            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn5 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn1 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
@@ -43,10 +36,35 @@
             Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn3 = new Telerik.WinControls.UI.GridViewDecimalColumn();
             Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn4 = new Telerik.WinControls.UI.GridViewDecimalColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn1 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn2 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Name");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn4 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
+            Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn5 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             this.splitParent = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
             this.splitLeftNav = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel3 = new Telerik.WinControls.UI.SplitPanel();
+            this.radGroupBox7 = new Telerik.WinControls.UI.RadGroupBox();
+            this.numericQuantity = new System.Windows.Forms.NumericUpDown();
+            this.btnDeleteInventoryItem = new Telerik.WinControls.UI.RadButton();
+            this.gridInventory = new Telerik.WinControls.UI.RadGridView();
+            this.gridViewTemplate2 = new Telerik.WinControls.UI.GridViewTemplate();
+            this.btnAddInventoryItem = new Telerik.WinControls.UI.RadButton();
+            this.chkTaxExempt = new Telerik.WinControls.UI.RadCheckBox();
+            this.radLabel25 = new Telerik.WinControls.UI.RadLabel();
+            this.txtInventoryRetail = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.radLabel24 = new Telerik.WinControls.UI.RadLabel();
+            this.txtInventoryCost = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.radLabel23 = new Telerik.WinControls.UI.RadLabel();
+            this.txtInventoryDescription = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.btnSelectInventoryItem = new Telerik.WinControls.UI.RadButton();
+            this.radLabel12 = new Telerik.WinControls.UI.RadLabel();
+            this.txtInventoryName = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.lblInventoryNumber = new Telerik.WinControls.UI.RadLabel();
+            this.ddlInventoryList = new Telerik.WinControls.UI.RadDropDownList();
             this.btnClose = new Telerik.WinControls.UI.RadButton();
             this.lblInvoiceSaved = new Telerik.WinControls.UI.RadLabel();
             this.btnPrintInvoice = new Telerik.WinControls.UI.RadButton();
@@ -60,7 +78,6 @@
             this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
             this.lblHeaderCustomer = new Telerik.WinControls.UI.RadLabel();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
-            this.gridViewTemplate1 = new Telerik.WinControls.UI.GridViewTemplate();
             this.btnSaveInvoice = new Telerik.WinControls.UI.RadButton();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
             this.btnAddPets = new Telerik.WinControls.UI.RadButton();
@@ -78,7 +95,6 @@
             this.radLabel7 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel16 = new Telerik.WinControls.UI.RadLabel();
             this.lblTaxIdNumber = new Telerik.WinControls.UI.RadLabel();
-            this.radTextBoxControl1 = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radLabel15 = new Telerik.WinControls.UI.RadLabel();
             this.lblInvoiceNumber = new Telerik.WinControls.UI.RadLabel();
             this.chkIncludeBalance = new Telerik.WinControls.UI.RadCheckBox();
@@ -86,30 +102,21 @@
             this.radDateTimePicker1 = new Telerik.WinControls.UI.RadDateTimePicker();
             this.radLabel8 = new Telerik.WinControls.UI.RadLabel();
             this.dateInvoiceDate = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.gridViewTemplate1 = new Telerik.WinControls.UI.GridViewTemplate();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
             this.radGroupBox6 = new Telerik.WinControls.UI.RadGroupBox();
             this.radButton2 = new Telerik.WinControls.UI.RadButton();
             this.radLabel10 = new Telerik.WinControls.UI.RadLabel();
             this.radButton3 = new Telerik.WinControls.UI.RadButton();
             this.radLabel11 = new Telerik.WinControls.UI.RadLabel();
-            this.radGroupBox7 = new Telerik.WinControls.UI.RadGroupBox();
-            this.ddlInventoryList = new Telerik.WinControls.UI.RadDropDownList();
-            this.radLabel12 = new Telerik.WinControls.UI.RadLabel();
-            this.txtInventoryName = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.btnSelectInventoryItem = new Telerik.WinControls.UI.RadButton();
-            this.radLabel23 = new Telerik.WinControls.UI.RadLabel();
-            this.txtInventoryDescription = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.lblInventoryNumber = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel24 = new Telerik.WinControls.UI.RadLabel();
-            this.txtInventoryCost = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.radLabel25 = new Telerik.WinControls.UI.RadLabel();
-            this.txtInventoryRetail = new Telerik.WinControls.UI.RadTextBoxControl();
-            this.chkTaxExempt = new Telerik.WinControls.UI.RadCheckBox();
-            this.btnAddInventoryItem = new Telerik.WinControls.UI.RadButton();
-            this.gridInventory = new Telerik.WinControls.UI.RadGridView();
-            this.gridViewTemplate2 = new Telerik.WinControls.UI.GridViewTemplate();
-            this.btnDeleteInventoryItem = new Telerik.WinControls.UI.RadButton();
-            this.numericQuantity = new System.Windows.Forms.NumericUpDown();
+            this.radGroupBox5 = new Telerik.WinControls.UI.RadGroupBox();
+            this.lblInvoiceTotal = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
+            this.lblPriorBalance = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel9 = new Telerik.WinControls.UI.RadLabel();
+            this.lblDiscount = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel20 = new Telerik.WinControls.UI.RadLabel();
+            this.lblInvoiceDiscount = new Telerik.WinControls.UI.RadLabel();
             ((System.ComponentModel.ISupportInitialize)(this.splitParent)).BeginInit();
             this.splitParent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
@@ -118,6 +125,26 @@
             this.splitLeftNav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel3)).BeginInit();
             this.splitPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox7)).BeginInit();
+            this.radGroupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericQuantity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDeleteInventoryItem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridInventory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridInventory.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewTemplate2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddInventoryItem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkTaxExempt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryRetail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryDescription)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSelectInventoryItem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblInventoryNumber)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlInventoryList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblInvoiceSaved)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrintInvoice)).BeginInit();
@@ -133,7 +160,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblHeaderCustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewTemplate1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSaveInvoice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
             this.radGroupBox2.SuspendLayout();
@@ -155,7 +181,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblTaxIdNumber)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblInvoiceNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkIncludeBalance)).BeginInit();
@@ -163,32 +188,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateInvoiceDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewTemplate1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox6)).BeginInit();
             this.radGroupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox7)).BeginInit();
-            this.radGroupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlInventoryList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSelectInventoryItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryDescription)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblInventoryNumber)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryCost)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryRetail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkTaxExempt)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddInventoryItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridInventory)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridInventory.MasterTemplate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewTemplate2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDeleteInventoryItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericQuantity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox5)).BeginInit();
+            this.radGroupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lblInvoiceTotal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblPriorBalance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblDiscount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblInvoiceDiscount)).BeginInit();
             this.SuspendLayout();
             // 
             // splitParent
@@ -201,7 +216,7 @@
             // 
             // 
             this.splitParent.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitParent.Size = new System.Drawing.Size(1329, 803);
+            this.splitParent.Size = new System.Drawing.Size(1329, 899);
             this.splitParent.TabIndex = 0;
             this.splitParent.TabStop = false;
             this.splitParent.Text = "radSplitContainer1";
@@ -216,7 +231,7 @@
             // 
             // 
             this.splitPanel1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel1.Size = new System.Drawing.Size(1329, 803);
+            this.splitPanel1.Size = new System.Drawing.Size(1329, 899);
             this.splitPanel1.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.03389829F, 0F);
             this.splitPanel1.SizeInfo.SplitterCorrection = new System.Drawing.Size(29, 0);
             this.splitPanel1.TabIndex = 0;
@@ -237,7 +252,7 @@
             // 
             // 
             this.splitLeftNav.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitLeftNav.Size = new System.Drawing.Size(1329, 803);
+            this.splitLeftNav.Size = new System.Drawing.Size(1329, 899);
             this.splitLeftNav.TabIndex = 0;
             this.splitLeftNav.TabStop = false;
             this.splitLeftNav.ThemeName = "TelerikMetro";
@@ -245,6 +260,8 @@
             // splitPanel3
             // 
             this.splitPanel3.AutoScroll = true;
+            this.splitPanel3.Controls.Add(this.lblPriorBalance);
+            this.splitPanel3.Controls.Add(this.radGroupBox5);
             this.splitPanel3.Controls.Add(this.radGroupBox7);
             this.splitPanel3.Controls.Add(this.btnClose);
             this.splitPanel3.Controls.Add(this.lblInvoiceSaved);
@@ -263,7 +280,6 @@
             this.splitPanel3.Controls.Add(this.radLabel7);
             this.splitPanel3.Controls.Add(this.radLabel16);
             this.splitPanel3.Controls.Add(this.lblTaxIdNumber);
-            this.splitPanel3.Controls.Add(this.radTextBoxControl1);
             this.splitPanel3.Controls.Add(this.radLabel15);
             this.splitPanel3.Controls.Add(this.lblInvoiceNumber);
             this.splitPanel3.Controls.Add(this.chkIncludeBalance);
@@ -277,13 +293,260 @@
             // 
             // 
             this.splitPanel3.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel3.Size = new System.Drawing.Size(1327, 801);
+            this.splitPanel3.Size = new System.Drawing.Size(1327, 897);
             this.splitPanel3.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0F, 0.1129139F);
             this.splitPanel3.SizeInfo.SplitterCorrection = new System.Drawing.Size(0, 89);
             this.splitPanel3.TabIndex = 0;
             this.splitPanel3.TabStop = false;
             this.splitPanel3.Text = "splitPanel3";
             this.splitPanel3.ThemeName = "TelerikMetro";
+            // 
+            // radGroupBox7
+            // 
+            this.radGroupBox7.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this.radGroupBox7.Controls.Add(this.numericQuantity);
+            this.radGroupBox7.Controls.Add(this.btnDeleteInventoryItem);
+            this.radGroupBox7.Controls.Add(this.gridInventory);
+            this.radGroupBox7.Controls.Add(this.btnAddInventoryItem);
+            this.radGroupBox7.Controls.Add(this.chkTaxExempt);
+            this.radGroupBox7.Controls.Add(this.radLabel25);
+            this.radGroupBox7.Controls.Add(this.txtInventoryRetail);
+            this.radGroupBox7.Controls.Add(this.radLabel24);
+            this.radGroupBox7.Controls.Add(this.txtInventoryCost);
+            this.radGroupBox7.Controls.Add(this.radLabel23);
+            this.radGroupBox7.Controls.Add(this.txtInventoryDescription);
+            this.radGroupBox7.Controls.Add(this.btnSelectInventoryItem);
+            this.radGroupBox7.Controls.Add(this.radLabel12);
+            this.radGroupBox7.Controls.Add(this.txtInventoryName);
+            this.radGroupBox7.Controls.Add(this.lblInventoryNumber);
+            this.radGroupBox7.Controls.Add(this.ddlInventoryList);
+            this.radGroupBox7.FooterImageIndex = -1;
+            this.radGroupBox7.FooterImageKey = "";
+            this.radGroupBox7.HeaderImageIndex = -1;
+            this.radGroupBox7.HeaderImageKey = "";
+            this.radGroupBox7.HeaderMargin = new System.Windows.Forms.Padding(0);
+            this.radGroupBox7.HeaderText = "Invoice Items";
+            this.radGroupBox7.Location = new System.Drawing.Point(357, 223);
+            this.radGroupBox7.Name = "radGroupBox7";
+            this.radGroupBox7.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
+            // 
+            // 
+            // 
+            this.radGroupBox7.RootElement.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
+            this.radGroupBox7.Size = new System.Drawing.Size(581, 460);
+            this.radGroupBox7.TabIndex = 21;
+            this.radGroupBox7.Text = "Invoice Items";
+            this.radGroupBox7.ThemeName = "TelerikMetro";
+            // 
+            // numericQuantity
+            // 
+            this.numericQuantity.Location = new System.Drawing.Point(354, 141);
+            this.numericQuantity.Name = "numericQuantity";
+            this.numericQuantity.Size = new System.Drawing.Size(70, 20);
+            this.numericQuantity.TabIndex = 24;
+            // 
+            // btnDeleteInventoryItem
+            // 
+            this.btnDeleteInventoryItem.Location = new System.Drawing.Point(251, 420);
+            this.btnDeleteInventoryItem.Name = "btnDeleteInventoryItem";
+            this.btnDeleteInventoryItem.Size = new System.Drawing.Size(78, 24);
+            this.btnDeleteInventoryItem.TabIndex = 23;
+            this.btnDeleteInventoryItem.Text = "Delete Item";
+            this.btnDeleteInventoryItem.ThemeName = "TelerikMetro";
+            this.btnDeleteInventoryItem.Click += new System.EventHandler(this.btnDeleteInventoryItem_Click);
+            // 
+            // gridInventory
+            // 
+            this.gridInventory.BackColor = System.Drawing.SystemColors.Control;
+            this.gridInventory.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gridInventory.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.gridInventory.ForeColor = System.Drawing.Color.Black;
+            this.gridInventory.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.gridInventory.Location = new System.Drawing.Point(19, 229);
+            // 
+            // gridInventory
+            // 
+            this.gridInventory.MasterTemplate.AllowAddNewRow = false;
+            this.gridInventory.MasterTemplate.AllowColumnReorder = false;
+            this.gridInventory.MasterTemplate.AllowDragToGroup = false;
+            this.gridInventory.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
+            gridViewTextBoxColumn1.FieldName = "Id";
+            gridViewTextBoxColumn1.HeaderText = "Id";
+            gridViewTextBoxColumn1.IsVisible = false;
+            gridViewTextBoxColumn1.Name = "Id";
+            gridViewTextBoxColumn1.VisibleInColumnChooser = false;
+            gridViewComboBoxColumn1.DisplayMember = null;
+            gridViewComboBoxColumn1.EnableExpressionEditor = false;
+            gridViewComboBoxColumn1.FieldName = "Inventory";
+            gridViewComboBoxColumn1.HeaderText = "Inventory";
+            gridViewComboBoxColumn1.Name = "Inventory";
+            gridViewComboBoxColumn1.ValueMember = null;
+            gridViewComboBoxColumn1.Width = 127;
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
+            gridViewTextBoxColumn2.FieldName = "Description";
+            gridViewTextBoxColumn2.HeaderText = "Description";
+            gridViewTextBoxColumn2.Name = "Description";
+            gridViewTextBoxColumn2.Width = 133;
+            gridViewDecimalColumn1.EnableExpressionEditor = false;
+            gridViewDecimalColumn1.FieldName = "Cost";
+            gridViewDecimalColumn1.HeaderText = "Cost";
+            gridViewDecimalColumn1.Name = "Cost";
+            gridViewDecimalColumn1.Width = 70;
+            gridViewDecimalColumn2.EnableExpressionEditor = false;
+            gridViewDecimalColumn2.FieldName = "Retail";
+            gridViewDecimalColumn2.HeaderText = "Retail";
+            gridViewDecimalColumn2.Name = "Retail";
+            gridViewDecimalColumn2.Width = 56;
+            gridViewDecimalColumn3.EnableExpressionEditor = false;
+            gridViewDecimalColumn3.FieldName = "Quantity";
+            gridViewDecimalColumn3.HeaderText = "Quantity";
+            gridViewDecimalColumn3.Name = "Quantity";
+            gridViewDecimalColumn3.Width = 56;
+            gridViewDecimalColumn4.EnableExpressionEditor = false;
+            gridViewDecimalColumn4.FieldName = "Subtotal";
+            gridViewDecimalColumn4.HeaderText = "Subtotal";
+            gridViewDecimalColumn4.Name = "Subtotal";
+            gridViewDecimalColumn4.ReadOnly = true;
+            gridViewDecimalColumn4.Width = 73;
+            gridViewTextBoxColumn3.EnableExpressionEditor = false;
+            gridViewTextBoxColumn3.HeaderText = "Name";
+            gridViewTextBoxColumn3.IsVisible = false;
+            gridViewTextBoxColumn3.Name = "Name";
+            gridViewTextBoxColumn3.Width = 46;
+            this.gridInventory.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewTextBoxColumn1,
+            gridViewComboBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewDecimalColumn1,
+            gridViewDecimalColumn2,
+            gridViewDecimalColumn3,
+            gridViewDecimalColumn4,
+            gridViewTextBoxColumn3});
+            this.gridInventory.MasterTemplate.ShowFilteringRow = false;
+            this.gridInventory.MasterTemplate.ShowRowHeaderColumn = false;
+            this.gridInventory.MasterTemplate.Templates.AddRange(new Telerik.WinControls.UI.GridViewTemplate[] {
+            this.gridViewTemplate2});
+            this.gridInventory.Name = "gridInventory";
+            this.gridInventory.ReadOnly = true;
+            this.gridInventory.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gridInventory.ShowGroupPanel = false;
+            this.gridInventory.Size = new System.Drawing.Size(534, 170);
+            this.gridInventory.TabIndex = 22;
+            this.gridInventory.Text = "radGridView1";
+            this.gridInventory.ThemeName = "TelerikMetro";
+            // 
+            // btnAddInventoryItem
+            // 
+            this.btnAddInventoryItem.Location = new System.Drawing.Point(251, 169);
+            this.btnAddInventoryItem.Name = "btnAddInventoryItem";
+            this.btnAddInventoryItem.Size = new System.Drawing.Size(78, 24);
+            this.btnAddInventoryItem.TabIndex = 21;
+            this.btnAddInventoryItem.Text = "Add Item";
+            this.btnAddInventoryItem.ThemeName = "TelerikMetro";
+            this.btnAddInventoryItem.Click += new System.EventHandler(this.btnAddInventoryItem_Click);
+            // 
+            // chkTaxExempt
+            // 
+            this.chkTaxExempt.Location = new System.Drawing.Point(251, 141);
+            this.chkTaxExempt.Name = "chkTaxExempt";
+            this.chkTaxExempt.Size = new System.Drawing.Size(77, 18);
+            this.chkTaxExempt.TabIndex = 20;
+            this.chkTaxExempt.Text = "Tax Exempt";
+            // 
+            // radLabel25
+            // 
+            this.radLabel25.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel25.Location = new System.Drawing.Point(127, 117);
+            this.radLabel25.Name = "radLabel25";
+            this.radLabel25.Size = new System.Drawing.Size(40, 18);
+            this.radLabel25.TabIndex = 19;
+            this.radLabel25.Text = "Retail:";
+            // 
+            // txtInventoryRetail
+            // 
+            this.txtInventoryRetail.Location = new System.Drawing.Point(127, 141);
+            this.txtInventoryRetail.Name = "txtInventoryRetail";
+            this.txtInventoryRetail.Size = new System.Drawing.Size(86, 20);
+            this.txtInventoryRetail.TabIndex = 18;
+            // 
+            // radLabel24
+            // 
+            this.radLabel24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel24.Location = new System.Drawing.Point(30, 117);
+            this.radLabel24.Name = "radLabel24";
+            this.radLabel24.Size = new System.Drawing.Size(33, 18);
+            this.radLabel24.TabIndex = 17;
+            this.radLabel24.Text = "Cost:";
+            // 
+            // txtInventoryCost
+            // 
+            this.txtInventoryCost.Location = new System.Drawing.Point(30, 141);
+            this.txtInventoryCost.Name = "txtInventoryCost";
+            this.txtInventoryCost.Size = new System.Drawing.Size(86, 20);
+            this.txtInventoryCost.TabIndex = 16;
+            // 
+            // radLabel23
+            // 
+            this.radLabel23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel23.Location = new System.Drawing.Point(270, 67);
+            this.radLabel23.Name = "radLabel23";
+            this.radLabel23.Size = new System.Drawing.Size(70, 18);
+            this.radLabel23.TabIndex = 15;
+            this.radLabel23.Text = "Description:";
+            // 
+            // txtInventoryDescription
+            // 
+            this.txtInventoryDescription.Location = new System.Drawing.Point(270, 91);
+            this.txtInventoryDescription.Name = "txtInventoryDescription";
+            this.txtInventoryDescription.Size = new System.Drawing.Size(292, 20);
+            this.txtInventoryDescription.TabIndex = 14;
+            // 
+            // btnSelectInventoryItem
+            // 
+            this.btnSelectInventoryItem.Location = new System.Drawing.Point(204, 37);
+            this.btnSelectInventoryItem.Name = "btnSelectInventoryItem";
+            this.btnSelectInventoryItem.Size = new System.Drawing.Size(78, 24);
+            this.btnSelectInventoryItem.TabIndex = 13;
+            this.btnSelectInventoryItem.Text = "View";
+            this.btnSelectInventoryItem.ThemeName = "TelerikMetro";
+            this.btnSelectInventoryItem.Click += new System.EventHandler(this.btnSelectInventoryItem_Click);
+            // 
+            // radLabel12
+            // 
+            this.radLabel12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel12.Location = new System.Drawing.Point(30, 67);
+            this.radLabel12.Name = "radLabel12";
+            this.radLabel12.Size = new System.Drawing.Size(41, 18);
+            this.radLabel12.TabIndex = 12;
+            this.radLabel12.Text = "Name:";
+            // 
+            // txtInventoryName
+            // 
+            this.txtInventoryName.Location = new System.Drawing.Point(30, 91);
+            this.txtInventoryName.Name = "txtInventoryName";
+            this.txtInventoryName.Size = new System.Drawing.Size(217, 20);
+            this.txtInventoryName.TabIndex = 11;
+            // 
+            // lblInventoryNumber
+            // 
+            this.lblInventoryNumber.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblInventoryNumber.Location = new System.Drawing.Point(354, 117);
+            this.lblInventoryNumber.Name = "lblInventoryNumber";
+            this.lblInventoryNumber.Size = new System.Drawing.Size(56, 18);
+            this.lblInventoryNumber.TabIndex = 10;
+            this.lblInventoryNumber.Text = "Quantity:";
+            // 
+            // ddlInventoryList
+            // 
+            this.ddlInventoryList.DropDownAnimationEnabled = true;
+            this.ddlInventoryList.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
+            this.ddlInventoryList.Location = new System.Drawing.Point(30, 41);
+            this.ddlInventoryList.MaxDropDownItems = 0;
+            this.ddlInventoryList.Name = "ddlInventoryList";
+            this.ddlInventoryList.ShowImageInEditorArea = true;
+            this.ddlInventoryList.Size = new System.Drawing.Size(165, 20);
+            this.ddlInventoryList.TabIndex = 0;
             // 
             // btnClose
             // 
@@ -372,6 +635,8 @@
             // radGroupBox4
             // 
             this.radGroupBox4.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this.radGroupBox4.Controls.Add(this.lblDiscount);
+            this.radGroupBox4.Controls.Add(this.radLabel9);
             this.radGroupBox4.Controls.Add(this.radLabel5);
             this.radGroupBox4.Controls.Add(this.listviewHeaderPets);
             this.radGroupBox4.Controls.Add(this.lblHeaderAddress);
@@ -706,14 +971,6 @@
             this.lblTaxIdNumber.Size = new System.Drawing.Size(2, 2);
             this.lblTaxIdNumber.TabIndex = 14;
             // 
-            // radTextBoxControl1
-            // 
-            this.radTextBoxControl1.Location = new System.Drawing.Point(30, 179);
-            this.radTextBoxControl1.Name = "radTextBoxControl1";
-            this.radTextBoxControl1.Size = new System.Drawing.Size(108, 20);
-            this.radTextBoxControl1.TabIndex = 7;
-            this.radTextBoxControl1.Text = "0";
-            // 
             // radLabel15
             // 
             this.radLabel15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
@@ -734,7 +991,7 @@
             // 
             // chkIncludeBalance
             // 
-            this.chkIncludeBalance.Location = new System.Drawing.Point(156, 179);
+            this.chkIncludeBalance.Location = new System.Drawing.Point(214, 147);
             this.chkIncludeBalance.Name = "chkIncludeBalance";
             this.chkIncludeBalance.Size = new System.Drawing.Size(125, 18);
             this.chkIncludeBalance.TabIndex = 8;
@@ -845,255 +1102,96 @@
             this.radLabel11.TabIndex = 15;
             this.radLabel11.Text = "Products:";
             // 
-            // radGroupBox7
+            // radGroupBox5
             // 
-            this.radGroupBox7.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this.radGroupBox7.Controls.Add(this.numericQuantity);
-            this.radGroupBox7.Controls.Add(this.btnDeleteInventoryItem);
-            this.radGroupBox7.Controls.Add(this.gridInventory);
-            this.radGroupBox7.Controls.Add(this.btnAddInventoryItem);
-            this.radGroupBox7.Controls.Add(this.chkTaxExempt);
-            this.radGroupBox7.Controls.Add(this.radLabel25);
-            this.radGroupBox7.Controls.Add(this.txtInventoryRetail);
-            this.radGroupBox7.Controls.Add(this.radLabel24);
-            this.radGroupBox7.Controls.Add(this.txtInventoryCost);
-            this.radGroupBox7.Controls.Add(this.radLabel23);
-            this.radGroupBox7.Controls.Add(this.txtInventoryDescription);
-            this.radGroupBox7.Controls.Add(this.btnSelectInventoryItem);
-            this.radGroupBox7.Controls.Add(this.radLabel12);
-            this.radGroupBox7.Controls.Add(this.txtInventoryName);
-            this.radGroupBox7.Controls.Add(this.lblInventoryNumber);
-            this.radGroupBox7.Controls.Add(this.ddlInventoryList);
-            this.radGroupBox7.FooterImageIndex = -1;
-            this.radGroupBox7.FooterImageKey = "";
-            this.radGroupBox7.HeaderImageIndex = -1;
-            this.radGroupBox7.HeaderImageKey = "";
-            this.radGroupBox7.HeaderMargin = new System.Windows.Forms.Padding(0);
-            this.radGroupBox7.HeaderText = "radGroupBox7";
-            this.radGroupBox7.Location = new System.Drawing.Point(357, 223);
-            this.radGroupBox7.Name = "radGroupBox7";
-            this.radGroupBox7.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
-            this.radGroupBox7.Size = new System.Drawing.Size(581, 460);
-            this.radGroupBox7.TabIndex = 21;
-            this.radGroupBox7.Text = "radGroupBox7";
-            this.radGroupBox7.ThemeName = "TelerikMetro";
+            this.radGroupBox5.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this.radGroupBox5.Controls.Add(this.lblInvoiceDiscount);
+            this.radGroupBox5.Controls.Add(this.radLabel20);
+            this.radGroupBox5.Controls.Add(this.radLabel19);
+            this.radGroupBox5.Controls.Add(this.lblInvoiceTotal);
+            this.radGroupBox5.FooterImageIndex = -1;
+            this.radGroupBox5.FooterImageKey = "";
+            this.radGroupBox5.HeaderImageIndex = -1;
+            this.radGroupBox5.HeaderImageKey = "";
+            this.radGroupBox5.HeaderMargin = new System.Windows.Forms.Padding(0);
+            this.radGroupBox5.HeaderText = "radGroupBox5";
+            this.radGroupBox5.Location = new System.Drawing.Point(357, 702);
+            this.radGroupBox5.Name = "radGroupBox5";
+            this.radGroupBox5.Padding = new System.Windows.Forms.Padding(2, 22, 2, 2);
+            this.radGroupBox5.Size = new System.Drawing.Size(581, 165);
+            this.radGroupBox5.TabIndex = 22;
+            this.radGroupBox5.Text = "radGroupBox5";
+            this.radGroupBox5.ThemeName = "TelerikMetro";
             // 
-            // ddlInventoryList
+            // lblInvoiceTotal
             // 
-            this.ddlInventoryList.DropDownAnimationEnabled = true;
-            this.ddlInventoryList.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
-            this.ddlInventoryList.Location = new System.Drawing.Point(30, 41);
-            this.ddlInventoryList.MaxDropDownItems = 0;
-            this.ddlInventoryList.Name = "ddlInventoryList";
-            this.ddlInventoryList.ShowImageInEditorArea = true;
-            this.ddlInventoryList.Size = new System.Drawing.Size(165, 20);
-            this.ddlInventoryList.TabIndex = 0;
+            this.lblInvoiceTotal.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblInvoiceTotal.Location = new System.Drawing.Point(524, 119);
+            this.lblInvoiceTotal.Name = "lblInvoiceTotal";
+            this.lblInvoiceTotal.Size = new System.Drawing.Size(29, 18);
+            this.lblInvoiceTotal.TabIndex = 1;
+            this.lblInvoiceTotal.Text = "0.00";
             // 
-            // radLabel12
+            // radLabel19
             // 
-            this.radLabel12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel12.Location = new System.Drawing.Point(30, 67);
-            this.radLabel12.Name = "radLabel12";
-            this.radLabel12.Size = new System.Drawing.Size(41, 18);
-            this.radLabel12.TabIndex = 12;
-            this.radLabel12.Text = "Name:";
+            this.radLabel19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel19.Location = new System.Drawing.Point(463, 119);
+            this.radLabel19.Name = "radLabel19";
+            this.radLabel19.Size = new System.Drawing.Size(37, 18);
+            this.radLabel19.TabIndex = 2;
+            this.radLabel19.Text = "Total:";
             // 
-            // txtInventoryName
+            // lblPriorBalance
             // 
-            this.txtInventoryName.Location = new System.Drawing.Point(30, 91);
-            this.txtInventoryName.Name = "txtInventoryName";
-            this.txtInventoryName.Size = new System.Drawing.Size(217, 20);
-            this.txtInventoryName.TabIndex = 11;
+            this.lblPriorBalance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblPriorBalance.Location = new System.Drawing.Point(125, 147);
+            this.lblPriorBalance.Name = "lblPriorBalance";
+            this.lblPriorBalance.Size = new System.Drawing.Size(29, 18);
+            this.lblPriorBalance.TabIndex = 23;
+            this.lblPriorBalance.Text = "0.00";
             // 
-            // btnSelectInventoryItem
+            // radLabel9
             // 
-            this.btnSelectInventoryItem.Location = new System.Drawing.Point(204, 37);
-            this.btnSelectInventoryItem.Name = "btnSelectInventoryItem";
-            this.btnSelectInventoryItem.Size = new System.Drawing.Size(78, 24);
-            this.btnSelectInventoryItem.TabIndex = 13;
-            this.btnSelectInventoryItem.Text = "View";
-            this.btnSelectInventoryItem.ThemeName = "TelerikMetro";
-            this.btnSelectInventoryItem.Click += new System.EventHandler(this.btnSelectInventoryItem_Click);
+            this.radLabel9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel9.Location = new System.Drawing.Point(364, 37);
+            this.radLabel9.Name = "radLabel9";
+            this.radLabel9.Size = new System.Drawing.Size(56, 18);
+            this.radLabel9.TabIndex = 10;
+            this.radLabel9.Text = "Discount:";
             // 
-            // radLabel23
+            // lblDiscount
             // 
-            this.radLabel23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel23.Location = new System.Drawing.Point(270, 67);
-            this.radLabel23.Name = "radLabel23";
-            this.radLabel23.Size = new System.Drawing.Size(70, 18);
-            this.radLabel23.TabIndex = 15;
-            this.radLabel23.Text = "Description:";
+            this.lblDiscount.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblDiscount.Location = new System.Drawing.Point(444, 37);
+            this.lblDiscount.Name = "lblDiscount";
+            this.lblDiscount.Size = new System.Drawing.Size(39, 18);
+            this.lblDiscount.TabIndex = 11;
+            this.lblDiscount.Text = "0.00%";
             // 
-            // txtInventoryDescription
+            // radLabel20
             // 
-            this.txtInventoryDescription.Location = new System.Drawing.Point(270, 91);
-            this.txtInventoryDescription.Name = "txtInventoryDescription";
-            this.txtInventoryDescription.Size = new System.Drawing.Size(292, 20);
-            this.txtInventoryDescription.TabIndex = 14;
+            this.radLabel20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel20.Location = new System.Drawing.Point(463, 95);
+            this.radLabel20.Name = "radLabel20";
+            this.radLabel20.Size = new System.Drawing.Size(56, 18);
+            this.radLabel20.TabIndex = 3;
+            this.radLabel20.Text = "Discount:";
             // 
-            // lblInventoryNumber
+            // lblInvoiceDiscount
             // 
-            this.lblInventoryNumber.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.lblInventoryNumber.Location = new System.Drawing.Point(354, 117);
-            this.lblInventoryNumber.Name = "lblInventoryNumber";
-            this.lblInventoryNumber.Size = new System.Drawing.Size(56, 18);
-            this.lblInventoryNumber.TabIndex = 10;
-            this.lblInventoryNumber.Text = "Quantity:";
-            // 
-            // radLabel24
-            // 
-            this.radLabel24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel24.Location = new System.Drawing.Point(30, 117);
-            this.radLabel24.Name = "radLabel24";
-            this.radLabel24.Size = new System.Drawing.Size(33, 18);
-            this.radLabel24.TabIndex = 17;
-            this.radLabel24.Text = "Cost:";
-            // 
-            // txtInventoryCost
-            // 
-            this.txtInventoryCost.Location = new System.Drawing.Point(30, 141);
-            this.txtInventoryCost.Name = "txtInventoryCost";
-            this.txtInventoryCost.Size = new System.Drawing.Size(86, 20);
-            this.txtInventoryCost.TabIndex = 16;
-            // 
-            // radLabel25
-            // 
-            this.radLabel25.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel25.Location = new System.Drawing.Point(127, 117);
-            this.radLabel25.Name = "radLabel25";
-            this.radLabel25.Size = new System.Drawing.Size(40, 18);
-            this.radLabel25.TabIndex = 19;
-            this.radLabel25.Text = "Retail:";
-            // 
-            // txtInventoryRetail
-            // 
-            this.txtInventoryRetail.Location = new System.Drawing.Point(127, 141);
-            this.txtInventoryRetail.Name = "txtInventoryRetail";
-            this.txtInventoryRetail.Size = new System.Drawing.Size(86, 20);
-            this.txtInventoryRetail.TabIndex = 18;
-            // 
-            // chkTaxExempt
-            // 
-            this.chkTaxExempt.Location = new System.Drawing.Point(251, 141);
-            this.chkTaxExempt.Name = "chkTaxExempt";
-            this.chkTaxExempt.Size = new System.Drawing.Size(77, 18);
-            this.chkTaxExempt.TabIndex = 20;
-            this.chkTaxExempt.Text = "Tax Exempt";
-            // 
-            // btnAddInventoryItem
-            // 
-            this.btnAddInventoryItem.Location = new System.Drawing.Point(251, 169);
-            this.btnAddInventoryItem.Name = "btnAddInventoryItem";
-            this.btnAddInventoryItem.Size = new System.Drawing.Size(78, 24);
-            this.btnAddInventoryItem.TabIndex = 21;
-            this.btnAddInventoryItem.Text = "Add Item";
-            this.btnAddInventoryItem.ThemeName = "TelerikMetro";
-            this.btnAddInventoryItem.Click += new System.EventHandler(this.btnAddInventoryItem_Click);
-            // 
-            // gridInventory
-            // 
-            this.gridInventory.BackColor = System.Drawing.SystemColors.Control;
-            this.gridInventory.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridInventory.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.gridInventory.ForeColor = System.Drawing.Color.Black;
-            this.gridInventory.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.gridInventory.Location = new System.Drawing.Point(19, 229);
-            // 
-            // gridInventory
-            // 
-            this.gridInventory.MasterTemplate.AllowAddNewRow = false;
-            this.gridInventory.MasterTemplate.AllowColumnReorder = false;
-            this.gridInventory.MasterTemplate.AllowDragToGroup = false;
-            this.gridInventory.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn1.EnableExpressionEditor = false;
-            gridViewTextBoxColumn1.FieldName = "Id";
-            gridViewTextBoxColumn1.HeaderText = "Id";
-            gridViewTextBoxColumn1.IsVisible = false;
-            gridViewTextBoxColumn1.Name = "Id";
-            gridViewTextBoxColumn1.VisibleInColumnChooser = false;
-            gridViewComboBoxColumn1.DisplayMember = null;
-            gridViewComboBoxColumn1.EnableExpressionEditor = false;
-            gridViewComboBoxColumn1.FieldName = "Inventory";
-            gridViewComboBoxColumn1.HeaderText = "Inventory";
-            gridViewComboBoxColumn1.Name = "Inventory";
-            gridViewComboBoxColumn1.ValueMember = null;
-            gridViewComboBoxColumn1.Width = 127;
-            gridViewTextBoxColumn2.EnableExpressionEditor = false;
-            gridViewTextBoxColumn2.FieldName = "Description";
-            gridViewTextBoxColumn2.HeaderText = "Description";
-            gridViewTextBoxColumn2.Name = "Description";
-            gridViewTextBoxColumn2.Width = 133;
-            gridViewDecimalColumn1.EnableExpressionEditor = false;
-            gridViewDecimalColumn1.FieldName = "Cost";
-            gridViewDecimalColumn1.HeaderText = "Cost";
-            gridViewDecimalColumn1.Name = "Cost";
-            gridViewDecimalColumn1.Width = 70;
-            gridViewDecimalColumn2.EnableExpressionEditor = false;
-            gridViewDecimalColumn2.FieldName = "Retail";
-            gridViewDecimalColumn2.HeaderText = "Retail";
-            gridViewDecimalColumn2.Name = "Retail";
-            gridViewDecimalColumn2.Width = 56;
-            gridViewDecimalColumn3.EnableExpressionEditor = false;
-            gridViewDecimalColumn3.FieldName = "Quantity";
-            gridViewDecimalColumn3.HeaderText = "Quantity";
-            gridViewDecimalColumn3.Name = "Quantity";
-            gridViewDecimalColumn3.Width = 56;
-            gridViewDecimalColumn4.EnableExpressionEditor = false;
-            gridViewDecimalColumn4.FieldName = "Subtotal";
-            gridViewDecimalColumn4.HeaderText = "Subtotal";
-            gridViewDecimalColumn4.Name = "Subtotal";
-            gridViewDecimalColumn4.ReadOnly = true;
-            gridViewDecimalColumn4.Width = 73;
-            gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.HeaderText = "Name";
-            gridViewTextBoxColumn3.IsVisible = false;
-            gridViewTextBoxColumn3.Name = "Name";
-            gridViewTextBoxColumn3.Width = 46;
-            this.gridInventory.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewComboBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewDecimalColumn1,
-            gridViewDecimalColumn2,
-            gridViewDecimalColumn3,
-            gridViewDecimalColumn4,
-            gridViewTextBoxColumn3});
-            this.gridInventory.MasterTemplate.ShowFilteringRow = false;
-            this.gridInventory.MasterTemplate.ShowRowHeaderColumn = false;
-            this.gridInventory.MasterTemplate.Templates.AddRange(new Telerik.WinControls.UI.GridViewTemplate[] {
-            this.gridViewTemplate2});
-            this.gridInventory.Name = "gridInventory";
-            this.gridInventory.ReadOnly = true;
-            this.gridInventory.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.gridInventory.ShowGroupPanel = false;
-            this.gridInventory.Size = new System.Drawing.Size(534, 170);
-            this.gridInventory.TabIndex = 22;
-            this.gridInventory.Text = "radGridView1";
-            this.gridInventory.ThemeName = "TelerikMetro";
-            // 
-            // btnDeleteInventoryItem
-            // 
-            this.btnDeleteInventoryItem.Location = new System.Drawing.Point(251, 420);
-            this.btnDeleteInventoryItem.Name = "btnDeleteInventoryItem";
-            this.btnDeleteInventoryItem.Size = new System.Drawing.Size(78, 24);
-            this.btnDeleteInventoryItem.TabIndex = 23;
-            this.btnDeleteInventoryItem.Text = "Delete Item";
-            this.btnDeleteInventoryItem.ThemeName = "TelerikMetro";
-            this.btnDeleteInventoryItem.Click += new System.EventHandler(this.btnDeleteInventoryItem_Click);
-            // 
-            // numericQuantity
-            // 
-            this.numericQuantity.Location = new System.Drawing.Point(354, 141);
-            this.numericQuantity.Name = "numericQuantity";
-            this.numericQuantity.Size = new System.Drawing.Size(70, 20);
-            this.numericQuantity.TabIndex = 24;
+            this.lblInvoiceDiscount.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblInvoiceDiscount.Location = new System.Drawing.Point(525, 95);
+            this.lblInvoiceDiscount.Name = "lblInvoiceDiscount";
+            this.lblInvoiceDiscount.Size = new System.Drawing.Size(29, 18);
+            this.lblInvoiceDiscount.TabIndex = 4;
+            this.lblInvoiceDiscount.Text = "0.00";
             // 
             // frmInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(1329, 803);
+            this.ClientSize = new System.Drawing.Size(1329, 899);
             this.Controls.Add(this.splitParent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmInvoice";
@@ -1109,6 +1207,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel3)).EndInit();
             this.splitPanel3.ResumeLayout(false);
             this.splitPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox7)).EndInit();
+            this.radGroupBox7.ResumeLayout(false);
+            this.radGroupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericQuantity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDeleteInventoryItem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridInventory.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridInventory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewTemplate2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddInventoryItem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkTaxExempt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryRetail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryDescription)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSelectInventoryItem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblInventoryNumber)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlInventoryList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblInvoiceSaved)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrintInvoice)).EndInit();
@@ -1125,7 +1244,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblHeaderCustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewTemplate1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSaveInvoice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).EndInit();
             this.radGroupBox2.ResumeLayout(false);
@@ -1148,7 +1266,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblTaxIdNumber)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblInvoiceNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkIncludeBalance)).EndInit();
@@ -1156,6 +1273,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radDateTimePicker1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateInvoiceDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewTemplate1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox6)).EndInit();
             this.radGroupBox6.ResumeLayout(false);
             this.radGroupBox6.PerformLayout();
@@ -1163,27 +1281,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox7)).EndInit();
-            this.radGroupBox7.ResumeLayout(false);
-            this.radGroupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ddlInventoryList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSelectInventoryItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryDescription)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblInventoryNumber)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryCost)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInventoryRetail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkTaxExempt)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddInventoryItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridInventory.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridInventory)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewTemplate2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDeleteInventoryItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericQuantity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox5)).EndInit();
+            this.radGroupBox5.ResumeLayout(false);
+            this.radGroupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lblInvoiceTotal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblPriorBalance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblDiscount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblInvoiceDiscount)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1214,7 +1321,6 @@
         private Telerik.WinControls.UI.RadLabel radLabel3;
         private Telerik.WinControls.UI.RadLabel radLabel5;
         private Telerik.WinControls.UI.RadListView listviewHeaderPets;
-        private Telerik.WinControls.UI.RadTextBoxControl radTextBoxControl1;
         private Telerik.WinControls.UI.RadLabel radLabel7;
         private Telerik.WinControls.UI.RadCheckBox chkIncludeBalance;
         private Telerik.WinControls.UI.RadDateTimePicker dateInvoiceDate;
@@ -1257,5 +1363,13 @@
         private Telerik.WinControls.UI.GridViewTemplate gridViewTemplate2;
         private Telerik.WinControls.UI.RadButton btnDeleteInventoryItem;
         private System.Windows.Forms.NumericUpDown numericQuantity;
+        private Telerik.WinControls.UI.RadGroupBox radGroupBox5;
+        private Telerik.WinControls.UI.RadLabel lblInvoiceTotal;
+        private Telerik.WinControls.UI.RadLabel radLabel19;
+        private Telerik.WinControls.UI.RadLabel lblPriorBalance;
+        private Telerik.WinControls.UI.RadLabel radLabel9;
+        private Telerik.WinControls.UI.RadLabel lblDiscount;
+        private Telerik.WinControls.UI.RadLabel lblInvoiceDiscount;
+        private Telerik.WinControls.UI.RadLabel radLabel20;
     }
 }

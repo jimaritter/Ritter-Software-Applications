@@ -25,6 +25,9 @@ namespace PerfectPet
         public int PersonId { get; set; }
         public int AddressId { get; set; }
         public int InvoiceId { get; set; }
+        public double PriorBalance { get; set; }
+        public double Discount { get; set; }
+        public double InvoiceTotal { get; set; }
         public IList<Pet> Pets { get; set; }
         private ICompany _company;
         private Company company;
@@ -137,6 +140,8 @@ namespace PerfectPet
                     customer = _customer.GetById(PersonId);
                     invoice.Person = customer;
                     lblHeaderCustomer.Text = customer.Number + " - " + customer.FirstName + " " + customer.LastName;
+                    Discount = customer.Discount/100;
+                    lblDiscount.Text = customer.Discount.ToString(CultureInfo.InvariantCulture) + "%";
                     Pets = new List<Pet>();
                     listviewHeaderPets.DataSource = null;
                     listviewHeaderPets.Items.Clear();
@@ -343,6 +348,7 @@ namespace PerfectPet
 
                     gridInventory.Rows.Add(inventory.Id, inventory.Name, inventory.Description, inventory.Cost,
                                            inventory.Retail, numericQuantity.Text, (inventory.Retail * Convert.ToDouble(numericQuantity.Text)));
+                    CalculateInventoryTotal();
 
                 }
                 catch (Exception)
@@ -351,6 +357,37 @@ namespace PerfectPet
                     throw;
                 }                
             }
+
+        private void CalculateInventoryTotal()
+        {
+            try
+            {
+                double total = 0;
+                foreach (var row in gridInventory.Rows)
+                {
+                    total = (total + Convert.ToDouble(row.Cells["Subtotal"].Value));
+                }
+
+                    if(chkIncludeBalance.Checked == true)
+                    {
+                        total = total - (total * Discount) + PriorBalance;
+                    }
+                    else
+                    {
+                        total = (total - (total * Discount));
+                    }
+
+                lblInvoiceDiscount.Text = Math.Round(total * Discount,2).ToString(CultureInfo.InvariantCulture);
+                InvoiceTotal = Math.Round(total,2);
+                lblInvoiceTotal.Text = InvoiceTotal.ToString(CultureInfo.InvariantCulture);
+
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        }
 
         #endregion
 
@@ -525,6 +562,7 @@ namespace PerfectPet
             try
             {
                 gridInventory.Rows.Remove(gridInventory.CurrentRow);
+                CalculateInventoryTotal();
             }
             catch (Exception)
             {
