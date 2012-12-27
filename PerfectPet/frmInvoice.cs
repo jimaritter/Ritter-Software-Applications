@@ -332,6 +332,7 @@ namespace PerfectPet
                 {
                     var _inventory = ObjectFactory.GetInstance<IInventory>();
                     var inventory = _inventory.GetById((int)ddlInventoryList.SelectedValue);
+
                     txtInventoryName.Text = inventory.Name;
                     txtInventoryDescription.Text = inventory.Description;
                     txtInventoryCost.Text = inventory.Cost.ToString();
