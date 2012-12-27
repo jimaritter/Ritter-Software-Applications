@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PerfectPet.Model.Addresses;
+using PerfectPet.Model.Common;
 using PerfectPet.Model.Companies;
 using PerfectPet.Model.Inventories;
 using PerfectPet.Model.People;
@@ -31,6 +32,8 @@ namespace PerfectPet
         public double InvoiceTotal { get; set; }
         public double TaxRate { get; set; }
         public double TaxTotal { get; set; }
+        public double Payment { get; set; }
+        public double Balance { get; set; }
         public IList<Pet> Pets { get; set; }
         private ICompany _company;
         private Company company;
@@ -58,18 +61,39 @@ namespace PerfectPet
                 {
                     Cursor.Current = Cursors.Default;
                     this.WindowState = FormWindowState.Maximized;
-                    lineItems = new List<LineItem>();
-                    Pets = new List<Pet>();
-                    _company = ObjectFactory.GetInstance<ICompany>();
-                    company = _company.GetById(1002);
-                    _invoice = ObjectFactory.GetInstance<IInvoice>();
-                    invoice = _invoice.Get();
-                    _invoiceNumber = ObjectFactory.GetInstance<IInvoiceNumber>();
-                    invoiceNumber = _invoiceNumber.GetById(1);
-                    invoice.Company = company;
-                    lblTaxIdNumber.Text = company.TaxNumber;
-                    lblInvoiceNumber.Text = invoiceNumber.Number.ToString();
-                    BindCustomerDropDown();
+                    if(InvoiceId == 0)
+                    {
+                        lineItems = new List<LineItem>();
+                        Pets = new List<Pet>();
+                        _company = ObjectFactory.GetInstance<ICompany>();
+                        company = _company.GetById(1002);
+                        _invoice = ObjectFactory.GetInstance<IInvoice>();
+                        invoice = _invoice.Get();
+                        _invoiceNumber = ObjectFactory.GetInstance<IInvoiceNumber>();
+                        invoiceNumber = _invoiceNumber.GetById(1);
+                        invoice.Company = company;
+                        lblTaxIdNumber.Text = company.TaxNumber;
+                        lblInvoiceNumber.Text = invoiceNumber.Number.ToString();
+                        BindCustomerDropDown();
+                        BindPaymentMehod();
+                        BindPaymentTerms();
+                    }else
+                    {
+                        var _lineItems = ObjectFactory.GetInstance<ILineItem>();
+                        lineItems = _lineItems.GetAllByInvoiceId(InvoiceId);
+                        _invoice = ObjectFactory.GetInstance<IInvoice>();
+                        invoice = _invoice.GetById(InvoiceId);
+                        Pets = new List<Pet>();
+                        _company = ObjectFactory.GetInstance<ICompany>();
+                        company = _company.GetById(1002);
+                        invoice.Company = company;
+                        lblTaxIdNumber.Text = company.TaxNumber;
+                        lblInvoiceNumber.Text = invoiceNumber.Number.ToString();
+                        BindCustomerDropDown();
+                        BindPaymentMehod();
+                        BindPaymentTerms();                       
+                    }
+
       
                     BindInventoryList();
                 }
@@ -297,6 +321,20 @@ namespace PerfectPet
                 }   
             }
 
+            private void BindPaymentMehod()
+            {
+                var bindsrc = new BindingSource();
+                bindsrc.DataSource = EnumerationParser.GetEnumDescriptions(typeof(PaymentMethods));
+                ddlPaymentMethod.DataSource = bindsrc.DataSource;             
+            }
+
+            private void BindPaymentTerms()
+            {
+                var bindsrc = new BindingSource();
+                bindsrc.DataSource = EnumerationParser.GetEnumDescriptions(typeof(PaymentTerms));
+                ddlInvoiceTerms.DataSource = bindsrc.DataSource;  
+            }
+
             private void AddPetsToHeaderListView()
             {
                 try
@@ -494,7 +532,13 @@ namespace PerfectPet
                 invoice.Company = company;
                 invoice.DeliveryDate = DateTime.Now;
                 invoice.Description = txtInvoiceDescription.Text;
-                invoice.CreatedDate = DateTime.Now;          
+                invoice.CreatedDate = DateTime.Now;
+                invoice.TaxRate = TaxRate;
+                invoice.Tax = TaxTotal;
+                invoice.Discount = DiscountTotal;
+                invoice.DiscountRate = Discount;
+                invoice.PriorBalance = PriorBalance;
+                invoice.InvoiceTotal = InvoiceTotal;
                 _invoice.Save(invoice);
 
 
@@ -585,6 +629,19 @@ namespace PerfectPet
             {
                 
                 throw;
+            }
+        }
+
+        private void txtPayment_TextChanged(object sender, EventArgs e)
+        {
+            double Num;
+            bool isNum = double.TryParse(txtPayment.Text, out Num);
+            if(isNum)
+            {
+                var balance = Math.Round(InvoiceTotal - Convert.ToDouble(txtPayment.Text),2);
+                Balance = balance;
+                Payment = Convert.ToDouble(txtPayment.Text);
+                lblInvoiceBalance.Text = balance.ToString();
             }
         }
 

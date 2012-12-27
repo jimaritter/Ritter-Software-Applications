@@ -27,6 +27,12 @@ namespace PerfectPet.Model.Mappings
             Map(x => x.DiscountRate);
             Map(x => x.Discount);
             Map(x => x.PriorBalance);
+            Map(x => x.PaymentMethod);
+            Map(x => x.PaymentTerms);
+            Map(x => x.InvoiceTotal);
+            Map(x => x.InvoiceBalance);
+            Map(x => x.Payment);
+            Map(x => x.Balance);
             //HasManyToMany(x => x.Pets)
             //    .Table("InvoicesToPets")
             //    .ParentKeyColumn("InvoiceId")

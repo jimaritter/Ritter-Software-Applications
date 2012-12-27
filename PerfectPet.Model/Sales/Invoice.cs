@@ -35,6 +35,12 @@ namespace PerfectPet.Model.Sales
         public virtual double PriorBalance { get; set; }
         public virtual double TaxRate { get; set; }
         public virtual double DiscountRate { get; set; }
+        public virtual string PaymentMethod { get; set; }
+        public virtual string PaymentTerms { get; set; }
+        public virtual double InvoiceTotal { get; set; }
+        public virtual double InvoiceBalance { get; set; }
+        public virtual double Payment { get; set; }
+        public virtual double Balance { get; set; }
 
         public Invoice()
         {
