@@ -27,7 +27,10 @@ namespace PerfectPet
         public int InvoiceId { get; set; }
         public double PriorBalance { get; set; }
         public double Discount { get; set; }
+        public double DiscountTotal { get; set; }
         public double InvoiceTotal { get; set; }
+        public double TaxRate { get; set; }
+        public double TaxTotal { get; set; }
         public IList<Pet> Pets { get; set; }
         private ICompany _company;
         private Company company;
@@ -142,6 +145,9 @@ namespace PerfectPet
                     lblHeaderCustomer.Text = customer.Number + " - " + customer.FirstName + " " + customer.LastName;
                     Discount = customer.Discount/100;
                     lblDiscount.Text = customer.Discount.ToString(CultureInfo.InvariantCulture) + "%";
+                    var _company = ObjectFactory.GetInstance<ICompany>();
+                    var company = _company.GetById(1002);
+                    TaxRate = company.TaxRate;
                     Pets = new List<Pet>();
                     listviewHeaderPets.DataSource = null;
                     listviewHeaderPets.Items.Clear();
@@ -347,7 +353,7 @@ namespace PerfectPet
                     var inventory = _inventory.GetById((int)ddlInventoryList.SelectedValue);
 
                     gridInventory.Rows.Add(inventory.Id, inventory.Name, inventory.Description, inventory.Cost,
-                                           inventory.Retail, numericQuantity.Text, (inventory.Retail * Convert.ToDouble(numericQuantity.Text)));
+                                           inventory.Retail, numericQuantity.Text, (inventory.Retail * Convert.ToDouble(numericQuantity.Text)), inventory.Name,inventory.TaxExempt);
                     CalculateInventoryTotal();
 
                 }
@@ -363,19 +369,29 @@ namespace PerfectPet
             try
             {
                 double total = 0;
+                double taxtotal = 0;
+
                 foreach (var row in gridInventory.Rows)
                 {
                     total = (total + Convert.ToDouble(row.Cells["Subtotal"].Value));
+                    if (Convert.ToBoolean(row.Cells["TaxExempt"].Value) == false)
+                    {
+                        taxtotal = taxtotal + Convert.ToDouble(row.Cells["Subtotal"].Value);
+                    }
                 }
 
-                    if(chkIncludeBalance.Checked == true)
-                    {
-                        total = total - (total * Discount) + PriorBalance;
-                    }
-                    else
-                    {
-                        total = (total - (total * Discount));
-                    }
+                taxtotal = Math.Round(taxtotal*TaxRate);
+                TaxTotal = taxtotal;
+                lblTaxTotal.Text = TaxTotal.ToString();
+
+                if(chkIncludeBalance.Checked == true)
+                {
+                    total = total - (total * Discount) + PriorBalance + taxtotal;
+                }
+                else
+                {
+                    total = (total - (total * Discount)) + taxtotal;
+                }
 
                 lblInvoiceDiscount.Text = Math.Round(total * Discount,2).ToString(CultureInfo.InvariantCulture);
                 InvoiceTotal = Math.Round(total,2);

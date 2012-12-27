@@ -36,13 +36,14 @@
             Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn3 = new Telerik.WinControls.UI.GridViewDecimalColumn();
             Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn4 = new Telerik.WinControls.UI.GridViewDecimalColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn1 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn2 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Name");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn4 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 0", "Id");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn5 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 1", "Name");
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             this.splitParent = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
             this.splitLeftNav = new Telerik.WinControls.UI.RadSplitContainer();
@@ -117,6 +118,8 @@
             this.lblDiscount = new Telerik.WinControls.UI.RadLabel();
             this.radLabel20 = new Telerik.WinControls.UI.RadLabel();
             this.lblInvoiceDiscount = new Telerik.WinControls.UI.RadLabel();
+            this.lblTaxTotal = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel22 = new Telerik.WinControls.UI.RadLabel();
             ((System.ComponentModel.ISupportInitialize)(this.splitParent)).BeginInit();
             this.splitParent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
@@ -204,6 +207,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblDiscount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblInvoiceDiscount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblTaxTotal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel22)).BeginInit();
             this.SuspendLayout();
             // 
             // splitParent
@@ -414,6 +419,11 @@
             gridViewTextBoxColumn3.IsVisible = false;
             gridViewTextBoxColumn3.Name = "Name";
             gridViewTextBoxColumn3.Width = 46;
+            gridViewTextBoxColumn4.FieldName = "TaxExempt";
+            gridViewTextBoxColumn4.HeaderText = "TaxExempt";
+            gridViewTextBoxColumn4.IsVisible = false;
+            gridViewTextBoxColumn4.Name = "TaxExempt";
+            gridViewTextBoxColumn4.Width = 46;
             this.gridInventory.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewComboBoxColumn1,
@@ -422,7 +432,8 @@
             gridViewDecimalColumn2,
             gridViewDecimalColumn3,
             gridViewDecimalColumn4,
-            gridViewTextBoxColumn3});
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4});
             this.gridInventory.MasterTemplate.ShowFilteringRow = false;
             this.gridInventory.MasterTemplate.ShowRowHeaderColumn = false;
             this.gridInventory.MasterTemplate.Templates.AddRange(new Telerik.WinControls.UI.GridViewTemplate[] {
@@ -841,26 +852,26 @@
             this.ddlCustomerList.EditorControl.MasterTemplate.AllowDragToGroup = false;
             this.ddlCustomerList.EditorControl.MasterTemplate.AllowEditRow = false;
             this.ddlCustomerList.EditorControl.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn4.AllowGroup = false;
-            gridViewTextBoxColumn4.AllowResize = false;
-            gridViewTextBoxColumn4.AllowSort = false;
-            gridViewTextBoxColumn4.EnableExpressionEditor = false;
-            gridViewTextBoxColumn4.FieldName = "Id";
-            gridViewTextBoxColumn4.HeaderText = "Id";
-            gridViewTextBoxColumn4.IsVisible = false;
-            gridViewTextBoxColumn4.Name = "Id";
-            gridViewTextBoxColumn4.Width = 621;
             gridViewTextBoxColumn5.AllowGroup = false;
             gridViewTextBoxColumn5.AllowResize = false;
             gridViewTextBoxColumn5.AllowSort = false;
             gridViewTextBoxColumn5.EnableExpressionEditor = false;
-            gridViewTextBoxColumn5.FieldName = "Name";
-            gridViewTextBoxColumn5.HeaderText = "Name";
-            gridViewTextBoxColumn5.Name = "Name";
+            gridViewTextBoxColumn5.FieldName = "Id";
+            gridViewTextBoxColumn5.HeaderText = "Id";
+            gridViewTextBoxColumn5.IsVisible = false;
+            gridViewTextBoxColumn5.Name = "Id";
             gridViewTextBoxColumn5.Width = 621;
+            gridViewTextBoxColumn6.AllowGroup = false;
+            gridViewTextBoxColumn6.AllowResize = false;
+            gridViewTextBoxColumn6.AllowSort = false;
+            gridViewTextBoxColumn6.EnableExpressionEditor = false;
+            gridViewTextBoxColumn6.FieldName = "Name";
+            gridViewTextBoxColumn6.HeaderText = "Name";
+            gridViewTextBoxColumn6.Name = "Name";
+            gridViewTextBoxColumn6.Width = 621;
             this.ddlCustomerList.EditorControl.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn4,
-            gridViewTextBoxColumn5});
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6});
             this.ddlCustomerList.EditorControl.MasterTemplate.EnableFiltering = true;
             this.ddlCustomerList.EditorControl.MasterTemplate.EnableGrouping = false;
             this.ddlCustomerList.EditorControl.MasterTemplate.ShowColumnHeaders = false;
@@ -1105,6 +1116,8 @@
             // radGroupBox5
             // 
             this.radGroupBox5.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this.radGroupBox5.Controls.Add(this.lblTaxTotal);
+            this.radGroupBox5.Controls.Add(this.radLabel22);
             this.radGroupBox5.Controls.Add(this.lblInvoiceDiscount);
             this.radGroupBox5.Controls.Add(this.radLabel20);
             this.radGroupBox5.Controls.Add(this.radLabel19);
@@ -1171,7 +1184,7 @@
             // radLabel20
             // 
             this.radLabel20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel20.Location = new System.Drawing.Point(463, 95);
+            this.radLabel20.Location = new System.Drawing.Point(463, 70);
             this.radLabel20.Name = "radLabel20";
             this.radLabel20.Size = new System.Drawing.Size(56, 18);
             this.radLabel20.TabIndex = 3;
@@ -1180,11 +1193,29 @@
             // lblInvoiceDiscount
             // 
             this.lblInvoiceDiscount.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.lblInvoiceDiscount.Location = new System.Drawing.Point(525, 95);
+            this.lblInvoiceDiscount.Location = new System.Drawing.Point(525, 70);
             this.lblInvoiceDiscount.Name = "lblInvoiceDiscount";
             this.lblInvoiceDiscount.Size = new System.Drawing.Size(29, 18);
             this.lblInvoiceDiscount.TabIndex = 4;
             this.lblInvoiceDiscount.Text = "0.00";
+            // 
+            // lblTaxTotal
+            // 
+            this.lblTaxTotal.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblTaxTotal.Location = new System.Drawing.Point(525, 94);
+            this.lblTaxTotal.Name = "lblTaxTotal";
+            this.lblTaxTotal.Size = new System.Drawing.Size(29, 18);
+            this.lblTaxTotal.TabIndex = 6;
+            this.lblTaxTotal.Text = "0.00";
+            // 
+            // radLabel22
+            // 
+            this.radLabel22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel22.Location = new System.Drawing.Point(463, 94);
+            this.radLabel22.Name = "radLabel22";
+            this.radLabel22.Size = new System.Drawing.Size(28, 18);
+            this.radLabel22.TabIndex = 5;
+            this.radLabel22.Text = "Tax:";
             // 
             // frmInvoice
             // 
@@ -1291,6 +1322,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblDiscount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblInvoiceDiscount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblTaxTotal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel22)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1371,5 +1404,7 @@
         private Telerik.WinControls.UI.RadLabel lblDiscount;
         private Telerik.WinControls.UI.RadLabel lblInvoiceDiscount;
         private Telerik.WinControls.UI.RadLabel radLabel20;
+        private Telerik.WinControls.UI.RadLabel lblTaxTotal;
+        private Telerik.WinControls.UI.RadLabel radLabel22;
     }
 }

@@ -22,6 +22,11 @@ namespace PerfectPet.Model.Mappings
             References(x => x.Company);
             References(x => x.Person);
             References(x => x.Phone);
+            Map(x => x.Tax);
+            Map(x => x.TaxRate);
+            Map(x => x.DiscountRate);
+            Map(x => x.Discount);
+            Map(x => x.PriorBalance);
             //HasManyToMany(x => x.Pets)
             //    .Table("InvoicesToPets")
             //    .ParentKeyColumn("InvoiceId")

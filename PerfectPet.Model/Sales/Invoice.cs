@@ -30,6 +30,11 @@ namespace PerfectPet.Model.Sales
         public virtual string VoidReason { get; set; }
         public virtual DateTime CreatedDate { get; set; }
         public virtual DateTime? ModifiedDate { get; set; }
+        public virtual double Discount { get; set; }
+        public virtual double Tax { get; set; }
+        public virtual double PriorBalance { get; set; }
+        public virtual double TaxRate { get; set; }
+        public virtual double DiscountRate { get; set; }
 
         public Invoice()
         {
