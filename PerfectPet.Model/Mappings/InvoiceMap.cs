@@ -30,7 +30,6 @@ namespace PerfectPet.Model.Mappings
             Map(x => x.PaymentMethod);
             Map(x => x.PaymentTerms);
             Map(x => x.InvoiceTotal);
-            Map(x => x.InvoiceBalance);
             Map(x => x.Payment);
             Map(x => x.Balance);
             //HasManyToMany(x => x.Pets)

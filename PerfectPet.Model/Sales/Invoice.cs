@@ -38,7 +38,6 @@ namespace PerfectPet.Model.Sales
         public virtual string PaymentMethod { get; set; }
         public virtual string PaymentTerms { get; set; }
         public virtual double InvoiceTotal { get; set; }
-        public virtual double InvoiceBalance { get; set; }
         public virtual double Payment { get; set; }
         public virtual double Balance { get; set; }
 

@@ -60,7 +60,7 @@ namespace PerfectPet
                 try
                 {
                     Cursor.Current = Cursors.Default;
-                    this.WindowState = FormWindowState.Maximized;
+                    //this.WindowState = FormWindowState.Maximized;
                     if(InvoiceId == 0)
                     {
                         lineItems = new List<LineItem>();
@@ -433,6 +433,7 @@ namespace PerfectPet
                 }
 
                 lblInvoiceDiscount.Text = Math.Round(total * Discount,2).ToString(CultureInfo.InvariantCulture);
+                DiscountTotal = Math.Round(total * Discount, 2);
                 InvoiceTotal = Math.Round(total,2);
                 lblInvoiceTotal.Text = InvoiceTotal.ToString(CultureInfo.InvariantCulture);
 
@@ -539,6 +540,11 @@ namespace PerfectPet
                 invoice.DiscountRate = Discount;
                 invoice.PriorBalance = PriorBalance;
                 invoice.InvoiceTotal = InvoiceTotal;
+                invoice.Balance = Balance;
+                invoice.InvoiceTotal = InvoiceTotal;
+                invoice.PaymentMethod = ddlPaymentMethod.Text;
+                invoice.PaymentTerms = ddlInvoiceTerms.Text;
+                invoice.Payment = Payment;
                 _invoice.Save(invoice);
 
 
