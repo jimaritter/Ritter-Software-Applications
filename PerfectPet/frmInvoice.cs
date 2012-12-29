@@ -409,7 +409,7 @@ namespace PerfectPet
             {
                 double total = 0;
                 double taxtotal = 0;
-
+                
                 foreach (var row in gridInventory.Rows)
                 {
                     total = (total + Convert.ToDouble(row.Cells["Subtotal"].Value));
@@ -448,7 +448,7 @@ namespace PerfectPet
         #endregion
 
 
-        private void AddProductLineItem(GridViewRowInfo row)
+        private void AddInventoryLineItem(GridViewRowInfo row)
         {
             try
             {
@@ -456,7 +456,7 @@ namespace PerfectPet
                 var lineitem = _lineitem.Get();
                 lineitem.Quantity = Convert.ToInt32(row.Cells["Quantity"].Value);
                 var _product = ObjectFactory.GetInstance<IInventory>();
-                var product = _product.GetById(Convert.ToInt32(row.Cells["Inventory"].Value));
+                var product = _product.GetById(Convert.ToInt32(row.Cells["Id"].Value));
                 lineitem.Inventory = product;
                 lineitem.LineTotal = Convert.ToDouble(row.Cells["Subtotal"].Value);
                 lineitem.UnitPrice = Convert.ToDouble(row.Cells["Retail"].Value);
@@ -510,6 +510,12 @@ namespace PerfectPet
         {
             try
             {
+                //Add Inventory Lineitems to Invoice
+                foreach (var row in gridInventory.Rows)
+                {
+                    AddInventoryLineItem(row);
+                }
+
                 _invoice = ObjectFactory.GetInstance<IInvoice>();
 
                 //Increment Invoice Number

@@ -66,6 +66,7 @@
     <Compile Include="ContainerBootstrapper.cs" />
     <Compile Include="DogBreedTest.cs" />
     <Compile Include="EnumTests.cs" />
+    <Compile Include="FizzBuzzTest.cs" />
     <Compile Include="InvoiceTest.cs" />
     <Compile Include="PersonTest.cs" />
     <Compile Include="PersonTypeTest.cs" />

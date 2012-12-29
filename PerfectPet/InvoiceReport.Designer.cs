@@ -21,6 +21,7 @@ namespace PerfectPet
             this.txtBillToAddress = new Telerik.Reporting.TextBox();
             this.txtBillToPhone = new Telerik.Reporting.TextBox();
             this.shape1 = new Telerik.Reporting.Shape();
+            this.txtTaxNumber = new Telerik.Reporting.TextBox();
             this.detail = new Telerik.Reporting.DetailSection();
             this.txtItem = new Telerik.Reporting.TextBox();
             this.txtRetail = new Telerik.Reporting.TextBox();
@@ -41,7 +42,6 @@ namespace PerfectPet
             this.textBox4 = new Telerik.Reporting.TextBox();
             this.textBox5 = new Telerik.Reporting.TextBox();
             this.objectDataSource1 = new Telerik.Reporting.ObjectDataSource();
-            this.txtTaxNumber = new Telerik.Reporting.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // pageHeaderSection1
@@ -130,6 +130,13 @@ namespace PerfectPet
             this.shape1.Name = "shape1";
             this.shape1.ShapeType = new Telerik.Reporting.Drawing.Shapes.LineShape(Telerik.Reporting.Drawing.Shapes.LineDirection.EW);
             this.shape1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(7.9999213218688965D), Telerik.Reporting.Drawing.Unit.Inch(0.0520833320915699D));
+            // 
+            // txtTaxNumber
+            // 
+            this.txtTaxNumber.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(1.2999998331069946D), Telerik.Reporting.Drawing.Unit.Inch(1.1797178983688355D));
+            this.txtTaxNumber.Name = "txtTaxNumber";
+            this.txtTaxNumber.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(2.1000003814697266D), Telerik.Reporting.Drawing.Unit.Inch(0.19999997317790985D));
+            this.txtTaxNumber.Value = "textBox1";
             // 
             // detail
             // 
@@ -279,13 +286,6 @@ namespace PerfectPet
             this.objectDataSource1.Name = "objectDataSource1";
             this.objectDataSource1.Parameters.AddRange(new Telerik.Reporting.ObjectDataSourceParameter[] {
             new Telerik.Reporting.ObjectDataSourceParameter("invoiceId", typeof(int), "=Parameters.invoiceId.Value")});
-            // 
-            // txtTaxNumber
-            // 
-            this.txtTaxNumber.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(1.2999998331069946D), Telerik.Reporting.Drawing.Unit.Inch(1.1797178983688355D));
-            this.txtTaxNumber.Name = "txtTaxNumber";
-            this.txtTaxNumber.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(2.1000003814697266D), Telerik.Reporting.Drawing.Unit.Inch(0.19999997317790985D));
-            this.txtTaxNumber.Value = "textBox1";
             // 
             // InvoiceReport
             // 
