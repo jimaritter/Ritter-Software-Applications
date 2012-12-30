@@ -34,7 +34,7 @@ namespace PerfectPet
             //
             // TODO: Add any constructor code after InitializeComponent call
             //
-            FillCompanyInformation();
+
         }
 
         public InvoiceReport(Company company, Invoice invoice, IList<LineItem> lineItems)
@@ -46,7 +46,7 @@ namespace PerfectPet
             FillCompanyInformation();
             FillInvoiceHeader();
             this.ReportParameters["invoiceid"].Value = _invoice.InvoiceId;
-            //FillInvoiceDetails(); 
+            FillInvoiceDetails();
         }
 
         private void FillInvoiceHeader()
@@ -91,13 +91,9 @@ namespace PerfectPet
         {
             try
             {
-                foreach (var item in LineItems)
-                {
-                    txtItem.Value = item.Inventory.Name;
-                    txtRetail.Value = item.UnitPrice.ToString();
-                    txtQuantity.Value = item.Quantity.ToString();
-                    txtSubTotal.Value = item.LineTotal.ToString();
-                }
+                txtDiscount.Value = Invoice.Discount.ToString();
+                txtPayment.Value = Invoice.Payment.ToString();
+                txtBalance.Value = Invoice.Balance.ToString();
             }
             catch (Exception)
             {

@@ -42,6 +42,12 @@ namespace PerfectPet
             this.textBox4 = new Telerik.Reporting.TextBox();
             this.textBox5 = new Telerik.Reporting.TextBox();
             this.objectDataSource1 = new Telerik.Reporting.ObjectDataSource();
+            this.txtDiscount = new Telerik.Reporting.TextBox();
+            this.textBox9 = new Telerik.Reporting.TextBox();
+            this.textBox8 = new Telerik.Reporting.TextBox();
+            this.txtPayment = new Telerik.Reporting.TextBox();
+            this.textBox11 = new Telerik.Reporting.TextBox();
+            this.txtBalance = new Telerik.Reporting.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // pageHeaderSection1
@@ -189,13 +195,19 @@ namespace PerfectPet
             // 
             // groupFooterSection1
             // 
-            this.groupFooterSection1.Height = Telerik.Reporting.Drawing.Unit.Inch(0.80000048875808716D);
+            this.groupFooterSection1.Height = Telerik.Reporting.Drawing.Unit.Inch(1.6479167938232422D);
             this.groupFooterSection1.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
             this.shape3,
             this.textBox6,
             this.textBox7,
             this.txtTax,
-            this.txtTotal});
+            this.txtTotal,
+            this.txtDiscount,
+            this.textBox9,
+            this.textBox8,
+            this.txtPayment,
+            this.textBox11,
+            this.txtBalance});
             this.groupFooterSection1.Name = "groupFooterSection1";
             // 
             // shape3
@@ -207,28 +219,29 @@ namespace PerfectPet
             // 
             // textBox6
             // 
-            this.textBox6.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.2000002861022949D), Telerik.Reporting.Drawing.Unit.Inch(0.5D));
+            this.textBox6.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.1958317756652832D), Telerik.Reporting.Drawing.Unit.Inch(0.44799518585205078D));
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(0.40000024437904358D), Telerik.Reporting.Drawing.Unit.Inch(0.19999997317790985D));
             this.textBox6.Value = "Total";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.3000006675720215D), Telerik.Reporting.Drawing.Unit.Inch(0.19992160797119141D));
+            this.textBox7.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.29583215713501D), Telerik.Reporting.Drawing.Unit.Inch(0.14791679382324219D));
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(0.299999862909317D), Telerik.Reporting.Drawing.Unit.Inch(0.19999997317790985D));
             this.textBox7.Value = "Tax";
             // 
             // txtTax
             // 
-            this.txtTax.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.7000007629394531D), Telerik.Reporting.Drawing.Unit.Inch(0.19992160797119141D));
+            this.txtTax.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.6958327293396D), Telerik.Reporting.Drawing.Unit.Inch(0.14791679382324219D));
             this.txtTax.Name = "txtTax";
             this.txtTax.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(0.99999970197677612D), Telerik.Reporting.Drawing.Unit.Inch(0.19999980926513672D));
             this.txtTax.Value = ".06";
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.7000002861022949D), Telerik.Reporting.Drawing.Unit.Inch(0.5D));
+            this.txtTotal.Format = "{0:N2}";
+            this.txtTotal.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.6958317756652832D), Telerik.Reporting.Drawing.Unit.Inch(0.44799518585205078D));
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(0.99999970197677612D), Telerik.Reporting.Drawing.Unit.Inch(0.19999980926513672D));
             this.txtTotal.Value = "= Sum(Fields.LineTotal) + (Sum(Fields.LineTotal) * .06)";
@@ -249,6 +262,7 @@ namespace PerfectPet
             this.textBox2.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(0.099999986588954926D), Telerik.Reporting.Drawing.Unit.Inch(0.1000000610947609D));
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(4.2000002861022949D), Telerik.Reporting.Drawing.Unit.Inch(0.19999997317790985D));
+            this.textBox2.Style.Font.Bold = true;
             this.textBox2.Value = "Item";
             // 
             // shape2
@@ -263,6 +277,7 @@ namespace PerfectPet
             this.textBox3.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(4.5000004768371582D), Telerik.Reporting.Drawing.Unit.Inch(0.1000000610947609D));
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1D), Telerik.Reporting.Drawing.Unit.Inch(0.19999997317790985D));
+            this.textBox3.Style.Font.Bold = true;
             this.textBox3.Value = "Retail";
             // 
             // textBox4
@@ -270,6 +285,7 @@ namespace PerfectPet
             this.textBox4.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(5.6000008583068848D), Telerik.Reporting.Drawing.Unit.Inch(0.1000000610947609D));
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1D), Telerik.Reporting.Drawing.Unit.Inch(0.19999997317790985D));
+            this.textBox4.Style.Font.Bold = true;
             this.textBox4.Value = "Quantity";
             // 
             // textBox5
@@ -277,6 +293,7 @@ namespace PerfectPet
             this.textBox5.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.7000007629394531D), Telerik.Reporting.Drawing.Unit.Inch(0.1000000610947609D));
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(1D), Telerik.Reporting.Drawing.Unit.Inch(0.19999997317790985D));
+            this.textBox5.Style.Font.Bold = true;
             this.textBox5.Value = "Sub Total";
             // 
             // objectDataSource1
@@ -286,6 +303,49 @@ namespace PerfectPet
             this.objectDataSource1.Name = "objectDataSource1";
             this.objectDataSource1.Parameters.AddRange(new Telerik.Reporting.ObjectDataSourceParameter[] {
             new Telerik.Reporting.ObjectDataSourceParameter("invoiceId", typeof(int), "=Parameters.invoiceId.Value")});
+            // 
+            // txtDiscount
+            // 
+            this.txtDiscount.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.6958317756652832D), Telerik.Reporting.Drawing.Unit.Inch(0.74791687726974487D));
+            this.txtDiscount.Name = "txtDiscount";
+            this.txtDiscount.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(0.99999970197677612D), Telerik.Reporting.Drawing.Unit.Inch(0.19999980926513672D));
+            this.txtDiscount.Value = "textBox1";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(5.9958324432373047D), Telerik.Reporting.Drawing.Unit.Inch(0.74791687726974487D));
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(0.59374934434890747D), Telerik.Reporting.Drawing.Unit.Inch(0.19999997317790985D));
+            this.textBox9.Value = "Discount";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(5.9000000953674316D), Telerik.Reporting.Drawing.Unit.Inch(1.0479167699813843D));
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(0.69583195447921753D), Telerik.Reporting.Drawing.Unit.Inch(0.19999997317790985D));
+            this.textBox8.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Right;
+            this.textBox8.Value = "Payment";
+            // 
+            // txtPayment
+            // 
+            this.txtPayment.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.6999993324279785D), Telerik.Reporting.Drawing.Unit.Inch(1.0479167699813843D));
+            this.txtPayment.Name = "txtPayment";
+            this.txtPayment.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(0.99999970197677612D), Telerik.Reporting.Drawing.Unit.Inch(0.19999980926513672D));
+            this.txtPayment.Value = "textBox1";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.0020828247070312D), Telerik.Reporting.Drawing.Unit.Inch(1.3479169607162476D));
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(0.59374934434890747D), Telerik.Reporting.Drawing.Unit.Inch(0.19999997317790985D));
+            this.textBox11.Value = "Balance";
+            // 
+            // txtBalance
+            // 
+            this.txtBalance.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6.6999993324279785D), Telerik.Reporting.Drawing.Unit.Inch(1.3479169607162476D));
+            this.txtBalance.Name = "txtBalance";
+            this.txtBalance.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Inch(0.99999970197677612D), Telerik.Reporting.Drawing.Unit.Inch(0.19999980926513672D));
+            this.txtBalance.Value = "textBox1";
             // 
             // InvoiceReport
             // 
@@ -347,5 +407,11 @@ namespace PerfectPet
         private Telerik.Reporting.TextBox txtTotal;
         private Telerik.Reporting.ObjectDataSource objectDataSource1;
         private Telerik.Reporting.TextBox txtTaxNumber;
+        private Telerik.Reporting.TextBox txtDiscount;
+        private Telerik.Reporting.TextBox textBox9;
+        private Telerik.Reporting.TextBox textBox8;
+        private Telerik.Reporting.TextBox txtPayment;
+        private Telerik.Reporting.TextBox textBox11;
+        private Telerik.Reporting.TextBox txtBalance;
     }
 }
