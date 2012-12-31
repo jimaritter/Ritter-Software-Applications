@@ -1,6 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
-using PerfectPet.Model.Products;
+using PerfectPet.Model.Inventories;
 using PerfectPet.Model.Repository;
 using StructureMap;
 
@@ -9,12 +9,12 @@ namespace PerfectPet.Tests
     [TestFixture]
     public class ProductTest
     {
-        private IProduct _product;
+        private IInventory _inventory;
 
         [Test]
         public void can_add_new_product()
         {
-            var _product = ObjectFactory.GetInstance<IProduct>();
+            var _product = ObjectFactory.GetInstance<IInventory>();
             var product = _product.Get();
             product.Name = @"Top Paw™ Gentle and Tearless Puppy Shampoo";
             product.Description = @"Pamper your pup from head to tail with our exclusive gentle and tearless puppy shampoo.";
@@ -36,7 +36,7 @@ namespace PerfectPet.Tests
         [Test]
         public void can_get_all_products()
         {
-            var _product = ObjectFactory.GetInstance<IProduct>();
+            var _product = ObjectFactory.GetInstance<IInventory>();
             var product = _product.GetAll();
             Assert.IsNotNull(product);
             foreach (var item in product)
@@ -48,7 +48,7 @@ namespace PerfectPet.Tests
         [Test]
         public void can_delete_product()
         {
-            var _product = ObjectFactory.GetInstance<IProduct>();
+            var _product = ObjectFactory.GetInstance<IInventory>();
             var product = _product.GetById(2004);
             Assert.IsNotNull(product);
             _product.Delete(product);

@@ -11,7 +11,6 @@ using System.Windows.Forms;
 using PerfectPet.Model.Addresses;
 using PerfectPet.Model.Common;
 using PerfectPet.Model.Companies;
-using PerfectPet.Model.Products;
 using PerfectPet.Model.Services;
 using StructureMap;
 

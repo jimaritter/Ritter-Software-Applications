@@ -30,6 +30,16 @@ namespace PerfectPet.Model.Sales
         public virtual string VoidReason { get; set; }
         public virtual DateTime CreatedDate { get; set; }
         public virtual DateTime? ModifiedDate { get; set; }
+        public virtual double Discount { get; set; }
+        public virtual double Tax { get; set; }
+        public virtual double PriorBalance { get; set; }
+        public virtual double TaxRate { get; set; }
+        public virtual double DiscountRate { get; set; }
+        public virtual string PaymentMethod { get; set; }
+        public virtual string PaymentTerms { get; set; }
+        public virtual double InvoiceTotal { get; set; }
+        public virtual double Payment { get; set; }
+        public virtual double Balance { get; set; }
 
         public Invoice()
         {
@@ -123,7 +133,6 @@ namespace PerfectPet.Model.Sales
                 _session.Save(invoice);
                 _session.Transaction.Commit();
                 _session.Flush();
-                _session.Close();
             }
             catch (Exception)
             {

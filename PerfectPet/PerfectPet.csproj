@@ -143,6 +143,12 @@
     <Compile Include="frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInvoiceLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceLookup.Designer.cs">
+      <DependentUpon>frmInvoiceLookup.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceLookup.resx">
+      <DependentUpon>frmInvoiceLookup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPet.resx">
       <DependentUpon>frmPet.cs</DependentUpon>
@@ -457,6 +466,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\disk_blue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />

@@ -479,6 +479,7 @@ namespace PerfectPet
             _isNewPet = true;
             PersonId = (int)ddlCustomer.SelectedValue;
             ClearPetDetails();
+            tabDetails.Enabled = true;
         }
 
         private void listMedications_ItemMouseClick(object sender, Telerik.WinControls.UI.ListViewItemEventArgs e)

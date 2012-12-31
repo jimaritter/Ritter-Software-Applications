@@ -1,15 +1,15 @@
 ﻿using FluentNHibernate.Mapping;
-using PerfectPet.Model.Products;
+using PerfectPet.Model.Inventories;
 
 namespace PerfectPet.Model.Mappings
 {
-    public class ProductMap : ClassMap<Product>
+    public class InventoryMap : ClassMap<Inventory>
     {
-        public ProductMap()
+        public InventoryMap()
         {
             Not.LazyLoad();
             Id(c => c.Id).GeneratedBy.HiLo("1001");
-            Map(x => x.ProductNumber);
+            Map(x => x.Number);
             Map(x => x.Name).Not.Nullable();
             Map(x => x.Description).Length(500);
             Map(x => x.Cost);

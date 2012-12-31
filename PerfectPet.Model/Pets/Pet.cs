@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using NHibernate;
 using PerfectPet.Model.People;
-using PerfectPet.Model.Products;
 using PerfectPet.Model.Repository;
 using PerfectPet.Model.Sales;
 using PerfectPet.Model.Services;
-using PerfectPet.Model.Workorders;
 
 namespace PerfectPet.Model.Pets
 {

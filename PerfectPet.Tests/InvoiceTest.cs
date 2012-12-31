@@ -28,30 +28,14 @@ namespace PerfectPet.Tests
             try
             {
                 var _invoicenumber = ObjectFactory.GetInstance<IInvoiceNumber>();
-                var invoicenumber = _invoicenumber.GetById(1);
-                invoicenumber.Number = invoicenumber.Number + 1;
+                var invoicenumber = _invoicenumber.Get();
+                invoicenumber.Number = 1001;
                 _invoicenumber.Save(invoicenumber);
                 Assert.IsNotNull(_invoicenumber);
             }
             catch (Exception)
             {
 
-                throw;
-            }
-        }
-
-        [Test]
-        public void can_get_invoices_pets()
-        {
-            try
-            {
-                var _invoicestests = ObjectFactory.GetInstance<IInvoicesPets>();
-                var invoicestests = _invoicestests.Get();
-                Assert.IsNotNull(_invoicestests);
-            }
-            catch (Exception)
-            {
-                
                 throw;
             }
         }
@@ -72,6 +56,26 @@ namespace PerfectPet.Tests
             catch (Exception)
             {
 
+                throw;
+            }
+        }
+
+        [Test]
+        public void can_delete_all_invoices()
+        {
+            try
+            {
+                var _invoices = ObjectFactory.GetInstance<IInvoice>();
+                var invoices = _invoices.GetAll();
+                Assert.IsNotNull(invoices);
+                foreach (var invoice in invoices)
+                {
+                    _invoices.Delete(invoice);
+                }                
+            }
+            catch (Exception)
+            {
+                
                 throw;
             }
         }

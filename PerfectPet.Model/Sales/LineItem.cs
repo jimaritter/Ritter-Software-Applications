@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using NHibernate;
-using PerfectPet.Model.Products;
+using PerfectPet.Model.Inventories;
 using PerfectPet.Model.Repository;
 using PerfectPet.Model.Services;
 
@@ -15,7 +15,7 @@ namespace PerfectPet.Model.Sales
         public virtual int LineNumber { get; set; }
         public virtual string Name { get; set; }
         public virtual string Description { get; set; }
-        public virtual Product Product { get; set; }
+        public virtual Inventory Inventory { get; set; }
         public virtual Service Service { get; set; }
         public virtual Invoice Invoice { get; set; }
         public virtual int Quantity { get; set; }

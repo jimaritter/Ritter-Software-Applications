@@ -463,6 +463,16 @@ namespace PerfectPet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap help2 {
+            get {
+                object obj = ResourceManager.GetObject("help2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hourglass {
             get {
                 object obj = ResourceManager.GetObject("hourglass", resourceCulture);
@@ -516,6 +526,16 @@ namespace PerfectPet.Properties {
         internal static System.Drawing.Bitmap item424x24_24_bit {
             get {
                 object obj = ResourceManager.GetObject("item424x24 24-bit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

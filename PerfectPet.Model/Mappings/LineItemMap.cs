@@ -16,7 +16,7 @@ namespace PerfectPet.Model.Mappings
             Map(x => x.UnitPrice);
             Map(x => x.Tax);
             Map(x => x.LineTotal);
-            References(x => x.Product);
+            References(x => x.Inventory);
             References(x => x.Service);
             References(x => x.Invoice);
             Map(x => x.CreatedDate);
