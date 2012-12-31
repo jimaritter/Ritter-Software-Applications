@@ -43,6 +43,7 @@ namespace PerfectPet.Model.Sales
 
         public Invoice()
         {
+
         }
 
         public Invoice(IInvoice invoice)

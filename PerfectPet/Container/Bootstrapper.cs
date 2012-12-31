@@ -42,6 +42,7 @@ namespace PerfectPet.Container
                 x.For<IInvoice>().Singleton().Use(() => new Invoice());
                 x.For<ILineItem>().Singleton().Use(() => new LineItem());
                 x.For<IMedication>().Singleton().Use(() => new Medication());
+                x.For<IInvoiceToPet>().Singleton().Use(() => new InvoiceToPet());
             });
 
         }

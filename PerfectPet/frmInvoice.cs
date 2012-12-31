@@ -346,9 +346,6 @@ namespace PerfectPet
                                 Pets.Add(pet);
                             }
                         }
-
-                        Console.WriteLine(item.Value);
-                        //listviewHeaderPets.Items.Add(item.Text);
                     }
                     BindPetHeaderListView();
                 }
@@ -551,6 +548,16 @@ namespace PerfectPet
                     item.Invoice = invoice;
                     _lineitems.Save(item);
                 }
+
+                foreach (var pet in Pets)
+                {
+                    var _invoicetopet = ObjectFactory.GetInstance<IInvoiceToPet>();
+                    var invoicetopet = _invoicetopet.Get();
+                    invoicetopet.Invoice = invoice;
+                    invoicetopet.Pet = pet;
+                    _invoicetopet.Save(invoicetopet);
+                }
+
                 InvoiceId = invoice.InvoiceId;
                 btnPrintInvoice.Enabled = true;
                 lblInvoiceSaved.Visible = true;
