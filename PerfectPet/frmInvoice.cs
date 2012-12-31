@@ -177,11 +177,6 @@ namespace PerfectPet
                     listviewHeaderPets.Items.Clear();
                     lblHeaderAddress.Text = "";
                     numericQuantity.Text = 0.ToString();
-                    txtInventoryCost.Clear();
-                    txtInventoryDescription.Clear();
-                    txtInventoryName.Clear();
-                    txtInventoryRetail.Clear();
-                    chkTaxExempt.Checked = false;
                     gridInventory.Rows.Clear();
 
                 }
@@ -371,11 +366,7 @@ namespace PerfectPet
                     var _inventory = ObjectFactory.GetInstance<IInventory>();
                     var inventory = _inventory.GetById((int)ddlInventoryList.SelectedValue);
 
-                    txtInventoryName.Text = inventory.Name;
-                    txtInventoryDescription.Text = inventory.Description;
-                    txtInventoryCost.Text = inventory.Cost.ToString();
-                    txtInventoryRetail.Text = inventory.Retail.ToString();
-                    chkTaxExempt.Checked = inventory.TaxExempt;
+
                 }
                 catch (Exception)
                 {
@@ -584,11 +575,6 @@ namespace PerfectPet
                 lblInvoiceSaved.Visible = false;
                 chkIncludeBalance.Checked = false;
                 numericQuantity.Text = 0.ToString();
-                txtInventoryCost.Clear();
-                txtInventoryDescription.Clear();
-                txtInventoryName.Clear();
-                txtInventoryRetail.Clear();
-                chkTaxExempt.Checked = false;
                 gridInventory.Rows.Clear();
             }
             catch (Exception)
