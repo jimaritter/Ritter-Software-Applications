@@ -23,6 +23,7 @@ namespace PerfectPet.Model.Mappings
             Map(x => x.DepartureTime);
             Map(x => x.CheckedIn);
             Map(x => x.CheckedOut);
+            References(x => x.Resources);
             Map(x => x.CreatedDate);
             References(x => x.Pet);
         }

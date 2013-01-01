@@ -31,6 +31,7 @@ namespace PerfectPet
             {
                 Cursor.Current = Cursors.Default;
                 BindCustomerDropDownList();
+                BindResourceList();
             }
             catch (Exception)
             {
@@ -41,6 +42,26 @@ namespace PerfectPet
         }
 
         #region
+
+        private void BindResourceList()
+        {
+            try
+            {
+                var _resource = ObjectFactory.GetInstance<IResources>();
+                var resource = _resource.GetAll();
+                var query = from i in resource
+                            orderby i.Name ascending
+                            select new {Id = i.Id, Name = i.Name};
+                ddlResource.DataSource = query.ToList();
+                ddlResource.DisplayMember = "Name";
+                ddlResource.ValueMember = "Id";
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        }
 
         private void BindCustomerDropDownList()
         {
@@ -146,6 +167,9 @@ namespace PerfectPet
                 var checkin = _checkin.Get();
                 var _pet = ObjectFactory.GetInstance<IPet>();
                 var pet = _pet.GetById(PetId);
+                var _resource = ObjectFactory.GetInstance<IResources>();
+                var resource = _resource.GetById((int)ddlResource.SelectedValue);
+
                 checkin.Pet = pet;
                 checkin.Name = pet.Name;
                 checkin.ArriveDate = Convert.ToDateTime(dateCheckInDate.Text).ToShortDateString();
@@ -154,6 +178,7 @@ namespace PerfectPet
                 checkin.DepartureTime = Convert.ToDateTime(dateCheckOutTime.Value).ToShortTimeString();
                 checkin.Notes = txtNotes.Text;
                 checkin.CheckedIn = true;
+                checkin.Resources = resource;
                 pet.IsCheckedIn = true;
                 _checkin.Save(checkin);
                 _pet.Save(pet);

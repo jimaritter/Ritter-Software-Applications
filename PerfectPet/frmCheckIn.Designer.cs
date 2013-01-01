@@ -43,6 +43,8 @@
             this.splitPanel2 = new Telerik.WinControls.UI.SplitPanel();
             this.radPageView1 = new Telerik.WinControls.UI.RadPageView();
             this.tabCheckIn = new Telerik.WinControls.UI.RadPageViewPage();
+            this.dateCheckOutTime = new Telerik.WinControls.UI.RadTimePicker();
+            this.dateCheckInTime = new Telerik.WinControls.UI.RadTimePicker();
             this.lblPet = new Telerik.WinControls.UI.RadLabel();
             this.lblCustomer = new Telerik.WinControls.UI.RadLabel();
             this.radLabel7 = new Telerik.WinControls.UI.RadLabel();
@@ -56,8 +58,8 @@
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.dateCheckInDate = new Telerik.WinControls.UI.RadDateTimePicker();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
-            this.dateCheckInTime = new Telerik.WinControls.UI.RadTimePicker();
-            this.dateCheckOutTime = new Telerik.WinControls.UI.RadTimePicker();
+            this.radLabel8 = new Telerik.WinControls.UI.RadLabel();
+            this.ddlResource = new Telerik.WinControls.UI.RadDropDownList();
             ((System.ComponentModel.ISupportInitialize)(this.ddlCustomerDropDownList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlCustomerDropDownList.EditorControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlCustomerDropDownList.EditorControl.MasterTemplate)).BeginInit();
@@ -77,6 +79,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
             this.tabCheckIn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateCheckOutTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateCheckInTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblPet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblCustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).BeginInit();
@@ -89,8 +93,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateCheckOutDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateCheckInDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateCheckInTime)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateCheckOutTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlResource)).BeginInit();
             this.SuspendLayout();
             // 
             // ddlCustomerDropDownList
@@ -260,7 +264,7 @@
             // 
             // 
             this.radSplitContainer1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.radSplitContainer1.Size = new System.Drawing.Size(708, 374);
+            this.radSplitContainer1.Size = new System.Drawing.Size(679, 393);
             this.radSplitContainer1.TabIndex = 6;
             this.radSplitContainer1.TabStop = false;
             this.radSplitContainer1.Text = "radSplitContainer1";
@@ -279,9 +283,9 @@
             // 
             // 
             this.splitPanel1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel1.Size = new System.Drawing.Size(294, 374);
-            this.splitPanel1.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.08241758F, 0F);
-            this.splitPanel1.SizeInfo.SplitterCorrection = new System.Drawing.Size(-105, 0);
+            this.splitPanel1.Size = new System.Drawing.Size(267, 393);
+            this.splitPanel1.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.1050296F, 0F);
+            this.splitPanel1.SizeInfo.SplitterCorrection = new System.Drawing.Size(-133, 0);
             this.splitPanel1.TabIndex = 0;
             this.splitPanel1.TabStop = false;
             this.splitPanel1.Text = "splitPanel1";
@@ -299,15 +303,15 @@
             // splitPanel2
             // 
             this.splitPanel2.Controls.Add(this.radPageView1);
-            this.splitPanel2.Location = new System.Drawing.Point(297, 0);
+            this.splitPanel2.Location = new System.Drawing.Point(270, 0);
             this.splitPanel2.Name = "splitPanel2";
             // 
             // 
             // 
             this.splitPanel2.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel2.Size = new System.Drawing.Size(411, 374);
-            this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.08241761F, 0F);
-            this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(105, 0);
+            this.splitPanel2.Size = new System.Drawing.Size(409, 393);
+            this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.1050296F, 0F);
+            this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(133, 0);
             this.splitPanel2.TabIndex = 1;
             this.splitPanel2.TabStop = false;
             this.splitPanel2.Text = "splitPanel2";
@@ -319,7 +323,7 @@
             this.radPageView1.Location = new System.Drawing.Point(0, 0);
             this.radPageView1.Name = "radPageView1";
             this.radPageView1.SelectedPage = this.tabCheckIn;
-            this.radPageView1.Size = new System.Drawing.Size(411, 374);
+            this.radPageView1.Size = new System.Drawing.Size(409, 393);
             this.radPageView1.TabIndex = 0;
             this.radPageView1.Text = "radPageView1";
             this.radPageView1.ThemeName = "TelerikMetro";
@@ -327,6 +331,8 @@
             // 
             // tabCheckIn
             // 
+            this.tabCheckIn.Controls.Add(this.ddlResource);
+            this.tabCheckIn.Controls.Add(this.radLabel8);
             this.tabCheckIn.Controls.Add(this.dateCheckOutTime);
             this.tabCheckIn.Controls.Add(this.dateCheckInTime);
             this.tabCheckIn.Controls.Add(this.lblPet);
@@ -344,8 +350,30 @@
             this.tabCheckIn.Enabled = false;
             this.tabCheckIn.Location = new System.Drawing.Point(5, 31);
             this.tabCheckIn.Name = "tabCheckIn";
-            this.tabCheckIn.Size = new System.Drawing.Size(401, 338);
+            this.tabCheckIn.Size = new System.Drawing.Size(399, 357);
             this.tabCheckIn.Text = "Check In";
+            // 
+            // dateCheckOutTime
+            // 
+            this.dateCheckOutTime.HeadersHeight = 19;
+            this.dateCheckOutTime.Location = new System.Drawing.Point(222, 112);
+            this.dateCheckOutTime.Name = "dateCheckOutTime";
+            this.dateCheckOutTime.Size = new System.Drawing.Size(106, 20);
+            this.dateCheckOutTime.TabIndex = 14;
+            this.dateCheckOutTime.TabStop = false;
+            this.dateCheckOutTime.Text = "radTimePicker1";
+            this.dateCheckOutTime.Value = new System.DateTime(2012, 12, 23, 12, 11, 37, 0);
+            // 
+            // dateCheckInTime
+            // 
+            this.dateCheckInTime.HeadersHeight = 19;
+            this.dateCheckInTime.Location = new System.Drawing.Point(222, 75);
+            this.dateCheckInTime.Name = "dateCheckInTime";
+            this.dateCheckInTime.Size = new System.Drawing.Size(106, 20);
+            this.dateCheckInTime.TabIndex = 13;
+            this.dateCheckInTime.TabStop = false;
+            this.dateCheckInTime.Text = "radTimePicker1";
+            this.dateCheckInTime.Value = new System.DateTime(2012, 12, 23, 12, 11, 37, 0);
             // 
             // lblPet
             // 
@@ -382,7 +410,7 @@
             // btnClose
             // 
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.Location = new System.Drawing.Point(219, 275);
+            this.btnClose.Location = new System.Drawing.Point(219, 308);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(84, 24);
             this.btnClose.TabIndex = 8;
@@ -390,7 +418,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(111, 275);
+            this.btnSave.Location = new System.Drawing.Point(111, 308);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(102, 24);
             this.btnSave.TabIndex = 7;
@@ -400,7 +428,7 @@
             // radLabel5
             // 
             this.radLabel5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel5.Location = new System.Drawing.Point(20, 162);
+            this.radLabel5.Location = new System.Drawing.Point(20, 195);
             this.radLabel5.Name = "radLabel5";
             this.radLabel5.Size = new System.Drawing.Size(41, 18);
             this.radLabel5.TabIndex = 6;
@@ -408,7 +436,7 @@
             // 
             // txtNotes
             // 
-            this.txtNotes.Location = new System.Drawing.Point(121, 162);
+            this.txtNotes.Location = new System.Drawing.Point(121, 195);
             this.txtNotes.Name = "txtNotes";
             this.txtNotes.Size = new System.Drawing.Size(207, 92);
             this.txtNotes.TabIndex = 5;
@@ -461,34 +489,32 @@
             this.dateCheckInDate.Text = "Wednesday, December 19, 2012";
             this.dateCheckInDate.Value = new System.DateTime(2012, 12, 19, 0, 0, 0, 0);
             // 
-            // dateCheckInTime
+            // radLabel8
             // 
-            this.dateCheckInTime.HeadersHeight = 19;
-            this.dateCheckInTime.Location = new System.Drawing.Point(222, 75);
-            this.dateCheckInTime.Name = "dateCheckInTime";
-            this.dateCheckInTime.Size = new System.Drawing.Size(106, 20);
-            this.dateCheckInTime.TabIndex = 13;
-            this.dateCheckInTime.TabStop = false;
-            this.dateCheckInTime.Text = "radTimePicker1";
-            this.dateCheckInTime.Value = new System.DateTime(2012, 12, 23, 12, 11, 37, 0);
+            this.radLabel8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel8.Location = new System.Drawing.Point(20, 152);
+            this.radLabel8.Name = "radLabel8";
+            this.radLabel8.Size = new System.Drawing.Size(58, 18);
+            this.radLabel8.TabIndex = 15;
+            this.radLabel8.Text = "Resource:";
             // 
-            // dateCheckOutTime
+            // ddlResource
             // 
-            this.dateCheckOutTime.HeadersHeight = 19;
-            this.dateCheckOutTime.Location = new System.Drawing.Point(222, 112);
-            this.dateCheckOutTime.Name = "dateCheckOutTime";
-            this.dateCheckOutTime.Size = new System.Drawing.Size(106, 20);
-            this.dateCheckOutTime.TabIndex = 14;
-            this.dateCheckOutTime.TabStop = false;
-            this.dateCheckOutTime.Text = "radTimePicker1";
-            this.dateCheckOutTime.Value = new System.DateTime(2012, 12, 23, 12, 11, 37, 0);
+            this.ddlResource.DropDownAnimationEnabled = true;
+            this.ddlResource.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
+            this.ddlResource.Location = new System.Drawing.Point(121, 149);
+            this.ddlResource.MaxDropDownItems = 0;
+            this.ddlResource.Name = "ddlResource";
+            this.ddlResource.ShowImageInEditorArea = true;
+            this.ddlResource.Size = new System.Drawing.Size(182, 20);
+            this.ddlResource.TabIndex = 16;
             // 
             // frmCheckIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(708, 374);
+            this.ClientSize = new System.Drawing.Size(679, 393);
             this.Controls.Add(this.radSplitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmCheckIn";
@@ -516,6 +542,8 @@
             this.radPageView1.ResumeLayout(false);
             this.tabCheckIn.ResumeLayout(false);
             this.tabCheckIn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateCheckOutTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateCheckInTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblPet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblCustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).EndInit();
@@ -528,8 +556,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateCheckOutDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateCheckInDate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateCheckInTime)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateCheckOutTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlResource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -562,5 +590,7 @@
         private Telerik.WinControls.UI.RadTimePicker dateCheckInTime;
         private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
         private Telerik.WinControls.UI.RadTimePicker dateCheckOutTime;
+        private Telerik.WinControls.UI.RadDropDownList ddlResource;
+        private Telerik.WinControls.UI.RadLabel radLabel8;
     }
 }
