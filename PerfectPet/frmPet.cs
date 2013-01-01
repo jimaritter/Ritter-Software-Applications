@@ -246,7 +246,7 @@ namespace PerfectPet
                 var _pet = ObjectFactory.GetInstance<IPet>();
                 var pet = _pet.GetById(PetId);
                 var _medication = ObjectFactory.GetInstance<IMedication>();
-                if(_isNewMedication)
+                if (_isNewMedication || MedicationId == 0)
                 {
                     medication = _medication.Get();
                 }else
@@ -259,6 +259,8 @@ namespace PerfectPet
                 medication.Quantity = txtMedicationQuantity.Text;
                 medication.Pet = pet;
                 _medication.Save(medication);
+                pet.HasMedications = true;
+                _pet.Save(pet);
                 BindMedicationList();
 
             }
@@ -502,6 +504,30 @@ namespace PerfectPet
         {
             _isNewMedication = true;
             ClearMedicationDetails();
+        }
+
+        private void btnDeleteMedication_Click(object sender, EventArgs e)
+        {
+            DeleteMedication();
+        }
+
+        private void DeleteMedication()
+        {
+            try
+            {
+                if(MessageBox.Show("Delete this medication?","Delete Medication", MessageBoxButtons.OKCancel)  == DialogResult.OK)
+                {
+                    var _medication = ObjectFactory.GetInstance<IMedication>();
+                    var medication = _medication.GetById((int)listMedications.SelectedItem.Value);
+                    _medication.Delete(medication);
+                    BindMedicationList();
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
         }
     }
 }

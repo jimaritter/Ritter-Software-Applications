@@ -39,6 +39,7 @@
             this.windows7Theme1 = new Telerik.WinControls.Themes.Windows7Theme();
             this.radSplitContainer1 = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
+            this.btnClose = new Telerik.WinControls.UI.RadButton();
             this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
             this.btnNew = new Telerik.WinControls.UI.RadButton();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
@@ -94,11 +95,12 @@
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.txtMedicationName = new Telerik.WinControls.UI.RadTextBoxControl();
             this.listMedications = new Telerik.WinControls.UI.RadListView();
-            this.btnClose = new Telerik.WinControls.UI.RadButton();
+            this.btnDeleteMedication = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
             this.radSplitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
             this.splitPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNew)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
@@ -157,7 +159,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMedicationName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listMedications)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDeleteMedication)).BeginInit();
             this.SuspendLayout();
             // 
             // radSplitContainer1
@@ -198,6 +200,16 @@
             this.splitPanel1.TabIndex = 0;
             this.splitPanel1.TabStop = false;
             this.splitPanel1.Text = "splitPanel1";
+            // 
+            // btnClose
+            // 
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnClose.Location = new System.Drawing.Point(129, 415);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(71, 24);
+            this.btnClose.TabIndex = 67;
+            this.btnClose.Text = "Close";
+            this.btnClose.ThemeName = "TelerikMetro";
             // 
             // radLabel19
             // 
@@ -653,6 +665,7 @@
             // radGroupBox2
             // 
             this.radGroupBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this.radGroupBox2.Controls.Add(this.btnDeleteMedication);
             this.radGroupBox2.Controls.Add(this.btnNewMedication);
             this.radGroupBox2.Controls.Add(this.btnSaveMedication);
             this.radGroupBox2.Controls.Add(this.radLabel18);
@@ -782,20 +795,19 @@
             this.listMedications.Name = "listMedications";
             this.listMedications.ShowColumnHeaders = false;
             this.listMedications.ShowGridLines = true;
-            this.listMedications.Size = new System.Drawing.Size(252, 122);
+            this.listMedications.Size = new System.Drawing.Size(252, 95);
             this.listMedications.TabIndex = 64;
             this.listMedications.Text = "radListView1";
             this.listMedications.ItemMouseClick += new Telerik.WinControls.UI.ListViewItemEventHandler(this.listMedications_ItemMouseClick);
             // 
-            // btnClose
+            // btnDeleteMedication
             // 
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.Location = new System.Drawing.Point(129, 415);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(71, 24);
-            this.btnClose.TabIndex = 67;
-            this.btnClose.Text = "Close";
-            this.btnClose.ThemeName = "TelerikMetro";
+            this.btnDeleteMedication.Location = new System.Drawing.Point(109, 126);
+            this.btnDeleteMedication.Name = "btnDeleteMedication";
+            this.btnDeleteMedication.Size = new System.Drawing.Size(99, 24);
+            this.btnDeleteMedication.TabIndex = 75;
+            this.btnDeleteMedication.Text = "Delete";
+            this.btnDeleteMedication.Click += new System.EventHandler(this.btnDeleteMedication_Click);
             // 
             // frmPet
             // 
@@ -814,6 +826,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).EndInit();
             this.splitPanel1.ResumeLayout(false);
             this.splitPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNew)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
@@ -874,7 +887,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMedicationName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listMedications)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDeleteMedication)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -941,5 +954,6 @@
         private Telerik.WinControls.UI.RadLabel radLabel19;
         private Telerik.WinControls.UI.RadButton btnNewMedication;
         private Telerik.WinControls.UI.RadButton btnClose;
+        private Telerik.WinControls.UI.RadButton btnDeleteMedication;
     }
 }
