@@ -169,7 +169,16 @@ namespace PerfectPet
                 var pet = _pet.GetById(PetId);
                 var _resource = ObjectFactory.GetInstance<IResources>();
                 var resource = _resource.GetById((int)ddlResource.SelectedValue);
+                var _appointment = ObjectFactory.GetInstance<IAppointments>();
+                var appointment = _appointment.Get();
 
+                var checkindate = Convert.ToDateTime(dateCheckInDate.Text).ToShortDateString() + " " +
+                                  Convert.ToDateTime(dateCheckInTime.Value).ToShortTimeString();
+
+                var checkoutdate = Convert.ToDateTime(dateCheckOutDate.Text).ToShortDateString() + " " +
+                  Convert.ToDateTime(dateCheckOutTime.Value).ToShortTimeString();
+
+                //Save the check in values to the ArrivalDeparture object
                 checkin.Pet = pet;
                 checkin.Name = pet.Name;
                 checkin.ArriveDate = Convert.ToDateTime(dateCheckInDate.Text).ToShortDateString();
@@ -179,7 +188,17 @@ namespace PerfectPet
                 checkin.Notes = txtNotes.Text;
                 checkin.CheckedIn = true;
                 checkin.Resources = resource;
+                
+                //Set the Checked in bool value in Pet Object
                 pet.IsCheckedIn = true;
+
+                //Save the appointment info to the Appointment object
+                appointment.Start = Convert.ToDateTime(checkindate);
+                appointment.EndDate = Convert.ToDateTime(checkoutdate);
+                appointment.Resource = resource;
+                appointment.Summary = txtNotes.Text;
+                _appointment.Save(appointment);
+
                 _checkin.Save(checkin);
                 _pet.Save(pet);
                 this.Close();
