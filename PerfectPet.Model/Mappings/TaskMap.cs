@@ -17,7 +17,7 @@ namespace PerfectPet.Model.Mappings
             Map(x => x.Description);
             Map(x => x.StartDate);
             Map(x => x.EndDate);
-            Map(x => x.Completed);
+            Map(x => x.Status);
             Map(x => x.CreatedDate);            
         }
     }

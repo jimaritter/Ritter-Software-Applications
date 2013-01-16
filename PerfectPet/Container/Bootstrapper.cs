@@ -13,7 +13,9 @@ using PerfectPet.Model.Pets;
 using PerfectPet.Model.Phones;
 using PerfectPet.Model.Sales;
 using PerfectPet.Model.Services;
+using PerfectPet.Model.Tasks;
 using StructureMap;
+using Task = PerfectPet.Model.Tasks.Task;
 
 namespace PerfectPet.Container
 {
@@ -43,6 +45,7 @@ namespace PerfectPet.Container
                 x.For<ILineItem>().Singleton().Use(() => new LineItem());
                 x.For<IMedication>().Singleton().Use(() => new Medication());
                 x.For<IInvoiceToPet>().Singleton().Use(() => new InvoiceToPet());
+                x.For<ITask>().Singleton().Use(() => new Task());
             });
 
         }

@@ -88,6 +88,7 @@
     <Compile Include="Common\Salutation.cs" />
     <Compile Include="Common\States.cs" />
     <Compile Include="Common\StringExtension.cs" />
+    <Compile Include="Common\TaskStatus.cs" />
     <Compile Include="Common\Temperment.cs" />
     <Compile Include="Common\TypeExtension.cs" />
     <Compile Include="Companies\Company.cs" />

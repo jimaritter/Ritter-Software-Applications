@@ -83,7 +83,7 @@ namespace PerfectPet
                     var _pets = ObjectFactory.GetInstance<IPet>();
                     var pets = _pets.GetByPersonId((int)ddlCustomer.SelectedValue);
                     var query = from i in pets
-                                select new { Id = i.PetId, Name = i.Name };
+                                select new { Id = i.PetId, Name = i.Name + " (" +  i.Species  + " - " + i.Breed + ")" };
                     listPets.DataSource = query.ToList();
                     listPets.DisplayMember = "Name";
                     listPets.ValueMember = "Id";
